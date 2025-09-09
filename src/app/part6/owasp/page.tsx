@@ -335,7 +335,7 @@ class SecurePassword {
             <p className="text-sm text-gray-600 dark:text-gray-400">취약점 사전 차단율</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">< 5분</div>
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">&lt; 5분</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">평균 위협 탐지 시간</p>
           </div>
           <div>

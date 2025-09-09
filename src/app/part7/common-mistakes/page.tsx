@@ -172,7 +172,7 @@ function getUser(userId) {
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
             <h6 className="font-semibold text-green-600 dark:text-green-400 mb-2">올바른 접근</h6>
             <div className="text-sm space-y-2">
-              <div><strong>요구사항 분석:</strong> 일관성 > 성능</div>
+              <div><strong>요구사항 분석:</strong> 일관성 &gt; 성능</div>
               <div><strong>기술 선택:</strong> RDBMS + 트랜잭션</div>
               <div><strong>AI 활용:</strong> 구현 세부사항 최적화</div>
               <div><strong>결과:</strong> 안정적인 금융 거래 시스템</div>

@@ -498,15 +498,15 @@ export const CustomerResourceList = ({ resources }) => {
   const renderResourceItem = useCallback((resource, index) => (
     <div className="flex items-center justify-between p-4 border-b">
       <div>
-        <h3 className="font-semibold">{resource.name}</h3>
+        <h3 className="font-semibold">\{resource.name}</h3>
         <p className="text-sm text-gray-600">
-          {resource.type} • {resource.region}
+          \{resource.type} • \{resource.region}
         </p>
       </div>
       <div className="text-right">
-        <div className="font-semibold">${resource.monthlyCost}</div>
-        <div className={\`text-sm \${resource.status === 'healthy' ? 'text-green-600' : 'text-red-600'}\`}>
-          {resource.status}
+        <div className="font-semibold">$\{resource.monthlyCost}</div>
+        <div className="text-sm" data-status="\\{resource.status}">
+          \{resource.status}
         </div>
       </div>
     </div>

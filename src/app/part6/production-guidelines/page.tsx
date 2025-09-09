@@ -273,16 +273,16 @@ canary_deployment:
 CANARY_STAGES=(5 25 75 100)
 WAIT_TIMES=(3600 14400 28800 0)  # seconds
 
-for i in "$${!CANARY_STAGES[@]}"; do
-  PERCENTAGE=$${CANARY_STAGES[i]}
-  WAIT_TIME=$${WAIT_TIMES[i]}
+for i in {0..3}; do
+  PERCENTAGE=\${CANARY_STAGES[i]}
+  WAIT_TIME=\${WAIT_TIMES[i]}
   
-  echo "🐦 카나리 배포: $${PERCENTAGE}% 트래픽"
+  echo "🐦 카나리 배포: \${PERCENTAGE}% 트래픽"
   kubectl patch service app -p "{\\"spec\\": {\\"selector\\": {\\"version\\": \\"canary\\"}}}" --type='merge'
-  kubectl annotate ingress app-ingress nginx.ingress.kubernetes.io/canary-weight=$${PERCENTAGE}
+  kubectl annotate ingress app-ingress nginx.ingress.kubernetes.io/canary-weight=\${PERCENTAGE}
   
-  echo "📊 모니터링 시작: $${WAIT_TIME}초"
-  ./scripts/monitor-canary.sh $${WAIT_TIME} $${PERCENTAGE}
+  echo "📊 모니터링 시작: \${WAIT_TIME}초"
+  ./scripts/monitor-canary.sh \${WAIT_TIME} \${PERCENTAGE}
   
   if [ $? -ne 0 ]; then
     echo "❌ 카나리 배포 실패 - 롤백 실행"
@@ -623,7 +623,7 @@ done`}</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">시스템 가용성</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">< 2분</div>
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">&lt; 2분</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">평균 복구 시간</p>
           </div>
           <div>

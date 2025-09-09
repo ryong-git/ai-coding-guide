@@ -551,7 +551,7 @@ export const generateRegressionTests = (errorHistory: ErrorPattern[]) => {
   return errorHistory.map(error => ({
     testName: \`Regression: \${error.category} - \${error.description}\`,
     testCode: \`
-      test('${error.description} 재발 방지', async () => {
+      test('\${error.description} 재발 방지', async () => {
         // 오류 발생 조건 재현
         \${generateErrorCondition(error)}
         

@@ -228,7 +228,7 @@ export default function RCAWorkflowPage() {
             <div className="text-sm space-y-1">
               <div>• 메모리 사용량 90% 초과 → 2시간 후 OOM 발생 확률 85%</div>
               <div>• 스레드 풀 80% 사용률 → 30분 후 응답 지연 확률 92%</div>
-              <div>• DB 커넥션 증가율 > 15%/min → 1시간 후 장애 확률 78%</div>
+              <div>• DB 커넥션 증가율 &gt; 15%/min → 1시간 후 장애 확률 78%</div>
             </div>
           </div>
           

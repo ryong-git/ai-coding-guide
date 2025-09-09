@@ -69,7 +69,7 @@ export default function IacIntegrationPage() {
         <div className="text-white">  required_providers {`{`}</div>
         <div className="text-white">    aws = {`{`}</div>
         <div className="text-white">      source  = &quot;hashicorp/aws&quot;</div>
-        <div className="text-white">      version = &quot;~> 5.0&quot;</div>
+        <div className="text-white">      version = &quot;~&gt; 5.0&quot;</div>
         <div className="text-white">    {`}`}</div>
         <div className="text-white">  {`}`}</div>
         <div className="text-white">{`}`}</div>

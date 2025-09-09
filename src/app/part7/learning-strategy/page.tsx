@@ -277,9 +277,9 @@ AI: [코드 생성]
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">버그 발생률</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">< 5%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">< 2%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">< 0.5%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">&lt; 5%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">&lt; 2%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">&lt; 0.5%</td>
               </tr>
             </tbody>
           </table>

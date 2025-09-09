@@ -357,7 +357,6 @@ export default function PromptingPage() {
             <div className="text-white mt-2">{`베스핀글로벌 표준 AWS 리소스 모니터링 함수 패턴:
 
 <example_function>
-```python
 def monitor_ec2_instances(customer_id: str, region: str = 'ap-northeast-2') -> Dict:
     """
     고객별 EC2 인스턴스 헬스 체크 및 비용 분석
@@ -406,7 +405,6 @@ def monitor_ec2_instances(customer_id: str, region: str = 'ap-northeast-2') -> D
     except Exception as e:
         logger.error(f"[{customer_id}] EC2 모니터링 실패: {str(e)}")
         raise MSPMonitoringException(f"고객 {customer_id} 모니터링 실패")
-```
 </example_function>
 
 같은 패턴으로 RDS 인스턴스 모니터링 함수를 작성해주세요.

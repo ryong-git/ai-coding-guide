@@ -94,7 +94,7 @@ jobs:
             </div>
             <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded border-l-4 border-blue-500">
               <strong>⚡ 성능 개선:</strong> useEffect 의존성 배열을 최적화할 수 있습니다.
-              <div className="text-xs mt-1 font-mono">Line 23-25: useEffect(() => {...}, [data])</div>
+              <div className="text-xs mt-1 font-mono">Line 23-25: useEffect(() =&gt; {`{...}`}, [data])</div>
               <div className="text-xs mt-1 text-gray-600">제안: useMemo 활용으로 불필요한 재렌더링 방지</div>
             </div>
           </div>
