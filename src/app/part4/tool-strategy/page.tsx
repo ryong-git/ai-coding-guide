@@ -49,8 +49,9 @@ export default function ToolStrategyPage() {
               EC2, RDS, EKS 등 AWS 네이티브 서비스 구축 및 관리
             </p>
             <div className="text-sm">
-              <span className="font-semibold">1순위:</span> Amazon Q Developer CLI<br/>
-              <span className="font-semibold">보완:</span> Claude Code (복잡한 스크립팅)
+              <span className="font-semibold">1순위:</span> Amazon Q Developer CLI + MCP<br/>
+              <span className="font-semibold">보완:</span> Claude Code (복잡한 스크립팅)<br/>
+              <span className="font-semibold">신규:</span> MCP 서버로 외부 시스템 연동
             </div>
           </div>
 
@@ -61,7 +62,8 @@ export default function ToolStrategyPage() {
             </p>
             <div className="text-sm">
               <span className="font-semibold">1순위:</span> Claude Code<br/>
-              <span className="font-semibold">보완:</span> Amazon Q (AWS 리소스), Gemini (데이터 분석)
+              <span className="font-semibold">보완:</span> Amazon Q + MCP (AWS 리소스), Gemini (데이터 분석)<br/>
+              <span className="font-semibold">추천:</span> MCP로 레거시 시스템 API 연동
             </div>
           </div>
 
