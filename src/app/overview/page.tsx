@@ -98,13 +98,13 @@ export default function OverviewPage() {
 
       <div className="flex gap-4 mt-8">
         <a 
-          href="/part1/definition"
+          href="/part1/definition/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
           1부 시작하기 →
         </a>
         <a 
-          href="/part9/aws-profile"
+          href="/part9/aws-profile/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
           실무 사례 바로가기

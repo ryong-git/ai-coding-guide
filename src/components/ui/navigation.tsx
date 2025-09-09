@@ -15,87 +15,87 @@ interface NavItem {
 const navigationData: NavItem[] = [
   {
     title: "개요",
-    href: "/overview"
+    href: "/overview/"
   },
   {
     title: "1부. 바이브 코딩이란?",
     children: [
-      { title: "1.1 바이브 코딩의 정의", href: "/part1/definition" },
-      { title: "1.2 ReAct 루프", href: "/part1/react-loop" },
-      { title: "1.3 Y Combinator 2025 트렌드", href: "/part1/trends" },
-      { title: "1.4 전통적 코딩 vs 바이브 코딩", href: "/part1/comparison" },
+      { title: "1.1 바이브 코딩의 정의", href: "/part1/definition/" },
+      { title: "1.2 ReAct 루프", href: "/part1/react-loop/" },
+      { title: "1.3 Y Combinator 2025 트렌드", href: "/part1/trends/" },
+      { title: "1.4 전통적 코딩 vs 바이브 코딩", href: "/part1/comparison/" },
     ]
   },
   {
     title: "2부. AI 코딩의 현실",
     children: [
-      { title: "2.1 생산성 혁명", href: "/part2/productivity" },
-      { title: "2.2 접근성 개선", href: "/part2/accessibility" },
-      { title: "2.3 한계와 위험", href: "/part2/limitations" },
-      { title: "2.4 산업 생태계 변화", href: "/part2/ecosystem" },
+      { title: "2.1 생산성 혁명", href: "/part2/productivity/" },
+      { title: "2.2 접근성 개선", href: "/part2/accessibility/" },
+      { title: "2.3 한계와 위험", href: "/part2/limitations/" },
+      { title: "2.4 산업 생태계 변화", href: "/part2/ecosystem/" },
     ]
   },
   {
     title: "3부. 개발자 로드맵",
     children: [
-      { title: "3.1 개발자 역할 재정의", href: "/part3/role-redefinition" },
-      { title: "3.2 필수 역량", href: "/part3/essential-skills" },
-      { title: "3.3 단계별 학습 경로", href: "/part3/learning-path" },
-      { title: "3.4 MSP 엔지니어 스킬셋", href: "/part3/msp-skills" },
+      { title: "3.1 개발자 역할 재정의", href: "/part3/role-redefinition/" },
+      { title: "3.2 필수 역량", href: "/part3/essential-skills/" },
+      { title: "3.3 단계별 학습 경로", href: "/part3/learning-path/" },
+      { title: "3.4 MSP 엔지니어 스킬셋", href: "/part3/msp-skills/" },
     ]
   },
   {
     title: "4부. 나만의 AI 코딩 비서",
     children: [
-      { title: "4.1 Amazon Q Developer CLI", href: "/part4/amazon-q" },
-      { title: "4.2 Claude Code", href: "/part4/claude-code" },
-      { title: "4.3 Gemini CLI", href: "/part4/gemini-cli" },
-      { title: "4.4 도구 조합 전략", href: "/part4/tool-strategy" },
+      { title: "4.1 Amazon Q Developer CLI", href: "/part4/amazon-q/" },
+      { title: "4.2 Claude Code", href: "/part4/claude-code/" },
+      { title: "4.3 Gemini CLI", href: "/part4/gemini-cli/" },
+      { title: "4.4 도구 조합 전략", href: "/part4/tool-strategy/" },
     ]
   },
   {
     title: "5부. MCP 마스터하기",
     children: [
-      { title: "5.1 MCP 개념", href: "/part5/mcp-concept" },
-      { title: "5.2 아키텍처 이해", href: "/part5/architecture" },
-      { title: "5.3 실무 구현", href: "/part5/implementation" },
-      { title: "5.4 MSP 업무 적용", href: "/part5/msp-application" },
+      { title: "5.1 MCP 개념", href: "/part5/mcp-concept/" },
+      { title: "5.2 아키텍처 이해", href: "/part5/architecture/" },
+      { title: "5.3 실무 구현", href: "/part5/implementation/" },
+      { title: "5.4 MSP 업무 적용", href: "/part5/msp-application/" },
     ]
   },
   {
     title: "6부. 보안 위협 최소화",
     children: [
-      { title: "6.1 OWASP 학습", href: "/part6/owasp" },
-      { title: "6.2 프로덕션 가이드라인", href: "/part6/production-guidelines" },
+      { title: "6.1 OWASP 학습", href: "/part6/owasp/" },
+      { title: "6.2 프로덕션 가이드라인", href: "/part6/production-guidelines/" },
     ]
   },
   {
     title: "7부. 최종 핵심 교훈",
     children: [
-      { title: "7.1 성공의 3대 원칙", href: "/part7/success-principles" },
-      { title: "7.2 피해야 할 실수들", href: "/part7/common-mistakes" },
-      { title: "7.3 지속적 학습 전략", href: "/part7/learning-strategy" },
-      { title: "7.4 미래 준비", href: "/part7/future-preparation" },
+      { title: "7.1 성공의 3대 원칙", href: "/part7/success-principles/" },
+      { title: "7.2 피해야 할 실수들", href: "/part7/common-mistakes/" },
+      { title: "7.3 지속적 학습 전략", href: "/part7/learning-strategy/" },
+      { title: "7.4 미래 준비", href: "/part7/future-preparation/" },
     ]
   },
   {
     title: "8부. 바이브코딩 실전 Tips",
     children: [
-      { title: "8.1 프롬프트 작성법", href: "/part8/prompting" },
-      { title: "8.2 ReAct 루프 최적화", href: "/part8/react-optimization" },
-      { title: "8.3 디버깅 노하우", href: "/part8/debugging" },
-      { title: "8.4 팀 협업 워크플로우", href: "/part8/team-workflow" },
+      { title: "8.1 프롬프트 작성법", href: "/part8/prompting/" },
+      { title: "8.2 ReAct 루프 최적화", href: "/part8/react-optimization/" },
+      { title: "8.3 디버깅 노하우", href: "/part8/debugging/" },
+      { title: "8.4 팀 협업 워크플로우", href: "/part8/team-workflow/" },
     ]
   },
   {
     title: "9부. AI Ops 실무 사례",
     children: [
-      { title: "9.1 AWS Profile 기반 AI Ops", href: "/part9/aws-profile" },
-      { title: "9.2 IaC + AI 통합", href: "/part9/iac-integration" },
-      { title: "9.3 근본원인 분석 워크플로우", href: "/part9/rca-workflow" },
-      { title: "9.4 Kubernetes 운영 자동화", href: "/part9/k8s-automation" },
-      { title: "9.5 AWS 비용 최적화", href: "/part9/cost-optimization" },
-      { title: "9.6 멀티클라우드 AI Ops", href: "/part9/multicloud-ops" },
+      { title: "9.1 AWS Profile 기반 AI Ops", href: "/part9/aws-profile/" },
+      { title: "9.2 IaC + AI 통합", href: "/part9/iac-integration/" },
+      { title: "9.3 근본원인 분석 워크플로우", href: "/part9/rca-workflow/" },
+      { title: "9.4 Kubernetes 운영 자동화", href: "/part9/k8s-automation/" },
+      { title: "9.5 AWS 비용 최적화", href: "/part9/cost-optimization/" },
+      { title: "9.6 멀티클라우드 AI Ops", href: "/part9/multicloud-ops/" },
     ]
   },
 ]

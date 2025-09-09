@@ -15,14 +15,14 @@ export default function HomePage() {
         </p>
         <div className="flex justify-center gap-4 mt-8">
           <Link 
-            href="/overview"
+            href="/overview/"
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
             시작하기
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
           <Link 
-            href="/part9/aws-profile"
+            href="/part9/aws-profile/"
             className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
           >
             실무 사례 보기
@@ -80,7 +80,7 @@ export default function HomePage() {
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <Link 
-            href="/part1/definition"
+            href="/part1/definition/"
             className="group p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
           >
             <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400">
@@ -95,7 +95,7 @@ export default function HomePage() {
           </Link>
 
           <Link 
-            href="/part4/amazon-q"
+            href="/part4/amazon-q/"
             className="group p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
           >
             <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400">
@@ -110,7 +110,7 @@ export default function HomePage() {
           </Link>
 
           <Link 
-            href="/part9/aws-profile"
+            href="/part9/aws-profile/"
             className="group p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
           >
             <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400">
@@ -174,7 +174,7 @@ export default function HomePage() {
           실무 AI Ops 구현 방법을 익혀보세요.
         </p>
         <Link 
-          href="/overview"
+          href="/overview/"
           className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
         >
           가이드 시작하기

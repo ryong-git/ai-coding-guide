@@ -160,13 +160,13 @@ export default function DefinitionPage() {
 
       <div className="flex gap-4 mt-8">
         <a 
-          href="/part1/react-loop"
+          href="/part1/react-loop/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
           다음: ReAct 루프 →
         </a>
         <a 
-          href="/overview"
+          href="/overview/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
           ← 개요로 돌아가기
