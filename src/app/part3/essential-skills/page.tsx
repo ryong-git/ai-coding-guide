@@ -1,11 +1,15 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function EssentialSkillsPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>3.2 필수 역량</h1>
+      <PageTitle sectionNumber="3.2">필수 역량</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         AI 시대 개발자가 반드시 갖춰야 할 핵심 스킬과 역량 개발 방법
-      </p>
+      </Lead>
 
       <h2>🧠 인지적 역량</h2>
 
@@ -333,27 +337,32 @@ export default function EssentialSkillsPage() {
         </div>
       </div>
 
-      <h3>실무 적용 성과</h3>
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-        <div className="grid md:grid-cols-4 gap-4 text-center">
-          <div>
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400">92%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">AI 도구 활용률</p>
+      <SubsectionTitle>실무 적용 가이드</SubsectionTitle>
+      <InfoBox type="info">
+        <h4 className="font-semibold mb-3">📋 역량 개발 실행 계획</h4>
+        
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold mb-2">단기 목표 (1-3개월)</h5>
+            <div className="text-sm space-y-1">
+              <div>• AI 도구 기본 활용법 습득</div>
+              <div>• 프롬프트 엔지니어링 기초</div>
+              <div>• 코드 품질 검증 방법</div>
+              <div>• 팀 협업 워크플로 이해</div>
+            </div>
           </div>
-          <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3.8x</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">개발 생산성 향상</p>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">67%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">아키텍처 설계 능력</p>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">89%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">개발자 만족도</p>
+          
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold mb-2">장기 목표 (6-12개월)</h5>
+            <div className="text-sm space-y-1">
+              <div>• 시스템 아키텍처 설계 역량</div>
+              <div>• 비즈니스 도메인 전문성</div>
+              <div>• AI와의 효과적 협업 패턴</div>
+              <div>• 혁신적 문제 해결 능력</div>
+            </div>
           </div>
         </div>
-      </div>
+      </InfoBox>
 
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
         <h4 className="font-semibold mb-2">💪 역량 개발의 핵심 원칙</h4>

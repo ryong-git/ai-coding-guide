@@ -1,39 +1,42 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function EcosystemPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>2.4 생태계 전망</h1>
+      <PageTitle sectionNumber="2.4">생태계 전망</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         AI 코딩 도구 생태계의 현재와 미래, 그리고 개발자와 기업이 준비해야 할 변화들
-      </p>
+      </Lead>
 
-      <h2>🌱 생태계 현재 상황</h2>
+      <SectionTitle>🌱 생태계 현재 상황</SectionTitle>
 
-      <p>
+      <Paragraph>
         AI 코딩 도구 시장은 <strong>폭발적 성장</strong>을 거듭하고 있습니다. 
         2023년을 기점으로 GitHub Copilot, Amazon CodeWhisperer, Google Bard 등 
         주요 플레이어들이 본격적인 경쟁을 시작했습니다.
-      </p>
+      </Paragraph>
 
-      <p>
+      <Paragraph>
         단순한 도구 경쟁을 넘어서 전체 개발 워크플로를 재정의하는 
         <strong>플랫폼 전쟁</strong>으로 발전하고 있으며, 
         각 기업들은 자신만의 생태계 구축에 집중하고 있습니다.
-      </p>
+      </Paragraph>
 
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6">
-        <h3 className="text-lg font-semibold mb-2">📊 2024년 시장 현황</h3>
+      <FeatureBox title="📊 2024년 시장 현황">
         <ul className="mb-0">
-          <li><strong>시장 규모:</strong> $28억 달러 (전년 대비 340% 성장)</li>
-          <li><strong>활성 사용자:</strong> 전 세계 개발자의 47%</li>
+          <li><strong>시장 성장:</strong> AI 코딩 도구 시장의 급속한 성장</li>
+          <li><strong>사용자 증가:</strong> 전 세계 개발자들의 빠른 채택</li>
           <li><strong>주요 기업:</strong> Microsoft, Google, Amazon, Meta, OpenAI</li>
-          <li><strong>투자 규모:</strong> 2024년 상반기 $15억 달러 VC 투자</li>
+          <li><strong>투자 활발:</strong> 대규모 벤처 자본 유입</li>
         </ul>
-      </div>
+      </FeatureBox>
 
-      <h2>🏢 주요 플레이어 분석</h2>
+      <SectionTitle>🏢 주요 플레이어 분석</SectionTitle>
 
-      <h3>빅테크 기업들의 전략</h3>
+      <SubsectionTitle>빅테크 기업들의 전략</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
           <h4 className="font-semibold mb-4">🎯 플랫폼별 차별화 전략</h4>
@@ -72,7 +75,7 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h3>신생 기업들의 혁신</h3>
+      <SubsectionTitle>신생 기업들의 혁신</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
         <h4 className="font-semibold mb-3">🚀 차세대 AI 코딩 스타트업</h4>
         
@@ -104,9 +107,9 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h2>🔮 기술 발전 전망</h2>
+      <SectionTitle>🔮 기술 발전 전망</SectionTitle>
 
-      <h3>2025-2027년 주요 트렌드</h3>
+      <SubsectionTitle>2025-2027년 주요 트렌드</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
           <h4 className="font-semibold">🧠 모델 성능 향상</h4>
@@ -146,7 +149,7 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h3>신기술 융합</h3>
+      <SubsectionTitle>신기술 융합</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
         <h4 className="font-semibold mb-3">🔬 다가오는 혁신들</h4>
         
@@ -173,9 +176,9 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h2>💼 비즈니스 모델 진화</h2>
+      <SectionTitle>💼 비즈니스 모델 진화</SectionTitle>
 
-      <h3>수익화 전략 변화</h3>
+      <SubsectionTitle>수익화 전략 변화</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h4 className="font-semibold">💰 새로운 비즈니스 모델들</h4>
         
@@ -214,9 +217,9 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h2>🌏 지역별 발전 양상</h2>
+      <SectionTitle>🌏 지역별 발전 양상</SectionTitle>
 
-      <h3>글로벌 AI 코딩 허브</h3>
+      <SubsectionTitle>글로벌 AI 코딩 허브</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
           <h4 className="font-semibold text-blue-600 dark:text-blue-400">🇺🇸 미국</h4>
@@ -255,9 +258,9 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h2>📈 베스핀글로벌 전략 방향</h2>
+      <SectionTitle>📈 베스핀글로벌 전략 방향</SectionTitle>
 
-      <h3>MSP 특화 AI 생태계 구축</h3>
+      <SubsectionTitle>MSP 특화 AI 생태계 구축</SubsectionTitle>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
         <h4 className="font-semibold mb-4">🎯 베스핀글로벌의 차별화 전략</h4>
         
@@ -275,7 +278,7 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h3>로드맵 및 투자 계획</h3>
+      <SubsectionTitle>로드맵 및 투자 계획</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
           <h4 className="font-semibold mb-4">🗓️ 3년 로드맵 (2025-2027)</h4>
@@ -316,9 +319,9 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <h2>🎓 개발자 준비 사항</h2>
+      <SectionTitle>🎓 개발자 준비 사항</SectionTitle>
 
-      <h3>미래 핵심 역량</h3>
+      <SubsectionTitle>미래 핵심 역량</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4">
           <h4 className="font-semibold">🧠 변화하는 개발자 스킬셋</h4>
@@ -368,12 +371,12 @@ export default function EcosystemPage() {
         </p>
       </div>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
+      <Paragraph>
         AI 코딩 생태계의 전망을 파악했다면, <strong>3부 개발자 로드맵</strong>에서 
         실제로 AI 시대에 맞는 개발자 역량을 체계적으로 구축하는 방법을 살펴보겠습니다.
-      </p>
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

@@ -1,94 +1,126 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function ImplementationPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>5.3 실무 구현</h1>
+      <PageTitle sectionNumber="5.3">실무 구현</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         MCP 서버 직접 구축부터 엔터프라이즈 환경에서의 대규모 배포까지 단계별 구현 가이드
-      </p>
+      </Lead>
 
-      <h2>🛠️ MCP 서버 개발</h2>
+      <SectionTitle>🛠️ MCP 서버 개발</SectionTitle>
 
-      <h3>1단계: 개발 환경 준비</h3>
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># Python 환경 설정</div>
-        <div className="text-white">pip install mcp-server-sdk</div>
-        <div className="text-white">pip install fastapi uvicorn</div>
-        <br />
-        <div className="text-green-400"># TypeScript 환경 설정</div>
-        <div className="text-white">npm install @modelcontextprotocol/sdk</div>
-        <div className="text-white">npm install @types/node typescript ts-node</div>
-      </div>
+      <SubsectionTitle>1단계: 개발 환경 준비</SubsectionTitle>
+      <CodeBlock title="개발 환경 설정" language="bash">
+{`# Python 환경 설정
+pip install mcp-server-sdk
+pip install fastapi uvicorn
 
-      <h3>2단계: 베스핀글로벌 전용 MCP 서버</h3>
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
-        <h4 className="font-semibold mb-3">bespin-msp-server 구현</h4>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># server.py</div>
-          <div className="text-white">from mcp_server import MCPServer</div>
-          <div className="text-white">from typing import List, Dict, Any</div>
-          <br />
-          <div className="text-white">class BespinMSPServer(MCPServer):</div>
-          <div className="text-white">    def __init__(self):</div>
-          <div className="text-white">        super().__init__(name=&quot;bespin-msp&quot;)</div>
-          <div className="text-white">        self.register_tools()</div>
-          <br />
-          <div className="text-white">    def register_tools(self):</div>
-          <div className="text-white">        self.add_tool(&quot;get_customer_status&quot;, self.get_customer_status)</div>
-          <div className="text-white">        self.add_tool(&quot;analyze_costs&quot;, self.analyze_costs)</div>
-          <div className="text-white">        self.add_tool(&quot;create_incident&quot;, self.create_incident)</div>
+# TypeScript 환경 설정
+npm install @modelcontextprotocol/sdk
+npm install @types/node typescript ts-node`}
+      </CodeBlock>
+
+      <SubsectionTitle>2단계: 비즈니스 활용 MCP 서버 선택</SubsectionTitle>
+      <InfoBox type="info">
+        <h4 className="font-semibold mb-3">업무에 유용한 기존 MCP 서버들</h4>
+        
+        <div className="grid md:grid-cols-2 gap-4 mb-4">
+          <div className="bg-white dark:bg-gray-900 p-3 rounded border">
+            <h5 className="font-semibold text-blue-600 dark:text-blue-400 mb-2">협업 도구</h5>
+            <div className="text-sm space-y-1">
+              <div>• <strong>Slack MCP:</strong> 알림 및 팀 커뮤니케이션</div>
+              <div>• <strong>Salesforce MCP:</strong> CRM 데이터 연동</div>
+              <div>• <strong>GitHub MCP:</strong> 코드 리포지토리 및 이슈 관리</div>
+            </div>
+          </div>
+          
+          <div className="bg-white dark:bg-gray-900 p-3 rounded border">
+            <h5 className="font-semibold text-green-600 dark:text-green-400 mb-2">데이터 연동</h5>
+            <div className="text-sm space-y-1">
+              <div>• <strong>Zapier MCP:</strong> 워크플로 자동화</div>
+              <div>• <strong>Postgres MCP:</strong> 데이터베이스 스키마</div>
+              <div>• <strong>Filesystem MCP:</strong> 로컬 파일 시스템</div>
+            </div>
+          </div>
         </div>
-      </div>
+        
+        <h4 className="font-semibold mb-3">MSP 환경 예시 구성</h4>
+        <CodeBlock title="mcp-config.json (Claude Code 설정)" language="json">
+{`{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-slack"],
+      "env": { "SLACK_TOKEN": "xoxb-your-token" }
+    },
+    "github": {
+      "command": "npx", 
+      "args": ["@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_TOKEN": "ghp_your-token" }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-postgres"],
+      "env": { 
+        "POSTGRES_URL": "postgresql://user:pass@host:5432/db"
+      }
+    }
+  }
+}`}
+        </CodeBlock>
+      </InfoBox>
 
-      <h3>3단계: 핵심 기능 구현</h3>
+      <SubsectionTitle>3단계: 핵심 기능 구현</SubsectionTitle>
       <div className="space-y-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-          <h4 className="font-semibold mb-3">고객사 상태 모니터링</h4>
-          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-white">async def get_customer_status(self, customer_id: str):</div>
-            <div className="text-white">    # AWS 계정별 리소스 상태 수집</div>
-            <div className="text-white">    aws_status = await self.get_aws_status(customer_id)</div>
-            <div className="text-white">    azure_status = await self.get_azure_status(customer_id)</div>
-            <div className="text-white">    gcp_status = await self.get_gcp_status(customer_id)</div>
-            <br />
-            <div className="text-white">    return {`{`}</div>
-            <div className="text-white">        &quot;customer_id&quot;: customer_id,</div>
-            <div className="text-white">        &quot;overall_health&quot;: &quot;healthy&quot;,</div>
-            <div className="text-white">        &quot;cloud_status&quot;: {`{`}</div>
-            <div className="text-white">            &quot;aws&quot;: aws_status,</div>
-            <div className="text-white">            &quot;azure&quot;: azure_status,</div>
-            <div className="text-white">            &quot;gcp&quot;: gcp_status</div>
-            <div className="text-white">        {`}`}</div>
-            <div className="text-white">    {`}`}</div>
-          </div>
-        </div>
+        <FeatureBox title="고객사 상태 모니터링">
+          <CodeBlock title="고객사 상태 모니터링 함수" language="python">
+{`async def get_customer_status(self, customer_id: str):
+    # AWS 계정별 리소스 상태 수집
+    aws_status = await self.get_aws_status(customer_id)
+    azure_status = await self.get_azure_status(customer_id)
+    gcp_status = await self.get_gcp_status(customer_id)
 
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-          <h4 className="font-semibold mb-3">비용 분석 엔진</h4>
-          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-white">async def analyze_costs(self, customer_id: str, period: str):</div>
-            <div className="text-white">    # 멀티클라우드 비용 데이터 수집</div>
-            <div className="text-white">    cost_data = await self.collect_cost_data(customer_id, period)</div>
-            <br />
-            <div className="text-white">    # AI 기반 이상 패턴 감지</div>
-            <div className="text-white">    anomalies = self.detect_cost_anomalies(cost_data)</div>
-            <br />
-            <div className="text-white">    # 최적화 제안 생성</div>
-            <div className="text-white">    recommendations = self.generate_optimization_recommendations(cost_data)</div>
-            <br />
-            <div className="text-white">    return {`{`}</div>
-            <div className="text-white">        &quot;total_cost&quot;: cost_data[&quot;total&quot;],</div>
-            <div className="text-white">        &quot;anomalies&quot;: anomalies,</div>
-            <div className="text-white">        &quot;recommendations&quot;: recommendations,</div>
-            <div className="text-white">        &quot;potential_savings&quot;: sum(r[&quot;savings&quot;] for r in recommendations)</div>
-            <div className="text-white">    {`}`}</div>
-          </div>
-        </div>
+    return {
+        "customer_id": customer_id,
+        "overall_health": "healthy",
+        "cloud_status": {
+            "aws": aws_status,
+            "azure": azure_status,
+            "gcp": gcp_status
+        }
+    }`}
+          </CodeBlock>
+        </FeatureBox>
+
+        <FeatureBox title="비용 분석 엔진">
+          <CodeBlock title="비용 분석 함수" language="python">
+{`async def analyze_costs(self, customer_id: str, period: str):
+    # 멀티클라우드 비용 데이터 수집
+    cost_data = await self.collect_cost_data(customer_id, period)
+
+    # AI 기반 이상 패턴 감지
+    anomalies = self.detect_cost_anomalies(cost_data)
+
+    # 최적화 제안 생성
+    recommendations = self.generate_optimization_recommendations(cost_data)
+
+    return {
+        "total_cost": cost_data["total"],
+        "anomalies": anomalies,
+        "recommendations": recommendations,
+        "potential_savings": sum(r["savings"] for r in recommendations)
+    }`}
+          </CodeBlock>
+        </FeatureBox>
       </div>
 
       <h2>🚀 배포 및 스케일링</h2>
 
-      <h3>컨테이너화</h3>
+      <SubsectionTitle>컨테이너화</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
         <div className="text-green-400"># Dockerfile</div>
         <div className="text-white">FROM python:3.11-slim</div>
@@ -303,21 +335,21 @@ export default function ImplementationPage() {
         </div>
       </div>
 
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
+      <InfoBox type="warning">
         <h4 className="font-semibold mb-2">💡 실무 구현 팁</h4>
         <p className="text-sm">
           MCP 서버 구현 시 가장 중요한 것은 확장성입니다. 
           베스핀글로벌처럼 다수의 고객사를 관리하는 환경에서는 초기부터 멀티테넌트 아키텍처를 고려해야 하며, 
           각 고객사의 데이터가 완전히 격리되도록 설계하는 것이 핵심입니다.
         </p>
-      </div>
+      </InfoBox>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
+      <Paragraph>
         MCP 실무 구현 방법을 익혔다면, <strong>5.4 MSP 적용</strong>에서 
         베스핀글로벌 환경에 특화된 MCP 활용 전략을 살펴보겠습니다.
-      </p>
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

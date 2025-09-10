@@ -548,15 +548,187 @@ function approximatePi(sampleSize = 10000) {
         </div>
       </div>
 
+      <h2>🛠️ 기술 선택의 실수</h2>
+
+      <h3>적합하지 않은 영역에 Vibe Coding 적용</h3>
+      <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6">
+        <h4 className="font-semibold mb-3">❌ 실수 사례: "모든 것을 AI로 구현하려는 시도"</h4>
+        
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+          Vibe Coding이 강력하다고 해서 모든 기능을 직접 구현하려는 것은 
+          시간과 자원의 낭비이며, 종종 보안과 안정성 문제를 야기합니다.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h6 className="font-semibold text-red-600 dark:text-red-400 mb-2">🚫 Vibe Coding 부적합 영역</h6>
+            <div className="text-sm space-y-2">
+              <div><strong>결제 시스템:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• PCI DSS 컴플라이언스 복잡성</li>
+                <li>• 금융 규제 및 보안 요구사항</li>
+                <li>• 카드사 연동 프로토콜</li>
+                <li>• 사기 탐지 및 리스크 관리</li>
+              </ul>
+              
+              <div><strong>회원가입/인증:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• OAuth 2.0/OIDC 프로토콜 구현</li>
+                <li>• 보안 토큰 관리</li>
+                <li>• 다중 인증(MFA) 처리</li>
+                <li>• 소셜 로그인 연동</li>
+              </ul>
+
+              <div><strong>이메일/SMS 발송:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• 스팸 방지 및 전송률 최적화</li>
+                <li>• 대량 발송 인프라</li>
+                <li>• 템플릿 관리 및 개인화</li>
+                <li>• 반송 처리 및 분석</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h6 className="font-semibold text-green-600 dark:text-green-400 mb-2">✅ 추천 SaaS 솔루션</h6>
+            <div className="text-sm space-y-2">
+              <div><strong>결제:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• <strong>Stripe:</strong> 글로벌 결제 (카드, 계좌이체)</li>
+                <li>• <strong>토스페이먼츠:</strong> 국내 결제 특화</li>
+                <li>• <strong>PayPal:</strong> 간편 결제</li>
+                <li>• <strong>이니시스, KG이니시스:</strong> 국내 PG</li>
+              </ul>
+              
+              <div><strong>인증:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• <strong>Auth0:</strong> 엔터프라이즈급 인증</li>
+                <li>• <strong>Supabase Auth:</strong> 오픈소스 백엔드</li>
+                <li>• <strong>Firebase Auth:</strong> Google 생태계</li>
+                <li>• <strong>AWS Cognito:</strong> AWS 통합</li>
+              </ul>
+
+              <div><strong>메시징:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• <strong>SendGrid:</strong> 이메일 발송</li>
+                <li>• <strong>Twilio:</strong> SMS/음성 메시지</li>
+                <li>• <strong>Amazon SES:</strong> AWS 이메일</li>
+                <li>• <strong>Mailgun:</strong> 개발자 친화적</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>선택 기준과 판단 가이드</h3>
+      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
+        <h4 className="font-semibold mb-3">🎯 SaaS vs Vibe Coding 결정 매트릭스</h4>
+        
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse border border-gray-300 dark:border-gray-600 text-sm">
+            <thead>
+              <tr className="bg-gray-50 dark:bg-gray-800">
+                <th className="border border-gray-300 dark:border-gray-600 p-3 text-left">평가 요소</th>
+                <th className="border border-gray-300 dark:border-gray-600 p-3">SaaS 추천</th>
+                <th className="border border-gray-300 dark:border-gray-600 p-3">Vibe Coding 가능</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">보안 중요도</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600 font-bold">매우 높음</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">보통 이하</td>
+              </tr>
+              <tr className="bg-gray-50 dark:bg-gray-800">
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">컴플라이언스</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600 font-bold">필수 (PCI, HIPAA)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">비필수</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">전문성 요구</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600 font-bold">전문가 수준</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">일반 개발자</td>
+              </tr>
+              <tr className="bg-gray-50 dark:bg-gray-800">
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">개발 시간</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">즉시 사용</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-orange-600">수일~수주</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">유지보수</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">SaaS 업체</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">내부 팀</td>
+              </tr>
+              <tr className="bg-gray-50 dark:bg-gray-800">
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">커스터마이징</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">제한적</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">완전 자유</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h3>베스핀글로벌 MSP 관점의 실무 가이드</h3>
+      <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
+        <h4 className="font-semibold mb-4">🏢 고객사별 기술 선택 전략</h4>
+        
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold text-blue-600 dark:text-blue-400 mb-2">스타트업/MVP</h5>
+            <div className="text-sm space-y-1">
+              <div><strong>원칙:</strong> 빠른 검증</div>
+              <div><strong>SaaS 비율:</strong> 80-90%</div>
+              <div><strong>권장:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• Stripe (결제)</li>
+                <li>• Supabase (DB+Auth)</li>
+                <li>• Vercel (배포)</li>
+                <li>• SendGrid (이메일)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold text-green-600 dark:text-green-400 mb-2">성장기업</h5>
+            <div className="text-sm space-y-1">
+              <div><strong>원칙:</strong> 확장성 균형</div>
+              <div><strong>SaaS 비율:</strong> 60-70%</div>
+              <div><strong>권장:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• 핵심 기능: SaaS</li>
+                <li>• 차별화 로직: Custom</li>
+                <li>• 하이브리드 접근</li>
+                <li>• 점진적 내재화</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">엔터프라이즈</h5>
+            <div className="text-sm space-y-1">
+              <div><strong>원칙:</strong> 제어와 보안</div>
+              <div><strong>SaaS 비율:</strong> 40-50%</div>
+              <div><strong>권장:</strong></div>
+              <ul className="ml-4 space-y-1 text-xs">
+                <li>• 보안: 내부 구축</li>
+                <li>• 비핵심: SaaS</li>
+                <li>• 컴플라이언스 우선</li>
+                <li>• 전용 인프라</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
         <h4 className="font-semibold mb-2">💡 실수 예방의 핵심</h4>
         <p className="text-sm">
           AI 코딩에서 실수를 완전히 피할 수는 없습니다. 
           중요한 것은 <strong>실수를 빨리 발견하고 학습하는 시스템</strong>을 구축하는 것입니다. 
-          개인의 주의력에만 의존하지 말고, 
-          <strong>자동화된 검증과 팀 차원의 리뷰 문화</strong>를 통해 
-          체계적으로 품질을 보장해야 합니다. 
-          실패를 두려워하기보다는 실패로부터 배우고 개선하는 조직이 되어야 합니다.
+          특히 <strong>적절한 기술 선택</strong>은 장기적인 성공의 핵심입니다.
+          결제나 인증 같은 중요한 기능은 검증된 SaaS를 사용하고, 
+          비즈니스 로직에 Vibe Coding을 집중하는 것이 현명한 전략입니다.
         </p>
       </div>
 

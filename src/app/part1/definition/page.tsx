@@ -7,7 +7,7 @@ export default function DefinitionPage() {
     <div className="prose prose-lg max-w-none dark:prose-invert">
       <PageTitle 
         sectionNumber="1.1"
-        subtitle="&quot;지수적 성장을 받아들이고 코드 존재를 잊는 것&quot; - 안드레이 카파시가 제시한 혁신적 개발 패러다임"
+        subtitle="2025년 개발 커뮤니티를 뜨겁게 달군 AI 기반 소프트웨어 개발 기법"
       >
         바이브 코딩의 정의
       </PageTitle>
@@ -15,163 +15,176 @@ export default function DefinitionPage() {
       <SectionTitle>🎯 바이브 코딩이란?</SectionTitle>
 
       <Lead>
-        바이브 코딩(Vibe Coding)은 OpenAI 공동창립자이자 전 Tesla AI 리더인 안드레이 카파시가 
-        2025년 2월에 도입한 용어로, <strong>대화형 AI 모델에게 프로젝트를 설명하고 
-        생성된 코드를 검토하지 않고 그대로 사용하는 AI 지원 소프트웨어 개발 기법</strong>입니다.
+        바이브 코딩(Vibe Coding)은 <strong>자연어로 프로젝트 의도를 설명하면 AI가 실행 가능한 코드로 변환해주는 
+        AI 지원 소프트웨어 개발 기법</strong>입니다. 2025년 2월 안드레이 카파시가 명명한 이후 
+        전 세계 개발 커뮤니티에서 급속도로 확산되고 있습니다.
       </Lead>
 
-      <InfoBox type="info" title="핵심 개념">
-        <blockquote className="border-l-2 border-blue-300 pl-4 italic text-gray-700 dark:text-gray-300">
-          "대화형 AI 모델에게 프로젝트를 설명하고, 생성된 코드를 검토하지 않고 그대로 사용한다"
-        </blockquote>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mt-3 text-right">
-          - 안드레이 카파시, 2025년 2월
-        </p>
+      <InfoBox type="info" title="2025년 실제 채택 현황">
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">25%</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Y Combinator 2025년 겨울 배치 스타트업이 95% AI 생성 코드베이스 보유</p>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-green-600 dark:text-green-400">40%</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Visa, Reddit, DoorDash 등 주요 기업의 엔지니어링 팀 생산성 향상</p>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">수백만</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Cursor, Windsurf, Replit 등 바이브 코딩 도구 일일 사용자</p>
+          </div>
+        </div>
       </InfoBox>
 
-      <SectionTitle>🔄 ReAct 루프: 평가의 새로운 기준</SectionTitle>
+      <SectionTitle>💡 핵심 특징과 원리</SectionTitle>
 
-      <Paragraph>
-        바이브 코딩의 핵심은 <strong>ReAct 루프</strong>입니다. 전통적인 코드 리뷰 대신 
-        도구 실행 결과만으로 코드를 평가하고 AI에게 개선을 요청합니다.
-      </Paragraph>
+      <SubsectionTitle>전통적 개발과의 차이점</SubsectionTitle>
+      
+      <div className="grid md:grid-cols-2 gap-6 my-6">
+        <FeatureBox title="전통적 개발 방식">
+          <ul className="text-sm space-y-1">
+            <li>• 코드 작성 → 컴파일/실행 → 디버깅</li>
+            <li>• 라이브러리 문서 참조</li>
+            <li>• 문법과 API 암기 필요</li>
+            <li>• 언어별 전문 지식 요구</li>
+          </ul>
+        </FeatureBox>
+        
+        <FeatureBox title="바이브 코딩 방식">
+          <ul className="text-sm space-y-1">
+            <li>• 자연어 설명 → AI 코드 생성 → 테스트</li>
+            <li>• AI가 적절한 라이브러리 선택</li>
+            <li>• 의도 전달이 핵심 스킬</li>
+            <li>• 도메인 지식이 더 중요</li>
+          </ul>
+        </FeatureBox>
+      </div>
 
-      <FeatureBox title="ReAct 루프 동작 과정">
-        <div className="space-y-4">
-          <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-              1
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-1">Reason (추론)</h4>
-              <p className="text-gray-600 dark:text-gray-400">AI가 요구사항을 분석하고 해결 방법을 추론</p>
-            </div>
+      <SectionTitle>🛠️ 실제 작동 방식</SectionTitle>
+
+      <SubsectionTitle>기본 워크플로</SubsectionTitle>
+
+      <div className="space-y-4">
+        <div className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+          <div>
+            <h4 className="font-semibold">의도 설명</h4>
+            <p className="text-sm text-gray-600 dark:text-gray-400">"사용자 등록 폼이 있는 웹페이지를 만들어줘. 이메일 중복 검사와 비밀번호 강도 확인 포함"</p>
           </div>
-          <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-              2
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-1">Act (실행)</h4>
-              <p className="text-gray-600 dark:text-gray-400">코드를 생성하고 실행</p>
-            </div>
+        </div>
+        
+        <div className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+          <div>
+            <h4 className="font-semibold">AI 코드 생성</h4>
+            <p className="text-sm text-gray-600 dark:text-gray-400">HTML, CSS, JavaScript 완전한 구현체 자동 생성</p>
           </div>
-          <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-              3
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-1">Observe (관찰)</h4>
-              <p className="text-gray-600 dark:text-gray-400">실행 결과를 관찰하고 분석</p>
-            </div>
+        </div>
+        
+        <div className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+          <div>
+            <h4 className="font-semibold">테스트 및 피드백</h4>
+            <p className="text-sm text-gray-600 dark:text-gray-400">"비밀번호 확인 필드 추가하고 스타일을 더 modern하게 바꿔줘"</p>
           </div>
+        </div>
+      </div>
+
+      <SectionTitle>📈 실제 성공 사례</SectionTitle>
+
+      <SubsectionTitle>커뮤니티 경험담</SubsectionTitle>
+
+      <div className="space-y-4">
+        <InfoBox type="success">
+          <h4 className="font-semibold">비개발자의 성공 사례</h4>
+          <Paragraph className="text-sm">
+            뉴욕타임스 기자 Kevin Roose는 코딩 경험 없이 바이브 코딩으로 
+            냉장고 내용물을 분석해 도시락 메뉴를 추천하는 개인용 앱을 제작했습니다.
+          </Paragraph>
+        </InfoBox>
+
+        <InfoBox type="info">
+          <h4 className="font-semibold">2일 부트캠프 성과</h4>
+          <Paragraph className="text-sm">
+            비기술자가 2일 AI 코딩 부트캠프 참여 후 
+            AI 기반 협상 훈련 웹앱을 완전히 구현했습니다.
+          </Paragraph>
+        </InfoBox>
+
+        <InfoBox type="warning">
+          <h4 className="font-semibold">수익 창출 사례</h4>
+          <Paragraph className="text-sm">
+            몇 달 전까지 코딩을 모르던 사람들이 바이브 코딩으로 제작한 앱으로 
+            월 $10,000-$20,000의 수익을 올리는 사례가 보고되고 있습니다.
+          </Paragraph>
+        </InfoBox>
+      </div>
+
+      <SectionTitle>⚠️ 현실적 한계와 주의사항</SectionTitle>
+
+      <SubsectionTitle>커뮤니티에서 발견된 문제점</SubsectionTitle>
+
+      <FeatureBox title="2025 StackOverflow 개발자 설문 결과">
+        <Paragraph className="text-sm mb-3">
+          AI 도구를 신뢰하지 않는 개발자가 신뢰하는 개발자보다 많으며, 
+          무조건 신뢰하는 3%의 개발자에 대한 우려가 제기되고 있습니다.
+        </Paragraph>
+        
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded">
+          <h5 className="font-semibold text-sm">주요 우려사항</h5>
+          <ul className="text-sm space-y-1 mt-2">
+            <li>• 보안 취약점 위험</li>
+            <li>• 디버깅 어려움</li>
+            <li>• 복잡한 작업에서의 한계</li>
+            <li>• 코드 이해 부족으로 인한 유지보수 문제</li>
+          </ul>
         </div>
       </FeatureBox>
 
-      <SubsectionTitle>실무 예시: AWS 리소스 생성</SubsectionTitle>
-
-      <CodeBlock title="바이브 코딩 ReAct 루프 실행 예시">
-{`# 사용자 요청
-"프로덕션 환경을 위한 EKS 클러스터를 생성해주세요"
-
-# AI 추론 (Reason)
-- VPC, 서브넷, 보안 그룹 필요
-- 노드 그룹과 IAM 역할 설정
-- 로깅과 모니터링 활성화
-
-# AI 실행 (Act)
-terraform apply
-
-# 결과 관찰 (Observe)
-✓ 클러스터 생성 완료
-✗ 노드 그룹 연결 실패
-
-# 개선 요청
-"노드 그룹 연결 문제를 해결해주세요"`}
-      </CodeBlock>
-
-      <SectionTitle>📊 산업 현황과 통계</SectionTitle>
-
-      <SubsectionTitle>Y Combinator 2025 분석</SubsectionTitle>
-      <div className="grid md:grid-cols-2 gap-6 my-8">
-        <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
-          <h4 className="text-lg font-semibold mb-2 text-green-800 dark:text-green-200">25%</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            대부분의 코드베이스를 AI 지원으로 구축한 스타트업 비율
-          </p>
-        </div>
-        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
-          <h4 className="text-lg font-semibold mb-2 text-blue-800 dark:text-blue-200">55%</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            전통적 개발 방식 대비 프로젝트 완료 시간 단축률
-          </p>
-        </div>
-      </div>
-
-      <SectionTitle>🌟 바이브 코딩의 핵심 특징</SectionTitle>
-
-      <div className="space-y-4">
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
-          <h3 className="text-lg font-semibold mb-2">1. 완전한 AI 의존</h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            개발자가 코드를 검토하거나 편집하지 않고 AI가 생성한 코드를 그대로 사용합니다.
-          </p>
-        </div>
-
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
-          <h3 className="text-lg font-semibold mb-2">2. 자연어 기반 개발</h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            평문으로 의도를 표현하면 AI가 실행 가능한 코드로 변환합니다.
-          </p>
-        </div>
-
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
-          <h3 className="text-lg font-semibold mb-2">3. "바이브에 맡기기"</h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            카파시의 표현으로 "지수적 성장을 받아들이고 코드 존재를 잊는 것"입니다.
-          </p>
-        </div>
-      </div>
-
-      <SectionTitle>⚡ MSP 환경에서의 활용 가능성</SectionTitle>
+      <SectionTitle>🎯 베스핀글로벌에서의 의미</SectionTitle>
 
       <Paragraph>
-        베스핀글로벌과 같은 MSP에서 바이브 코딩은 다음과 같은 혁신을 가능하게 합니다:
+        MSP 업무에서 바이브 코딩은 특히 유용합니다. 고객별 맞춤 솔루션을 빠르게 프로토타이핑하고, 
+        반복적인 인프라 관리 스크립트를 자연어 설명만으로 생성할 수 있습니다.
       </Paragraph>
 
-      <ul>
-        <li><strong>고객 요구사항 즉시 구현</strong>: 자연어 요구사항을 바로 인프라 코드로 변환</li>
-        <li><strong>24/7 무인 운영</strong>: AI가 장애 상황을 감지하고 자동으로 해결책 구현</li>
-        <li><strong>지식 격차 해소</strong>: 주니어 엔지니어도 시니어 수준의 코드 생성 가능</li>
-        <li><strong>멀티클라우드 대응</strong>: AWS, Azure, GCP 환경에 맞는 코드를 동시에 생성</li>
-      </ul>
+      <FeatureBox title="MSP 적용 영역">
+        <ul className="text-sm space-y-1">
+          <li>• 고객별 모니터링 대시보드 rapid 프로토타이핑</li>
+          <li>• 클라우드 리소스 관리 스크립트 자동 생성</li>
+          <li>• 장애 대응 절차 자동화 도구 개발</li>
+          <li>• 보고서 생성 도구 신속 구현</li>
+        </ul>
+      </FeatureBox>
 
-      <InfoBox type="warning" title="🚨 주의사항">
-        <p>
-          바이브 코딩은 강력한 도구이지만, 보안과 품질 관리를 위한 적절한 가드레일이 필요합니다. 
-          특히 프로덕션 환경에서는 단계별 검증 과정이 반드시 필요합니다.
-        </p>
+      <InfoBox type="warning" className="my-8">
+        <h4 className="font-semibold mb-2">💡 실무 적용 시 주의사항</h4>
+        <Paragraph className="text-sm">
+          바이브 코딩은 프로토타이핑과 "주말 프로젝트"에는 적합하지만, 
+          <strong>심층적인 코드 이해가 필요한 프로덕션 환경에서는 신중한 검토가 필수</strong>입니다.
+        </Paragraph>
       </InfoBox>
 
-      <SectionTitle>🎯 다음 학습 내용</SectionTitle>
-
+      <SectionTitle>🎯 다음 학습</SectionTitle>
+      
       <Paragraph>
-        바이브 코딩의 정의를 이해했다면, 이제 <strong>1.2 ReAct 루프</strong>에서 
-        실제 동작 원리를 더 자세히 살펴보겠습니다.
+        바이브 코딩의 개념을 이해했다면, <strong>1.2 AI 페어 프로그래밍 워크플로</strong>에서 
+        AI를 효과적인 개발 파트너로 활용하는 전문적 접근법을 알아보겠습니다.
       </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 
-          href="/part1/react-loop/"
+          href="/part1/ai-pair-programming/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          다음: ReAct 루프 →
+          다음: AI 페어 프로그래밍 →
         </a>
         <a 
           href="/overview/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
-          ← 개요로 돌아가기
+          ← 이전: 개요
         </a>
       </div>
     </div>

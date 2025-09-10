@@ -1,27 +1,31 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function LimitationsPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>2.3 한계와 도전</h1>
+      <PageTitle sectionNumber="2.3">한계와 도전</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         AI 코딩 도구의 현실적 제약사항과 이를 극복하기 위한 전략적 접근법
-      </p>
+      </Lead>
 
-      <h2>⚠️ 기술적 한계 인식</h2>
+      <SectionTitle>⚠️ 기술적 한계 인식</SectionTitle>
 
-      <p>
+      <Paragraph>
         AI 코딩 도구는 혁신적이지만 만능은 아닙니다. 
         <strong>현실적인 한계를 정확히 이해</strong>하고 이를 보완하는 전략을 
         수립하는 것이 성공적인 AI 코딩의 핵심입니다.
-      </p>
+      </Paragraph>
 
-      <p>
+      <Paragraph>
         과도한 기대나 맹목적인 의존은 오히려 개발 품질을 저하시킬 수 있습니다. 
         AI의 강점을 활용하면서도 인간의 창의성과 판단력이 필요한 영역을 
         명확히 구분해야 합니다.
-      </p>
+      </Paragraph>
 
-      <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6">
+      <InfoBox type="error" className="my-6">
         <h3 className="text-lg font-semibold mb-2">🚨 주요 한계 영역</h3>
         <ul className="mb-0">
           <li><strong>창의적 아키텍처 설계</strong>: 혁신적인 시스템 구조 기획</li>
@@ -29,11 +33,11 @@ export default function LimitationsPage() {
           <li><strong>성능 최적화</strong>: 시스템 전반의 병목 지점 분석</li>
           <li><strong>보안 취약점 분석</strong>: 정교한 위협 모델링</li>
         </ul>
-      </div>
+      </InfoBox>
 
-      <h2>🧠 인지적 편향과 오류</h2>
+      <SectionTitle>🧠 인지적 편향과 오류</SectionTitle>
 
-      <h3>훈련 데이터의 편향</h3>
+      <SubsectionTitle>훈련 데이터의 편향</SubsectionTitle>
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6">
         <h4 className="font-semibold mb-3">📊 데이터 편향의 실제 영향</h4>
         
@@ -65,7 +69,7 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h3>맥락 이해의 한계</h3>
+      <SubsectionTitle>맥락 이해의 한계</SubsectionTitle>
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
         <h4 className="font-semibold mb-3">🎯 컨텍스트 손실 문제</h4>
         
@@ -87,9 +91,9 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h2>🔒 보안 및 프라이버시 우려</h2>
+      <SectionTitle>🔒 보안 및 프라이버시 우려</SectionTitle>
 
-      <h3>코드 유출 위험</h3>
+      <SubsectionTitle>코드 유출 위험</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-4">
           <h4 className="font-semibold">🔐 민감 정보 노출 위험</h4>
@@ -127,9 +131,9 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h2>🎭 과의존성 문제</h2>
+      <SectionTitle>🎭 과의존성 문제</SectionTitle>
 
-      <h3>개발자 스킬 퇴화</h3>
+      <SubsectionTitle>개발자 스킬 퇴화</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
         <h4 className="font-semibold mb-3">⚖️ AI 의존도 균형잡기</h4>
         
@@ -161,7 +165,7 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h3>팀 역량 격차</h3>
+      <SubsectionTitle>팀 역량 격차</SubsectionTitle>
       <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-6">
         <h4 className="font-semibold mb-3">👥 팀 내 불균형 해결</h4>
         
@@ -178,9 +182,9 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h2>🌊 기술 변화의 속도</h2>
+      <SectionTitle>🌊 기술 변화의 속도</SectionTitle>
 
-      <h3>지속적 학습의 부담</h3>
+      <SubsectionTitle>지속적 학습의 부담</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
           <h4 className="font-semibold">📚 학습 피로도 관리</h4>
@@ -191,9 +195,9 @@ export default function LimitationsPage() {
           </p>
 
           <div className="space-y-2">
-            <div><strong>월별 새로운 도구:</strong> 평균 15-20개</div>
-            <div><strong>메이저 업데이트:</strong> 주요 도구별 월 2-3회</div>
-            <div><strong>학습 시간:</strong> 신규 도구당 평균 8-12시간</div>
+            <div><strong>새로운 도구 등장:</strong> 지속적으로 증가하는 AI 도구들</div>
+            <div><strong>기능 업데이트:</strong> 주요 도구들의 빠른 발전 속도</div>
+            <div><strong>학습 부담:</strong> 새로운 기술 습득에 상당한 시간 필요</div>
           </div>
         </div>
 
@@ -209,9 +213,9 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h2>💰 비용과 ROI 검증</h2>
+      <SectionTitle>💰 비용과 ROI 검증</SectionTitle>
 
-      <h3>숨겨진 비용들</h3>
+      <SubsectionTitle>숨겨진 비용들</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h4 className="font-semibold">💸 총 소유 비용 (TCO) 분석</h4>
         
@@ -227,17 +231,17 @@ export default function LimitationsPage() {
             <tbody>
               <tr>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">도구 라이선스</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">$50-200/인</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">중간-고가</td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">사용량 기반 추가 요금</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">교육 및 트레이닝</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">$100-300/인</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">상당한 투자</td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">생산성 저하 기간</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">보안 및 컴플라이언스</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">$200-500/팀</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">추가 예산 필요</td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">감사 및 모니터링 비용</td>
               </tr>
             </tbody>
@@ -245,7 +249,7 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h3>ROI 측정의 어려움</h3>
+      <SubsectionTitle>ROI 측정의 어려움</SubsectionTitle>
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6">
         <h4 className="font-semibold mb-3">📊 정량적 측정 지표</h4>
         
@@ -272,9 +276,9 @@ export default function LimitationsPage() {
         </div>
       </div>
 
-      <h2>🔧 극복 전략 및 모범 사례</h2>
+      <SectionTitle>🔧 극복 전략 및 모범 사례</SectionTitle>
 
-      <h3>단계적 도입 접근법</h3>
+      <SubsectionTitle>단계적 도입 접근법</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
           <h4 className="font-semibold">🚀 베스핀글로벌 도입 전략</h4>
@@ -342,12 +346,12 @@ export default function LimitationsPage() {
         </p>
       </div>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
+      <Paragraph>
         AI 코딩의 한계와 도전을 이해했다면, <strong>2.4 생태계 전망</strong>에서 
         AI 코딩 도구 시장의 미래와 기술 발전 방향을 살펴보겠습니다.
-      </p>
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

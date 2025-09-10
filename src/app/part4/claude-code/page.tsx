@@ -1,22 +1,26 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function ClaudeCodePage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>4.2 Claude Code</h1>
+      <PageTitle sectionNumber="4.2">Claude Code</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         컴퓨터 사용(Computer Use)과 MCP 생태계로 전 시스템을 제어하는 차세대 AI 코딩 플랫폼
-      </p>
+      </Lead>
 
-      <h2>🚀 Claude Code 개요</h2>
+      <SectionTitle>🚀 Claude Code 개요</SectionTitle>
 
-      <p>
+      <Paragraph>
         Claude Code는 Anthropic에서 개발한 혁신적인 AI 코딩 도구로, 단순한 코드 생성을 넘어 
         <strong>컴퓨터 전체를 사용할 수 있는 능력</strong>을 제공합니다. 
         MCP(Model Context Protocol) 생태계를 통해 외부 시스템과 안전하게 연결되며, 
         실제 터미널 조작부터 브라우저 제어까지 가능합니다.
-      </p>
+      </Paragraph>
 
-      <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6 my-6">
+      <InfoBox type="tip">
         <h3 className="text-lg font-semibold mb-2">핵심 차별화 요소</h3>
         <ul className="mb-0">
           <li><strong>Computer Use</strong>: 마우스, 키보드, 스크린샷을 통한 직접적 시스템 제어</li>
@@ -24,39 +28,39 @@ export default function ClaudeCodePage() {
           <li><strong>컨텍스트 유지</strong>: 200K 토큰으로 대규모 프로젝트 전체 인식</li>
           <li><strong>멀티모달</strong>: 텍스트, 이미지, 코드를 통합적으로 처리</li>
         </ul>
-      </div>
+      </InfoBox>
 
-      <h2>⚙️ 설치 및 설정</h2>
+      <SectionTitle>⚙️ 설치 및 설정</SectionTitle>
 
-      <h3>1단계: Claude Code 설치</h3>
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># macOS/Linux</div>
-        <div className="text-white">curl -fsSL https://claude.ai/install.sh | sh</div>
-        <br />
-        <div className="text-green-400"># Windows (PowerShell)</div>
-        <div className="text-white">iwr -useb https://claude.ai/install.ps1 | iex</div>
-        <br />
-        <div className="text-green-400"># 설치 확인</div>
-        <div className="text-white">claude --version</div>
-      </div>
+      <SubsectionTitle>1단계: Claude Code 설치</SubsectionTitle>
+      <CodeBlock title="Claude Code 설치" language="bash">
+{`# macOS/Linux
+curl -fsSL https://claude.ai/install.sh | sh
 
-      <h3>2단계: API 키 설정</h3>
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 환경 변수 설정</div>
-        <div className="text-white">export ANTHROPIC_API_KEY=&quot;sk-ant-...&quot;</div>
-        <br />
-        <div className="text-green-400"># 또는 대화형 설정</div>
-        <div className="text-white">claude auth login</div>
-      </div>
+# Windows (PowerShell)
+iwr -useb https://claude.ai/install.ps1 | iex
 
-      <h3>3단계: Computer Use 권한 설정</h3>
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4">
+# 설치 확인
+claude --version`}
+      </CodeBlock>
+
+      <SubsectionTitle>2단계: API 키 설정</SubsectionTitle>
+      <CodeBlock title="API 키 설정" language="bash">
+{`# 환경 변수 설정
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+# 또는 대화형 설정
+claude auth login`}
+      </CodeBlock>
+
+      <SubsectionTitle>3단계: Computer Use 권한 설정</SubsectionTitle>
+      <InfoBox type="warning">
         <p className="text-sm mb-2"><strong>⚠️ 중요:</strong> Computer Use 기능은 시스템 전체에 접근할 수 있습니다.</p>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 안전한 샌드박스 환경에서 시작</div>
-          <div className="text-white">claude config set computer-use-mode sandbox</div>
-        </div>
-      </div>
+        <CodeBlock language="bash">
+{`# 안전한 샌드박스 환경에서 시작
+claude config set computer-use-mode sandbox`}
+        </CodeBlock>
+      </InfoBox>
 
       <h2>🖥️ Computer Use: 시스템 직접 제어</h2>
 
@@ -129,24 +133,26 @@ export default function ClaudeCodePage() {
         </div>
       </div>
 
-      <h3>커스텀 MCP 서버 구축</h3>
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
-        <h4 className="font-semibold mb-3">베스핀글로벌 전용 MCP 서버 예시</h4>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># bespin-mcp-server 설치</div>
-          <div className="text-white">pip install bespin-mcp-server</div>
-          <br />
-          <div className="text-green-400"># Claude Code에 연결</div>
-          <div className="text-white">claude mcp add bespin-server</div>
-          <br />
-          <div className="text-green-400"># 베스핀 전용 명령어 사용</div>
-          <div className="text-white">claude bespin &quot;고객사 A의 월 비용을 분석하고 최적화 방안 제시&quot;</div>
-        </div>
-      </div>
+      <SubsectionTitle>비즈니스 활용 MCP 서버 추천</SubsectionTitle>
+      <InfoBox type="info">
+        <h4 className="font-semibold mb-3">업무에 유용한 MCP 서버들</h4>
+        <CodeBlock title="실제 MCP 서버 활용" language="bash">
+{`# 실제 사용 가능한 MCP 서버 설치
+npm install @modelcontextprotocol/server-slack
+npm install @modelcontextprotocol/server-github
 
-      <h2>💡 실무 사용 사례</h2>
+# Claude Code로 실제 활용 예시
+claude chat "배포 후 버그 리포트 있나 GitHub에서 확인"
+claude chat "슬랙으로 서버 다운 알림 전송"
 
-      <h3>1. 자동화된 장애 대응</h3>
+# 데이터베이스 연동 예시
+claude chat "클라이언트 데이터베이스 스키마 분석 및 성능 최적화"`}
+        </CodeBlock>
+      </InfoBox>
+
+      <SectionTitle>💡 실무 사용 사례</SectionTitle>
+
+      <SubsectionTitle>1. 자동화된 장애 대응</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
         <div className="text-green-400"># 통합 장애 대응 워크플로</div>
         <div className="text-white">claude incident &quot;</div>

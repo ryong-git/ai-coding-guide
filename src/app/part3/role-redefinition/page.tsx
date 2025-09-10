@@ -1,19 +1,23 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function RoleRedefinitionPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>3.1 역할 재정의</h1>
+      <PageTitle sectionNumber="3.1">역할 재정의</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         AI 시대 개발자의 새로운 역할과 책임, 그리고 변화하는 업무 방식에 대한 이해
-      </p>
+      </Lead>
 
-      <h2>🔄 개발자 역할의 진화</h2>
+      <SectionTitle>🔄 개발자 역할의 진화</SectionTitle>
 
-      <p>
+      <Paragraph>
         AI 코딩 도구의 등장으로 개발자의 역할이 근본적으로 변화하고 있습니다. 
         <strong>코드 작성자(Code Writer)</strong>에서 <strong>시스템 설계자(System Architect)</strong>와 
         <strong>AI 협업자(AI Collaborator)</strong>로 진화하고 있습니다.
-      </p>
+      </Paragraph>
 
       <p>
         이러한 변화는 개발자에게 새로운 기회를 제공합니다. 
@@ -21,65 +25,47 @@ export default function RoleRedefinitionPage() {
         비즈니스 가치 창출에 직접적으로 기여할 수 있는 역할로 발전하고 있습니다.
       </p>
 
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6">
-        <h3 className="text-lg font-semibold mb-2">🎯 새로운 역할 정의</h3>
+      <FeatureBox title="🎯 새로운 역할 정의">
         <ul className="mb-0">
           <li><strong>AI 오케스트레이터</strong>: AI 도구들을 조율하여 최적의 결과 도출</li>
           <li><strong>비즈니스 분석가</strong>: 요구사항을 AI가 이해할 수 있는 형태로 변환</li>
           <li><strong>품질 관리자</strong>: AI 생성 코드의 품질과 보안성 검증</li>
           <li><strong>혁신 기획자</strong>: AI 활용한 새로운 솔루션 기획 및 설계</li>
         </ul>
-      </div>
+      </FeatureBox>
 
-      <h2>🔧 전통적 업무 vs 새로운 업무</h2>
+      <SectionTitle>🔧 전통적 업무 vs 새로운 업무</SectionTitle>
 
-      <h3>업무 변화 매트릭스</h3>
+      <SubsectionTitle>업무 변화 매트릭스</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h4 className="font-semibold">📊 시간 배분의 변화</h4>
         
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse border border-gray-300 dark:border-gray-600">
-            <thead>
-              <tr className="bg-gray-50 dark:bg-gray-800">
-                <th className="border border-gray-300 dark:border-gray-600 p-3 text-left">업무 유형</th>
-                <th className="border border-gray-300 dark:border-gray-600 p-3">기존 비율</th>
-                <th className="border border-gray-300 dark:border-gray-600 p-3">AI 시대 비율</th>
-                <th className="border border-gray-300 dark:border-gray-600 p-3">변화</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">코드 작성</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">60%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">25%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-red-600">-58%</td>
-              </tr>
-              <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">시스템 설계</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">15%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">30%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">+100%</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">요구사항 분석</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">10%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">25%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">+150%</td>
-              </tr>
-              <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">코드 리뷰 & 품질관리</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">10%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">15%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">+50%</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">혁신 & 기획</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">5%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">5%</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-blue-600">+0%</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="space-y-4">
+          <InfoBox type="info">
+            <h5 className="font-semibold mb-3">🔄 업무 방식의 변화</h5>
+            
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+                <h6 className="font-semibold text-red-600 dark:text-red-400 mb-2">감소하는 업무</h6>
+                <div className="text-sm space-y-1">
+                  <div>• 반복적 코드 작성</div>
+                  <div>• 기계적 디버깅</div>
+                  <div>• 단순 버그 수정</div>
+                  <div>• 루틴 유지보수</div>
+                </div>
+              </div>
+              
+              <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+                <h6 className="font-semibold text-green-600 dark:text-green-400 mb-2">증가하는 업무</h6>
+                <div className="text-sm space-y-1">
+                  <div>• 시스템 아키텍처 설계</div>
+                  <div>• 비즈니스 요구사항 분석</div>
+                  <div>• AI 출력물 검증</div>
+                  <div>• 창의적 문제 해결</div>
+                </div>
+              </div>
+            </div>
+          </InfoBox>
         </div>
       </div>
 
@@ -295,27 +281,32 @@ export default function RoleRedefinitionPage() {
         </div>
       </div>
 
-      <h3>새로운 성과 지표</h3>
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-        <div className="grid md:grid-cols-4 gap-4 text-center">
-          <div>
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400">85%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">업무 자동화율</p>
+      <SubsectionTitle>역할 전환의 이점</SubsectionTitle>
+      <InfoBox type="success">
+        <h4 className="font-semibold mb-3">🎆 AI 시대 개발자의 새로운 가치</h4>
+        
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold mb-2">개인적 이점</h5>
+            <div className="text-sm space-y-1">
+              <div>• 반복 업무에서 자유로워짐</div>
+              <div>• 창의적 문제 해결에 집중</div>
+              <div>• 비즈니스 가치 창출 기여</div>
+              <div>• 지속적 학습과 성장</div>
+            </div>
           </div>
-          <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3.2x</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">고객 만족도 향상</p>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">67%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">혁신 프로젝트 비율</p>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">92%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">개발자 역할 만족도</p>
+          
+          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
+            <h5 className="font-semibold mb-2">조직적 이점</h5>
+            <div className="text-sm space-y-1">
+              <div>• 개발 속도 및 품질 향상</div>
+              <div>• 혁신적 솔루션 창출</div>
+              <div>• 고객 요구에 빠른 대응</div>
+              <div>• 인재 만족도 및 유지율 증가</div>
+            </div>
           </div>
         </div>
-      </div>
+      </InfoBox>
 
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
         <h4 className="font-semibold mb-2">🌟 역할 재정의의 핵심</h4>

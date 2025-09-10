@@ -1,39 +1,42 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function AccessibilityPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>2.2 접근성과 포용성</h1>
+      <PageTitle sectionNumber="2.2">접근성과 포용성</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         AI 코딩 도구가 개발자 간 격차를 줄이고, 더 포용적인 개발 환경을 만드는 방법
-      </p>
+      </Lead>
 
-      <h2>🌍 개발의 민주화</h2>
+      <SectionTitle>🌍 개발의 민주화</SectionTitle>
 
-      <p>
+      <Paragraph>
         AI 코딩 도구는 단순히 생산성 향상 도구가 아닙니다. 
         <strong>개발 진입 장벽을 낮추고</strong>, 다양한 배경을 가진 사람들이 
         소프트웨어 개발에 참여할 수 있는 기회를 제공합니다.
-      </p>
+      </Paragraph>
 
-      <p>
+      <Paragraph>
         전통적으로 프로그래밍은 수년간의 학습과 경험이 필요한 전문 분야였습니다. 
         하지만 AI는 복잡한 문법과 프레임워크 지식의 부담을 줄여, 
         <strong>아이디어와 창의성</strong>에 더 집중할 수 있게 합니다.
-      </p>
+      </Paragraph>
 
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6">
-        <h3 className="text-lg font-semibold mb-2">🎯 AI가 제거하는 장벽들</h3>
+      <FeatureBox title="🎯 AI가 제거하는 장벽들">
         <ul className="mb-0">
           <li><strong>언어 장벽</strong>: 자연어로 코드 생성 및 설명</li>
           <li><strong>경험 격차</strong>: 베스트 프랙티스 자동 적용</li>
           <li><strong>학습 부담</strong>: 실시간 코드 설명과 가이드</li>
           <li><strong>기술 복잡성</strong>: 고수준 의도를 저수준 구현으로 변환</li>
         </ul>
-      </div>
+      </FeatureBox>
 
-      <h2>👥 다양성 증진</h2>
+      <SectionTitle>👥 다양성 증진</SectionTitle>
 
-      <h3>비전공자의 개발 참여</h3>
+      <SubsectionTitle>비전공자의 개발 참여</SubsectionTitle>
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6">
         <h4 className="font-semibold mb-3">🎨 창의적 배경의 개발자들</h4>
         
@@ -67,7 +70,7 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h3>경력 전환자 지원</h3>
+      <SubsectionTitle>경력 전환자 지원</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
         <h4 className="font-semibold mb-3">🔄 커리어 체인지의 새로운 패러다임</h4>
         
@@ -98,9 +101,9 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h2>🌐 언어 및 지역적 접근성</h2>
+      <SectionTitle>🌐 언어 및 지역적 접근성</SectionTitle>
 
-      <h3>다국어 지원</h3>
+      <SubsectionTitle>다국어 지원</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4">
           <h4 className="font-semibold">🗣️ 자연어 프로그래밍</h4>
@@ -142,9 +145,9 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h2>♿ 신체적 접근성 지원</h2>
+      <SectionTitle>♿ 신체적 접근성 지원</SectionTitle>
 
-      <h3>다양한 능력을 가진 개발자 지원</h3>
+      <SubsectionTitle>다양한 능력을 가진 개발자 지원</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h4 className="font-semibold">🤝 포용적 개발 환경</h4>
         
@@ -171,7 +174,7 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h3>실제 활용 사례</h3>
+      <SubsectionTitle>실제 활용 사례</SubsectionTitle>
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6">
         <h4 className="font-semibold mb-3">💪 성공 사례들</h4>
         
@@ -194,9 +197,9 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h2>👶 교육 접근성 혁신</h2>
+      <SectionTitle>👶 교육 접근성 혁신</SectionTitle>
 
-      <h3>개인맞춤형 학습</h3>
+      <SubsectionTitle>개인맞춤형 학습</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-4">
           <h4 className="font-semibold">🎯 적응형 커리큘럼</h4>
@@ -226,9 +229,9 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h2>💼 베스핀글로벌의 포용적 채용</h2>
+      <SectionTitle>💼 베스핀글로벌의 포용적 채용</SectionTitle>
 
-      <h3>다양성 확대 전략</h3>
+      <SubsectionTitle>다양성 확대 전략</SubsectionTitle>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
         <h4 className="font-semibold mb-4">🤝 AI 시대의 채용 혁신</h4>
         
@@ -246,7 +249,7 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h3>성공 사례</h3>
+      <SubsectionTitle>성공 사례</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
           <blockquote className="italic text-gray-700 dark:text-gray-300 mb-2">
@@ -265,7 +268,7 @@ export default function AccessibilityPage() {
         </div>
       </div>
 
-      <h3>접근성 지표</h3>
+      <SubsectionTitle>접근성 지표</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <div className="grid md:grid-cols-4 gap-4 text-center">
           <div>
@@ -296,12 +299,12 @@ export default function AccessibilityPage() {
         </p>
       </div>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
+      <Paragraph>
         접근성과 포용성의 중요성을 이해했다면, <strong>2.3 한계와 도전</strong>에서 
         AI 코딩 도구의 현실적 제약사항과 극복 방안을 살펴보겠습니다.
-      </p>
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

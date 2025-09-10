@@ -1,19 +1,23 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function ProductivityPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>2.1 생산성 혁명</h1>
+      <PageTitle sectionNumber="2.1">생산성 혁명</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
+      <Lead>
         AI 코딩 도구가 개발자 생산성에 미치는 실제 영향과 측정 가능한 성과 지표
-      </p>
+      </Lead>
 
-      <h2>📊 생산성 측정의 새로운 패러다임</h2>
+      <SectionTitle>📊 생산성 측정의 새로운 패러다임</SectionTitle>
 
-      <p>
+      <Paragraph>
         전통적인 개발 생산성 측정은 <strong>코드 라인 수</strong>나 <strong>커밋 횟수</strong>에 의존했습니다. 
         하지만 AI 시대에는 <strong>문제 해결 속도</strong>, <strong>코드 품질</strong>, 
         <strong>창의적 사고 시간 확보</strong>가 더 중요한 지표가 되었습니다.
-      </p>
+      </Paragraph>
 
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6">
         <h3 className="text-lg font-semibold mb-2">🚀 AI 코딩의 생산성 지표</h3>
@@ -25,9 +29,9 @@ export default function ProductivityPage() {
         </ul>
       </div>
 
-      <h2>⚡ 실제 개발 시나리오별 생산성</h2>
+      <SectionTitle>⚡ 실제 개발 시나리오별 생산성</SectionTitle>
 
-      <h3>시나리오 1: 새로운 API 개발</h3>
+      <SubsectionTitle>시나리오 1: 새로운 API 개발</SubsectionTitle>
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
         <h4 className="font-semibold mb-3">전통적 방식 vs AI 코딩</h4>
         
@@ -72,7 +76,7 @@ export default function ProductivityPage() {
         </div>
       </div>
 
-      <h3>시나리오 2: 레거시 코드 리팩토링</h3>
+      <SubsectionTitle>시나리오 2: 레거시 코드 리팩토링</SubsectionTitle>
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6">
         <h4 className="font-semibold mb-3">🔧 AI 기반 코드 현대화</h4>
         
@@ -104,9 +108,9 @@ export default function ProductivityPage() {
         </div>
       </div>
 
-      <h2>🧠 인지 부하 감소</h2>
+      <SectionTitle>🧠 인지 부하 감소</SectionTitle>
 
-      <h3>Mental Context Switching 최소화</h3>
+      <SubsectionTitle>Mental Context Switching 최소화</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h4 className="font-semibold">AI가 해결하는 인지적 부담</h4>
         
@@ -135,7 +139,7 @@ export default function ProductivityPage() {
         </div>
       </div>
 
-      <h3>Flow State 유지</h3>
+      <SubsectionTitle>Flow State 유지</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
         <h4 className="font-semibold mb-3">🌊 개발자 몰입도 향상</h4>
         <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
@@ -158,9 +162,9 @@ export default function ProductivityPage() {
         </div>
       </div>
 
-      <h2>📈 팀 생산성 승수 효과</h2>
+      <SectionTitle>📈 팀 생산성 승수 효과</SectionTitle>
 
-      <h3>지식 공유의 민주화</h3>
+      <SubsectionTitle>지식 공유의 민주화</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
           <h4 className="font-semibold">시니어 개발자의 지식 확산</h4>
@@ -185,9 +189,9 @@ export default function ProductivityPage() {
         </div>
       </div>
 
-      <h2>🎯 베스핀글로벌 생산성 성과</h2>
+      <SectionTitle>🎯 베스핀글로벌 생산성 성과</SectionTitle>
 
-      <h3>실제 측정 결과</h3>
+      <SubsectionTitle>실제 측정 결과</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <div className="grid md:grid-cols-4 gap-4 text-center">
           <div>
@@ -209,7 +213,7 @@ export default function ProductivityPage() {
         </div>
       </div>
 
-      <h3>개발자 후기</h3>
+      <SubsectionTitle>개발자 후기</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
           <blockquote className="italic text-gray-700 dark:text-gray-300 mb-2">
@@ -237,12 +241,12 @@ export default function ProductivityPage() {
         </p>
       </div>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
+      <Paragraph>
         생산성 혁명의 실체를 파악했다면, <strong>2.2 접근성과 포용성</strong>에서 
         AI 코딩이 모든 개발자에게 미치는 긍정적 영향을 살펴보겠습니다.
-      </p>
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

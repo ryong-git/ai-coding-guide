@@ -260,19 +260,19 @@ export default function AmazonQPage() {
       </div>
 
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
-        <h4 className="font-semibold mb-2">💰 비용 및 최신 기능</h4>
+        <h4 className="font-semibold mb-2">📝 Q Chat 사용 가이드</h4>
         <div className="text-sm space-y-2">
           <div>
-            <strong>요금 체계:</strong> Amazon Q Developer CLI는 월 $19/사용자 (Professional tier)
+            <strong>기본 명령:</strong> Amazon Q Developer CLI는 "q chat" 명령으로 대화형 AI 지원
           </div>
           <div>
-            <strong>MCP 통합:</strong> 외부 도구 연동 시 추가 비용 없음 (단, 도구별 API 비용은 별도)
+            <strong>AWS 프로파일:</strong> --profile 옵션으로 다중 AWS 계정 관리
           </div>
           <div>
-            <strong>베스핀글로벌 혜택:</strong> AWS 파트너 할인으로 최대 20% 절약 + MCP 설정 컨설팅 무료
+            <strong>MSP 활용:</strong> 고객사별 프로파일 관리로 안전한 멀티 테넌트 지원
           </div>
           <div>
-            <strong>백그라운드 로딩:</strong> 2024년 12월 업데이트로 시작 시간 80% 단축
+            <strong>비용 정보:</strong> AWS 공식 문서에서 최신 요금 체계 확인 권장
           </div>
         </div>
       </div>

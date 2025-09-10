@@ -1,39 +1,38 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function MSPSkillsPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>3.4 MSP 스킬</h1>
-      
-      <p className="text-xl text-gray-600 dark:text-gray-300">
-        클라우드 MSP 환경에서 AI를 활용한 고객 중심 서비스 개발과 운영 전문 역량
-      </p>
+      <PageTitle sectionNumber="3.4">MSP 스킬</PageTitle>
 
-      <h2>🏢 MSP 환경의 특수성</h2>
+      <SectionTitle>🏢 MSP 환경의 특수성</SectionTitle>
 
-      <p>
+      <Paragraph>
         MSP(Managed Service Provider) 환경은 일반적인 개발 환경과 다른 독특한 특성을 가지고 있습니다. 
         <strong>다중 고객사 서비스</strong>, <strong>높은 가용성 요구</strong>, 
         <strong>복잡한 규정 준수</strong> 등이 그 예입니다.
-      </p>
+      </Paragraph>
 
-      <p>
+      <Paragraph>
         베스핀글로벌과 같은 MSP에서 AI를 활용하려면, 
         단순한 개발 도구 활용을 넘어 고객의 비즈니스 가치 창출에 직접 기여할 수 있는 
         전문적인 스킬셋이 필요합니다.
-      </p>
+      </Paragraph>
 
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6">
-        <h3 className="text-lg font-semibold mb-2">🎯 MSP AI 스킬의 핵심</h3>
+      <FeatureBox title="🎯 MSP AI 스킬의 핵심">
         <ul className="mb-0">
           <li><strong>멀티테넌시 설계</strong>: 다중 고객사 환경을 고려한 AI 솔루션</li>
           <li><strong>운영 자동화</strong>: 24/7 무인 운영을 위한 지능형 자동화</li>
           <li><strong>비용 최적화</strong>: AI 기반 리소스 효율성 극대화</li>
           <li><strong>규정 준수</strong>: 다양한 컴플라이언스 요구사항 자동 대응</li>
         </ul>
-      </div>
+      </FeatureBox>
 
-      <h2>☁️ 멀티클라우드 AI 운영</h2>
+      <SectionTitle>☁️ 멀티클라우드 AI 운영</SectionTitle>
 
-      <h3>클라우드별 특화 AI 도구 활용</h3>
+      <SubsectionTitle>클라우드별 특화 AI 도구 활용</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h4 className="font-semibold">🔧 플랫폼별 전문성</h4>
         
@@ -97,38 +96,38 @@ export default function MSPSkillsPage() {
         </div>
       </div>
 
-      <h3>통합 인프라 관리</h3>
-      <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
+      <SubsectionTitle>통합 인프라 관리</SubsectionTitle>
+      <InfoBox type="info">
         <h4 className="font-semibold mb-3">🌐 크로스 클라우드 오케스트레이션</h4>
         
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+        <Paragraph className="text-sm mb-4">
           여러 클라우드 플랫폼을 동시에 관리하면서도 
           각 플랫폼의 장점을 최대한 활용하는 전문성이 필요합니다.
-        </p>
+        </Paragraph>
 
-        <div className="bg-gray-900 text-gray-100 rounded p-4 text-sm font-mono">
-          <div className="text-green-400"># 멀티클라우드 워크로드 배치 예시</div>
-          <div className="text-white">claude multicloud "고객사 A 워크로드 최적화:</div>
-          <div className="text-white">- 데이터: AWS S3 (한국 리전)</div>
-          <div className="text-white">- 컴퓨팅: GCP (비용 효율성)</div>
-          <div className="text-white">- AI/ML: Azure OpenAI (엔터프라이즈)</div>
-          <div className="text-white">- 보안: 통합 IAM 정책</div>
-          <div className="text-white">- 모니터링: 단일 대시보드 구성</div>
-          <div className="text-white">예상 비용 절감: 35%"</div>
-        </div>
-      </div>
+        <CodeBlock language="bash">
+# 멀티클라우드 워크로드 배치 예시
+claude multicloud "고객사 A 워크로드 최적화:
+- 데이터: AWS S3 (한국 리전)
+- 컴퓨팅: GCP (비용 효율성)
+- AI/ML: Azure OpenAI (엔터프라이즈)
+- 보안: 통합 IAM 정책
+- 모니터링: 단일 대시보드 구성
+예상 비용 절감: 35%"
+        </CodeBlock>
+      </InfoBox>
 
-      <h2>🤝 고객 중심 서비스 설계</h2>
+      <SectionTitle>🤝 고객 중심 서비스 설계</SectionTitle>
 
-      <h3>고객 요구사항 이해와 번역</h3>
+      <SubsectionTitle>고객 요구사항 이해와 번역</SubsectionTitle>
       <div className="space-y-4">
-        <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
+        <InfoBox type="success">
           <h4 className="font-semibold">💼 비즈니스 언어 ↔ 기술 언어 번역</h4>
           
-          <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+          <Paragraph className="text-sm mb-3">
             고객의 비즈니스 요구사항을 정확히 이해하고, 
             이를 기술적 구현으로 변환하는 능력이 MSP의 핵심 역량입니다.
-          </p>
+          </Paragraph>
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white dark:bg-gray-900 p-4 rounded border">
@@ -151,46 +150,46 @@ export default function MSPSkillsPage() {
               </div>
             </div>
           </div>
-        </div>
+        </InfoBox>
 
-        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
+        <InfoBox type="info">
           <h4 className="font-semibold">📊 데이터 기반 제안</h4>
           
-          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono mt-3">
-            <div className="text-green-400"># 고객 대상 AI 분석 리포트 생성</div>
-            <div className="text-white">claude analyze "고객사 B 인프라 현황:</div>
-            <div className="text-white">- 현재 월 비용: $12,000</div>
-            <div className="text-white">- CPU 평균 사용률: 23%</div>
-            <div className="text-white">- 스토리지 증가율: 15%/월</div>
-            <div className="text-white">- 보안 이벤트: 주당 5건</div>
-            <div className="text-white">종합 분석과 개선안 제시"</div>
-          </div>
-        </div>
+          <CodeBlock language="bash">
+# 고객 대상 AI 분석 리포트 생성
+claude analyze "고객사 B 인프라 현황:
+- 현재 월 비용: $12,000
+- CPU 평균 사용률: 23%
+- 스토리지 증가율: 15%/월
+- 보안 이벤트: 주당 5건
+종합 분석과 개선안 제시"
+          </CodeBlock>
+        </InfoBox>
       </div>
 
-      <h2>🔄 운영 자동화 전문성</h2>
+      <SectionTitle>🔄 운영 자동화 전문성</SectionTitle>
 
-      <h3>24/7 무인 운영 시스템</h3>
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6">
+      <SubsectionTitle>24/7 무인 운영 시스템</SubsectionTitle>
+      <InfoBox type="warning">
         <h4 className="font-semibold mb-3">🤖 지능형 운영 자동화</h4>
         
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+        <Paragraph className="text-sm mb-4">
           MSP 환경에서는 수십, 수백 개의 고객 시스템을 동시에 모니터링하고 관리해야 합니다. 
           AI를 활용한 완전 자동화가 필수적입니다.
-        </p>
+        </Paragraph>
 
         <div className="space-y-4">
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
             <h6 className="font-semibold mb-2">자동 장애 대응</h6>
-            <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-              <div className="text-green-400"># 장애 감지 → 분석 → 대응 자동화</div>
-              <div className="text-white">claude ops "장애 대응 워크플로:</div>
-              <div className="text-white">1. 이상 징후 감지 (AI 모니터링)</div>
-              <div className="text-white">2. 근본원인 분석 (로그 분석 AI)</div>
-              <div className="text-white">3. 자동 복구 실행 (검증된 패턴)</div>
-              <div className="text-white">4. 고객 자동 알림 (개인화)</div>
-              <div className="text-white">5. 사후 분석 보고서 생성"</div>
-            </div>
+            <CodeBlock language="bash">
+# 장애 감지 → 분석 → 대응 자동화
+claude ops "장애 대응 워크플로:
+1. 이상 징후 감지 (AI 모니터링)
+2. 근본원인 분석 (로그 분석 AI)
+3. 자동 복구 실행 (검증된 패턴)
+4. 고객 자동 알림 (개인화)
+5. 사후 분석 보고서 생성"
+            </CodeBlock>
           </div>
           
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
@@ -203,10 +202,10 @@ export default function MSPSkillsPage() {
             </div>
           </div>
         </div>
-      </div>
+      </InfoBox>
 
-      <h3>고객별 맞춤 대시보드</h3>
-      <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6">
+      <SubsectionTitle>고객별 맞춤 대시보드</SubsectionTitle>
+      <InfoBox type="error">
         <h4 className="font-semibold mb-3">📈 AI 생성 인사이트 대시보드</h4>
         
         <div className="grid md:grid-cols-3 gap-4">
@@ -240,11 +239,11 @@ export default function MSPSkillsPage() {
             </div>
           </div>
         </div>
-      </div>
+      </InfoBox>
 
-      <h2>💰 FinOps 전문 역량</h2>
+      <SectionTitle>💰 FinOps 전문 역량</SectionTitle>
 
-      <h3>AI 기반 비용 최적화</h3>
+      <SubsectionTitle>AI 기반 비용 최적화</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
           <h4 className="font-semibold mb-4">📊 지능형 비용 분석</h4>
@@ -293,7 +292,7 @@ export default function MSPSkillsPage() {
           </div>
         </div>
 
-        <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
+        <InfoBox type="success">
           <h4 className="font-semibold">🎯 고객 맞춤 비용 전략</h4>
           
           <div className="text-sm space-y-1">
@@ -302,19 +301,19 @@ export default function MSPSkillsPage() {
             <div>• <strong>대기업:</strong> 거버넌스와 규정 준수 우선</div>
             <div>• <strong>공공기관:</strong> 보안과 투명성 중심</div>
           </div>
-        </div>
+        </InfoBox>
       </div>
 
-      <h2>🔒 보안 및 컴플라이언스</h2>
+      <SectionTitle>🔒 보안 및 컴플라이언스</SectionTitle>
 
-      <h3>규정 준수 자동화</h3>
-      <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
+      <SubsectionTitle>규정 준수 자동화</SubsectionTitle>
+      <InfoBox type="info">
         <h4 className="font-semibold mb-3">⚖️ 다양한 컴플라이언스 대응</h4>
         
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+        <Paragraph className="text-sm mb-4">
           MSP는 금융, 헬스케어, 공공 등 다양한 업계의 고객을 서비스하므로 
           각기 다른 규정 준수 요구사항을 동시에 만족해야 합니다.
-        </p>
+        </Paragraph>
 
         <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
@@ -338,20 +337,20 @@ export default function MSPSkillsPage() {
           </div>
         </div>
 
-        <div className="mt-4 bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 컴플라이언스 자동 검증 예시</div>
-          <div className="text-white">claude compliance "GDPR 준수 현황 점검:</div>
-          <div className="text-white">- 개인정보 수집 동의 여부</div>
-          <div className="text-white">- 데이터 암호화 상태</div>
-          <div className="text-white">- 접근 권한 관리</div>
-          <div className="text-white">- 삭제 요청 처리 절차</div>
-          <div className="text-white">위반 사항 발견 시 즉시 알림"</div>
-        </div>
-      </div>
+        <CodeBlock language="bash">
+# 컴플라이언스 자동 검증 예시
+claude compliance "GDPR 준수 현황 점검:
+- 개인정보 수집 동의 여부
+- 데이터 암호화 상태
+- 접근 권한 관리
+- 삭제 요청 처리 절차
+위반 사항 발견 시 즉시 알림"
+        </CodeBlock>
+      </InfoBox>
 
-      <h2>🎓 베스핀글로벌 MSP 전문가 과정</h2>
+      <SectionTitle>🎓 베스핀글로벌 MSP 전문가 과정</SectionTitle>
 
-      <h3>실무 중심 트레이닝</h3>
+      <SubsectionTitle>실무 중심 트레이닝</SubsectionTitle>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
         <h4 className="font-semibold mb-4">🚀 MSP AI 전문가 양성 프로그램</h4>
         
@@ -391,9 +390,9 @@ export default function MSPSkillsPage() {
         </div>
       </div>
 
-      <h3>실제 고객 프로젝트</h3>
+      <SubsectionTitle>실제 고객 프로젝트</SubsectionTitle>
       <div className="space-y-4">
-        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
+        <InfoBox type="info">
           <h4 className="font-semibold">🏢 대형 금융사 마이그레이션</h4>
           <div className="text-sm space-y-1">
             <div>• <strong>규모:</strong> 500+ 서버, 50TB 데이터</div>
@@ -401,9 +400,9 @@ export default function MSPSkillsPage() {
             <div>• <strong>AI 활용:</strong> 자동 의존성 분석, 리스크 예측, 롤백 계획</div>
             <div>• <strong>성과:</strong> 기존 12개월 → 4개월 완료, 비용 40% 절감</div>
           </div>
-        </div>
+        </InfoBox>
 
-        <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
+        <InfoBox type="success">
           <h4 className="font-semibold">🏥 의료기관 DR 구축</h4>
           <div className="text-sm space-y-1">
             <div>• <strong>목표:</strong> RTO 15분, RPO 1분 달성</div>
@@ -411,10 +410,10 @@ export default function MSPSkillsPage() {
             <div>• <strong>AI 솔루션:</strong> 자동 복제, 헬스체크, 페일오버</div>
             <div>• <strong>결과:</strong> 목표 100% 달성, 운영비 30% 절감</div>
           </div>
-        </div>
+        </InfoBox>
       </div>
 
-      <h3>성과 지표</h3>
+      <SubsectionTitle>성과 지표</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <div className="grid md:grid-cols-4 gap-4 text-center">
           <div>
@@ -436,23 +435,23 @@ export default function MSPSkillsPage() {
         </div>
       </div>
 
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
+      <InfoBox type="warning" className="my-8">
         <h4 className="font-semibold mb-2">🎯 MSP AI 전문가의 핵심 가치</h4>
-        <p className="text-sm">
+        <Paragraph className="text-sm">
           MSP 환경에서의 AI 활용은 단순한 개발 도구 사용을 넘어서는 
           <strong>비즈니스 가치 창출의 촉매제</strong>입니다. 
           고객의 성공이 곧 우리의 성공이며, 
           AI를 통해 더 나은 서비스를 제공함으로써 
           고객과 함께 성장하는 것이 MSP AI 전문가의 사명입니다.
-        </p>
-      </div>
+        </Paragraph>
+      </InfoBox>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
+      <Paragraph>
         MSP 특화 AI 스킬을 익혔다면, <strong>4부 도구 완전 정복</strong>에서 
         각 AI 코딩 도구의 심층적인 활용법을 체계적으로 학습하겠습니다.
-      </p>
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

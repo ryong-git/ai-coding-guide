@@ -48,7 +48,7 @@ export default function OverviewPage() {
 
       <h3>권장 학습 경로</h3>
       <ol>
-        <li><strong>기초 이해 (1-3부)</strong>: 바이브 코딩 개념부터 개발자 로드맵까지</li>
+        <li><strong>기초 이해 (1-3부)</strong>: 바이브 코딩 정의, AI 페어 프로그래밍, 속도-리스크 균형, 도구 비교</li>
         <li><strong>도구 활용 (4-5부)</strong>: Amazon Q Developer, Claude Code, Gemini CLI 실습</li>
         <li><strong>보안과 실무 (6-9부)</strong>: OWASP 보안부터 실제 AI Ops 구현까지</li>
       </ol>
@@ -92,8 +92,8 @@ export default function OverviewPage() {
       <h2>🚀 다음 단계</h2>
       
       <p>
-        준비가 되셨다면 <strong>1부 바이브 코딩이란?</strong>부터 시작하세요. 
-        카파시의 혁신적인 개념을 이해하는 것이 모든 AI 코딩 활용의 출발점입니다.
+        준비가 되셨다면 <strong>1부 바이브 코딩의 정의</strong>부터 시작하세요. 
+        2025년 개발 커뮤니티의 실제 성과와 전문가의 베스트 프랙티스를 이해하는 것이 모든 AI 코딩 활용의 출발점입니다.
       </p>
 
       <div className="flex gap-4 mt-8">
