@@ -391,10 +391,10 @@ export default function MulticloudOpsPage() {
 
       <div className="flex gap-4 mt-8">
         <a 
-          href="/"
-          className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+          href="/conclusion/"
+          className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          🏠 홈으로 돌아가기
+          다음: 마치며 →
         </a>
         <a 
           href="/part9/cost-optimization/"
@@ -403,6 +403,7 @@ export default function MulticloudOpsPage() {
           ← 이전: 비용 최적화
         </a>
       </div>
+
     </div>
   )
 }

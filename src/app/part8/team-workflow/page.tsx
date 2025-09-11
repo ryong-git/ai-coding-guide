@@ -633,16 +633,6 @@ class OrganizationalKnowledgeEvolution:
         </a>
       </div>
 
-      {/* Site Information */}
-      <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
-        <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6">
-          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">이 사이트에 대하여</h3>
-          <div className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
-            <p>이 웹사이트는 <strong>Claude Code</strong>를 통해 생성되었으며, <strong>GitHub</strong>에서 관리되고 <strong>Cloudflare Pages</strong> 기능을 통해 운영되고 있습니다.</p>
-            <p className="mt-4"><strong>작성자: NamRyong Kim</strong></p>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

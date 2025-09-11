@@ -5,33 +5,32 @@ import { CodeBlock } from '@/components/ui/code-block';
 export default function LearningPathPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <PageTitle sectionNumber="3.3">학습 경로</PageTitle>
+      <PageTitle sectionNumber="3.3">단계별 실무 적용</PageTitle>
       
       <Lead>
-        AI 시대 개발자 역량을 체계적으로 구축하기 위한 단계별 학습 로드맵과 실무 적용 전략
+        AI 시대 IT 전문가와 클라우드 엔지니어 역량을 체계적으로 구축하기 위한 단계별 학습 로드맵과 실무 적용 전략
       </Lead>
 
       <SectionTitle>🛤️ 체계적 학습 접근법</SectionTitle>
 
       <Paragraph>
-        AI 코딩 역량 개발은 <strong>점진적이고 실무 중심적</strong>이어야 합니다. 
-        이론 학습보다는 실제 프로젝트를 통해 경험을 축적하고, 
+        AI 운영 도구 역량 개발은 <strong>점진적이고 실무 중심적</strong>이어야 합니다. 
+        이론 학습보다는 실제 인프라 관리 작업을 통해 경험을 축적하고, 
         지속적인 피드백 순환을 통해 개선해나가는 것이 핵심입니다.
       </Paragraph>
 
       <Paragraph>
-        Andrej Karpathy가 제시한 <strong>"Vibe Coding"</strong> 접근법을 통해 
-        AI와 자연스럽게 협업하는 방식을 배우는 것이 중요합니다. 
-        코드의 세부사항보다는 전체적인 흐름과 의도에 집중하는 새로운 개발 방식입니다.
+        복잡한 클라우드 환경을 AI 도구와 함께 <strong>효율적으로 관리하는 방식</strong>을 배우는 것이 중요합니다. 
+        개별 설정 작업보다는 전체적인 인프라 관리 전략과 자동화에 집중하는 새로운 운영 방식입니다.
       </Paragraph>
 
       <InfoBox type="tip">
-        <h3 className="text-lg font-semibold mb-2">🎯 실전 Vibe Coding 학습 원칙</h3>
+        <h3 className="text-lg font-semibold mb-2">🎯 실전 AI 운영 학습 원칙</h3>
         <ul className="mb-0">
-          <li><strong>Planning First</strong>: AI에게 계획을 맡기지 말고 명확한 계획 수립</li>
-          <li><strong>Voice-First Interaction</strong>: 음성 명령으로 AI와 자연스러운 대화</li>
-          <li><strong>Rapid Iteration</strong>: 빠른 프로토타이핑과 피드백 순환</li>
-          <li><strong>Error-Driven Learning</strong>: 오류 메시지를 AI에게 직접 전달하여 학습</li>
+          <li><strong>문제 중심 학습</strong>: 실제 발생하는 운영 문제를 AI 도구로 해결</li>
+          <li><strong>구체적 지시</strong>: AI에게 명확하고 구체적인 요구사항 제시</li>
+          <li><strong>단계적 적용</strong>: 간단한 작업부터 시작하여 복잡한 시스템으로 확장</li>
+          <li><strong>검증 중심</strong>: AI 결과물을 항상 검토하고 개선하는 습관</li>
         </ul>
       </InfoBox>
 
@@ -41,407 +40,277 @@ export default function LearningPathPage() {
       <InfoBox type="info">
         <h4 className="font-semibold mb-3">🌱 기초 역량 구축</h4>
         
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
-          Cursor + Claude Sonnet 환경에서 실제 Vibe Coding 워크플로를 익히고, 
-          음성 기반 개발과 AI 협업 패턴을 마스터하는 단계입니다.
-        </p>
+        <Paragraph className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+          AWS Q Developer, Claude Code 환경에서 실제 클라우드 운영 워크플로를 익히고, 
+          AI 도구를 활용한 인프라 관리 패턴을 마스터하는 단계입니다.
+        </Paragraph>
 
         <div className="space-y-4">
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">주간 1-2: Vibe Coding 환경 설정</h5>
+            <h5 className="font-semibold mb-2">주간 1-2: AI 도구 환경 설정</h5>
             <div className="text-sm space-y-1">
-              <div>✅ Cursor IDE + Claude 3.5 Sonnet 설치 및 설정</div>
-              <div>✅ SuperWhisper 또는 음성 인식 도구 연동</div>
-              <div>✅ Composer Mode 활성화 및 기본 사용법</div>
-              <div>✅ .cursorrules 파일로 프로젝트 컨텍스트 관리</div>
+              <div>✅ AWS Q Developer CLI 설치 및 프로필 설정</div>
+              <div>✅ Claude Code 설치 및 AWS 계정 연동</div>
+              <div>✅ Gemini CLI 기본 설정</div>
+              <div>✅ 기본 프롬프트 템플릿 구성</div>
             </div>
           </div>
 
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">주간 3-4: 음성 기반 개발 실습</h5>
+            <h5 className="font-semibold mb-2">주간 3-4: 간단한 인프라 작업 실습</h5>
             <div className="text-sm space-y-1">
-              <div>✅ "make this async" 같은 음성 명령으로 코드 변경</div>
-              <div>✅ 오류 메시지 복사-붙여넣기로 즉시 해결</div>
-              <div>✅ Agent Mode로 전체 앱 구조 생성</div>
-              <div>✅ 계획 없이 "vibes"로 프로토타입 구축</div>
+              <div>✅ EC2 인스턴스 생성/관리 자동화</div>
+              <div>✅ S3 버킷 정책 및 백업 설정</div>
+              <div>✅ 기본 모니터링 및 알림 구성</div>
+              <div>✅ 간단한 비용 분석 및 최적화</div>
             </div>
           </div>
 
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">주간 5-8: 고급 Composer 활용</h5>
+            <h5 className="font-semibold mb-2">주간 5-8: 네트워킹 및 보안 관리</h5>
             <div className="text-sm space-y-1">
-              <div>✅ 멀티스텝 대화로 복잡한 코드 생성</div>
-              <div>✅ 실시간 코드 미리보기 활용</div>
-              <div>✅ 롤백 전략: 이전 버전으로 되돌아가기</div>
-              <div>✅ 계획 문서(.cursorrules)로 AI 정렬 유지</div>
+              <div>✅ VPC 및 서브넷 구성 자동화</div>
+              <div>✅ 보안 그룹 및 NACL 최적화</div>
+              <div>✅ IAM 역할 및 정책 관리</div>
+              <div>✅ 기본 보안 스캔 및 컴플라이언스 체크</div>
             </div>
           </div>
 
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">주간 9-12: 협업 및 검증</h5>
+            <h5 className="font-semibold mb-2">주간 9-12: 데이터베이스 및 스토리지</h5>
             <div className="text-sm space-y-1">
-              <div>✅ AI 생성 코드 리뷰 방법론</div>
-              <div>✅ 팀 프로젝트에서 AI 도구 활용</div>
-              <div>✅ 코드 품질 도구 통합</div>
+              <div>✅ RDS 인스턴스 생성 및 최적화</div>
+              <div>✅ 데이터베이스 백업 및 복구 전략</div>
+              <div>✅ 스토리지 클래스 최적화</div>
               <div>✅ 1단계 역량 평가 및 피드백</div>
             </div>
           </div>
         </div>
 
-        <CodeBlock title="1단계 Vibe Coding 실습" language="bash">
-# 실제 Karpathy 방식의 주말 프로젝트
-# 목표: 키보드는 최소한만 사용, 음성 위주 개발
+        <CodeBlock title="1단계 실무 실습 예시" language="bash">
+# AWS Q Developer로 기본 인프라 생성
+aws q "개발 환경용 EC2 인스턴스를 생성해줘. 
+t3.medium, Ubuntu 22.04, 
+자동 백업 활성화, 
+개발팀만 SSH 접근 가능하게 보안 그룹 설정"
 
-1. 음성으로 프로젝트 아이디어 설명
-   "Build a simple todo app with React and TypeScript"
-
-2. Agent Mode로 전체 구조 생성
-   - 폴더 구조, 파일, 의존성 자동 생성
-   - 문서화까지 자동 완성
-
-3. 오류 발생 시 메시지 복사-붙여넣기
-   "Fix this error: [오류 메시지 붙여넣기]"
-
-4. 기능 추가는 자연어로
-   "Add dark mode toggle", "Make it responsive"
+# Claude Code로 모니터링 설정
+"CloudWatch에서 이 EC2 인스턴스의 CPU 사용률이 80% 넘으면 
+알림을 보내는 설정을 만들어줘. 
+알림은 Slack #ops-alerts 채널로 보내야 해"
         </CodeBlock>
       </InfoBox>
 
-      <SubsectionTitle>2단계: Advanced (3-9개월)</SubsectionTitle>
-      <InfoBox type="success">
-        <h4 className="font-semibold mb-3">🚀 실무 역량 심화</h4>
-        
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
-          Vibe Coding을 프로덕션 환경에서 안전하게 활용하고, 
-          팀 워크플로에 통합하는 고급 기술을 개발하는 단계입니다.
-        </p>
-
-        <div className="space-y-4">
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">월 1-2: 계획 중심 개발</h5>
-            <div className="text-sm space-y-1">
-              <div>✅ 상세한 사전 계획 수립 (AI가 계획하지 않도록)</div>
-              <div>✅ 아키텍처 결정을 문서화하여 AI 정렬</div>
-              <div>✅ 복잡한 시스템을 단계별로 분해</div>
-              <div>✅ 실시간 미리보기로 즉시 피드백</div>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">월 3-4: 프로덕션 준비</h5>
-            <div className="text-sm space-y-1">
-              <div>✅ Vibe Coding으로 생성된 코드 품질 검증</div>
-              <div>✅ 팀에서 안전한 AI 협업 가이드라인</div>
-              <div>✅ 롤백 전략과 버전 관리</div>
-              <div>✅ AI 생성 코드의 보안 검토 프로세스</div>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">월 5-6: 성능 최적화</h5>
-            <div className="text-sm space-y-1">
-              <div>✅ 성능 병목 지점 분석</div>
-              <div>✅ 자동 최적화 코드 생성</div>
-              <div>✅ 모니터링 및 알림 시스템</div>
-              <div>✅ 확장성 고려 리팩토링</div>
-            </div>
-          </div>
-        </div>
-
-        <CodeBlock title="2단계 실무 프로젝트" language="typescript">
-{`// 실제 프로덕션 환경에서 사용하는 Vibe Coding 워크플로
-// 계획 중심의 개발과 고품질 코드 생성
-
-// 1. 명확한 계획 문서 작성 (.cursorrules)
-export const projectPlan = {
-  architecture: "Next.js 14 + Supabase + Stripe",
-  features: ["auth", "payments", "dashboard", "api"],
-  constraints: "TypeScript strict mode, responsive design"
-};
-
-// 2. 음성으로 각 모듈 구현
-// "Create user authentication with Supabase"
-// "Add Stripe payment integration"
-// "Build admin dashboard with charts"
-
-// 3. 즉시 배포 및 테스트
-// "Deploy to Vercel and show me the live URL"`}
-        </CodeBlock>
-      </InfoBox>
-
-      <SubsectionTitle>3단계: Expert (9-12개월)</SubsectionTitle>
+      <SubsectionTitle>2단계: Advanced (3-6개월)</SubsectionTitle>
       <InfoBox type="warning">
-        <h4 className="font-semibold mb-3">🎯 전문가 역량 완성</h4>
+        <h4 className="font-semibold mb-3">⚡ 고급 자동화 및 오케스트레이션</h4>
         
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
-          Vibe Coding의 한계를 이해하고, 적절한 상황에서 선택적으로 활용하며, 
-          팀과 조직에 AI 협업 문화를 전파하는 전문가 역량을 개발합니다.
-        </p>
+        <Paragraph className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+          복잡한 멀티 서비스 환경에서 AI 도구를 활용한 고급 인프라 관리와 
+          자동화 워크플로를 구축하는 단계입니다.
+        </Paragraph>
 
-        <div className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">월 1-2: Vibe Coding 전문가</h5>
+            <h5 className="font-semibold mb-2">🐳 컨테이너 오케스트레이션</h5>
             <div className="text-sm space-y-1">
-              <div>✅ 프로토타입 vs 프로덕션 상황 구분</div>
-              <div>✅ 팀에 Vibe Coding 도입 전략 수립</div>
-              <div>✅ AI 협업 워크플로 최적화</div>
-              <div>✅ 코드 이해 없이도 안전한 개발 방법론</div>
+              <div>• EKS 클러스터 자동 프로비저닝</div>
+              <div>• Kubernetes 워크로드 최적화</div>
+              <div>• 자동 스케일링 정책 구성</div>
+              <div>• 서비스 메시 구현</div>
             </div>
           </div>
-
+          
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">월 3-4: 조직 AI 전환 리드</h5>
+            <h5 className="font-semibold mb-2">🔄 CI/CD 파이프라인</h5>
             <div className="text-sm space-y-1">
-              <div>✅ "사고 속도의 코딩" 워크플로 전파</div>
-              <div>✅ AI 도구 비용-효과 분석</div>
-              <div>✅ 안전한 AI 협업 정책 수립</div>
-              <div>✅ 차세대 개발자 교육 프로그램</div>
+              <div>• GitHub Actions 워크플로 자동화</div>
+              <div>• 무중단 배포 전략 구현</div>
+              <div>• 자동 테스트 및 검증</div>
+              <div>• 롤백 메커니즘 구축</div>
             </div>
           </div>
         </div>
+
+        <FeatureBox title="2단계 실무 프로젝트: 완전 자동화 배포 파이프라인">
+          <div className="space-y-4">
+            <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded">
+              <h6 className="font-semibold text-blue-600 dark:text-blue-400 mb-2">프로젝트 목표</h6>
+              <div className="text-sm font-mono bg-white dark:bg-gray-900 p-3 rounded border">
+                "고객사 웹 애플리케이션을 위한 완전 자동화 배포 시스템을 구축해줘.
+                
+                요구사항:
+                - GitHub에 푸시하면 자동으로 테스트, 빌드, 배포
+                - 개발/스테이징/프로덕션 환경 분리
+                - 배포 전 자동 보안 스캔
+                - 실패 시 자동 롤백
+                - Slack으로 알림
+                
+                기술 스택: Node.js, Docker, EKS, ALB
+                예산: 월 $300 이하"
+              </div>
+            </div>
+          </div>
+        </FeatureBox>
       </InfoBox>
 
-      <SectionTitle>🎓 실전 Vibe Coding 방법론</SectionTitle>
+      <SubsectionTitle>3단계: Expert (6-12개월)</SubsectionTitle>
+      <InfoBox type="success">
+        <h4 className="font-semibold mb-3">🚀 전문가급 운영 및 최적화</h4>
+        
+        <Paragraph className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+          대규모 엔터프라이즈 환경에서 AI 기반 운영 전략을 수립하고 
+          조직 차원의 디지털 트랜스포메이션을 이끄는 단계입니다.
+        </Paragraph>
 
-      <SubsectionTitle>Karpathy 방식의 프로젝트 접근법</SubsectionTitle>
-      <div className="space-y-4">
-        <InfoBox type="tip">
-          <h4 className="font-semibold">📋 실제 Vibe Coding 프로젝트 선택</h4>
-          
-          <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
-            "throwaway weekend projects"부터 시작하여 점진적으로 
-            프로덕션 수준까지 발전시키는 것이 핵심입니다.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="bg-white dark:bg-gray-900 p-3 rounded border">
-              <h6 className="font-semibold text-green-600 dark:text-green-400 mb-1">주말 프로젝트</h6>
-              <div className="text-sm space-y-1">
-                <div>• 아이디어 즉석 구현</div>
-                <div>• 음성으로만 개발</div>
-                <div>• 코드 리뷰 없이 완성</div>
-                <div>• 2-3시간 내 배포</div>
+        <div className="space-y-4">
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 p-4 rounded border">
+            <h5 className="font-semibold mb-2">🌐 멀티클라우드 운영</h5>
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div>
+                <div><strong>AWS + Azure 하이브리드:</strong></div>
+                <div>• 워크로드별 최적 클라우드 선택</div>
+                <div>• 크로스 클라우드 네트워킹</div>
+                <div>• 통합 모니터링 및 거버넌스</div>
               </div>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-900 p-3 rounded border">
-              <h6 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">MVP 개발</h6>
-              <div className="text-sm space-y-1">
-                <div>• 스타트업 아이디어 검증</div>
-                <div>• 하루만에 기능 구현</div>
-                <div>• 사용자 피드백 수집</div>
-                <div>• 빠른 피벗 가능</div>
-              </div>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-900 p-3 rounded border">
-              <h6 className="font-semibold text-purple-600 dark:text-purple-400 mb-1">프로덕션 코드</h6>
-              <div className="text-sm space-y-1">
-                <div>• 계획 중심 개발</div>
-                <div>• 코드 품질 검증</div>
-                <div>• 팀 협업 고려</div>
-                <div>• 장기 유지보수성</div>
+              <div>
+                <div><strong>비용 최적화:</strong></div>
+                <div>• 실시간 비용 분석 및 예측</div>
+                <div>• 자동 리소스 최적화</div>
+                <div>• 예약 인스턴스 전략</div>
               </div>
             </div>
           </div>
-        </InfoBox>
 
-        <InfoBox type="note">
-          <h4 className="font-semibold">🔄 Vibe Coding 실습 사이클</h4>
-          
-          <div className="space-y-3">
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-4 rounded border">
+            <h5 className="font-semibold mb-2">🤖 AI Ops 플랫폼 구축</h5>
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div>
-                <div className="font-semibold">음성 설명 (Voice)</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">"Build me a weather app with React"</div>
+                <div><strong>예측적 운영:</strong></div>
+                <div>• 장애 예측 및 사전 대응</div>
+                <div>• 성능 이상 탐지</div>
+                <div>• 자동 용량 계획</div>
               </div>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
-                <div className="font-semibold">즉시 실행 (Run)</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">생성된 코드를 바로 실행하여 결과 확인</div>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
-              <div>
-                <div className="font-semibold">오류 수정 (Fix)</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">에러 메시지를 AI에게 복사-붙여넣기</div>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
-              <div>
-                <div className="font-semibold">기능 추가 (Enhance)</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">"Add dark mode", "Make it mobile responsive"</div>
+                <div><strong>자율 운영 시스템:</strong></div>
+                <div>• 자동 문제 해결</div>
+                <div>• 무인 배포 시스템</div>
+                <div>• 지능형 알림 필터링</div>
               </div>
             </div>
           </div>
-        </InfoBox>
+        </div>
+
+        <FeatureBox title="3단계 마스터 프로젝트: 자율 운영 플랫폼">
+          <div className="space-y-4">
+            <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded">
+              <h6 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">최종 목표</h6>
+              <div className="text-sm font-mono bg-white dark:bg-gray-900 p-3 rounded border">
+                "기업용 자율 운영 AI 플랫폼을 구축해줘.
+                
+                기능 요구사항:
+                1. 멀티클라우드 환경 통합 관리 (AWS + Azure + GCP)
+                2. 실시간 이상 탐지 및 자동 대응
+                3. 예측적 스케일링 및 비용 최적화
+                4. 보안 위협 자동 탐지 및 차단
+                5. 규정 준수 자동 모니터링
+                6. 경영진 대시보드 및 리포팅
+                
+                제약조건:
+                - 99.9% 가용성 보장
+                - SOC 2 Type II 준수
+                - 기존 시스템과의 원활한 통합
+                - 월 운영비용 30% 절감 목표"
+              </div>
+            </div>
+          </div>
+        </FeatureBox>
+      </InfoBox>
+
+      <SectionTitle>📊 실무 역량 평가 기준</SectionTitle>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+          <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">1단계 평가</h4>
+          <div className="text-sm space-y-2">
+            <div>✅ 기본 AWS 서비스 자동화</div>
+            <div>✅ AI 도구 활용한 문제 해결</div>
+            <div>✅ 간단한 모니터링 구성</div>
+            <div>✅ 기본 보안 설정 적용</div>
+          </div>
+        </div>
+
+        <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-6">
+          <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-3">2단계 평가</h4>
+          <div className="text-sm space-y-2">
+            <div>✅ 복잡한 인프라 자동화</div>
+            <div>✅ CI/CD 파이프라인 구축</div>
+            <div>✅ 컨테이너 오케스트레이션</div>
+            <div>✅ 고급 모니터링 및 알림</div>
+          </div>
+        </div>
+
+        <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
+          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">3단계 평가</h4>
+          <div className="text-sm space-y-2">
+            <div>✅ 멀티클라우드 관리</div>
+            <div>✅ AI Ops 플랫폼 구축</div>
+            <div>✅ 예측적 운영 시스템</div>
+            <div>✅ 조직 차원 최적화</div>
+          </div>
+        </div>
       </div>
 
-      <SectionTitle>🤝 Vibe Coding 학습 리소스</SectionTitle>
+      <SectionTitle>🎯 실무 적용 팁</SectionTitle>
 
-      <SubsectionTitle>추천 학습 자료</SubsectionTitle>
-      <InfoBox type="info">
-        <h4 className="font-semibold mb-3">🌐 실제 Vibe Coding 예시와 자료</h4>
-        
-        <div className="space-y-3">
-          <div>
-            <strong>공식 레퍼런스:</strong>
-            <div className="text-sm text-gray-600 dark:text-gray-400 ml-4">
-              • Andrej Karpathy 트위터: 원조 Vibe Coding 개념 설명<br/>
-              • Cursor 공식 도큐먼트: Composer 및 Agent Mode 가이드<br/>
-              • Claude Code 공식 가이드: 네이티브 AI 코딩 방법
-            </div>
-          </div>
-          
-          <div>
-            <strong>실전 예시:</strong>
-            <div className="text-sm text-gray-600 dark:text-gray-400 ml-4">
-              • Y Combinator 스타트업 사례: 95% AI 코드베이스<br/>
-              • 실시간 디버깅 과정: 에러 복사-붙여넣기<br/>
-              • 음성 기반 개발: SuperWhisper + Cursor Composer
-            </div>
-          </div>
-        </div>
-      </InfoBox>
+      <div className="space-y-4">
+        <FeatureBox title="💡 효과적인 학습 전략">
+          <ul className="text-sm space-y-2">
+            <li><strong>실제 문제 해결:</strong> 현재 업무에서 직면하는 실제 문제를 AI 도구로 해결해보세요</li>
+            <li><strong>단계적 복잡성:</strong> 간단한 작업부터 시작하여 점진적으로 복잡한 시스템으로 확장하세요</li>
+            <li><strong>문서화 습관:</strong> AI와의 대화와 결과물을 문서화하여 패턴을 학습하세요</li>
+            <li><strong>커뮤니티 참여:</strong> 베스핀글로벌 내부 AI 운영 커뮤니티에 적극 참여하세요</li>
+          </ul>
+        </FeatureBox>
 
-      <SubsectionTitle>베스핀글로벌 Vibe Coding 후에 학습법</SubsectionTitle>
-      <InfoBox type="note">
-        <h4 className="font-semibold mb-3">👨‍🏫 AI 코딩 마스터리 프로그램</h4>
-        
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
-          코드를 이해하지 못해도 작동하는 소프트웨어를 만드는 
-          Vibe Coding 후에 필요한 심화 역량을 이해하고 개발하는 방법입니다.
-        </p>
+        <FeatureBox title="⚠️ 주의사항 및 한계">
+          <ul className="text-sm space-y-2">
+            <li><strong>보안 고려:</strong> AI 도구 사용 시 민감한 정보 노출에 주의하세요</li>
+            <li><strong>검증 필수:</strong> AI 결과물은 반드시 검토하고 테스트한 후 적용하세요</li>
+            <li><strong>백업 계획:</strong> 자동화 실패 시를 대비한 수동 복구 방안을 준비하세요</li>
+            <li><strong>지속적 업데이트:</strong> AI 도구와 클라우드 서비스 업데이트를 꾸준히 추적하세요</li>
+          </ul>
+        </FeatureBox>
+      </div>
 
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h6 className="font-semibold mb-2">Vibe Coding 버글 수정법</h6>
-            <div className="text-sm space-y-1">
-              <div>• 코드 이해 없이 버그 수정 방법</div>
-              <div>• "랜덤 변경" 기법으로 문제 해결</div>
-              <div>• 롤백 전략과 재시도 타이밍</div>
-              <div>• AI 학습 경험으로 점진적 향상</div>
-            </div>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h6 className="font-semibold mb-2">언제 Vibe Coding을 사용하지 말아야 하나</h6>
-            <div className="text-sm space-y-1">
-              <div>• 결제 시스템 (PCI DSS 컴플라이언스)</div>
-              <div>• 회원가입/인증 (OAuth, MFA 등)</div>
-              <div>• 이메일/SMS 발송 (전송률, 스팸방지)</div>
-              <div>• 보안 치명적 영역 (암호화, 권한)</div>
-              <div>• 금융/의료 규제 대상 기능</div>
-            </div>
-          </div>
-        </div>
-      </InfoBox>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 my-8">
+        <h4 className="font-semibold mb-2">🌟 학습의 핵심</h4>
+        <Paragraph className="text-sm">
+          AI 시대의 IT 전문가는 <strong>도구를 다루는 사람에서 시스템을 설계하는 사람</strong>으로 진화해야 합니다. 
+          단순한 명령어 사용법을 넘어서, AI 도구를 활용하여 복잡한 비즈니스 문제를 해결하고 
+          조직의 디지털 트랜스포메이션을 이끄는 리더로 성장하는 것이 목표입니다.
+        </Paragraph>
+      </div>
 
-      <SectionTitle>📊 Vibe Coding 실력 체크</SectionTitle>
-
-      <SubsectionTitle>단계별 실력 확인법</SubsectionTitle>
-      <InfoBox type="warning">
-        <h4 className="font-semibold mb-3">🎯 내 Vibe Coding 수준 체크</h4>
-        
-        <div className="space-y-3">
-          <div>
-            <strong>기초 단계:</strong>
-            <div className="text-sm text-gray-600 dark:text-gray-400 ml-4">
-              • 음성으로 "Build a todo app" 말하면 작동하는 앱 나오나?<br/>
-              • 오류 메시지 복사-붙여넣기로 바로 해결되나?<br/>
-              • 2-3시간 안에 배포 가능한 따라쟁이 사이트 만들 수 있나?
-            </div>
-          </div>
-          
-          <div>
-            <strong>중급 단계:</strong>
-            <div className="text-sm text-gray-600 dark:text-gray-400 ml-4">
-              • 계획 문서(.cursorrules)로 AI를 정렬시킬 수 있나?<br/>
-              • 오류 발생 시 롤백하여 이전 버전에서 재시도할 수 있나?<br/>
-              • 프로덕션 코드와 프로토타입 구분할 수 있나?
-            </div>
-          </div>
-          
-          <div>
-            <strong>고급 단계 (핵심: 적용 영역 판단):</strong>
-            <div className="text-sm text-gray-600 dark:text-gray-400 ml-4">
-              • Vibe Coding vs SaaS 솔루션 선택 기준을 명확히 아는가?<br/>
-              • 결제/인증 등 민감 영역에서 SaaS를 우선 고려하는가?<br/>
-              • 비즈니스 로직과 인프라 코드에 Vibe Coding을 집중하는가?<br/>
-              • 팀에 "언제 사용하지 말아야 하는지" 가이드라인을 제시할 수 있나?
-            </div>
-          </div>
-        </div>
-      </InfoBox>
-
-      <SectionTitle>🎯 베스핀글로벌 실무 후에 프로그램</SectionTitle>
-
-      <SubsectionTitle>MSP 환경 Vibe Coding 전략</SubsectionTitle>
-      <InfoBox type="success">
-        <h4 className="font-semibold mb-4">🏢 클라우드 환경 Vibe Coding 전략</h4>
-        
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <div><strong>✅ Vibe Coding 적합 영역:</strong></div>
-            <ul className="ml-4 space-y-1 text-sm">
-              <li>• 인프라 코드 (Terraform, Kubernetes)</li>
-              <li>• 비즈니스 로직 및 데이터 처리</li>
-              <li>• 내부 도구 및 유틸리티</li>
-              <li>• UI/UX 컴포넌트 개발</li>
-              <li>• 모니터링 및 알림 시스템</li>
-            </ul>
-          </div>
-          <div className="space-y-2">
-            <div><strong>🚫 SaaS 솔루션 권장 영역:</strong></div>
-            <ul className="ml-4 space-y-1 text-sm">
-              <li>• 결제 처리 (Stripe, 토스페이먼츠)</li>
-              <li>• 사용자 인증 (Auth0, Supabase)</li>
-              <li>• 이메일/SMS (SendGrid, Twilio)</li>
-              <li>• 파일 업로드 (AWS S3, Cloudinary)</li>
-              <li>• 실시간 통신 (Pusher, Socket.io)</li>
-            </ul>
-          </div>
-        </div>
-      </InfoBox>
-
-      <InfoBox type="warning" className="my-8">
-        <h4 className="font-semibold mb-2">⚠️ Vibe Coding 마스터리의 핵심: "언제 사용하지 말아야 하는가"</h4>
-        <p className="text-sm">
-          Vibe Coding은 강력한 도구이지만 <strong>모든 영역에 적합하지 않습니다</strong>. 
-          진정한 전문성은 언제 Vibe Coding을 사용하고 <strong>언제 사용하지 말아야 하는지</strong> 
-          구분하는 판단력에 있습니다. 
-          결제, 인증, 보안 등 중요한 기능은 검증된 SaaS 솔루션을 사용하고, 
-          비즈니스 로직과 내부 도구에 Vibe Coding을 집중하는 것이 현명한 전략입니다.
-        </p>
-      </InfoBox>
-
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
-        체계적인 학습 경로를 파악했다면, <strong>3.4 MSP 특화 스킬</strong>에서 
-        베스핀글로벌과 같은 관리형 서비스 제공업체에 특화된 AI 역량을 살펴보겠습니다.
-      </p>
+      <Paragraph>
+        단계별 실무 적용 로드맵을 확인했다면, <strong>3.4 MSP 엔지니어 전문성</strong>에서 
+        베스핀글로벌 MSP 환경에 특화된 고급 역량과 실무 노하우를 살펴보겠습니다.
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 
           href="/part3/msp-skills/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          다음: MSP 특화 스킬 →
+          다음: MSP 엔지니어 전문성 →
         </a>
         <a 
           href="/part3/essential-skills/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
-          ← 이전: 필수 역량
+          ← 이전: 실무 핵심 역량
         </a>
       </div>
     </div>

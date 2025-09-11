@@ -98,6 +98,10 @@ const navigationData: NavItem[] = [
       { title: "9.6 멀티클라우드 AI Ops", href: "/part9/multicloud-ops/" },
     ]
   },
+  {
+    title: "마치며",
+    href: "/conclusion/"
+  },
 ]
 
 interface NavigationProps {
