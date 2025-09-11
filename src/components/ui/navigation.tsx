@@ -21,9 +21,9 @@ const navigationData: NavItem[] = [
     title: "1부. 바이브 코딩이란?",
     children: [
       { title: "1.1 바이브 코딩의 정의", href: "/part1/definition/" },
-      { title: "1.2 ReAct 루프", href: "/part1/react-loop/" },
-      { title: "1.3 Y Combinator 2025 트렌드", href: "/part1/trends/" },
-      { title: "1.4 전통적 코딩 vs 바이브 코딩", href: "/part1/comparison/" },
+      { title: "1.2 AI 페어 프로그래밍 워크플로", href: "/part1/ai-pair-programming/" },
+      { title: "1.3 속도와 리스크 균형", href: "/part1/velocity-risk-balance/" },
+      { title: "1.4 도구별 비교 분석", href: "/part1/comparison/" },
     ]
   },
   {
