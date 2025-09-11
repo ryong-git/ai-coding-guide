@@ -4,7 +4,7 @@ export default function CostOptimizationPage() {
       <h1>9.5 비용 최적화</h1>
       
       <p className="text-xl text-gray-600 dark:text-gray-300">
-        AI 기반 지능형 비용 관리로 클라우드 지출을 30-60% 절감하면서 성능은 향상시키는 전략
+        AI 기반 지능형 비용 관리로 클라우드 지출을 효과적으로 절감하면서 성능은 유지하거나 향상시키는 전략
       </p>
 
       <h2>💰 AI 기반 FinOps 혁명</h2>
@@ -89,21 +89,21 @@ export default function CostOptimizationPage() {
         
         <div className="space-y-3">
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-red-300">Cost Alert: 예상 대비 47% 비용 증가 감지</div>
+            <div className="text-red-300">Cost Alert: 예상 대비 상당한 비용 증가 감지</div>
             <div className="text-white">Service: AWS S3 (us-west-2)</div>
             <div className="text-white">Period: 지난 6시간</div>
-            <div className="text-white">Expected: $1,200/month → Actual: $1,764/month</div>
+            <div className="text-white">Expected: 예상 비용 → Actual: 실제 비용 초과</div>
             <br />
             <div className="text-yellow-300">AI 분석 결과:</div>
-            <div className="text-white">- 원인: 대용량 로그 파일 급증 (348GB)</div>
+            <div className="text-white">- 원인: 대용량 로그 파일 급증</div>
             <div className="text-white">- 트리거: 새로운 마이크로서비스 배포</div>
-            <div className="text-white">- 패턴: 유사 사례 12건 발견</div>
+            <div className="text-white">- 패턴: 유사 사례 다수 발견</div>
             <br />
             <div className="text-green-300">자동 최적화 제안:</div>
             <div className="text-green-300">1. 로그 레벨 조정 (DEBUG → INFO)</div>
             <div className="text-green-300">2. S3 Intelligent Tiering 활성화</div>
             <div className="text-green-300">3. CloudWatch Logs 보존 기간 조정</div>
-            <div className="text-green-300">예상 절약: $450/month (25%)</div>
+            <div className="text-green-300">예상 효과: 상당한 비용 절약</div>
           </div>
         </div>
       </div>
@@ -118,12 +118,12 @@ export default function CostOptimizationPage() {
             <div className="text-green-400"># 자동 인스턴스 최적화</div>
             <div className="text-white">분석 기간: 지난 30일 사용 패턴</div>
             <div className="text-white">현재: c5.2xlarge (8 vCPU, 16GB RAM)</div>
-            <div className="text-white">평균 사용률: CPU 23%, Memory 45%</div>
+            <div className="text-white">평균 사용률: CPU 낮음, Memory 보통</div>
             <br />
             <div className="text-white">최적화 제안:</div>
             <div className="text-white">→ c5.xlarge (4 vCPU, 8GB RAM)</div>
             <div className="text-white">성능 영향: 무시할 수준</div>
-            <div className="text-white">비용 절약: $1,440/년 (50%)</div>
+            <div className="text-white">비용 절약: 상당한 절감 효과 예상</div>
             <br />
             <div className="text-green-300">안전성 검증:</div>
             <div className="text-green-300">✓ 피크 시간도 80% 이하 사용률</div>
@@ -194,18 +194,18 @@ export default function CostOptimizationPage() {
           <h4 className="font-semibold">6개월 비용 예측</h4>
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono mt-2">
             <div className="text-green-400"># 예측 모델 분석 결과</div>
-            <div className="text-white">기간: 2025년 3월 - 8월</div>
-            <div className="text-white">현재 월 비용: $12,400</div>
+            <div className="text-white">기간: 6개월 예측</div>
+            <div className="text-white">현재 월 비용: 기준 비용</div>
             <br />
             <div className="text-white">예측 요인:</div>
-            <div className="text-white">+ 신규 서비스 런칭: +25%</div>
-            <div className="text-white">+ 트래픽 증가 (마케팅): +15%</div>
-            <div className="text-white">- Reserved Instance 계약: -20%</div>
-            <div className="text-white">- 최적화 자동화: -12%</div>
+            <div className="text-white">+ 신규 서비스 런칭: 상당한 증가</div>
+            <div className="text-white">+ 트래픽 증가 (마케팅): 대한 증가</div>
+            <div className="text-white">- Reserved Instance 계약: 상당한 절감</div>
+            <div className="text-white">- 최적화 자동화: 지속적 절감</div>
             <br />
-            <div className="text-green-300">예상 월 비용: $13,580 (+9.5%)</div>
-            <div className="text-green-300">총 6개월 예산: $81,480</div>
-            <div className="text-green-300">신뢰도: 87%</div>
+            <div className="text-green-300">예상 월 비용: 소폭 증가 예상</div>
+            <div className="text-green-300">6개월 예산: 예상 비용 범위 내</div>
+            <div className="text-green-300">신뢰도: 높음</div>
           </div>
         </div>
 
@@ -240,32 +240,32 @@ export default function CostOptimizationPage() {
             <tbody>
               <tr>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">c5.xlarge</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">24대 (90% 평균)</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">20대 (1년 약정)</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">$3,200/월</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">312%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">다수 (높은 평균 사용률)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">일부 (1년 약정)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">상당한 절감</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">높은 ROI</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">m5.large</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">12대 (95% 평균)</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">12대 (3년 약정)</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">$1,800/월</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">287%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">일반적 (높은 평균 사용률)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">전체 (3년 약정)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">상당한 절감</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">높은 ROI</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">r5.2xlarge</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">8대 (75% 평균)</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">6대 (1년 약정)</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">$2,400/월</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">298%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">소수 (보통 평균 사용률)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">대부분 (1년 약정)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center text-green-600">상당한 절감</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center font-bold">높은 ROI</td>
               </tr>
             </tbody>
           </table>
         </div>
         
         <div className="mt-4 text-center">
-          <div className="text-2xl font-bold text-green-600 dark:text-green-400">총 절약: $7,400/월</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">연간 $88,800 절약 (43% 비용 절감)</div>
+          <div className="text-2xl font-bold text-green-600 dark:text-green-400">총 절약: 상당한 비용 절감</div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">연간 효과적인 비용 최적화</div>
         </div>
       </div>
 
@@ -310,63 +310,67 @@ export default function CostOptimizationPage() {
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <div className="grid md:grid-cols-4 gap-4 text-center">
           <div>
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400">$2.8M</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">월간 총 절약액</p>
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400">상당한</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">비용 절약 효과</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">39%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">평균 절약률</p>
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">지속적</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">비용 최적화</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">89</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">고객사 수</p>
+            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">다양한</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">적용 사례</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">24h</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">평균 최적화 적용 시간</p>
+            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">빠른</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">최적화 적용</p>
           </div>
         </div>
       </div>
 
-      <h3>성공 사례</h3>
+      <h3>일반적인 최적화 예시</h3>
       <div className="space-y-4">
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
-          <h4 className="font-semibold">K모 핀테크: 월 $180K → $72K (60% 절약)</h4>
+          <h4 className="font-semibold">핀테크 기업 사례: 포괄적 비용 최적화</h4>
           <ul className="text-sm space-y-1">
-            <li>• RDS 인스턴스 rightsizing: $45K 절약</li>
-            <li>• 개발 환경 스케줄링: $28K 절약</li>
-            <li>• S3 Intelligent Tiering: $15K 절약</li>
-            <li>• Reserved Instance 최적화: $20K 절약</li>
+            <li>• 데이터베이스 인스턴스 사이징 최적화</li>
+            <li>• 개발/테스트 환경 스케줄링</li>
+            <li>• 스토리지 라이프사이클 자동화</li>
+            <li>• Reserved Instance 전략 적용</li>
           </ul>
         </div>
         
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
-          <h4 className="font-semibold">L모 이커머스: AI 추천으로 연간 $1.2M 절약</h4>
+          <h4 className="font-semibold">이커머스 기업 사례: AI 기반 비용 관리</h4>
           <ul className="text-sm space-y-1">
-            <li>• 컴퓨트 워크로드 최적화: 45% 절약</li>
-            <li>• 스토리지 라이프사이클 자동화: 38% 절약</li>
-            <li>• 네트워크 트래픽 최적화: 22% 절약</li>
-            <li>• 미사용 리소스 자동 정리: 15% 추가 절약</li>
+            <li>• 컴퓨트 워크로드 자동 조정</li>
+            <li>• 스토리지 라이프사이클 자동화</li>
+            <li>• 네트워크 트래픽 최적화</li>
+            <li>• 미사용 리소스 자동 발견 및 정리</li>
           </ul>
         </div>
       </div>
 
-      <h3>고객 피드백</h3>
+      <h3>AI 기반 FinOps 장점</h3>
       <div className="space-y-4">
         <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
-          <blockquote className="italic text-gray-700 dark:text-gray-300 mb-2">
-            "베스핀의 AI FinOps 덕분에 클라우드 비용이 절반으로 줄었는데 성능은 오히려 향상되었습니다. 
-            이제는 비용 걱정 없이 새로운 서비스를 시도할 수 있게 되었어요."
-          </blockquote>
-          <cite className="text-sm text-gray-600 dark:text-gray-400">- M모 스타트업 CFO</cite>
+          <h4 className="font-semibold mb-3">도입 효과</h4>
+          <div className="text-sm text-gray-700 dark:text-gray-300 space-y-2">
+            <div>• 지속적인 비용 모니터링과 자동 최적화</div>
+            <div>• 성능 저하 없는 비용 절감 수단 제공</div>
+            <div>• 비용 예측 및 예산 계획 지원</div>
+            <div>• 신규 서비스 기획 시 비용 걱정 감소</div>
+          </div>
         </div>
         
         <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
-          <blockquote className="italic text-gray-700 dark:text-gray-300 mb-2">
-            "AI가 우리보다 훨씬 정확하게 비용 최적화 포인트를 찾아냅니다. 
-            매월 상세한 리포트와 함께 자동으로 적용되니 정말 편리해요."
-          </blockquote>
-          <cite className="text-sm text-gray-600 dark:text-gray-400">- N모 제조업 IT 팀장</cite>
+          <h4 className="font-semibold mb-3">운영 효율성</h4>
+          <div className="text-sm text-gray-700 dark:text-gray-300 space-y-2">
+            <div>• 인간보다 정확한 비용 최적화 포인트 식별</div>
+            <div>• 매월 상세한 분석 리포트 자동 생성</div>
+            <div>• 안전한 최적화 자동 적용</div>
+            <div>• 지속적인 리소스 효율성 개선</div>
+          </div>
         </div>
       </div>
 
@@ -376,7 +380,7 @@ export default function CostOptimizationPage() {
           AI 기반 비용 최적화의 성공 요소는 지속적인 모니터링과 자동화입니다. 
           일회성 최적화가 아닌 실시간으로 변화하는 워크로드에 맞춰 
           지속적으로 비용 효율성을 개선하는 것이 중요합니다. 
-          베스핀글로벌은 이를 통해 고객들이 혁신에 집중할 수 있도록 돕고 있습니다.
+          이를 통해 기업들이 비용 우려 없이 혁신에 집중할 수 있습니다.
         </p>
       </div>
 

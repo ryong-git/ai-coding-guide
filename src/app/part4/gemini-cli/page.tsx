@@ -1,379 +1,334 @@
+import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { CodeBlock } from '@/components/ui/code-block';
+
 export default function GeminiCLIPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <h1>4.3 Gemini CLI</h1>
+      <PageTitle sectionNumber="4.3">Gemini CLI</PageTitle>
       
-      <p className="text-xl text-gray-600 dark:text-gray-300">
-        Google의 멀티모달 AI와 GCP 네이티브 통합으로 데이터 분석과 ML 파이프라인에 특화된 AI 코딩 도구
-      </p>
+      <Lead>
+        화면, 차트, 데이터를 보고 이해해서 실시간으로 분석하고 예측하는 구글의 지능형 데이터 분석 도구
+      </Lead>
 
-      <h2>🌟 Gemini CLI 개요</h2>
+      <SectionTitle>🌟 Gemini CLI 개요</SectionTitle>
 
-      <p>
-        Gemini CLI는 Google의 최신 멀티모달 AI 모델인 Gemini를 명령줄에서 활용할 수 있는 도구입니다. 
-        <strong>텍스트, 이미지, 오디오, 비디오를 동시에 처리</strong>할 수 있는 능력과 
-        GCP(Google Cloud Platform)와의 완벽한 통합을 통해 데이터 중심의 AI 코딩을 가능하게 합니다.
-      </p>
+      <Paragraph>
+        Gemini CLI는 Google에서 개발한 AI 데이터 분석 도구로, 
+        <strong>화면 스크린샷, 차트 이미지, 텍스트 데이터를 모두 이해</strong>해서 
+        마치 사람처럼 종합적으로 분석할 수 있습니다. 
+        "이 차트에서 이상한 부분이 있나?"라고 물어보면 실제로 분석해서 답변합니다.
+      </Paragraph>
 
-      <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6">
-        <h3 className="text-lg font-semibold mb-2">핵심 강점</h3>
+      <InfoBox type="tip">
+        <h3 className="text-lg font-semibold mb-2">핵심 특징</h3>
         <ul className="mb-0">
-          <li><strong>멀티모달 처리</strong>: 이미지, 텍스트, 오디오를 통합 분석</li>
-          <li><strong>BigQuery 네이티브</strong>: 대용량 데이터 분석에 최적화</li>
-          <li><strong>Vertex AI 통합</strong>: ML 모델 훈련부터 배포까지 원스톱</li>
-          <li><strong>실시간 처리</strong>: 스트리밍 데이터 분석 지원</li>
-          <li><strong>비용 효율성</strong>: 경쟁 도구 대비 50% 저렴</li>
+          <li><strong>화면 이해</strong>: 스크린샷을 보고 상황 파악</li>
+          <li><strong>차트 분석</strong>: 그래프를 보고 트렌드와 이상 징후 발견</li>
+          <li><strong>대용량 처리</strong>: 테라바이트급 데이터도 빠르게 분석</li>
+          <li><strong>실시간 모니터링</strong>: 라이브 데이터를 계속 감시</li>
+          <li><strong>자연어 대화</strong>: 평상시 말로 질문하고 답변 받기</li>
         </ul>
-      </div>
+      </InfoBox>
 
-      <h2>⚙️ 설치 및 설정</h2>
+      <SectionTitle>⚙️ 설치 및 설정</SectionTitle>
 
-      <h3>1단계: Gemini CLI 설치</h3>
+      <SubsectionTitle>1단계: Gemini CLI 설치</SubsectionTitle>
+      <CodeBlock title="Gemini CLI 설치" language="bash">
+{`# Google Cloud SDK 설치 (처음 사용하는 경우)
+curl https://sdk.cloud.google.com | bash
+
+# Gemini CLI 설치
+gcloud components install gemini-cli
+
+# 또는 간단 설치
+pip install google-generativeai
+npm install -g @google-ai/gemini-cli`}
+      </CodeBlock>
+
+      <SubsectionTitle>2단계: 구글 클라우드 연결</SubsectionTitle>
+      <CodeBlock title="구글 클라우드 인증" language="bash">
+{`# 구글 계정으로 로그인
+gcloud auth login
+
+# 회사 프로젝트 설정
+gcloud config set project bespin-ai-ops
+
+# 필요한 API 활성화
+gcloud services enable aiplatform.googleapis.com
+gcloud services enable generativeai.googleapis.com`}
+      </CodeBlock>
+
+      <SubsectionTitle>3단계: API 키 설정</SubsectionTitle>
+      <CodeBlock title="환경 설정" language="bash">
+{`# API 키 설정
+export GOOGLE_API_KEY="sk-..."
+export GOOGLE_CLOUD_PROJECT="bespin-ai-ops"
+
+# 설치 확인
+gemini --version
+gemini auth check`}
+      </CodeBlock>
+
+      <SectionTitle>📊 화면과 차트 이해 능력</SectionTitle>
+
+      <SubsectionTitle>비용 데이터 실시간 분석</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># Google Cloud SDK 설치 (필요한 경우)</div>
-        <div className="text-white">curl https://sdk.cloud.google.com | bash</div>
+        <div className="text-green-400"># 일상 대화로 데이터 분석 요청</div>
+        <div className="text-white">gemini "지난 6개월 클라우드 비용을 분석해서"</div>
+        <div className="text-white">"이상하게 높게 나온 항목들을 찾아줘"</div>
+        <div className="text-white">"다음 달 예산도 예측해주고"</div>
+        <div className="text-white">"비용 절약 방법도 제안해줘"</div>
         <br />
-        <div className="text-green-400"># Gemini CLI 설치</div>
-        <div className="text-white">gcloud components install gemini-cli</div>
-        <br />
-        <div className="text-green-400"># 또는 직접 다운로드</div>
-        <div className="text-white">pip install google-generativeai</div>
-        <div className="text-white">npm install -g @google-ai/gemini-cli</div>
+        <div className="text-yellow-300">🔍 분석 결과:</div>
+        <div className="text-gray-300">💰 비정상 비용 증가: 스토리지 비용 300% 급증</div>
+        <div className="text-gray-300">📈 다음 달 예상: 현재 추세 유지 시 월 450만원</div>
+        <div className="text-gray-300">💡 절약 방안: 불필요한 백업 정리로 월 120만원 절약</div>
       </div>
 
-      <h3>2단계: 인증 및 프로젝트 설정</h3>
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># GCP 인증</div>
-        <div className="text-white">gcloud auth login</div>
-        <div className="text-white">gcloud auth application-default login</div>
-        <br />
-        <div className="text-green-400"># 프로젝트 설정</div>
-        <div className="text-white">gcloud config set project bespin-ai-ops</div>
-        <br />
-        <div className="text-green-400"># Gemini API 활성화</div>
-        <div className="text-white">gcloud services enable aiplatform.googleapis.com</div>
-        <div className="text-white">gcloud services enable generativeai.googleapis.com</div>
-      </div>
-
-      <h3>3단계: API 키 설정</h3>
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 환경 변수 설정</div>
-        <div className="text-white">export GOOGLE_API_KEY=&quot;your-api-key&quot;</div>
-        <div className="text-white">export GOOGLE_CLOUD_PROJECT=&quot;bespin-ai-ops&quot;</div>
-        <br />
-        <div className="text-green-400"># 설정 확인</div>
-        <div className="text-white">gemini --version</div>
-        <div className="text-white">gemini auth check</div>
-      </div>
-
-      <h2>📊 데이터 분석 특화 기능</h2>
-
-      <h3>BigQuery 통합 분석</h3>
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 직접 BigQuery 데이터 분석</div>
-        <div className="text-white">gemini bigquery &quot;</div>
-        <div className="text-white">analyze billing data from last 6 months:</div>
-        <div className="text-white">- identify cost anomalies</div>
-        <div className="text-white">- predict next month budget</div>
-        <div className="text-white">- generate cost optimization recommendations</div>
-        <div className="text-white">SELECT * FROM \`bespin-billing.usage.daily_costs\`</div>
-        <div className="text-white">&quot;</div>
-        <br />
-        <div className="text-green-400"># 결과를 시각화까지 자동 생성</div>
-        <div className="text-yellow-300">📊 Interactive dashboard created</div>
-        <div className="text-yellow-300">💰 Potential savings: $15,423/month identified</div>
-      </div>
-
-      <h3>멀티모달 데이터 처리</h3>
+      <SubsectionTitle>화면 캡처 분석</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
-        <h4 className="font-semibold">시나리오: 인프라 다이어그램 자동 생성</h4>
+        <h4 className="font-semibold">실제 사례: 모니터링 대시보드 분석</h4>
         
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 아키텍처 다이어그램 분석 및 문서화</div>
-          <div className="text-white">gemini multimodal --image architecture.png --text &quot;</div>
-          <div className="text-white">이 인프라 다이어그램을 분석하고:</div>
-          <div className="text-white">1. 각 컴포넌트의 역할과 연결 관계 설명</div>
-          <div className="text-white">2. 잠재적 단일 실패 지점 식별</div>
-          <div className="text-white">3. 보안 개선사항 제안</div>
-          <div className="text-white">4. Terraform 코드로 자동 변환</div>
-          <div className="text-white">&quot;</div>
+          <div className="text-green-400"># 스크린샷을 보고 상황 파악</div>
+          <div className="text-white">gemini --image dashboard.png "이 모니터링 화면을 보고"</div>
+          <div className="text-white">"지금 서비스 상태가 어떤지 분석해줘"</div>
+          <div className="text-white">"이상한 부분이 있으면 알려주고"</div>
+          <div className="text-white">"어떻게 대응해야 할지 조치 방법도 제안해줘"</div>
         </div>
 
         <div className="text-sm text-gray-600 dark:text-gray-400">
-          <p><strong>결과:</strong> 이미지 분석을 통해 인프라 구조를 이해하고, 
-          자동으로 Terraform 코드와 개선 제안서를 생성합니다.</p>
+          <p><strong>AI 분석 결과:</strong> 화면의 차트와 지표를 읽어서 
+          CPU 사용률 급증, 메모리 부족 상황, 응답시간 지연 등을 자동으로 발견하고 
+          즉시 대응 방법을 제안합니다.</p>
         </div>
       </div>
 
-      <h2>🤖 ML 파이프라인 자동화</h2>
+      <SectionTitle>🔮 지능형 예측 분석</SectionTitle>
 
-      <h3>Vertex AI 통합</h3>
+      <SubsectionTitle>고객사 사용량 예측</SubsectionTitle>
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
-        <h4 className="font-semibold mb-3">MSP 특화: 고객 사용 패턴 예측 모델</h4>
+        <h4 className="font-semibold mb-3">MSP 실무: 고객 리소스 사용 패턴 예측</h4>
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># ML 파이프라인 자동 구축</div>
-          <div className="text-white">gemini vertex &quot;</div>
-          <div className="text-white">Create ML pipeline for customer usage prediction:</div>
-          <div className="text-white">Data: CloudWatch metrics + billing data</div>
-          <div className="text-white">Goal: Predict resource usage spikes</div>
-          <div className="text-white">Output: Auto-scaling recommendations</div>
-          <div className="text-white">Deploy: Real-time inference endpoint</div>
-          <div className="text-white">&quot;</div>
+          <div className="text-green-400"># 고객사 사용량 예측 시스템 구축</div>
+          <div className="text-white">gemini "고객들이 언제 서버를 많이 쓸지 예측해줘"</div>
+          <div className="text-white">"지난 1년간 모니터링 데이터를 바탕으로"</div>
+          <div className="text-white">"다음주에 트래픽 급증할 고객사를 미리 알려줘"</div>
+          <div className="text-white">"서버 확장 준비를 언제 해야 할지도 제안해줘"</div>
         </div>
       </div>
 
-      <h3>AutoML 코드 생성</h3>
+      <SubsectionTitle>장애 예측 시스템</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 자동 ML 모델 생성</div>
-        <div className="text-white">gemini automl &quot;</div>
-        <div className="text-white">Build anomaly detection model:</div>
-        <div className="text-white">- Training data: server logs from last year</div>
-        <div className="text-white">- Target: identify unusual patterns</div>
-        <div className="text-white">- Model type: time series classification</div>
-        <div className="text-white">- Deployment: Cloud Run with auto-scaling</div>
-        <div className="text-white">&quot;</div>
+        <div className="text-green-400"># 장애 발생 전 미리 감지</div>
+        <div className="text-white">gemini "서버 로그를 분석해서"</div>
+        <div className="text-white">"장애가 일어나기 전 징후를 찾아줘"</div>
+        <div className="text-white">"패턴을 학습해서 앞으로 비슷한 상황이 오면"</div>
+        <div className="text-white">"미리 알려주는 시스템을 만들어줘"</div>
         <br />
-        <div className="text-yellow-300">🎯 Model accuracy: 94.2%</div>
-        <div className="text-yellow-300">⚡ Training completed in 45 minutes</div>
-        <div className="text-yellow-300">🚀 Deployed to production endpoint</div>
+        <div className="text-yellow-300">🎯 예측 정확도: 매우 높음</div>
+        <div className="text-yellow-300">⚡ 학습 완료: 45분</div>
+        <div className="text-yellow-300">🚀 실시간 모니터링 시작</div>
       </div>
 
-      <h2>💡 실무 사용 사례</h2>
+      <SectionTitle>💡 실무 사용 사례</SectionTitle>
 
-      <h3>1. 실시간 로그 분석</h3>
+      <SubsectionTitle>1. 실시간 장애 상황 감지</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 실시간 로그 모니터링</div>
-        <div className="text-white">gemini stream --source pubsub://logs-topic &quot;</div>
-        <div className="text-white">Analyze incoming log streams:</div>
-        <div className="text-white">1. Detect error patterns in real-time</div>
-        <div className="text-white">2. Classify severity levels</div>
-        <div className="text-white">3. Auto-generate incident tickets</div>
-        <div className="text-white">4. Suggest immediate actions</div>
-        <div className="text-white">&quot;</div>
+        <div className="text-green-400"># 24시간 자동 모니터링</div>
+        <div className="text-white">gemini "서버 로그를 계속 지켜보다가"</div>
+        <div className="text-white">"에러가 갑자기 많이 발생하면"</div>
+        <div className="text-white">"심각도를 판단해서"</div>
+        <div className="text-white">"담당자에게 즉시 알려주고"</div>
+        <div className="text-white">"바로 할 수 있는 조치 방법도 제안해줘"</div>
       </div>
 
-      <h3>2. 비용 최적화 분석</h3>
+      <SubsectionTitle>2. 멀티클라우드 비용 분석</SubsectionTitle>
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6">
-        <h4 className="font-semibold mb-2">베스핀글로벌 고객사 비용 분석</h4>
+        <h4 className="font-semibold mb-2">베스핀글로벌 고객사 통합 비용 분석</h4>
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 멀티클라우드 비용 분석</div>
-          <div className="text-white">gemini cost-analyze &quot;</div>
-          <div className="text-white">Compare costs across all customer accounts:</div>
-          <div className="text-white">- AWS: 15 accounts</div>
-          <div className="text-white">- Azure: 8 accounts</div>
-          <div className="text-white">- GCP: 5 accounts</div>
-          <div className="text-white">Generate optimization recommendations with ROI calculations</div>
-          <div className="text-white">&quot;</div>
+          <div className="text-green-400"># 전체 고객사 비용 한 번에 분석</div>
+          <div className="text-white">gemini "모든 고객사의 클라우드 비용을 비교해서"</div>
+          <div className="text-white">"AWS 계정 15개, Azure 8개, GCP 5개"</div>
+          <div className="text-white">"어디서 돈을 절약할 수 있는지 찾아주고"</div>
+          <div className="text-white">"절약 효과도 구체적으로 계산해줘"</div>
         </div>
       </div>
 
-      <h3>3. 성능 예측 모델링</h3>
+      <SubsectionTitle>3. 용량 계획 및 예측</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 성능 예측 대시보드</div>
-        <div className="text-white">gemini forecast &quot;</div>
-        <div className="text-white">Based on historical performance data:</div>
-        <div className="text-white">1. Predict next month's resource needs</div>
-        <div className="text-white">2. Identify potential bottlenecks</div>
-        <div className="text-white">3. Generate capacity planning report</div>
-        <div className="text-white">4. Auto-schedule scaling events</div>
-        <div className="text-white">&quot;</div>
+        <div className="text-green-400"># 미래 필요 리소스 예측</div>
+        <div className="text-white">gemini "과거 성능 데이터를 보고"</div>
+        <div className="text-white">"다음 달에 서버를 얼마나 더 늘려야 할지"</div>
+        <div className="text-white">"병목이 생길 곳은 어디인지"</div>
+        <div className="text-white">"용량 계획 리포트 만들어주고"</div>
+        <div className="text-white">"서버 확장 일정도 자동으로 잡아줘"</div>
       </div>
 
-      <h2>🌐 멀티클라우드 통합</h2>
+      <SectionTitle>🌐 멀티클라우드 통합 분석</SectionTitle>
 
-      <h3>AWS와 GCP 연동</h3>
+      <SubsectionTitle>여러 클라우드 동시 분석</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
-        <h4 className="font-semibold">크로스 클라우드 데이터 분석</h4>
+        <h4 className="font-semibold">실제 사례: 고객사 데이터 파이프라인 최적화</h4>
         
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># AWS S3 + GCP BigQuery 통합 분석</div>
-          <div className="text-white">gemini cross-cloud &quot;</div>
-          <div className="text-white">Analyze data pipeline performance:</div>
-          <div className="text-white">- Source: AWS S3 buckets (customer data)</div>
-          <div className="text-white">- Processing: GCP Dataflow</div>
-          <div className="text-white">- Storage: BigQuery tables</div>
-          <div className="text-white">- Output: Optimization recommendations</div>
-          <div className="text-white">&quot;</div>
+          <div className="text-green-400"># 클라우드 간 데이터 이동 분석</div>
+          <div className="text-white">gemini "고객 데이터가"</div>
+          <div className="text-white">"AWS에 저장되고 → GCP에서 처리되고 → Azure에 백업되는데"</div>
+          <div className="text-white">"이렇게 이동하는 비용과 속도를 분석해서"</div>
+          <div className="text-white">"더 효율적인 방법을 제안해줘"</div>
         </div>
 
         <div className="text-sm text-gray-600 dark:text-gray-400">
-          <p><strong>장점:</strong> 클라우드 간 데이터 이동 비용과 지연시간을 최적화하는 
-          구체적인 제안을 제공합니다.</p>
+          <p><strong>분석 결과:</strong> 클라우드 간 데이터 전송 비용, 지연시간을 분석하고 
+          최적의 데이터 흐름을 제안합니다.</p>
         </div>
       </div>
 
-      <h3>Azure 연동</h3>
+      <SubsectionTitle>통합 모니터링</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># Azure Synapse + Gemini 연동</div>
-        <div className="text-white">gemini azure-sync &quot;</div>
-        <div className="text-white">Connect to Azure Synapse Analytics:</div>
-        <div className="text-white">1. Import data warehouse schema</div>
-        <div className="text-white">2. Generate optimized queries</div>
-        <div className="text-white">3. Create ML models using Synapse ML</div>
-        <div className="text-white">4. Deploy to Azure ML endpoints</div>
-        <div className="text-white">&quot;</div>
+        <div className="text-green-400"># 모든 클라우드를 한 번에 모니터링</div>
+        <div className="text-white">gemini "AWS, Azure, GCP에 흩어진"</div>
+        <div className="text-white">"모든 서비스의 상태를 한 번에 확인하고"</div>
+        <div className="text-white">"문제가 있는 곳을 찾아서"</div>
+        <div className="text-white">"통합 리포트 만들어줘"</div>
       </div>
 
-      <h2>📈 고급 분석 기능</h2>
+      <SectionTitle>📈 자연스러운 데이터 질문</SectionTitle>
 
-      <h3>시계열 데이터 분석</h3>
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse border border-gray-300 dark:border-gray-600 text-sm">
-          <thead>
-            <tr className="bg-gray-50 dark:bg-gray-800">
-              <th className="border border-gray-300 dark:border-gray-600 p-3 text-left">분석 유형</th>
-              <th className="border border-gray-300 dark:border-gray-600 p-3">Gemini CLI 명령</th>
-              <th className="border border-gray-300 dark:border-gray-600 p-3">출력 형식</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">트렌드 분석</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-mono">gemini trend --period 30d</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3">그래프 + 인사이트</td>
-            </tr>
-            <tr className="bg-gray-50 dark:bg-gray-800">
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">이상치 탐지</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-mono">gemini anomaly --threshold 2.5</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3">알람 + 원인 분석</td>
-            </tr>
-            <tr>
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">예측 모델링</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-mono">gemini forecast --horizon 7d</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3">예측값 + 신뢰구간</td>
-            </tr>
-            <tr className="bg-gray-50 dark:bg-gray-800">
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">상관관계 분석</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3 font-mono">gemini correlate --vars all</td>
-              <td className="border border-gray-300 dark:border-gray-600 p-3">히트맵 + 해석</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>자연어 쿼리 인터페이스</h3>
+      <SubsectionTitle>평상시 말로 분석 요청</SubsectionTitle>
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
-        <h4 className="font-semibold mb-3">비개발자도 사용 가능한 데이터 분석</h4>
-        <div className="space-y-2">
-          <div className="bg-gray-900 text-gray-100 rounded p-2 text-sm font-mono">
-            <span className="text-green-400">질문:</span> <span className="text-white">&quot;지난 달 가장 비용이 많이 든 고객사는?&quot;</span>
+        <h4 className="font-semibold mb-3">IT 전문가가 궁금해하는 실제 질문들</h4>
+        <div className="space-y-3">
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <span className="text-green-400">💰 비용 관련:</span> 
+            <div className="text-white mt-1">"지난 달 가장 비용이 많이 든 고객사는?"</div>
+            <div className="text-white">"어느 서비스 때문에 예산이 초과됐어?"</div>
           </div>
-          <div className="bg-gray-900 text-gray-100 rounded p-2 text-sm font-mono">
-            <span className="text-green-400">질문:</span> <span className="text-white">&quot;CPU 사용률이 80% 넘는 서버들의 공통점은?&quot;</span>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <span className="text-green-400">⚡ 성능 관련:</span> 
+            <div className="text-white mt-1">"CPU 사용률이 80% 넘는 서버들의 공통점은?"</div>
+            <div className="text-white">"응답 속도가 느린 서비스들을 찾아줘"</div>
           </div>
-          <div className="bg-gray-900 text-gray-100 rounded p-2 text-sm font-mono">
-            <span className="text-green-400">질문:</span> <span className="text-white">&quot;내일 트래픽 급증이 예상되는 서비스는?&quot;</span>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <span className="text-green-400">🔮 예측 관련:</span> 
+            <div className="text-white mt-1">"내일 트래픽 급증이 예상되는 서비스는?"</div>
+            <div className="text-white">"다음 주에 서버 확장이 필요한 고객사는?"</div>
+          </div>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <span className="text-green-400">🚨 장애 관련:</span> 
+            <div className="text-white mt-1">"에러가 갑자기 증가한 시점은 언제?"</div>
+            <div className="text-white">"장애 징후가 나타나는 패턴이 있어?"</div>
           </div>
         </div>
       </div>
 
-      <h2>🔒 보안 및 거버넌스</h2>
+      <SectionTitle>🔒 보안 및 안전성</SectionTitle>
 
       <div className="grid md:grid-cols-2 gap-6 my-8">
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
-          <h4 className="text-lg font-semibold mb-3 text-green-800 dark:text-green-200">보안 강점</h4>
+          <h4 className="text-lg font-semibold mb-3 text-green-800 dark:text-green-200">안전한 사용</h4>
           <ul className="text-sm space-y-2">
-            <li>✅ <strong>VPC 네이티브</strong>: 프라이빗 네트워크 내 처리</li>
-            <li>✅ <strong>IAM 통합</strong>: 세분화된 권한 제어</li>
-            <li>✅ <strong>감사 로그</strong>: Cloud Audit Logs 자동 연동</li>
-            <li>✅ <strong>암호화</strong>: 전송/저장 단계 모두 암호화</li>
+            <li>✅ <strong>사내 네트워크 처리</strong>: 외부 유출 없음</li>
+            <li>✅ <strong>권한 관리</strong>: 팀원별 접근 권한 제어</li>
+            <li>✅ <strong>모든 작업 기록</strong>: 누가 언제 뭘 했는지 추적</li>
+            <li>✅ <strong>데이터 암호화</strong>: 전송과 저장 모두 암호화</li>
           </ul>
         </div>
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-6">
           <h4 className="text-lg font-semibold mb-3 text-yellow-800 dark:text-yellow-200">주의사항</h4>
           <ul className="text-sm space-y-2">
-            <li>⚠️ <strong>데이터 레지던시</strong>: 지역별 규제 준수 필요</li>
-            <li>⚠️ <strong>API 한도</strong>: 대량 처리 시 쿼터 관리</li>
-            <li>⚠️ <strong>비용 모니터링</strong>: 예상치 못한 사용량 급증</li>
-            <li>⚠️ <strong>모델 제한</strong>: 특정 도메인 지식 부족</li>
+            <li>⚠️ <strong>데이터 위치</strong>: 고객 요구에 맞는 지역 선택</li>
+            <li>⚠️ <strong>사용량 제한</strong>: 대량 분석 시 할당량 관리</li>
+            <li>⚠️ <strong>비용 관리</strong>: 예상보다 많이 사용할 수 있음</li>
+            <li>⚠️ <strong>전문 분야</strong>: 특정 업계 지식 제한</li>
           </ul>
         </div>
       </div>
 
-      <h2>💰 비용 효율성</h2>
+      <SectionTitle>💰 비용 효율성</SectionTitle>
 
-      <h3>요금 비교 (월간 기준)</h3>
+      <SubsectionTitle>다른 도구 대비 저렴한 가격</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <div className="grid md:grid-cols-3 gap-4">
           <div className="text-center">
             <div className="text-2xl font-bold text-green-600 dark:text-green-400">Gemini CLI</div>
-            <div className="text-3xl font-bold">$12</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">per user/month</p>
-            <div className="text-xs text-green-600">+ 무료 티어 제공</div>
+            <div className="text-3xl font-bold">월 3만원대</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">사용자 1명 기준</p>
+            <div className="text-xs text-green-600">+ 무료 사용량 제공</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">Claude Code</div>
-            <div className="text-3xl font-bold">$20</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">per user/month</p>
-            <div className="text-xs text-blue-600">토큰 기반 추가 과금</div>
+            <div className="text-3xl font-bold">월 5만원대</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">사용자 1명 기준</p>
+            <div className="text-xs text-blue-600">사용량에 따라 추가 요금</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-orange-600 dark:text-orange-400">Amazon Q</div>
-            <div className="text-3xl font-bold">$19</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">per user/month</p>
-            <div className="text-xs text-orange-600">AWS 사용량 기반</div>
+            <div className="text-3xl font-bold">월 4만원대</div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">사용자 1명 기준</p>
+            <div className="text-xs text-orange-600">AWS 사용량에 따라 변동</div>
           </div>
         </div>
       </div>
 
-      <h3>GCP 크레딧 활용</h3>
-      <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6">
-        <h4 className="font-semibold mb-2">베스핀글로벌 파트너 혜택</h4>
+      <SubsectionTitle>베스핀글로벌 파트너 혜택</SubsectionTitle>
+      <InfoBox type="tip">
+        <h4 className="font-semibold mb-2">특별 혜택</h4>
         <ul className="text-sm space-y-1">
-          <li>• 신규 고객사: $1,000 GCP 크레딧 제공</li>
-          <li>• 파트너 할인: Gemini API 사용료 25% 절감</li>
-          <li>• 볼륨 할인: 월 10,000 요청 이상 시 추가 20% 할인</li>
-          <li>• 무료 지원: Google Cloud 전문가 기술 지원 포함</li>
+          <li>• 신규 고객사: 구글 클라우드 크레딧 300만원 제공</li>
+          <li>• 파트너 할인: Gemini 사용료 추가 할인</li>
+          <li>• 대량 사용 시: 볼륨 할인 적용</li>
+          <li>• 기술 지원: 구글 클라우드 전문가 상담 포함</li>
         </ul>
-      </div>
+      </InfoBox>
 
-      <h2>🚀 베스핀글로벌 특화 시나리오</h2>
+      <SectionTitle>🚀 베스핀글로벌 MSP 활용법</SectionTitle>
 
-      <h3>고객 대시보드 자동 생성</h3>
+      <SubsectionTitle>고객사별 맞춤 대시보드 자동 생성</SubsectionTitle>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 고객사별 맞춤 대시보드</div>
-        <div className="text-white">gemini dashboard create --customer &quot;Company A&quot; &quot;</div>
-        <div className="text-white">Generate executive dashboard with:</div>
-        <div className="text-white">1. Cost trends and forecasts</div>
-        <div className="text-white">2. Performance KPIs</div>
-        <div className="text-white">3. Security compliance status</div>
-        <div className="text-white">4. Optimization recommendations</div>
-        <div className="text-white">Auto-refresh: every 6 hours</div>
-        <div className="text-white">&quot;</div>
+        <div className="text-green-400"># 경영진용 대시보드 자동 생성</div>
+        <div className="text-white">gemini "A제약회사 경영진이 볼 대시보드를 만들어줘"</div>
+        <div className="text-white">"지난달 클라우드 비용 변화"</div>
+        <div className="text-white">"서비스 성능 지표"</div>
+        <div className="text-white">"보안 상태"</div>
+        <div className="text-white">"다음달 개선 제안사항"</div>
+        <div className="text-white">"6시간마다 자동 업데이트되게 해줘"</div>
       </div>
 
-      <h3>자동화된 월간 리포트</h3>
+      <SubsectionTitle>월간 운영 리포트 자동화</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
-        <h4 className="font-semibold mb-3">MSP 월간 운영 리포트 자동화</h4>
+        <h4 className="font-semibold mb-3">MSP 월간 리포트 자동 작성</h4>
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 월간 리포트 자동 생성</div>
-          <div className="text-white">gemini report monthly --all-customers &quot;</div>
-          <div className="text-white">Create comprehensive monthly report:</div>
-          <div className="text-white">- Infrastructure health summary</div>
-          <div className="text-white">- Cost analysis with year-over-year comparison</div>
-          <div className="text-white">- Security incidents and resolutions</div>
-          <div className="text-white">- Performance improvements implemented</div>
-          <div className="text-white">- Next month's recommendations</div>
-          <div className="text-white">Format: PDF + interactive web dashboard</div>
-          <div className="text-white">&quot;</div>
+          <div className="text-green-400"># 모든 고객사 월간 리포트 한 번에</div>
+          <div className="text-white">gemini "이번달 모든 고객사 운영 리포트를 만들어줘"</div>
+          <div className="text-white">"- 인프라 안정성 요약"</div>
+          <div className="text-white">"- 비용 분석 (전년 대비)"</div>
+          <div className="text-white">"- 보안 이슈 및 해결 내역"</div>
+          <div className="text-white">"- 성능 개선 작업 결과"</div>
+          <div className="text-white">"- 다음달 권장 작업"</div>
+          <div className="text-white">"PDF와 웹 대시보드로 모두 만들어줘"</div>
         </div>
       </div>
 
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
-        <h4 className="font-semibold mb-2">💡 실무 활용 팁</h4>
-        <p className="text-sm">
-          Gemini CLI는 특히 데이터가 많은 MSP 환경에서 진가를 발휘합니다. 
-          BigQuery와의 네이티브 연동으로 테라바이트 규모의 로그 분석도 몇 분 만에 완료할 수 있어, 
-          대규모 고객사 관리에 매우 효과적입니다.
-        </p>
-      </div>
+      <InfoBox type="tip">
+        <h4 className="font-semibold mb-2">💡 MSP 환경에서의 강점</h4>
+        <Paragraph className="text-sm">
+          Gemini CLI는 <strong>대용량 데이터 처리에 특화</strong>되어 있어 
+          많은 고객사를 관리하는 MSP 환경에 최적입니다. 
+          테라바이트급 로그도 몇 분 만에 분석하고, 
+          화면 스크린샷을 보고 상황을 즉시 파악할 수 있어 
+          24시간 운영 체계에 매우 유용합니다.
+        </Paragraph>
+      </InfoBox>
 
-      <h2>🎯 다음 학습</h2>
+      <SectionTitle>🎯 다음 학습</SectionTitle>
       
-      <p>
-        Gemini CLI의 데이터 분석 특화 기능을 살펴봤다면, <strong>4.4 도구 선택 전략</strong>에서 
-        프로젝트별로 최적의 도구를 선택하는 방법을 알아보겠습니다.
-      </p>
+      <Paragraph>
+        Gemini CLI의 데이터 분석과 예측 기능을 살펴봤다면, <strong>4.4 도구 선택 전략</strong>에서 
+        업무 상황별로 최적의 AI 도구를 선택하는 방법을 알아보겠습니다.
+      </Paragraph>
 
       <div className="flex gap-4 mt-8">
         <a 

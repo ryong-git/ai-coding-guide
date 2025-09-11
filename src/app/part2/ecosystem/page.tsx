@@ -5,137 +5,142 @@ import { CodeBlock } from '@/components/ui/code-block';
 export default function EcosystemPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
-      <PageTitle sectionNumber="2.4">생태계 전망</PageTitle>
+      <PageTitle sectionNumber="2.4">클라우드 운영 산업 생태계</PageTitle>
       
       <Lead>
-        AI 코딩 도구 생태계의 현재와 미래, 그리고 개발자와 기업이 준비해야 할 변화들
+        AI 운영 도구가 만들어내는 클라우드 운영 산업의 근본적 변화와 MSP 시장의 미래
       </Lead>
 
-      <SectionTitle>🌱 생태계 현재 상황</SectionTitle>
+      <SectionTitle>🌱 클라우드 운영 시장 변화</SectionTitle>
 
       <Paragraph>
-        AI 코딩 도구 시장은 <strong>폭발적 성장</strong>을 거듭하고 있습니다. 
-        2023년을 기점으로 GitHub Copilot, Amazon CodeWhisperer, Google Bard 등 
-        주요 플레이어들이 본격적인 경쟁을 시작했습니다.
+        AI 운영 도구의 등장으로 클라우드 운영 서비스 시장이 <strong>근본적으로 재편</strong>되고 있습니다. 
+        2024년을 기점으로 Amazon Q Developer, Azure AI, Google Cloud AI 등 
+        클라우드 벤더들이 AI 기반 운영 자동화 경쟁에 본격 진입했습니다.
       </Paragraph>
 
       <Paragraph>
-        단순한 도구 경쟁을 넘어서 전체 개발 워크플로를 재정의하는 
-        <strong>플랫폼 전쟁</strong>으로 발전하고 있으며, 
-        각 기업들은 자신만의 생태계 구축에 집중하고 있습니다.
+        단순한 인프라 관리를 넘어서 전체 클라우드 운영 프로세스를 재정의하는 
+        <strong>지능형 운영 플랫폼 경쟁</strong>으로 발전하고 있으며, 
+        MSP 기업들은 AI 네이티브 서비스 체계로의 전환을 가속화하고 있습니다.
       </Paragraph>
 
-      <FeatureBox title="📊 2024년 시장 현황">
+      <FeatureBox title="📊 2025년 클라우드 운영 시장 동향">
         <ul className="mb-0">
-          <li><strong>시장 성장:</strong> AI 코딩 도구 시장의 급속한 성장</li>
-          <li><strong>사용자 증가:</strong> 전 세계 개발자들의 빠른 채택</li>
-          <li><strong>주요 기업:</strong> Microsoft, Google, Amazon, Meta, OpenAI</li>
-          <li><strong>투자 활발:</strong> 대규모 벤처 자본 유입</li>
+          <li><strong>시장 혁신:</strong> AI 기반 자동화 솔루션 급속 확산</li>
+          <li><strong>MSP 진화:</strong> 전통적 관리 서비스에서 지능형 운영으로</li>
+          <li><strong>주요 플레이어:</strong> AWS, Microsoft Azure, Google Cloud, 베스핀글로벌</li>
+          <li><strong>투자 급증:</strong> AI Ops 분야 대규모 투자 유입</li>
         </ul>
       </FeatureBox>
 
-      <SectionTitle>🏢 주요 플레이어 분석</SectionTitle>
+      <SectionTitle>🏢 클라우드 벤더별 AI 운영 전략</SectionTitle>
 
-      <SubsectionTitle>빅테크 기업들의 전략</SubsectionTitle>
+      <SubsectionTitle>주요 클라우드 플랫폼의 AI Ops 방향</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-          <h4 className="font-semibold mb-4">🎯 플랫폼별 차별화 전략</h4>
+          <h4 className="font-semibold mb-4">🎯 벤더별 차별화 전략</h4>
           
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-              <h5 className="font-semibold text-blue-600 dark:text-blue-400 mb-2">Microsoft 생태계</h5>
+              <h5 className="font-semibold text-blue-600 dark:text-blue-400 mb-2">Microsoft Azure</h5>
               <div className="text-sm space-y-1">
-                <div>• <strong>GitHub Copilot</strong>: 개발자 도구 통합</div>
-                <div>• <strong>VS Code 확장</strong>: 에디터 네이티브 지원</div>
-                <div>• <strong>Azure 연동</strong>: 클라우드 워크플로 최적화</div>
-                <div>• <strong>기업 솔루션</strong>: 엔터프라이즈 보안 강화</div>
+                <div>• <strong>Azure AI for Operations</strong>: 통합 운영 플랫폼</div>
+                <div>• <strong>Copilot for Azure</strong>: 자연어 인프라 관리</div>
+                <div>• <strong>엔터프라이즈 통합</strong>: Office 365 연동</div>
+                <div>• <strong>하이브리드 클라우드</strong>: 온프레미스-클라우드 연계</div>
               </div>
             </div>
             
             <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-              <h5 className="font-semibold text-green-600 dark:text-green-400 mb-2">Google 생태계</h5>
+              <h5 className="font-semibold text-green-600 dark:text-green-400 mb-2">Google Cloud</h5>
               <div className="text-sm space-y-1">
-                <div>• <strong>Bard/Gemini</strong>: 멀티모달 코딩 지원</div>
-                <div>• <strong>Cloud 통합</strong>: GCP 서비스 최적화</div>
-                <div>• <strong>Android 개발</strong>: 모바일 특화 도구</div>
-                <div>• <strong>AI 연구</strong>: 최신 모델 빠른 적용</div>
+                <div>• <strong>Vertex AI for Operations</strong>: ML 기반 운영 최적화</div>
+                <div>• <strong>Cloud AI Assistant</strong>: 멀티모달 운영 지원</div>
+                <div>• <strong>Kubernetes 특화</strong>: 컨테이너 운영 자동화</div>
+                <div>• <strong>데이터 분석</strong>: BigQuery 연동 운영 인사이트</div>
               </div>
             </div>
             
             <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-              <h5 className="font-semibold text-orange-600 dark:text-orange-400 mb-2">Amazon 생태계</h5>
+              <h5 className="font-semibold text-orange-600 dark:text-orange-400 mb-2">Amazon AWS</h5>
               <div className="text-sm space-y-1">
-                <div>• <strong>CodeWhisperer</strong>: AWS 서비스 특화</div>
-                <div>• <strong>Q Developer</strong>: 인프라 관리 자동화</div>
-                <div>• <strong>클라우드 중심</strong>: 서버리스 개발 지원</div>
-                <div>• <strong>엔터프라이즈</strong>: 대기업 솔루션 집중</div>
+                <div>• <strong>Q Developer CLI</strong>: 명령어 기반 운영 자동화</div>
+                <div>• <strong>AWS Bedrock</strong>: 맞춤형 AI 모델 구축</div>
+                <div>• <strong>서버리스 우선</strong>: Lambda 기반 이벤트 처리</div>
+                <div>• <strong>글로벌 확장</strong>: 멀티 리전 운영 최적화</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <SubsectionTitle>신생 기업들의 혁신</SubsectionTitle>
+      <SubsectionTitle>MSP 시장에서의 혁신</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
-        <h4 className="font-semibold mb-3">🚀 차세대 AI 코딩 스타트업</h4>
+        <h4 className="font-semibold mb-3">🚀 특화된 클라우드 운영 서비스</h4>
         
         <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
-          빅테크가 범용 솔루션에 집중하는 동안, 
-          스타트업들은 특화된 영역에서 혁신적인 접근법을 시도하고 있습니다.
+          빅테크 벤더들이 범용 플랫폼에 집중하는 동안, 
+          MSP 기업들은 고객 비즈니스에 특화된 지능형 운영 서비스를 개발하고 있습니다.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h6 className="font-semibold mb-2">특화 영역들</h6>
+            <h6 className="font-semibold mb-2">특화 서비스 영역</h6>
             <ul className="text-sm space-y-1">
-              <li>• <strong>Cursor:</strong> AI 네이티브 IDE</li>
-              <li>• <strong>Replit:</strong> 브라우저 기반 개발 환경</li>
-              <li>• <strong>Tabnine:</strong> 프라이버시 중심 코딩</li>
-              <li>• <strong>Codeium:</strong> 무료 대안 솔루션</li>
+              <li>• <strong>베스핀글로벌:</strong> AI 기반 MSP 플랫폼</li>
+              <li>• <strong>메가존클라우드:</strong> 멀티클라우드 운영 자동화</li>
+              <li>• <strong>LG CNS:</strong> AI 기반 인프라 최적화</li>
+              <li>• <strong>삼성SDS:</strong> 기업맞춤 클라우드 운영</li>
             </ul>
           </div>
           
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
             <h6 className="font-semibold mb-2">혁신 포인트</h6>
             <ul className="text-sm space-y-1">
-              <li>• 완전 AI 기반 워크플로</li>
-              <li>• 온디바이스 AI 모델</li>
-              <li>• 개발자 경험 최적화</li>
-              <li>• 비용 효율적 솔루션</li>
+              <li>• 완전 자동화된 운영 프로세스</li>
+              <li>• 예측적 인프라 관리</li>
+              <li>• 고객 맞춤 운영 경험</li>
+              <li>• 비용 효율적 서비스 모델</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <SectionTitle>🔮 기술 발전 전망</SectionTitle>
+      <SectionTitle>🔮 클라우드 운영 기술 전망</SectionTitle>
 
-      <SubsectionTitle>2025-2027년 주요 트렌드</SubsectionTitle>
+      <SubsectionTitle>2025-2027년 주요 기술 트렌드</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
-          <h4 className="font-semibold">🧠 모델 성능 향상</h4>
+          <h4 className="font-semibold">🧠 AI 운영 지능 고도화</h4>
           
           <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
-            더 큰 컨텍스트 윈도우, 정확도 향상, 그리고 특화된 도메인 모델들이 등장할 예정입니다.
+            더 큰 인프라 맥락 이해, 예측 정확도 향상, 그리고 업계단 특화 AI 모델들이 등장할 예정입니다.
           </p>
 
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-green-400"># 예상 기술 발전</div>
-            <div className="text-white">컨텍스트 윈도우: 32K → 1M+ 토큰</div>
-            <div className="text-white">코드 생성 정확도: 65% → 85%</div>
-            <div className="text-white">멀티모달: 텍스트+이미지+음성+비디오</div>
-            <div className="text-white">실시간 피드백: 즉시 → 실시간</div>
-            <div className="text-white">특화 모델: 언어별, 프레임워크별</div>
+            <div className="text-green-400"># 2027년 클라우드 운영 시나리오</div>
+            <div className="text-white">"고객사 전자상거래 사이트가 느려졌다고 하는데</div>
+            <div className="text-white">과거 3일간 트래픽 패턴과 인프라 성능을 분석해서</div>
+            <div className="text-white">근본원인을 찾고 예방책까지 제안해줘.</div>
+            <div className="text-white">고객사에 설명할 리포트도 같이 작성해줘."</div>
+            <br />
+            <div className="text-yellow-300">→ AI가 자동으로:</div>
+            <div className="text-white">- 멀티 소스 데이터 분석 (로그+메트릭+비즈니스 데이터)</div>
+            <div className="text-white">- 근본원인 식별 및 영향도 평가</div>
+            <div className="text-white">- 단기/장기 개선 방안 제시</div>
+            <div className="text-white">- 고객 맞춤형 기술 리포트 생성</div>
           </div>
         </div>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
-          <h4 className="font-semibold">🔄 워크플로 통합</h4>
+          <h4 className="font-semibold">🔄 운영 프로세스 완전 자동화</h4>
           
           <div className="text-sm space-y-1">
-            <div>• <strong>전체 SDLC 자동화:</strong> 기획부터 배포까지</div>
-            <div>• <strong>DevOps 통합:</strong> CI/CD 파이프라인 자동 생성</div>
-            <div>• <strong>테스팅 자동화:</strong> 테스트 케이스 자동 생성</div>
-            <div>• <strong>문서화 자동화:</strong> 실시간 코드 문서 동기화</div>
+            <div>• <strong>전체 인프라 라이프사이클:</strong> 설계부터 폐기까지</div>
+            <div>• <strong>DevOps → AIOps:</strong> 지능형 배포 파이프라인 자동 생성</div>
+            <div>• <strong>운영 테스트 자동화:</strong> 장애 시나리오 자동 검증</div>
+            <div>• <strong>문서화 자동 동기화:</strong> 인프라 변경사항 실시간 반영</div>
           </div>
         </div>
 
@@ -144,73 +149,73 @@ export default function EcosystemPage() {
           
           <p className="text-sm text-gray-700 dark:text-gray-300">
             온디바이스 AI 모델로 인해 네트워크 없이도 
-            고성능 코딩 어시스트를 받을 수 있게 될 예정입니다.
+            고성능 인프라 운영 어시스트를 받을 수 있게 될 예정입니다.
           </p>
         </div>
       </div>
 
       <SubsectionTitle>신기술 융합</SubsectionTitle>
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6">
-        <h4 className="font-semibold mb-3">🔬 다가오는 혁신들</h4>
+        <h4 className="font-semibold mb-3">🔬 다가오는 운영 혁신들</h4>
         
         <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h6 className="font-semibold mb-2">VR/AR 개발 환경</h6>
+            <h6 className="font-semibold mb-2">AR/VR 인프라 관리</h6>
             <div className="text-sm space-y-1">
-              <div>• 3D 코드 시각화</div>
-              <div>• 제스처 기반 코딩</div>
-              <div>• 실시간 협업 공간</div>
-              <div>• 몰입형 디버깅</div>
+              <div>• 3D 인프라 시각화</div>
+              <div>• 제스처 기반 운영</div>
+              <div>• 실시간 협업 대시보드</div>
+              <div>• 몰입형 장애 대응</div>
             </div>
           </div>
           
           <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h6 className="font-semibold mb-2">양자 컴퓨팅 연동</h6>
+            <h6 className="font-semibold mb-2">양자 컴퓨팅 운영</h6>
             <div className="text-sm space-y-1">
-              <div>• 양자 알고리즘 생성</div>
-              <div>• 복잡도 최적화</div>
-              <div>• 하이브리드 컴퓨팅</div>
-              <div>• 암호화 자동 처리</div>
+              <div>• 양자 알고리즘 최적화</div>
+              <div>• 복잡한 데이터 분석</div>
+              <div>• 하이브리드 인프라 관리</div>
+              <div>• 양자 보안 자동 적용</div>
             </div>
           </div>
         </div>
       </div>
 
-      <SectionTitle>💼 비즈니스 모델 진화</SectionTitle>
+      <SectionTitle>💼 MSP 서비스 모델 진화</SectionTitle>
 
-      <SubsectionTitle>수익화 전략 변화</SubsectionTitle>
+      <SubsectionTitle>MSP 서비스 요금 모델 변화</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
-        <h4 className="font-semibold">💰 새로운 비즈니스 모델들</h4>
+        <h4 className="font-semibold">💰 새로운 클라우드 운영 서비스 모델</h4>
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300 dark:border-gray-600">
             <thead>
               <tr className="bg-gray-50 dark:bg-gray-800">
-                <th className="border border-gray-300 dark:border-gray-600 p-3 text-left">모델</th>
-                <th className="border border-gray-300 dark:border-gray-600 p-3">현재</th>
-                <th className="border border-gray-300 dark:border-gray-600 p-3">미래 전망</th>
+                <th className="border border-gray-300 dark:border-gray-600 p-3 text-left">서비스 모델</th>
+                <th className="border border-gray-300 dark:border-gray-600 p-3">전통적 MSP</th>
+                <th className="border border-gray-300 dark:border-gray-600 p-3">AI 기반 MSP</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">구독 모델</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">월 $10-50</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">사용량 기반 차등 요금제</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">기본 운영</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">인스턴스별 월 고정비</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">자동화 수준별 차등 요금</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">기업 솔루션</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">연 $500-2000/인</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">성과 기반 요금제 (생산성 향상률)</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">고도화 서비스</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">전문 인력 시간당 요금</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">운영 효율성 성과 기반 요금</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">마켓플레이스</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">플러그인 판매</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">AI 모델 거래소</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">플랫폼 서비스</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">도구 라이선스 별도 판매</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">통합 AI 운영 플랫폼 제공</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">서비스형 AI</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">API 호출당 요금</td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">결과물 품질 보장 서비스</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 font-medium">컨설팅 서비스</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">프로젝트별 일회성 수수료</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">지속적 운영 최적화 서비스</td>
               </tr>
             </tbody>
           </table>
@@ -219,41 +224,41 @@ export default function EcosystemPage() {
 
       <SectionTitle>🌏 지역별 발전 양상</SectionTitle>
 
-      <SubsectionTitle>글로벌 AI 코딩 허브</SubsectionTitle>
+      <SubsectionTitle>글로벌 클라우드 운영 허브</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
           <h4 className="font-semibold text-blue-600 dark:text-blue-400">🇺🇸 미국</h4>
           <div className="text-sm space-y-1">
-            <div>• <strong>강점:</strong> 빅테크 생태계, 벤처 투자</div>
-            <div>• <strong>특징:</strong> 범용 플랫폼 중심</div>
-            <div>• <strong>전망:</strong> AI 연구 선도, 표준 제정</div>
+            <div>• <strong>강점:</strong> 클라우드 벤더 주도, 대규모 투자</div>
+            <div>• <strong>특징:</strong> 차세대 인프라 기술 선도</div>
+            <div>• <strong>전망:</strong> AI Ops 표준 제정, 글로벌 확산</div>
           </div>
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
           <h4 className="font-semibold text-green-600 dark:text-green-400">🇰🇷 한국</h4>
           <div className="text-sm space-y-1">
-            <div>• <strong>강점:</strong> 게임, 모바일, 전자상거래</div>
-            <div>• <strong>특징:</strong> K-디지털 정책, 공공 데이터 활용</div>
-            <div>• <strong>전망:</strong> 특화 도메인 AI 모델 개발</div>
+            <div>• <strong>강점:</strong> MSP 노하우, 제조업 IT 인프라 경험</div>
+            <div>• <strong>특징:</strong> K-디지털 뉴딜 정책, 고도화된 네트워크</div>
+            <div>• <strong>전망:</strong> 아시아 태평양 지역 클라우드 허브</div>
           </div>
         </div>
 
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-4">
           <h4 className="font-semibold text-red-600 dark:text-red-400">🇨🇳 중국</h4>
           <div className="text-sm space-y-1">
-            <div>• <strong>강점:</strong> 대규모 데이터, 제조업 연동</div>
-            <div>• <strong>특징:</strong> 자체 생태계, 로컬라이제이션</div>
-            <div>• <strong>전망:</strong> 독립적인 AI 생태계 구축</div>
+            <div>• <strong>강점:</strong> 대규모 인프라, 제조업 디지털 전환</div>
+            <div>• <strong>특징:</strong> 자체 클라우드 생태계, 국가 주도 디지털화</div>
+            <div>• <strong>전망:</strong> 독립적인 AI 인프라 운영 체계</div>
           </div>
         </div>
 
         <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-4">
           <h4 className="font-semibold text-purple-600 dark:text-purple-400">🇪🇺 유럽</h4>
           <div className="text-sm space-y-1">
-            <div>• <strong>강점:</strong> 개인정보보호, 규제 선도</div>
-            <div>• <strong>특징:</strong> 윤리적 AI, GDPR 준수</div>
-            <div>• <strong>전망:</strong> 프라이버시 중심 솔루션</div>
+            <div>• <strong>강점:</strong> 데이터 보호 규제, 지속가능 IT</div>
+            <div>• <strong>특징:</strong> GDPR 기반 인프라, 그린 클라우드</div>
+            <div>• <strong>전망:</strong> 프라이버시 중심 AI 운영 표준</div>
           </div>
         </div>
       </div>
@@ -319,31 +324,31 @@ export default function EcosystemPage() {
         </div>
       </div>
 
-      <SectionTitle>🎓 개발자 준비 사항</SectionTitle>
+      <SectionTitle>🎓 IT 전문가 준비 사항</SectionTitle>
 
       <SubsectionTitle>미래 핵심 역량</SubsectionTitle>
       <div className="space-y-4">
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4">
-          <h4 className="font-semibold">🧠 변화하는 개발자 스킬셋</h4>
+          <h4 className="font-semibold">🧠 변화하는 클라우드 엔지니어 스킬셋</h4>
           
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white dark:bg-gray-900 p-4 rounded border">
               <h6 className="font-semibold text-red-600 dark:text-red-400 mb-2">중요도 감소</h6>
               <ul className="text-sm space-y-1">
-                <li>• 문법 암기</li>
-                <li>• 라이브러리 API 숙지</li>
-                <li>• 반복적 코드 작성</li>
-                <li>• 기계적 디버깅</li>
+                <li>• AWS 서비스 세부 설정 암기</li>
+                <li>• 클라우드 API 수동 호출</li>
+                <li>• 반복적 인프라 설정 작업</li>
+                <li>• 수동 장애 대응</li>
               </ul>
             </div>
             
             <div className="bg-white dark:bg-gray-900 p-4 rounded border">
               <h6 className="font-semibold text-green-600 dark:text-green-400 mb-2">중요도 증가</h6>
               <ul className="text-sm space-y-1">
-                <li>• AI 프롬프팅 스킬</li>
-                <li>• 시스템 아키텍처 설계</li>
-                <li>• 비즈니스 요구사항 분석</li>
-                <li>• AI 출력물 검증 능력</li>
+                <li>• AI 운영 도구 활용 스킬</li>
+                <li>• 인프라 아키텍처 전략적 설계</li>
+                <li>• 고객 비즈니스 요구사항 분석</li>
+                <li>• AI 출력 인프라 설정 검증</li>
               </ul>
             </div>
           </div>
@@ -353,10 +358,10 @@ export default function EcosystemPage() {
           <h4 className="font-semibold">📚 학습 전략</h4>
           
           <div className="text-sm space-y-1">
-            <div>• <strong>AI 도구 마스터:</strong> 주요 AI 코딩 도구들의 깊이있는 활용</div>
-            <div>• <strong>도메인 전문성:</strong> 특정 업무 영역의 깊은 이해</div>
-            <div>• <strong>소프트 스킬:</strong> 커뮤니케이션, 협업, 창의적 문제해결</div>
-            <div>• <strong>지속 학습:</strong> 빠르게 변화하는 기술 트렌드 적응</div>
+            <div>• <strong>AI 운영 도구 마스터:</strong> 주요 AI 기반 인프라 도구들의 전문성</div>
+            <div>• <strong>비즈니스 도메인 전문성:</strong> 고객 산업 영역의 깊은 이해</div>
+            <div>• <strong>커뮤니케이션 스킬:</strong> 고객과의 협업, 창의적 운영 문제해결</div>
+            <div>• <strong>지속 학습:</strong> 빠르게 변화하는 클라우드 기술 적응</div>
           </div>
         </div>
       </div>
@@ -364,18 +369,18 @@ export default function EcosystemPage() {
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
         <h4 className="font-semibold mb-2">🚀 변화에 대비하는 마음가짐</h4>
         <p className="text-sm">
-          AI 코딩 생태계의 변화는 위협이 아닌 <strong>기회</strong>입니다. 
-          기계적인 작업에서 벗어나 더 창의적이고 전략적인 업무에 집중할 수 있게 되었습니다. 
+          AI 기반 클라우드 운영의 변화는 위협이 아닌 <strong>기회</strong>입니다. 
+          반복적인 인프라 설정 업무에서 벗어나 더 전략적이고 고객 가치 중심의 운영에 집중할 수 있게 되었습니다. 
           변화를 두려워하지 말고 적극적으로 받아들여, 
-          AI와 함께 성장하는 개발자가 되시길 바랍니다.
+          AI와 함께 성장하는 클라우드 엔지니어가 되시길 바랍니다.
         </p>
       </div>
 
       <SectionTitle>🎯 다음 학습</SectionTitle>
       
       <Paragraph>
-        AI 코딩 생태계의 전망을 파악했다면, <strong>3부 개발자 로드맵</strong>에서 
-        실제로 AI 시대에 맞는 개발자 역량을 체계적으로 구축하는 방법을 살펴보겠습니다.
+        클라우드 운영 산업 생태계의 전망을 파악했다면, <strong>3부 IT 전문가 성장 가이드</strong>에서 
+        실제로 AI 시대에 맞는 클라우드 엔지니어 역량을 체계적으로 구축하는 방법을 살펴보겠습니다.
       </Paragraph>
 
       <div className="flex gap-4 mt-8">
@@ -383,13 +388,13 @@ export default function EcosystemPage() {
           href="/part3/role-redefinition/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          다음: 3부 역할 재정의 →
+          다음: 3부 IT 역할 진화 →
         </a>
         <a 
           href="/part2/limitations/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
-          ← 이전: 한계와 도전
+          ← 이전: 한계와 위험
         </a>
       </div>
     </div>

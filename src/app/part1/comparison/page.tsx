@@ -7,7 +7,7 @@ export default function ComparisonPage() {
     <div className="prose prose-lg max-w-none dark:prose-invert">
       <PageTitle 
         sectionNumber="1.4"
-        subtitle="MSP 환경에 최적화된 AI 코딩 도구 선택 가이드"
+        subtitle="MSP 환경에 최적화된 AI 운영 도구 선택 가이드"
       >
         도구별 비교 분석
       </PageTitle>
@@ -15,8 +15,8 @@ export default function ComparisonPage() {
       <SectionTitle>🔧 MSP 업무별 도구 선택</SectionTitle>
 
       <Lead>
-        베스핀글로벌 MSP 환경에서는 <strong>업무 특성에 따른 도구 선택이 핵심</strong>입니다. 
-        각 도구의 강점을 이해하고 상황에 맞게 활용하는 것이 바이브 코딩 성공의 열쇠입니다.
+        베스핀글로벌 MSP 환경에서는 <strong>운영 업무 특성에 따른 AI 도구 선택이 핵심</strong>입니다. 
+        각 도구의 강점을 이해하고 클라우드 운영 상황에 맞게 활용하는 것이 효율적 인프라 관리의 열쇠입니다.
       </Lead>
 
       <div className="grid md:grid-cols-3 gap-6 my-8">
@@ -79,7 +79,9 @@ export default function ComparisonPage() {
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
                   <span className="text-orange-600 font-bold">Amazon Q</span>
                 </td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">90%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">매우 높음</span>
+                </td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">AWS 네이티브 통합, 보안 정책</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
@@ -87,7 +89,9 @@ export default function ComparisonPage() {
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
                   <span className="text-blue-600 font-bold">Claude Code</span>
                 </td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">85%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
+                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">높음</span>
+                </td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">복합 문제 해결, 자동화 실행</td>
               </tr>
               <tr>
@@ -95,7 +99,9 @@ export default function ComparisonPage() {
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
                   <span className="text-green-600 font-bold">Gemini CLI</span>
                 </td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">80%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
+                  <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">높음</span>
+                </td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">데이터 분석, ML 예측</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
@@ -103,7 +109,9 @@ export default function ComparisonPage() {
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
                   <span className="text-blue-600 font-bold">Claude Code</span>
                 </td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">75%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
+                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">보통</span>
+                </td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">멀티 시스템 통합</td>
               </tr>
               <tr>
@@ -111,7 +119,9 @@ export default function ComparisonPage() {
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
                   <span className="text-orange-600 font-bold">Amazon Q</span>
                 </td>
-                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">70%</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-center">
+                  <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">보통</span>
+                </td>
                 <td className="border border-gray-300 dark:border-gray-600 p-3 text-sm">엔터프라이즈 보안 기준</td>
               </tr>
             </tbody>
@@ -136,11 +146,17 @@ export default function ComparisonPage() {
           </ul>
           
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-green-400"># 실무 예시: EKS 클러스터 + RDS 구축</div>
-            <div className="text-white">q --profile customer-prod "Create production EKS cluster with:</div>
-            <div className="text-white">- RDS PostgreSQL multi-AZ</div>
-            <div className="text-white">- ALB with SSL termination</div>
-            <div className="text-white">- CloudWatch logging enabled"</div>
+            <div className="text-green-400"># 구체적 사용 예시</div>
+            <div className="text-white">"E-커머스 고객사를 위한 완전한 프로덕션 환경을 구축해줘.</div>
+            <div className="text-white">
+            <div className="text-white">- 동시 사용자 5,000명 처리 가능</div>
+            <div className="text-white">- 자동 스케일링 및 로드밸런싱</div>
+            <div className="text-white">- 데이터베이스 고가용성 및 자동 백업</div>
+            <div className="text-white">- SSL 인증서 자동 관리</div>
+            <div className="text-white">- 전체 시스템 모니터링 및 알림 설정</div>
+            <div className="text-white">- 예산: 월 $3,000 이하</div>
+            <div className="text-white">
+            <div className="text-white">Terraform 코드와 운영 가이드도 포함해서 제공해줘"</div>
           </div>
         </div>
 
@@ -158,10 +174,18 @@ export default function ComparisonPage() {
           </ul>
           
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-green-400"># 실무 예시: 장애 대응 자동화</div>
-            <div className="text-white">claude "API Gateway 5xx errors detected.</div>
-            <div className="text-white">Analyze logs, identify root cause,</div>
-            <div className="text-white">and implement automated fix"</div>
+            <div className="text-green-400"># 구체적 사용 예시</div>
+            <div className="text-white">"금융사 고객의 API 서비스에 장애가 발생했어.</div>
+            <div className="text-white">
+            <div className="text-white">증상: 응답시간이 평소 200ms에서 5초로 증가</div>
+            <div className="text-white">상황: 고객 결제 시스템 영향, 비즐니스 손실 발생</div>
+            <div className="text-white">
+            <div className="text-white">1. CloudWatch 로그 분석해서 근본 원인 파악</div>
+            <div className="text-white">2. 즉시 적용 가능한 임시 해결책 제시</div>
+            <div className="text-white">3. 장기적 근본 해결 방안 제안</div>
+            <div className="text-white">4. 동일 문제 재발 방지 모니터링 설정</div>
+            <div className="text-white">
+            <div className="text-white">실시간 액션 플랜과 함께 제공해줘"</div>
           </div>
         </div>
 
@@ -179,11 +203,19 @@ export default function ComparisonPage() {
           </ul>
           
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-green-400"># 실무 예시: 비용 최적화 분석</div>
-            <div className="text-white">gemini "Analyze last 3 months billing data:</div>
-            <div className="text-white">- Identify cost anomalies</div>
-            <div className="text-white">- Predict next month's budget</div>
-            <div className="text-white">- Generate optimization recommendations"</div>
+            <div className="text-green-400"># 구체적 사용 예시</div>
+            <div className="text-white">"스타트업 고객사의 AWS 비용이 급증하고 있어.</div>
+            <div className="text-white">
+            <div className="text-white">데이터: 지난 6개월 Cost Explorer 데이터 첨부</div>
+            <div className="text-white">문제: 월 $5,000에서 $15,000으로 3배 증가</div>
+            <div className="text-white">
+            <div className="text-white">분석 요청사항:</div>
+            <div className="text-white">1. 비용 증가의 주요 원인 식별 (서비스별 세분화)</div>
+            <div className="text-white">2. 사용량이 높지만 효율이 낮은 리소스 찾기</div>
+            <div className="text-white">3. 즉시 적용 가능한 비용 절감 방안 (라이센스, 예약 인스턴스)</div>
+            <div className="text-white">4. 향후 3개월 비용 예측 및 버짓 체계 제안</div>
+            <div className="text-white">
+            <div className="text-white">목표: 월 $8,000 이하로 단축하면서 성능 유지"</div>
           </div>
         </div>
       </div>
@@ -269,9 +301,9 @@ export default function ComparisonPage() {
         </FeatureBox>
       </div>
 
-      <SectionTitle>💰 ROI 관점에서의 도구 선택</SectionTitle>
+      <SectionTitle>💰 비용 및 효율성 고려사항</SectionTitle>
 
-      <FeatureBox title="베스핀글로벌 비용-효과 분석 (2025년 3분기 기준)">
+      <FeatureBox title="베스핀글로벌 AI 도구 비용 분석">
         <div className="grid md:grid-cols-3 gap-4">
           <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded">
             <h5 className="font-semibold text-sm text-orange-800 dark:text-orange-200 mb-2">Amazon Q Developer</h5>
@@ -281,12 +313,12 @@ export default function ComparisonPage() {
                 <span className="font-bold">$19/인</span>
               </div>
               <div className="flex justify-between">
-                <span>시간 절약</span>
-                <span className="font-bold text-green-600">40%</span>
+                <span>작업 효율성</span>
+                <span className="font-bold text-green-600">높음</span>
               </div>
               <div className="flex justify-between">
-                <span>ROI</span>
-                <span className="font-bold text-green-600">350%</span>
+                <span>학습 곡선</span>
+                <span className="font-bold text-blue-600">완만함</span>
               </div>
             </div>
           </div>
@@ -299,12 +331,12 @@ export default function ComparisonPage() {
                 <span className="font-bold">$20/인</span>
               </div>
               <div className="flex justify-between">
-                <span>시간 절약</span>
-                <span className="font-bold text-green-600">55%</span>
+                <span>문제 해결력</span>
+                <span className="font-bold text-green-600">매우 높음</span>
               </div>
               <div className="flex justify-between">
-                <span>ROI</span>
-                <span className="font-bold text-green-600">420%</span>
+                <span>학습 곡선</span>
+                <span className="font-bold text-orange-600">중간</span>
               </div>
             </div>
           </div>
@@ -317,12 +349,12 @@ export default function ComparisonPage() {
                 <span className="font-bold">$15/인</span>
               </div>
               <div className="flex justify-between">
-                <span>시간 절약</span>
-                <span className="font-bold text-green-600">35%</span>
+                <span>데이터 분석</span>
+                <span className="font-bold text-green-600">매우 높음</span>
               </div>
               <div className="flex justify-between">
-                <span>ROI</span>
-                <span className="font-bold text-green-600">280%</span>
+                <span>학습 곡선</span>
+                <span className="font-bold text-green-600">쉽음</span>
               </div>
             </div>
           </div>
@@ -408,11 +440,11 @@ export default function ComparisonPage() {
         </div>
         
         <InfoBox type="info" className="mt-4">
-          <h5 className="font-semibold text-sm mb-2">📈 도입 성과 지표</h5>
+          <h5 className="font-semibold text-sm mb-2">📈 도입 효과 기대</h5>
           <div className="text-sm space-y-1">
-            <div>• <strong>1개월 후</strong>: 반복 작업 자동화 30% 달성</div>
-            <div>• <strong>3개월 후</strong>: 고객 대응 시간 50% 단축</div>
-            <div>• <strong>6개월 후</strong>: 팀 전체 생산성 40% 향상</div>
+            <div>• <strong>1개월 후</strong>: 반복적 인프라 작업 자동화 성공</div>
+            <div>• <strong>3개월 후</strong>: 고객 요청 대응 속도 대폭 개선</div>
+            <div>• <strong>6개월 후</strong>: 팀 전체 운영 효율성 향상</div>
           </div>
         </InfoBox>
       </div>
@@ -420,8 +452,8 @@ export default function ComparisonPage() {
       <SectionTitle>🚀 다음 학습</SectionTitle>
       
       <Paragraph>
-        도구별 특징을 파악했다면, <strong>2부 AI 코딩의 현실</strong>에서 
-        실제 업무 생산성 향상과 한계점을 구체적으로 살펴보겠습니다.
+        AI 도구별 특징을 파악했다면, <strong>2부 AI 도구의 현실</strong>에서 
+        실제 운영 업무 효율성 향상과 한계점을 구체적으로 살펴보겠습니다.
       </Paragraph>
 
       <div className="flex gap-4 mt-8">
@@ -435,7 +467,7 @@ export default function ComparisonPage() {
           href="/part1/velocity-risk-balance/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
-          ← 이전: 속도와 리스크 균형
+          ← 이전: 효율성과 안정성 균형
         </a>
       </div>
     </div>

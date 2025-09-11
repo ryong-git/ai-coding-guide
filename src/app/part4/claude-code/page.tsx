@@ -8,25 +8,25 @@ export default function ClaudeCodePage() {
       <PageTitle sectionNumber="4.2">Claude Code</PageTitle>
       
       <Lead>
-        컴퓨터 사용(Computer Use)과 MCP 생태계로 전 시스템을 제어하는 차세대 AI 코딩 플랫폼
+        마치 전문가처럼 컴퓨터를 직접 조작해서 클라우드 인프라를 관리하는 지능형 AI 도구
       </Lead>
 
       <SectionTitle>🚀 Claude Code 개요</SectionTitle>
 
       <Paragraph>
-        Claude Code는 Anthropic에서 개발한 혁신적인 AI 코딩 도구로, 단순한 코드 생성을 넘어 
-        <strong>컴퓨터 전체를 사용할 수 있는 능력</strong>을 제공합니다. 
-        MCP(Model Context Protocol) 생태계를 통해 외부 시스템과 안전하게 연결되며, 
-        실제 터미널 조작부터 브라우저 제어까지 가능합니다.
+        Claude Code는 Anthropic에서 개발한 AI 운영 도구로, 사람처럼 
+        <strong>컴퓨터 화면을 보고 마우스와 키보드를 조작</strong>할 수 있습니다. 
+        여러 운영 도구들과 연결되어 복잡한 인프라 관리 작업을 
+        자연어로 요청하면 실제 화면에서 직접 수행합니다.
       </Paragraph>
 
       <InfoBox type="tip">
         <h3 className="text-lg font-semibold mb-2">핵심 차별화 요소</h3>
         <ul className="mb-0">
-          <li><strong>Computer Use</strong>: 마우스, 키보드, 스크린샷을 통한 직접적 시스템 제어</li>
-          <li><strong>MCP 생태계</strong>: 100+ 서버로 모든 외부 시스템과 연결 가능</li>
-          <li><strong>컨텍스트 유지</strong>: 200K 토큰으로 대규모 프로젝트 전체 인식</li>
-          <li><strong>멀티모달</strong>: 텍스트, 이미지, 코드를 통합적으로 처리</li>
+          <li><strong>사람처럼 조작</strong>: 화면을 보고 마우스/키보드로 직접 작업</li>
+          <li><strong>100+ 도구 연결</strong>: 모든 운영 시스템과 연동 가능</li>
+          <li><strong>전체 파악</strong>: 대규모 인프라 전체를 한 번에 이해</li>
+          <li><strong>상황 인식</strong>: 화면, 텍스트, 데이터를 종합적으로 분석</li>
         </ul>
       </InfoBox>
 
@@ -64,71 +64,77 @@ claude config set computer-use-mode sandbox`}
 
       <h2>🖥️ Computer Use: 시스템 직접 제어</h2>
 
-      <h3>기본 사용법</h3>
+      <h3>일상 대화로 인프라 관리</h3>
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 스크린샷을 찍고 분석</div>
-        <div className="text-white">claude screenshot analyze &quot;현재 화면에서 문제점을 찾아주세요&quot;</div>
+        <div className="text-green-400"># 현재 상황 파악</div>
+        <div className="text-white">claude "지금 우리 서비스 상태가 어떨지 화면 캡처해서 분석해줘"</div>
         <br />
         <div className="text-green-400"># 브라우저 자동 조작</div>
-        <div className="text-white">claude browse &quot;AWS 콘솔에 로그인하고 EC2 인스턴스 목록을 확인해주세요&quot;</div>
+        <div className="text-white">claude "관리자 콘솔에 들어가서 서버 상태 확인하고 리포트 만들어줘"</div>
         <br />
-        <div className="text-green-400"># 파일 시스템 작업</div>
-        <div className="text-white">claude file &quot;프로젝트 구조를 분석하고 README.md를 업데이트해주세요&quot;</div>
+        <div className="text-green-400"># 전체 인프라 점검</div>
+        <div className="text-white">claude "프로젝트 전체를 살펴보고 개선점 찾아서 정리해줘"</div>
       </div>
 
-      <h3>MSP 실무 활용: 대시보드 모니터링</h3>
+      <h3>실제 사례: 고객사 서비스 점검 자동화</h3>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
-        <h4 className="font-semibold">시나리오: 고객사 인프라 상태 체크</h4>
+        <h4 className="font-semibold">평상시 업무: 매일 아침 9시 전체 점검</h4>
         
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 자동 대시보드 점검</div>
-          <div className="text-white">claude computer &quot;</div>
-          <div className="text-white">1. AWS 콘솔 CloudWatch 대시보드 열기</div>
-          <div className="text-white">2. 모든 알람 상태 확인</div>
-          <div className="text-white">3. 이상 징후가 있으면 Slack으로 알림 발송</div>
-          <div className="text-white">4. 스크린샷을 첨부하여 상세 리포트 작성</div>
-          <div className="text-white">&quot;</div>
+          <div className="text-green-400"># 자연스러운 요청</div>
+          <div className="text-white">claude "모든 고객사 서비스 상태를 확인해서"</div>
+          <div className="text-white">"이상한 것이 있으면 슬랙으로 알려줘"</div>
+          <div className="text-white">"문제 상황 스크린샷도 찍어서 보고서 만들어줘"</div>
         </div>
 
-        <div className="text-sm text-gray-600 dark:text-gray-400">
-          <p><strong>결과:</strong> Claude가 실제로 브라우저를 조작하여 대시보드를 확인하고, 
-          알람 상태를 점검한 후 자동으로 리포트를 생성합니다.</p>
+        <div className="text-sm space-y-2">
+          <div className="bg-green-100 dark:bg-green-900/30 p-3 rounded">
+            <strong>🤖 AI가 자동으로 하는 일:</strong>
+            <ul className="mt-1 text-xs space-y-1">
+              <li>✅ 각 고객사 AWS 콘솔 자동 로그인</li>
+              <li>✅ 모니터링 대시보드 스코링 확인</li>
+              <li>✅ 알람 상태 및 메트릭 수치 검사</li>
+              <li>✅ 비정상 상황 발견 시 스크린샷 캡처</li>
+              <li>✅ 슬랙 메시지 + 상세 리포트 전송</li>
+              <li>✅ 심각한 문제는 담당자 전화 연락</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <h2>🔌 MCP 생태계 활용</h2>
 
-      <h3>주요 MCP 서버들</h3>
+      <h3>연결 가능한 주요 운영 도구들</h3>
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <div className="bg-white dark:bg-gray-900 p-4 rounded border border-gray-200 dark:border-gray-700">
-          <h4 className="font-semibold mb-2">GitHub MCP</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">리포지토리 관리, PR 검토, 이슈 처리</p>
+          <h4 className="font-semibold mb-2">📊 서비스 모니터링</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">서비스 상태, 성능, 에러 추적</p>
           <div className="bg-gray-900 text-gray-100 rounded p-2 text-xs font-mono">
-            claude github &quot;모든 PR을 검토하고 피드백 작성&quot;
+            claude "서로스 느린 서비스 찾아서 원인 분석해줘"
           </div>
         </div>
         
         <div className="bg-white dark:bg-gray-900 p-4 rounded border border-gray-200 dark:border-gray-700">
-          <h4 className="font-semibold mb-2">PostgreSQL MCP</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">데이터베이스 쿼리, 스키마 분석</p>
+          <h4 className="font-semibold mb-2">💾 데이터베이스 최적화</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">느린 조회 획수, 인덱스 최적화</p>
           <div className="bg-gray-900 text-gray-100 rounded p-2 text-xs font-mono">
-            claude postgres &quot;성능이 낮은 쿼리 찾아서 최적화&quot;
+            claude "대배드 조회가 5초 넘게 걸리는데 빠르게 해줘"
           </div>
         </div>
         
         <div className="bg-white dark:bg-gray-900 p-4 rounded border border-gray-200 dark:border-gray-700">
-          <h4 className="font-semibold mb-2">Kubernetes MCP</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">클러스터 관리, 배포 자동화</p>
+          <h4 className="font-semibold mb-2">☁️ 컴테이너 관리</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">컴테이너 재시작, 스케일링</p>
           <div className="bg-gray-900 text-gray-100 rounded p-2 text-xs font-mono">
-            claude k8s &quot;파드 상태 확인하고 문제 해결&quot;
+            claude "컴테이너 상태 이상한데 자동으로 재시작해줘"
           </div>
         </div>
         
         <div className="bg-white dark:bg-gray-900 p-4 rounded border border-gray-200 dark:border-gray-700">
-          <h4 className="font-semibold mb-2">Slack MCP</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">메시지 전송, 채널 관리</p>
+          <h4 className="font-semibold mb-2">📢 팀 커뮤니케이션</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">슬랙 메시지, 알림 전송</p>
           <div className="bg-gray-900 text-gray-100 rounded p-2 text-xs font-mono">
-            claude slack &quot;장애 상황을 팀에 자동 보고&quot;
+            claude "서버 다운 상황을 담당자들에게 알려줘"
           </div>
         </div>
       </div>

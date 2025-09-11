@@ -18,18 +18,18 @@ const navigationData: NavItem[] = [
     href: "/overview/"
   },
   {
-    title: "1부. 바이브 코딩이란?",
+    title: "1부. AI 도구 활용이란?",
     children: [
-      { title: "1.1 바이브 코딩의 정의", href: "/part1/definition/" },
-      { title: "1.2 AI 페어 프로그래밍 워크플로", href: "/part1/ai-pair-programming/" },
-      { title: "1.3 속도와 리스크 균형", href: "/part1/velocity-risk-balance/" },
+      { title: "1.1 AI 도구 활용의 정의", href: "/part1/definition/" },
+      { title: "1.2 AI 페어 운영 워크플로", href: "/part1/ai-pair-programming/" },
+      { title: "1.3 효율성과 안정성 균형", href: "/part1/velocity-risk-balance/" },
       { title: "1.4 도구별 비교 분석", href: "/part1/comparison/" },
     ]
   },
   {
-    title: "2부. AI 코딩의 현실",
+    title: "2부. AI 운영 도구의 현실",
     children: [
-      { title: "2.1 생산성 혁명", href: "/part2/productivity/" },
+      { title: "2.1 운영 효율성 혁명", href: "/part2/productivity/" },
       { title: "2.2 접근성 개선", href: "/part2/accessibility/" },
       { title: "2.3 한계와 위험", href: "/part2/limitations/" },
       { title: "2.4 산업 생태계 변화", href: "/part2/ecosystem/" },
