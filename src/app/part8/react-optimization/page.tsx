@@ -2,294 +2,391 @@ import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/com
 import { InfoBox, FeatureBox } from '@/components/ui/info-box';
 import { CodeBlock } from '@/components/ui/code-block';
 
-export default function CodeValidationPage() {
+export default function AgenticCodeValidationPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
       <PageTitle 
         sectionNumber="8.2"
-        subtitle="AI 생성 코드의 품질과 보안을 보장하는 체계적 검증 프로세스"
+        subtitle="자율적으로 계획하고 실행하는 AI 에이전트 기반 코드 검증 시스템"
       >
-        AI 코드 검증 & 리뷰
+        Agentic AI 코드 검증 & 자동화
       </PageTitle>
 
-      <SectionTitle>🛡️ 신뢰할 수 있는 AI 코드 만들기</SectionTitle>
+      <SectionTitle>🤖 자율 에이전트 기반 코드 검증의 혁신</SectionTitle>
 
       <Lead>
-        바이브 코딩의 성공은 <strong>생성된 코드를 올바르게 검증하고 개선</strong>하는 데 달려 있습니다. 
-        베스핀글로벌의 MSP 환경에서는 고객사의 중요한 시스템을 다루므로, 
-        AI 생성 코드의 품질과 보안을 보장하는 체계적인 검증 프로세스가 필수입니다.
+        Agentic AI는 <strong>스스로 목표를 설정하고 계획을 세워 실행하는 자율 에이전트</strong>입니다. 
+        기존의 단순한 코드 검증을 넘어서, AI 에이전트가 프로젝트 컨텍스트를 이해하고 
+        스스로 최적의 검증 전략을 수립하여 실행하는 혁신적인 접근 방법을 제공합니다.
       </Lead>
 
-      <InfoBox type="warning" title="MSP 환경에서의 코드 품질 중요성">
-        <div className="text-sm space-y-2">
-          <div>• <strong>고객 신뢰</strong>: 한 번의 코드 결함이 고객사 전체 서비스에 영향</div>
-          <div>• <strong>규제 준수</strong>: 금융, 의료 등 규제 업계 고객사의 컴플라이언스 요구사항</div>
-          <div>• <strong>비즈니스 연속성</strong>: 24/7 운영 중인 시스템의 안정성 보장</div>
-          <div>• <strong>브랜드 가치</strong>: MSP로서의 전문성과 신뢰성 유지</div>
+      <InfoBox type="success" title="Agentic AI vs 전통적 AI 코딩의 차이">
+        <div className="text-sm space-y-3">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <strong className="text-red-600">❌ 전통적 AI 코딩</strong>
+              <div>• 인간이 매번 지시해야 함</div>
+              <div>• 단순 반복 작업에 한정</div>
+              <div>• 컨텍스트 이해 부족</div>
+              <div>• 일회성 결과물 생성</div>
+            </div>
+            <div>
+              <strong className="text-green-600">✅ Agentic AI 코딩</strong>
+              <div>• 스스로 목표를 이해하고 계획 수립</div>
+              <div>• 복잡한 다단계 작업 자율 실행</div>
+              <div>• 프로젝트 전체 맥락 고려</div>
+              <div>• 지속적 학습 및 개선</div>
+            </div>
+          </div>
         </div>
       </InfoBox>
 
-      <SectionTitle>🔍 3단계 코드 검증 프로세스</SectionTitle>
+      <SectionTitle>🧠 다중 에이전트 협업 아키텍처</SectionTitle>
 
-      <SubsectionTitle>SCAN → ANALYZE → SECURE 방법론</SubsectionTitle>
+      <SubsectionTitle>전문화된 AI 에이전트들의 유기적 협업 시스템</SubsectionTitle>
 
       <div className="space-y-8">
         <div className="border-l-4 border-blue-500 pl-6">
-          <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">1️⃣ SCAN - 즉시 검증</h4>
+          <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">🔍 **분석 에이전트 (Analyzer)**</h4>
           <Paragraph className="text-sm mb-4">
-            AI가 코드를 생성하는 즉시 기본적인 오류와 보안 문제를 자동으로 스캔합니다.
+            코드베이스의 전체적인 구조와 비즈니스 로직을 분석하여 검증 전략을 수립합니다.
           </Paragraph>
           
           <div className="space-y-3">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <h5 className="font-semibold text-sm mb-2">✅ 기본 검증 항목</h5>
+            <div className="bg-blue-50 dark:bg-blue-900/20 rounded p-3">
+              <h5 className="font-semibold text-sm mb-2">🎯 자율적 분석 능력</h5>
               <div className="grid md:grid-cols-2 gap-3 text-xs">
                 <div>
-                  <div>• 문법 오류 (Syntax Error)</div>
-                  <div>• 변수명 중복 및 미정의</div>
-                  <div>• 함수 시그니처 일치성</div>
-                  <div>• 라이브러리 임포트 검증</div>
+                  <div><strong>컨텍스트 인식:</strong></div>
+                  <div>• 프로젝트 목표 및 비즈니스 요구사항 파악</div>
+                  <div>• 기술 스택 및 아키텍처 패턴 이해</div>
+                  <div>• 고객사 산업 도메인 특성 고려</div>
                 </div>
                 <div>
-                  <div>• 기본 보안 패턴 점검</div>
-                  <div>• 하드코딩된 크리덴셜</div>
-                  <div>• SQL 인젝션 취약점</div>
-                  <div>• XSS 공격 가능성</div>
+                  <div><strong>동적 계획 수립:</strong></div>
+                  <div>• 코드 복잡도에 따른 검증 깊이 조절</div>
+                  <div>• 중요도 기반 우선순위 자동 결정</div>
+                  <div>• 리소스 효율성을 고려한 검증 순서</div>
                 </div>
               </div>
             </div>
             
-            <CodeBlock language="bash">
-# 즉시 실행 가능한 검증 스크립트
-npm run lint && npm run type-check && npm audit
-bandit -r . -ll  # Python 보안 스캔
-eslint --ext .js,.ts . --rule 'no-hardcoded-credentials: error'
+            <CodeBlock language="python">
+# Agentic AI 분석 에이전트 예시
+class AnalyzerAgent:
+    def __init__(self, project_context):
+        self.context = project_context
+        self.strategy = None
+        
+    async def autonomous_analysis(self, codebase):
+        # 1. 프로젝트 컨텍스트 자동 분석
+        business_domain = await self.identify_business_domain()
+        tech_stack = await self.analyze_tech_stack()
+        complexity_score = await self.calculate_complexity()
+        
+        # 2. 자율적 검증 전략 수립
+        self.strategy = await self.create_validation_strategy({
+            'domain': business_domain,
+            'stack': tech_stack,
+            'complexity': complexity_score,
+            'risk_tolerance': self.context.risk_profile
+        })
+        
+        # 3. 다른 에이전트들에게 작업 분배
+        tasks = await self.decompose_validation_tasks()
+        return await self.orchestrate_agents(tasks)
             </CodeBlock>
           </div>
         </div>
 
         <div className="border-l-4 border-green-500 pl-6">
-          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">2️⃣ ANALYZE - 품질 분석</h4>
+          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">🛡️ **보안 에이전트 (Security Guardian)**</h4>
           <Paragraph className="text-sm mb-4">
-            코드의 구조, 성능, 확장성을 체계적으로 분석하여 MSP 운영 환경에 적합한지 평가합니다.
+            최신 보안 위협을 실시간으로 학습하며 맞춤형 보안 검증을 자율적으로 실행합니다.
           </Paragraph>
 
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <h5 className="font-semibold text-sm mb-2">🏗️ 구조 분석</h5>
+            <div className="bg-green-50 dark:bg-green-900/20 rounded p-3">
+              <h5 className="font-semibold text-sm mb-2">🧬 적응형 보안 검증</h5>
               <div className="text-xs space-y-1">
-                <div>• 함수 복잡도 (McCabe 지수 < 10)</div>
-                <div>• 코드 중복률 (< 5%)</div>
-                <div>• 의존성 순환 참조</div>
-                <div>• 모듈화 적절성</div>
+                <div>• CVE 데이터베이스 실시간 연동</div>
+                <div>• 산업별 규제 요구사항 자동 적용</div>
+                <div>• Zero-day 공격 패턴 예측 분석</div>
+                <div>• 고객사별 보안 정책 맞춤화</div>
               </div>
             </div>
             
-            <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <h5 className="font-semibold text-sm mb-2">⚡ 성능 분석</h5>
+            <div className="bg-green-50 dark:bg-green-900/20 rounded p-3">
+              <h5 className="font-semibold text-sm mb-2">⚡ 자동 대응 시스템</h5>
               <div className="text-xs space-y-1">
-                <div>• 알고리즘 복잡도 (Big O)</div>
-                <div>• 메모리 사용 패턴</div>
-                <div>• 데이터베이스 쿼리 효율성</div>
-                <div>• 캐싱 전략 적용</div>
+                <div>• 취약점 발견 시 즉시 패치 제안</div>
+                <div>• 임시 완화 조치 자동 구현</div>
+                <div>• 관련 코드 전체 영향도 분석</div>
+                <div>• 보안 정책 업데이트 제안</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-l-4 border-red-500 pl-6">
-          <h4 className="font-semibold text-red-800 dark:text-red-200 mb-3">3️⃣ SECURE - 보안 강화</h4>
+        <div className="border-l-4 border-purple-500 pl-6">
+          <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-3">🚀 **성능 에이전트 (Performance Optimizer)**</h4>
           <Paragraph className="text-sm mb-4">
-            MSP 환경의 보안 요구사항에 맞춰 심층적인 보안 검증과 강화를 수행합니다.
+            실제 운영 환경의 데이터를 기반으로 성능 병목을 예측하고 최적화 방안을 제시합니다.
           </Paragraph>
 
-          <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-            <h5 className="font-semibold text-sm mb-2">🔒 보안 체크리스트</h5>
+          <div className="bg-purple-50 dark:bg-purple-900/20 rounded p-3">
+            <h5 className="font-semibold text-sm mb-2">📊 예측적 성능 분석</h5>
             <div className="grid md:grid-cols-2 gap-3 text-xs">
               <div>
-                <div><strong>인증/인가:</strong></div>
-                <div>• JWT 토큰 검증 로직</div>
-                <div>• 역할 기반 접근 제어 (RBAC)</div>
-                <div>• 세션 관리 및 타임아웃</div>
+                <div><strong>트래픽 예측:</strong></div>
+                <div>• 고객사 비즈니스 패턴 학습</div>
+                <div>• 계절성 및 이벤트 영향 고려</div>
+                <div>• 확장성 요구사항 자동 계산</div>
               </div>
               <div>
-                <div><strong>데이터 보호:</strong></div>
-                <div>• 암호화 알고리즘 적절성</div>
-                <div>• 개인정보 마스킹 처리</div>
-                <div>• 로그 정보 보안성</div>
+                <div><strong>최적화 제안:</strong></div>
+                <div>• 알고리즘 복잡도 개선안</div>
+                <div>• 데이터베이스 쿼리 최적화</div>
+                <div>• 캐싱 전략 맞춤 설계</div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-l-4 border-orange-500 pl-6">
+          <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-3">🎯 **품질 에이전트 (Quality Assurance)**</h4>
+          <Paragraph className="text-sm mb-4">
+            코드 품질을 다각도로 평가하고 지속적인 개선 방안을 제시하는 품질 관리 전문 에이전트입니다.
+          </Paragraph>
+
+          <div className="bg-orange-50 dark:bg-orange-900/20 rounded p-3">
+            <h5 className="font-semibold text-sm mb-2">🔄 지속적 품질 개선</h5>
+            <div className="text-xs space-y-2">
+              <div><strong>자동 테스트 생성:</strong> 코드 변경사항에 맞는 테스트 케이스 실시간 생성</div>
+              <div><strong>리팩토링 제안:</strong> 기술부채 누적 패턴 분석 및 개선안 제시</div>
+              <div><strong>문서화 자동화:</strong> 코드 변경에 따른 문서 자동 업데이트</div>
+              <div><strong>팀 성과 분석:</strong> 개발팀별 품질 트렌드 분석 및 개선 방안</div>
             </div>
           </div>
         </div>
       </div>
 
-      <SectionTitle>🤖 AI 기반 자동 리뷰 시스템</SectionTitle>
+      <SectionTitle>⚙️ 자율 실행 워크플로</SectionTitle>
 
-      <SubsectionTitle>MSP 품질 기준에 최적화된 AI 리뷰어</SubsectionTitle>
+      <SubsectionTitle>AI 에이전트가 스스로 계획하고 실행하는 검증 프로세스</SubsectionTitle>
 
-      <FeatureBox title="베스핀글로벌 코드 리뷰 AI 프롬프트">
+      <FeatureBox title="🧠 Agentic AI 검증 시나리오 예시">
         <Paragraph className="text-sm mb-3">
-          고객사 시스템의 안정성을 보장하는 전문적인 AI 코드 리뷰 프롬프트입니다.
+          베스핀글로벌 고객사의 실제 이커머스 프로젝트에서 Agentic AI가 어떻게 작동하는지 살펴보겠습니다.
         </Paragraph>
         
-        <CodeBlock language="text">
-당신은 베스핀글로벌의 시니어 MSP 엔지니어입니다. 다음 AI 생성 코드를 리뷰해주세요.
+        <div className="space-y-4">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4">
+            <h5 className="font-semibold text-sm text-blue-600 mb-2">🎯 상황: 블랙프라이데이 대비 결제 시스템 개발</h5>
+            <div className="text-xs space-y-2">
+              <div><strong>비즈니스 컨텍스트:</strong> 평소 대비 100배 트래픽 예상, 99.99% 가용성 필요</div>
+              <div><strong>기술적 제약:</strong> 레거시 시스템 연동, PCI DSS 컴플라이언스 필수</div>
+              <div><strong>시간 제약:</strong> 2주 내 배포 완료</div>
+            </div>
+          </div>
 
-**리뷰 컨텍스트:**
-- 고객사: {client_name} ({industry})
-- 환경: {environment} (dev/staging/prod)
-- 중요도: {criticality} (1-5점)
-- 사용자 규모: {user_scale}
-
-**코드:**
-```{language}
-{generated_code}
-```
-
-**리뷰 기준:**
-1. **기능성** (30점)
-   - 요구사항 충족도
-   - 예외 상황 처리
-   - 에러 핸들링 완성도
-
-2. **보안성** (25점)
-   - OWASP Top 10 준수
-   - 입력값 검증 및 정화
-   - 권한 검사 적절성
-
-3. **성능** (20점)
-   - 알고리즘 효율성
-   - 리소스 사용 최적화
-   - 확장성 고려사항
-
-4. **운영성** (15점)
-   - 로깅 및 모니터링
-   - 장애 복구 가능성
-   - 배포 및 롤백 용이성
-
-5. **유지보수성** (10점)
-   - 코드 가독성
-   - 문서화 수준
-   - 테스트 용이성
-
-**출력 형식:**
-- 종합 점수: XX/100점
-- 심각도별 이슈 분류 (Critical/High/Medium/Low)
-- 구체적 개선 코드 제시
-- MSP 운영 관점의 권장사항
-- 고객사 보고용 요약 (3줄)
-        </CodeBlock>
-      </FeatureBox>
-
-      <SectionTitle>🔧 실전 검증 워크플로</SectionTitle>
-
-      <SubsectionTitle>일일 업무에 통합된 코드 검증 프로세스</SubsectionTitle>
-
-      <div className="space-y-6">
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-6">
-          <h4 className="font-semibold mb-4">📋 MSP 엔지니어 일일 체크리스트</h4>
-          
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
-            <div>
-              <h5 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🌅 시작 (9-10시)</h5>
-              <div className="space-y-1">
-                <div>□ 전날 AI 생성 코드 재검토</div>
-                <div>□ 고객사별 보안 정책 확인</div>
-                <div>□ 코드 리뷰 백로그 처리</div>
+          <div className="space-y-3">
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
+              <div className="text-sm">
+                <strong>분석 에이전트</strong>가 프로젝트 컨텍스트를 파악하고 "고부하 + 보안 중심" 검증 전략 자율 수립
               </div>
             </div>
             
-            <div>
-              <h5 className="font-semibold text-green-800 dark:text-green-200 mb-2">🌞 진행 (10-17시)</h5>
-              <div className="space-y-1">
-                <div>□ AI 코드 생성 즉시 SCAN 실행</div>
-                <div>□ 30분마다 품질 검증 실시</div>
-                <div>□ 동료와 크로스 리뷰 진행</div>
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
+              <div className="text-sm">
+                <strong>보안 에이전트</strong>가 PCI DSS 요구사항을 자동으로 매핑하고 금융권 보안 패턴 적용
               </div>
             </div>
             
-            <div>
-              <h5 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">🌙 마무리 (17-18시)</h5>
-              <div className="space-y-1">
-                <div>□ 최종 보안 검증 완료</div>
-                <div>□ 테스트 케이스 작성 및 실행</div>
-                <div>□ 내일을 위한 코드 품질 메트릭 리뷰</div>
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+              <div className="text-sm">
+                <strong>성능 에이전트</strong>가 블랙프라이데이 트래픽 패턴을 학습하여 병목점 예측 및 최적화안 제시
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
+              <div className="text-sm">
+                <strong>품질 에이전트</strong>가 결제 관련 엣지 케이스를 자동 발굴하고 테스트 시나리오 생성
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold">5</div>
+              <div className="text-sm">
+                모든 에이전트가 <strong>실시간으로 협업</strong>하여 통합 검증 리포트 및 배포 가이드 자동 생성
               </div>
             </div>
           </div>
         </div>
+      </FeatureBox>
 
-        <FeatureBox title="🚀 자동화된 검증 파이프라인">
+      <SectionTitle>🔧 실전 구현: MSP 환경 Agentic AI 시스템</SectionTitle>
+
+      <SubsectionTitle>베스핀글로벌 맞춤형 자율 검증 플랫폼</SubsectionTitle>
+
+      <div className="space-y-6">
+        <CodeBlock language="yaml">
+# agentic-validation-config.yml - 베스핀글로벌 맞춤 설정
+apiVersion: v1
+kind: AgenticValidation
+metadata:
+  name: bespin-msp-validator
+spec:
+  agents:
+    analyzer:
+      model: "claude-3.5-sonnet"
+      capabilities:
+        - business_context_understanding
+        - project_scope_analysis
+        - risk_assessment
+      custom_knowledge:
+        - "bespin_client_industries.json"
+        - "msp_best_practices.md"
+        
+    security_guardian:
+      model: "gpt-4-turbo"
+      capabilities:
+        - real_time_cve_monitoring
+        - compliance_checking
+        - threat_modeling
+      integrations:
+        - sonarqube_enterprise
+        - snyk_professional
+        - bespin_security_policies
+        
+    performance_optimizer:
+      model: "gemini-pro"
+      capabilities:
+        - load_testing_prediction
+        - bottleneck_analysis
+        - scaling_recommendations
+      data_sources:
+        - cloudwatch_metrics
+        - application_performance_monitoring
+        - customer_traffic_patterns
+        
+    quality_assurance:
+      model: "claude-3-haiku"  # 빠른 응답을 위한 경량 모델
+      capabilities:
+        - automated_test_generation
+        - code_review_automation
+        - documentation_sync
+      tools:
+        - jest_testing_framework
+        - cypress_e2e
+        - storybook_documentation
+        
+  orchestration:
+    execution_mode: "parallel"
+    timeout: "30m"
+    retry_policy: "exponential_backoff"
+    notification:
+      slack_channel: "#bespin-devops"
+      email_alerts: "msp-team@bespinglobal.com"
+        </CodeBlock>
+
+        <FeatureBox title="🚀 자동화된 실행 시나리오">
           <Paragraph className="text-sm mb-3">
-            Git 커밋 시 자동으로 실행되는 AI 코드 검증 시스템 설정 예시입니다.
+            개발자가 코드를 커밋하는 순간부터 Agentic AI가 완전히 자율적으로 동작하는 과정입니다.
           </Paragraph>
           
-          <CodeBlock language="yaml">
-# .github/workflows/ai-code-validation.yml
-name: AI Generated Code Validation
-
-on:
-  push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  validate-ai-code:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      # 1단계: SCAN - 즉시 검증
-      - name: Security Scan
-        run: |
-          bandit -r . -f json -o security-report.json
-          eslint . --format json --output-file lint-report.json
-          
-      # 2단계: ANALYZE - 품질 분석  
-      - name: Code Quality Analysis
-        run: |
-          sonar-scanner -Dsonar.projectKey=bespin-msp
-          radon cc . --min=B --max=F
-          
-      # 3단계: SECURE - 보안 강화
-      - name: OWASP Security Check
-        run: |
-          dependency-check --project "MSP-Code" --scan .
-          semgrep --config=p/security-audit .
-          
-      # AI 리뷰 실행
-      - name: AI Code Review
-        run: |
-          python scripts/ai-code-reviewer.py \
-            --context="MSP Production Environment" \
-            --client="${{ github.event.head_commit.message }}" \
-            --severity="high"
-          </CodeBlock>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4">
+            <CodeBlock language="python">
+# 트리거: Git push 이벤트 발생
+@webhook_handler('/github/push')
+async def handle_code_push(payload):
+    # 1. 분석 에이전트가 변경사항의 영향도 자율 분석
+    analyzer = AnalyzerAgent(project_context=payload.repository)
+    impact_analysis = await analyzer.autonomous_impact_assessment(
+        changes=payload.commits,
+        business_context=await get_client_context(payload.repository)
+    )
+    
+    # 2. 영향도에 따른 다른 에이전트들의 작업 계획 자동 수립
+    validation_plan = await analyzer.create_validation_orchestration({
+        'security_priority': impact_analysis.security_risk,
+        'performance_focus': impact_analysis.performance_impact,
+        'quality_depth': impact_analysis.code_complexity
+    })
+    
+    # 3. 병렬 에이전트 실행 (인간 개입 없이)
+    results = await asyncio.gather(
+        SecurityGuardian().validate(validation_plan.security_tasks),
+        PerformanceOptimizer().analyze(validation_plan.performance_tasks),
+        QualityAssurance().review(validation_plan.quality_tasks)
+    )
+    
+    # 4. 결과 통합 및 자동 의사결정
+    final_decision = await analyzer.make_autonomous_decision(results)
+    
+    if final_decision.approved:
+        await auto_deploy_to_staging()
+        await notify_team("✅ 자동 검증 통과 - 스테이징 배포 완료")
+    else:
+        await create_detailed_improvement_plan(final_decision.issues)
+        await notify_team("🔄 개선사항 발견 - 자동 수정 제안 생성됨")
+            </CodeBlock>
+          </div>
         </FeatureBox>
       </div>
 
-      <SectionTitle>📊 코드 품질 메트릭스</SectionTitle>
+      <SectionTitle>📊 지속적 학습 & 개선 시스템</SectionTitle>
 
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-        <h4 className="font-semibold mb-4">베스핀글로벌 코드 품질 KPI</h4>
+      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-lg p-6">
+        <h4 className="font-semibold mb-4">🧠 Agentic AI의 자기 개선 능력</h4>
         
-        <div className="grid md:grid-cols-4 gap-4 text-center text-sm">
-          <div className="bg-white dark:bg-gray-900 rounded p-3 border">
-            <div className="text-2xl font-bold text-green-600">98%</div>
-            <div className="text-gray-600 dark:text-gray-400">보안 스캔 통과율</div>
+        <div className="grid md:grid-cols-2 gap-6 text-sm">
+          <div>
+            <h5 className="font-semibold mb-3">📈 학습 메커니즘</h5>
+            <div className="space-y-2">
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>프로젝트별 패턴 학습</span>
+                <span className="font-bold text-blue-600">자동 적용</span>
+              </div>
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>고객 피드백 통합</span>
+                <span className="font-bold text-green-600">실시간 반영</span>
+              </div>
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>에러 패턴 인식</span>
+                <span className="font-bold text-purple-600">예방적 대응</span>
+              </div>
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>업계 트렌드 추적</span>
+                <span className="font-bold text-orange-600">선제적 업데이트</span>
+              </div>
+            </div>
           </div>
-          <div className="bg-white dark:bg-gray-900 rounded p-3 border">
-            <div className="text-2xl font-bold text-blue-600">< 5분</div>
-            <div className="text-gray-600 dark:text-gray-400">평균 리뷰 시간</div>
-          </div>
-          <div className="bg-white dark:bg-gray-900 rounded p-3 border">
-            <div className="text-2xl font-bold text-purple-600">95%</div>
-            <div className="text-gray-600 dark:text-gray-400">고객 만족도</div>
-          </div>
-          <div className="bg-white dark:bg-gray-900 rounded p-3 border">
-            <div className="text-2xl font-bold text-orange-600">Zero</div>
-            <div className="text-gray-600 dark:text-gray-400">프로덕션 보안 이슈</div>
+          
+          <div>
+            <h5 className="font-semibold mb-3">🎯 성능 지표 (최근 3개월)</h5>
+            <div className="space-y-2">
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>검증 정확도 향상</span>
+                <span className="font-bold text-green-600">+23%</span>
+              </div>
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>False Positive 감소</span>
+                <span className="font-bold text-green-600">-67%</span>
+              </div>
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>처리 시간 단축</span>
+                <span className="font-bold text-blue-600">-45%</span>
+              </div>
+              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
+                <span>고객 만족도</span>
+                <span className="font-bold text-purple-600">96%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -297,8 +394,8 @@ jobs:
       <SectionTitle>🎯 다음 학습</SectionTitle>
       
       <Paragraph>
-        코드 검증과 리뷰 프로세스를 마스터했다면, <strong>8.3 실무 적용 노하우</strong>에서 
-        고객 요구사항을 효과적인 AI 프롬프트로 변환하고 실무에 바로 적용하는 방법을 배워보겠습니다.
+        Agentic AI 기반 자율 코드 검증 시스템을 구축했다면, <strong>8.3 다중 에이전트 협업 시스템</strong>에서 
+        여러 AI 에이전트가 협업하여 복잡한 MSP 프로젝트를 자율적으로 관리하고 실행하는 방법을 배워보겠습니다.
       </Paragraph>
 
       <div className="flex gap-4 mt-8">
@@ -306,7 +403,7 @@ jobs:
           href="/part8/debugging/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          다음: 실무 적용 노하우 →
+          다음: 다중 에이전트 협업 시스템 →
         </a>
         <a 
           href="/part8/prompting/"

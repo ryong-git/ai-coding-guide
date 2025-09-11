@@ -79,12 +79,12 @@ const navigationData: NavItem[] = [
     ]
   },
   {
-    title: "8부. 바이브코딩 실전 Tips",
+    title: "8부. Agentic AI 실전 시스템",
     children: [
       { title: "8.1 바이브 코딩 마스터 프롬프트", href: "/part8/prompting/" },
-      { title: "8.2 AI 코드 검증 & 리뷰", href: "/part8/react-optimization/" },
-      { title: "8.3 실무 적용 노하우", href: "/part8/debugging/" },
-      { title: "8.4 MSP 환경 최적화", href: "/part8/team-workflow/" },
+      { title: "8.2 Agentic AI 코드 검증 & 자동화", href: "/part8/react-optimization/" },
+      { title: "8.3 다중 에이전트 협업 시스템", href: "/part8/debugging/" },
+      { title: "8.4 Agentic AI 오케스트레이션 플랫폼", href: "/part8/team-workflow/" },
     ]
   },
   {
