@@ -36,16 +36,16 @@ const navigationData: NavItem[] = [
     ]
   },
   {
-    title: "3부. 개발자 로드맵",
+    title: "3부. IT 전문가 성장 가이드",
     children: [
-      { title: "3.1 개발자 역할 재정의", href: "/part3/role-redefinition/" },
-      { title: "3.2 필수 역량", href: "/part3/essential-skills/" },
-      { title: "3.3 단계별 학습 경로", href: "/part3/learning-path/" },
-      { title: "3.4 MSP 엔지니어 스킬셋", href: "/part3/msp-skills/" },
+      { title: "3.1 IT 역할의 진화", href: "/part3/role-redefinition/" },
+      { title: "3.2 실무 핵심 역량", href: "/part3/essential-skills/" },
+      { title: "3.3 단계별 실무 적용", href: "/part3/learning-path/" },
+      { title: "3.4 MSP 엔지니어 전문성", href: "/part3/msp-skills/" },
     ]
   },
   {
-    title: "4부. 나만의 AI 코딩 비서",
+    title: "4부. AI 운영 도구 활용법",
     children: [
       { title: "4.1 Amazon Q Developer CLI", href: "/part4/amazon-q/" },
       { title: "4.2 Claude Code", href: "/part4/claude-code/" },

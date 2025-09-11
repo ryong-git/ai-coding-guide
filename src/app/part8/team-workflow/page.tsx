@@ -497,15 +497,15 @@ class OrganizationalKnowledgeEvolution:
             <div className="space-y-2">
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>프로젝트 수주율</span>
-                <span className="font-bold text-green-600">+45%</span>
+                <span className="font-bold text-green-600">향상</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>고객 만족도</span>
-                <span className="font-bold text-blue-600">4.8/5</span>
+                <span className="font-bold text-blue-600">우수</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>리피트 오더율</span>
-                <span className="font-bold text-purple-600">87%</span>
+                <span className="font-bold text-purple-600">높음</span>
               </div>
             </div>
           </div>
@@ -515,15 +515,15 @@ class OrganizationalKnowledgeEvolution:
             <div className="space-y-2">
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>프로젝트 완료 시간</span>
-                <span className="font-bold text-green-600">-52%</span>
+                <span className="font-bold text-green-600">단축</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>리소스 활용률</span>
-                <span className="font-bold text-blue-600">91%</span>
+                <span className="font-bold text-blue-600">높음</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>멀티태스킹 효율</span>
-                <span className="font-bold text-orange-600">+73%</span>
+                <span className="font-bold text-orange-600">향상</span>
               </div>
             </div>
           </div>
@@ -533,11 +533,11 @@ class OrganizationalKnowledgeEvolution:
             <div className="space-y-2">
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>첫 배포 성공률</span>
-                <span className="font-bold text-green-600">97%</span>
+                <span className="font-bold text-green-600">우수</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>SLA 준수율</span>
-                <span className="font-bold text-blue-600">99.1%</span>
+                <span className="font-bold text-blue-600">우수</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>보안 이슈</span>
@@ -551,15 +551,15 @@ class OrganizationalKnowledgeEvolution:
             <div className="space-y-2">
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>AI 역량 성장</span>
-                <span className="font-bold text-purple-600">+38%/분기</span>
+                <span className="font-bold text-purple-600">지속적</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>신기술 도입 속도</span>
-                <span className="font-bold text-green-600">+65%</span>
+                <span className="font-bold text-green-600">빠름</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
                 <span>특허 및 논문</span>
-                <span className="font-bold text-blue-600">12건</span>
+                <span className="font-bold text-blue-600">활발</span>
               </div>
             </div>
           </div>
@@ -578,7 +578,7 @@ class OrganizationalKnowledgeEvolution:
             </div>
             <h5 className="font-semibold mb-2">완전 자율 조직</h5>
             <p className="text-xs text-gray-600 dark:text-gray-400">
-              AI 에이전트가 조직 운영의 80%를 자율적으로 수행하며, 
+              AI 에이전트가 조직 운영의 대부분을 자율적으로 수행하며, 
               인간은 전략적 의사결정과 창의적 업무에 집중
             </p>
           </div>
@@ -631,6 +631,17 @@ class OrganizationalKnowledgeEvolution:
         >
           ← 이전: 다중 에이전트 협업 시스템
         </a>
+      </div>
+
+      {/* Site Information */}
+      <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6">
+          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">이 사이트에 대하여</h3>
+          <div className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+            <p>이 웹사이트는 <strong>Claude Code</strong>를 통해 생성되었으며, <strong>GitHub</strong>에서 관리되고 <strong>Cloudflare Pages</strong> 기능을 통해 운영되고 있습니다.</p>
+            <p className="mt-4"><strong>작성자: NamRyong Kim</strong></p>
+          </div>
+        </div>
       </div>
     </div>
   )

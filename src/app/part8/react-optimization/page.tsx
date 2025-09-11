@@ -368,23 +368,23 @@ async def handle_code_push(payload):
           </div>
           
           <div>
-            <h5 className="font-semibold mb-3">🎯 성능 지표 (최근 3개월)</h5>
+            <h5 className="font-semibold mb-3">🎯 개선 영역</h5>
             <div className="space-y-2">
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>검증 정확도 향상</span>
-                <span className="font-bold text-green-600">+23%</span>
+                <span>검증 정확도</span>
+                <span className="font-bold text-green-600">지속적 향상</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>False Positive 감소</span>
-                <span className="font-bold text-green-600">-67%</span>
+                <span>오탐지 최소화</span>
+                <span className="font-bold text-green-600">점진적 개선</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>처리 시간 단축</span>
-                <span className="font-bold text-blue-600">-45%</span>
+                <span>처리 속도</span>
+                <span className="font-bold text-blue-600">최적화 진행</span>
               </div>
               <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>고객 만족도</span>
-                <span className="font-bold text-purple-600">96%</span>
+                <span>사용자 경험</span>
+                <span className="font-bold text-purple-600">우수</span>
               </div>
             </div>
           </div>
