@@ -16,7 +16,7 @@ export default function AgenticOrchestrationPlatformPage() {
 
       <Lead>
         Agentic AI 오케스트레이션 플랫폼은 <strong>전사 차원에서 수십 개의 프로젝트와 수백 개의 AI 에이전트를 통합 관리</strong>하는 
-        메타 시스템입니다. 베스핀글로벌의 MSP 사업부에서는 이 플랫폼을 통해 다양한 고객사 프로젝트를 동시에 진행하면서도 
+        메타 시스템입니다. MSP 환경에서는 이 플랫폼을 통해 다양한 고객사 프로젝트를 동시에 진행하면서도 
         리소스 효율성을 극대화하고 조직 전체의 AI 역량을 지속적으로 발전시키고 있습니다.
       </Lead>
 
@@ -170,7 +170,7 @@ class StrategicAgent:
 
       <SubsectionTitle>대규모 멀티 프로젝트 자동 관리</SubsectionTitle>
 
-      <FeatureBox title="🏢 베스핀글로벌 실제 운영 시나리오: 20개 프로젝트 동시 진행">
+      <FeatureBox title="🏢 MSP 실제 운영 시나리오: 다중 프로젝트 동시 진행">
         <Paragraph className="text-sm mb-3">
           베스핀글로벌이 20개 고객사 프로젝트를 동시에 진행하면서 Agentic AI 오케스트레이션 플랫폼이 
           어떻게 전체를 조율하는지 실제 사례를 통해 살펴보겠습니다.

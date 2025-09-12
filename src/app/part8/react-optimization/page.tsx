@@ -177,7 +177,7 @@ class AnalyzerAgent:
 
       <FeatureBox title="🧠 Agentic AI 검증 시나리오 예시">
         <Paragraph className="text-sm mb-3">
-          베스핀글로벌 고객사의 실제 이커머스 프로젝트에서 Agentic AI가 어떻게 작동하는지 살펴보겠습니다.
+          실제 이커머스 프로젝트에서 Agentic AI가 어떻게 작동하는지 살펴보겠습니다.
         </Paragraph>
         
         <div className="space-y-4">
@@ -231,11 +231,11 @@ class AnalyzerAgent:
 
       <SectionTitle>🔧 실전 구현: MSP 환경 Agentic AI 시스템</SectionTitle>
 
-      <SubsectionTitle>베스핀글로벌 맞춤형 자율 검증 플랫폼</SubsectionTitle>
+      <SubsectionTitle>자율 검증 플랫폼 구성</SubsectionTitle>
 
       <div className="space-y-6">
         <CodeBlock language="yaml">
-# agentic-validation-config.yml - 베스핀글로벌 맞춤 설정
+# agentic-validation-config.yml - 사용자 맞춤 설정
 apiVersion: v1
 kind: AgenticValidation
 metadata:

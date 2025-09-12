@@ -264,7 +264,7 @@ export default function RCAWorkflowPage() {
         </div>
       </div>
 
-      <h2>🎯 베스핀글로벌 RCA 특화</h2>
+      <h2>🎯 MSP RCA 특화 접근</h2>
 
       <h3>멀티 고객사 환경 대응</h3>
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6">
@@ -301,7 +301,7 @@ export default function RCAWorkflowPage() {
         <p className="text-sm">
           AI RCA의 핵심은 데이터 품질입니다. 
           로그 표준화, 메트릭 일관성, 이벤트 태깅 등 기본기가 탄탄해야 AI의 성능을 최대한 발휘할 수 있습니다. 
-          베스핀글로벌의 경우 고객사 온보딩 시부터 이러한 표준을 적용하여 
+          MSP 환경에서는 고객사 온보딩 시부터 이러한 표준을 적용하여 
           RCA 시스템의 효과를 극대화하고 있습니다.
         </p>
       </div>

@@ -16,7 +16,7 @@ export default function MSPSkillsPage() {
       </Paragraph>
 
       <Paragraph>
-        베스핀글로벌과 같은 MSP에서 AI를 활용하려면, 
+        MSP 기업에서 AI를 활용하려면, 
         단순한 개발 도구 활용을 넘어 고객의 비즈니스 가치 창출에 직접 기여할 수 있는 
         전문적인 스킬셋이 필요합니다.
       </Paragraph>

@@ -272,11 +272,11 @@ export default function MulticloudOpsPage() {
         </div>
       </div>
 
-      <h2>💼 베스핀글로벌 멀티클라우드 플랫폼</h2>
+      <h2>💼 멀티클라우드 운영 플랫폼</h2>
 
       <h3>통합 MSP 서비스</h3>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
-        <h4 className="font-semibold mb-4">베스핀글로벌 멀티클라우드 허브</h4>
+        <h4 className="font-semibold mb-4">멀티클라우드 운영 허브</h4>
         
         <div className="grid md:grid-cols-2 gap-4">
           <div className="space-y-3">
@@ -340,7 +340,7 @@ export default function MulticloudOpsPage() {
         </div>
       </div>
 
-      <h3>베스핀글로벌 로드맵</h3>
+      <h3>멀티클라우드 로드맵</h3>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <h4 className="font-semibold mb-4">2025-2027 멀티클라우드 비전</h4>
         
@@ -366,7 +366,7 @@ export default function MulticloudOpsPage() {
           멀티클라우드의 성공은 기술이 아닌 전략에서 나옵니다. 
           각 클라우드의 장점을 이해하고, 워크로드별 특성에 맞는 배치를 통해 
           비용과 성능을 동시에 최적화하는 것이 핵심입니다. 
-          베스핀글로벌은 AI 기반 자동화를 통해 이러한 복잡성을 단순화하고 
+          AI 기반 자동화를 통해 이러한 복잡성을 단순화하고 
           고객이 비즈니스 혁신에 집중할 수 있도록 지원합니다.
         </p>
       </div>
@@ -385,7 +385,7 @@ export default function MulticloudOpsPage() {
           <li>✅ <strong>실습 프로젝트</strong>: 개인 환경에서 AI 자동화 구현</li>
           <li>✅ <strong>커뮤니티 참여</strong>: AI Ops 커뮤니티에서 경험 공유</li>
           <li>✅ <strong>지속 학습</strong>: 새로운 AI 도구와 기술 동향 팔로우</li>
-          <li>✅ <strong>베스핀글로벌 솔루션</strong>: 엔터프라이즈 적용 상담 및 도입</li>
+          <li>✅ <strong>전문 기업 솔루션</strong>: 엔터프라이즈 적용 상담 및 도입</li>
         </ul>
       </div>
 

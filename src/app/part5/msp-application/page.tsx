@@ -7,7 +7,7 @@ export default function MSPApplicationPage() {
       <PageTitle sectionNumber="5.4">MSP 전용 전략</PageTitle>
       
       <Lead>
-        베스핀글로벌 같은 MSP 환경에서 MCP를 최대한 활용하는 실무 전략과 고객사별 차별화 방법
+        MSP 환경에서 MCP를 최대한 활용하는 실무 전략과 고객사별 차별화 방법
       </Lead>
 
       <SectionTitle>🏢 MSP에서 MCP가 특별한 이유</SectionTitle>
@@ -43,7 +43,7 @@ export default function MSPApplicationPage() {
 
       <SectionTitle>🎯 MSP별 맞춤 활용 전략</SectionTitle>
 
-      <SubsectionTitle>베스핀글로벌 유형: 대형 종합 MSP</SubsectionTitle>
+      <SubsectionTitle>대형 종합 MSP 유형</SubsectionTitle>
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
         <h4 className="font-semibold mb-3">특징과 전략</h4>
         <div className="grid md:grid-cols-2 gap-4">

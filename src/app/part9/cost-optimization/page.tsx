@@ -304,7 +304,7 @@ export default function CostOptimizationPage() {
         </div>
       </div>
 
-      <h2>📊 베스핀글로벌 FinOps 성과</h2>
+      <h2>📊 FinOps 도입 성과</h2>
 
       <h3>고객 절약 실적</h3>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">

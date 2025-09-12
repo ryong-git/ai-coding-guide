@@ -33,23 +33,23 @@ export default function AWSProfilePage() {
         <div className="text-white">region = ap-northeast-2</div>
         <div className="text-white">output = json</div>
         <br />
-        <div className="text-green-400"># 베스핀글로벌 개발 환경</div>
-        <div className="text-white">[profile bespin-dev]</div>
+        <div className="text-green-400"># MSP 개발 환경</div>
+        <div className="text-white">[profile msp-dev]</div>
         <div className="text-white">region = ap-northeast-2</div>
-        <div className="text-white">role_arn = arn:aws:iam::123456789012:role/BespinDevOpsRole</div>
+        <div className="text-white">role_arn = arn:aws:iam::123456789012:role/MSPDevOpsRole</div>
         <div className="text-white">source_profile = default</div>
         <br />
-        <div className="text-green-400"># 고객사 A 프로덕션 환경</div>
-        <div className="text-white">[profile customer-a-prod]</div>
+        <div className="text-green-400"># 고객사 프로덕션 환경</div>
+        <div className="text-white">[profile client-prod]</div>
         <div className="text-white">region = ap-northeast-2</div>
-        <div className="text-white">role_arn = arn:aws:iam::987654321098:role/CustomerAProdRole</div>
+        <div className="text-white">role_arn = arn:aws:iam::987654321098:role/ClientProdRole</div>
         <div className="text-white">source_profile = default</div>
         <div className="text-white">mfa_serial = arn:aws:iam::123456789012:mfa/engineer</div>
         <br />
-        <div className="text-green-400"># 고객사 B 개발 환경</div>
-        <div className="text-white">[profile customer-b-dev]</div>
+        <div className="text-green-400"># 고객사 개발 환경</div>
+        <div className="text-white">[profile client-dev]</div>
         <div className="text-white">region = us-east-1</div>
-        <div className="text-white">role_arn = arn:aws:iam::555666777888:role/CustomerBDevRole</div>
+        <div className="text-white">role_arn = arn:aws:iam::555666777888:role/ClientDevRole</div>
         <div className="text-white">source_profile = default</div>
       </div>
 
@@ -117,15 +117,15 @@ export default function AWSProfilePage() {
       <h3>Amazon Q Developer CLI</h3>
 
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
-        <div className="text-green-400"># 고객사 A 환경에서 EKS 클러스터 생성</div>
-        <div className="text-white">q --profile customer-a-prod "Create EKS cluster with the following specs:</div>
+        <div className="text-green-400"># 고객사 환경에서 EKS 클러스터 생성</div>
+        <div className="text-white">q --profile client-prod "Create EKS cluster with the following specs:</div>
         <div className="text-white">- Kubernetes version 1.28</div>
         <div className="text-white">- 3 worker nodes (t3.medium)</div>
         <div className="text-white">- Private subnets only</div>
         <div className="text-white">- Enable CloudWatch logging"</div>
         <br />
-        <div className="text-green-400"># 고객사 B 환경에서 비용 분석</div>
-        <div className="text-white">q --profile customer-b-dev "Analyze EC2 instances with low CPU utilization (&lt;20%) </div>
+        <div className="text-green-400"># 고객사 환경에서 비용 분석</div>
+        <div className="text-white">q --profile client-dev "Analyze EC2 instances with low CPU utilization (&lt;20%) </div>
         <div className="text-white">in the last 30 days and suggest rightsizing options"</div>
       </div>
 
@@ -133,7 +133,7 @@ export default function AWSProfilePage() {
 
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
         <div className="text-green-400"># 환경별 설정 파일 관리</div>
-        <div className="text-white">export AWS_PROFILE=customer-a-prod</div>
+        <div className="text-white">export AWS_PROFILE=client-prod</div>
         <div className="text-white">claude "Generate Terraform configuration for production RDS setup:</div>
         <div className="text-white">- Multi-AZ deployment</div>
         <div className="text-white">- Encrypted at rest</div>
@@ -145,7 +145,7 @@ export default function AWSProfilePage() {
 
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
         <div className="text-green-400"># 멀티 환경 배포 스크립트 생성</div>
-        <div className="text-white">AWS_PROFILE=bespin-dev gemini "Create a deployment script that:</div>
+        <div className="text-white">AWS_PROFILE=msp-dev gemini "Create a deployment script that:</div>
         <div className="text-white">1. Validates resources in dev environment</div>
         <div className="text-white">2. Runs integration tests</div>
         <div className="text-white">3. If tests pass, deploy to staging</div>
@@ -158,26 +158,26 @@ export default function AWSProfilePage() {
       <h3>시나리오 1: 긴급 장애 대응</h3>
 
       <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6">
-        <h4 className="font-semibold mb-2">🚨 상황: 고객사 A의 API Gateway에서 5xx 오류 급증</h4>
+        <h4 className="font-semibold mb-2">🚨 상황: 고객사의 API Gateway에서 5xx 오류 급증</h4>
         
         <div className="space-y-3 mt-4">
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 1. 현재 상황 파악</div>
-            <div className="text-white">aws --profile customer-a-prod logs describe-log-groups \</div>
+            <div className="text-white">aws --profile client-prod logs describe-log-groups \</div>
             <div className="text-white">  --log-group-name-prefix /aws/lambda/api</div>
           </div>
           
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 2. AI를 통한 로그 패턴 분석</div>
-            <div className="text-white">claude --profile customer-a-prod "Analyze these CloudWatch logs for API Gateway 5xx errors pattern:</div>
-            <div className="text-white">$(aws --profile customer-a-prod logs filter-log-events \</div>
+            <div className="text-white">claude --profile client-prod "Analyze these CloudWatch logs for API Gateway 5xx errors pattern:</div>
+            <div className="text-white">$(aws --profile client-prod logs filter-log-events \</div>
             <div className="text-white">  --log-group-name /aws/apigateway/access-logs \</div>
             <div className="text-white">  --start-time $(date -d '1 hour ago' +%s)000)"</div>
           </div>
           
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 3. 자동 복구 스크립트 생성 및 실행</div>
-            <div className="text-white">q --profile customer-a-prod "Generate auto-scaling policy to handle current API load spike:</div>
+            <div className="text-white">q --profile client-prod "Generate auto-scaling policy to handle current API load spike:</div>
             <div className="text-white">- Target CPU: 70%</div>
             <div className="text-white">- Min instances: 5</div>
             <div className="text-white">- Max instances: 20</div>
@@ -194,7 +194,7 @@ export default function AWSProfilePage() {
         <div className="space-y-3 mt-4">
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 모든 고객사 환경의 비용 분석</div>
-            <div className="text-white">for profile in customer-a-prod customer-b-prod customer-c-prod; do</div>
+            <div className="text-white">for profile in client-prod-1 client-prod-2 client-prod-3; do</div>
             <div className="text-white">  echo "=== Analyzing $profile ==="</div>
             <div className="text-white">  q --profile $profile "Generate cost optimization report for this month:</div>
             <div className="text-white">  - Underutilized resources (CPU &lt; 20%, Memory &lt; 30%)</div>
@@ -214,7 +214,7 @@ export default function AWSProfilePage() {
         <div className="space-y-3 mt-4">
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 백업 정책 생성 및 적용</div>
-            <div className="text-white">claude --profile customer-a-prod "Create comprehensive backup strategy:</div>
+            <div className="text-white">claude --profile client-prod "Create comprehensive backup strategy:</div>
             <div className="text-white">- RDS snapshots: daily, 30-day retention</div>
             <div className="text-white">- EBS snapshots: daily, 14-day retention</div>
             <div className="text-white">- S3 cross-region replication to us-west-2</div>
@@ -229,9 +229,9 @@ export default function AWSProfilePage() {
 
       <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm font-mono">
         <div className="text-green-400"># CloudTrail 로그 분석</div>
-        <div className="text-white">aws --profile customer-a-prod logs filter-log-events \</div>
-        <div className="text-white">  --log-group-name CloudTrail/BespinAIOps \</div>
-        <div className="text-white">  --filter-pattern '{`{ $.userIdentity.type = "AssumedRole" && $.userIdentity.principalId = "*BespinDevOpsRole*" }`}' \</div>
+        <div className="text-white">aws --profile client-prod logs filter-log-events \</div>
+        <div className="text-white">  --log-group-name CloudTrail/MSPAIOps \</div>
+        <div className="text-white">  --filter-pattern '{`{ $.userIdentity.type = "AssumedRole" && $.userIdentity.principalId = "*MSPDevOpsRole*" }`}' \</div>
         <div className="text-white">  --start-time $(date -d '1 day ago' +%s)000</div>
       </div>
 
@@ -268,17 +268,17 @@ export default function AWSProfilePage() {
         <div className="grid md:grid-cols-3 gap-4">
           <div className="bg-blue-100 dark:bg-blue-900 p-4 rounded">
             <h4 className="font-semibold text-blue-800 dark:text-blue-200">평균 장애 복구 시간</h4>
-            <p className="text-2xl font-bold text-blue-900 dark:text-blue-100">12분</p>
-            <p className="text-sm text-blue-600 dark:text-blue-400">기존 45분 → 73% 단축</p>
+            <p className="text-2xl font-bold text-blue-900 dark:text-blue-100">대폭 개선</p>
+            <p className="text-sm text-blue-600 dark:text-blue-400">평균 장애 복구 시간 단축</p>
           </div>
           <div className="bg-green-100 dark:bg-green-900 p-4 rounded">
             <h4 className="font-semibold text-green-800 dark:text-green-200">비용 최적화 효과</h4>
-            <p className="text-2xl font-bold text-green-900 dark:text-green-100">23%</p>
-            <p className="text-sm text-green-600 dark:text-green-400">월평균 인프라 비용 절약</p>
+            <p className="text-2xl font-bold text-green-900 dark:text-green-100">유의미한 절약</p>
+            <p className="text-sm text-green-600 dark:text-green-400">인프라 비용 최적화</p>
           </div>
           <div className="bg-purple-100 dark:bg-purple-900 p-4 rounded">
             <h4 className="font-semibold text-purple-800 dark:text-purple-200">자동화 적용률</h4>
-            <p className="text-2xl font-bold text-purple-900 dark:text-purple-100">87%</p>
+            <p className="text-2xl font-bold text-purple-900 dark:text-purple-100">높은 수준</p>
             <p className="text-sm text-purple-600 dark:text-purple-400">반복 작업의 AI 자동화</p>
           </div>
         </div>

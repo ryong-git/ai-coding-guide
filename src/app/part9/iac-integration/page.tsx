@@ -314,23 +314,23 @@ export default function IacIntegrationPage() {
 
       <h2>📈 성과 측정</h2>
 
-      <h3>베스핀글로벌 AI+IaC 성과</h3>
+      <h3>AI+IaC 성과 사례</h3>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
         <div className="grid md:grid-cols-4 gap-4 text-center">
           <div>
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400">85%</div>
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400">대폭 개선</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">배포 시간 단축</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">92%</div>
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">현저하게 감소</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">설정 오류 감소</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">67%</div>
+            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">유의미한 절감</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">운영 비용 절감</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">99.8%</div>
+            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">높은 준수율</div>
             <p className="text-sm text-gray-600 dark:text-gray-400">보안 정책 준수율</p>
           </div>
         </div>
@@ -339,10 +339,10 @@ export default function IacIntegrationPage() {
       <h3>고객 피드백</h3>
       <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
         <blockquote className="italic text-gray-700 dark:text-gray-300 mb-2">
-          "베스핀의 AI+IaC 솔루션으로 인프라 구축이 완전히 바뀌었습니다. 
-          이제는 비즈니스 요구사항만 말하면 30분 만에 프로덕션 환경이 준비돼요."
+          "AI+IaC 솔루션으로 인프라 구축이 완전히 바뀌었습니다. 
+          이제는 비즈니스 요구사항만 말하면 빠른 시간 내에 프로덕션 환경이 준비돼요."
         </blockquote>
-        <cite className="text-sm text-gray-600 dark:text-gray-400">- M모 스타트업 CTO</cite>
+        <cite className="text-sm text-gray-600 dark:text-gray-400">- 스타트업 CTO</cite>
       </div>
 
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">

@@ -10,7 +10,7 @@ export default function HomePage() {
           AI 코딩 A to Z
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          바이브코딩 완전 가이드 - 베스핀글로벌 클라우드 엔지니어를 위한 
+          바이브코딩 완전 가이드 - 클라우드 엔지니어를 위한 
           AI 기반 코딩 도구 활용 종합 가이드
         </p>
         <div className="flex justify-center gap-4 mt-8">
@@ -170,7 +170,7 @@ export default function HomePage() {
           지금 바로 시작해보세요
         </h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          55% 개발 시간 단축의 비밀을 알아보고, AWS Profile을 활용한 
+          개발 시간 대폭 단축의 비밀을 알아보고, AWS Profile을 활용한 
           실무 AI Ops 구현 방법을 익혀보세요.
         </p>
         <Link 

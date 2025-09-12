@@ -330,7 +330,7 @@ export default function K8sAutomationPage() {
         </div>
       </div>
 
-      <h2>🚀 베스핀글로벌 K8s 플랫폼</h2>
+      <h2>🚀 기업용 K8s 플랫폼</h2>
 
       <h3>멀티 클러스터 통합 관리</h3>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
@@ -348,7 +348,7 @@ export default function K8sAutomationPage() {
       <div className="space-y-4">
         <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
           <blockquote className="italic text-gray-700 dark:text-gray-300 mb-2">
-            "베스핀의 AI K8s 플랫폼 덕분에 개발팀이 YAML 작성에 시간을 쓰지 않고 
+            "AI K8s 플랫폼 덕분에 개발팀이 YAML 작성에 시간을 쓰지 않고 
             비즈니스 로직 개발에만 집중할 수 있게 되었습니다. 
             장애도 우리가 알기 전에 자동으로 해결되어 있어요."
           </blockquote>
@@ -369,7 +369,7 @@ export default function K8sAutomationPage() {
         <p className="text-sm">
           Kubernetes 자동화의 핵심은 신뢰성입니다. 
           AI가 아무리 똑똑해도 잘못된 판단으로 서비스가 중단되면 의미가 없습니다. 
-          베스핀글로벌은 단계적 자동화 도입과 지속적인 학습을 통해 
+          단계적 자동화 도입과 지속적인 학습을 통해 
           99.9% 이상의 안정성을 달성하며 고객의 신뢰를 얻고 있습니다.
         </p>
       </div>

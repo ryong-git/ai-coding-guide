@@ -25,7 +25,7 @@ export default function AIPairProgrammingPage() {
           "AI 운영 파트너의 시니어 엔지니어가 되어라: 정확한 요구사항을 설정하고, 결과를 검증하며, 안정적인 운영 환경으로 이끌어라"
         </blockquote>
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-3 text-right">
-          - 베스핀글로벌 AI 운영팀
+          - AI 운영 전문가
         </p>
       </InfoBox>
 
@@ -45,7 +45,7 @@ export default function AIPairProgrammingPage() {
 - 지난 3개월 AWS 비용 데이터를 첨부했어
 - 사용률이 낮은 리소스 식별
 - Reserved Instance 적용 가능 여부 분석
-- 월 $2,000 이상 절감 방안 제시
+- 달성 가능한 비용 절감 방안 제시
 - 구현 우선순위와 리스크 평가 포함
 - 실행 가능한 액션 플랜 작성해줘"
                 </CodeBlock>
