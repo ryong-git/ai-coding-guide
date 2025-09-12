@@ -348,7 +348,7 @@ claude compliance "GDPR 준수 현황 점검:
         </CodeBlock>
       </InfoBox>
 
-      <SectionTitle>🎓 베스핀글로벌 MSP 전문가 과정</SectionTitle>
+      <SectionTitle>🎓 MSP 전문가 역량 개발</SectionTitle>
 
       <SubsectionTitle>실무 중심 트레이닝</SubsectionTitle>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">

@@ -2,400 +2,262 @@ import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/com
 import { InfoBox, FeatureBox } from '@/components/ui/info-box';
 import { CodeBlock } from '@/components/ui/code-block';
 
-export default function AgenticCodeValidationPage() {
+export default function IaCAutomationPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
       <PageTitle 
         sectionNumber="8.2"
-        subtitle="자율적으로 계획하고 실행하는 AI 에이전트 기반 코드 검증 시스템"
+        subtitle="자연어로 인프라를 설명하면 AI가 Terraform, CDK, CloudFormation을 자동 생성"
       >
-        Agentic AI 코드 검증 & 자동화
+        바이브 코딩 IaC 자동 생성
       </PageTitle>
 
-      <SectionTitle>🤖 자율 에이전트 기반 코드 검증의 혁신</SectionTitle>
+      <SectionTitle>🏗️ Infrastructure as Code의 바이브 코딩 혁명</SectionTitle>
 
       <Lead>
-        Agentic AI는 <strong>스스로 목표를 설정하고 계획을 세워 실행하는 자율 에이전트</strong>입니다. 
-        기존의 단순한 코드 검증을 넘어서, AI 에이전트가 프로젝트 컨텍스트를 이해하고 
-        스스로 최적의 검증 전략을 수립하여 실행하는 혁신적인 접근 방법을 제공합니다.
+        바이브 코딩에서 가장 강력한 활용 영역 중 하나가 <strong>Infrastructure as Code (IaC) 자동 생성</strong>입니다. 
+        복잡한 Terraform 문법이나 AWS CDK를 외울 필요 없이, 자연어로 원하는 인프라를 설명하면 
+        AI가 완전한 IaC 코드를 생성해줍니다.
       </Lead>
 
-      <InfoBox type="success" title="Agentic AI vs 전통적 AI 코딩의 차이">
+      <InfoBox type="success" title="바이브 코딩 IaC의 핵심 가치">
         <div className="text-sm space-y-3">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <strong className="text-red-600">❌ 전통적 AI 코딩</strong>
-              <div>• 인간이 매번 지시해야 함</div>
-              <div>• 단순 반복 작업에 한정</div>
-              <div>• 컨텍스트 이해 부족</div>
-              <div>• 일회성 결과물 생성</div>
+              <strong className="text-green-600">✅ 바이브 코딩 방식</strong>
+              <div>• 비즈니스 요구사항을 자연어로 설명</div>
+              <div>• AI가 최적의 아키텍처 패턴 제안</div>
+              <div>• 보안 모범 사례 자동 적용</div>
+              <div>• 비용 최적화 고려사항 포함</div>
             </div>
             <div>
-              <strong className="text-green-600">✅ Agentic AI 코딩</strong>
-              <div>• 스스로 목표를 이해하고 계획 수립</div>
-              <div>• 복잡한 다단계 작업 자율 실행</div>
-              <div>• 프로젝트 전체 맥락 고려</div>
-              <div>• 지속적 학습 및 개선</div>
+              <strong className="text-red-600">❌ 전통적 방식</strong>
+              <div>• 복잡한 IaC 문법 학습 필요</div>
+              <div>• 매뉴얼 참조하며 코드 작성</div>
+              <div>• 보안 설정 누락 위험</div>
+              <div>• 아키텍처 패턴 일관성 부족</div>
             </div>
           </div>
         </div>
       </InfoBox>
 
-      <SectionTitle>🧠 다중 에이전트 협업 아키텍처</SectionTitle>
+      <SectionTitle>🚀 실무 바이브 코딩 IaC 워크플로</SectionTitle>
 
-      <SubsectionTitle>전문화된 AI 에이전트들의 유기적 협업 시스템</SubsectionTitle>
-
-      <div className="space-y-8">
-        <div className="border-l-4 border-blue-500 pl-6">
-          <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">🔍 **분석 에이전트 (Analyzer)**</h4>
-          <Paragraph className="text-sm mb-4">
-            코드베이스의 전체적인 구조와 비즈니스 로직을 분석하여 검증 전략을 수립합니다.
-          </Paragraph>
-          
-          <div className="space-y-3">
-            <div className="bg-blue-50 dark:bg-blue-900/20 rounded p-3">
-              <h5 className="font-semibold text-sm mb-2">🎯 자율적 분석 능력</h5>
-              <div className="grid md:grid-cols-2 gap-3 text-xs">
-                <div>
-                  <div><strong>컨텍스트 인식:</strong></div>
-                  <div>• 프로젝트 목표 및 비즈니스 요구사항 파악</div>
-                  <div>• 기술 스택 및 아키텍처 패턴 이해</div>
-                  <div>• 고객사 산업 도메인 특성 고려</div>
-                </div>
-                <div>
-                  <div><strong>동적 계획 수립:</strong></div>
-                  <div>• 코드 복잡도에 따른 검증 깊이 조절</div>
-                  <div>• 중요도 기반 우선순위 자동 결정</div>
-                  <div>• 리소스 효율성을 고려한 검증 순서</div>
-                </div>
-              </div>
-            </div>
-            
-            <CodeBlock language="python">
-# Agentic AI 분석 에이전트 예시
-class AnalyzerAgent:
-    def __init__(self, project_context):
-        self.context = project_context
-        self.strategy = None
-        
-    async def autonomous_analysis(self, codebase):
-        # 1. 프로젝트 컨텍스트 자동 분석
-        business_domain = await self.identify_business_domain()
-        tech_stack = await self.analyze_tech_stack()
-        complexity_score = await self.calculate_complexity()
-        
-        # 2. 자율적 검증 전략 수립
-        self.strategy = await self.create_validation_strategy({
-            'domain': business_domain,
-            'stack': tech_stack,
-            'complexity': complexity_score,
-            'risk_tolerance': self.context.risk_profile
-        })
-        
-        # 3. 다른 에이전트들에게 작업 분배
-        tasks = await self.decompose_validation_tasks()
-        return await self.orchestrate_agents(tasks)
-            </CodeBlock>
-          </div>
-        </div>
-
-        <div className="border-l-4 border-green-500 pl-6">
-          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">🛡️ **보안 에이전트 (Security Guardian)**</h4>
-          <Paragraph className="text-sm mb-4">
-            최신 보안 위협을 실시간으로 학습하며 맞춤형 보안 검증을 자율적으로 실행합니다.
-          </Paragraph>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-green-50 dark:bg-green-900/20 rounded p-3">
-              <h5 className="font-semibold text-sm mb-2">🧬 적응형 보안 검증</h5>
-              <div className="text-xs space-y-1">
-                <div>• CVE 데이터베이스 실시간 연동</div>
-                <div>• 산업별 규제 요구사항 자동 적용</div>
-                <div>• Zero-day 공격 패턴 예측 분석</div>
-                <div>• 고객사별 보안 정책 맞춤화</div>
-              </div>
-            </div>
-            
-            <div className="bg-green-50 dark:bg-green-900/20 rounded p-3">
-              <h5 className="font-semibold text-sm mb-2">⚡ 자동 대응 시스템</h5>
-              <div className="text-xs space-y-1">
-                <div>• 취약점 발견 시 즉시 패치 제안</div>
-                <div>• 임시 완화 조치 자동 구현</div>
-                <div>• 관련 코드 전체 영향도 분석</div>
-                <div>• 보안 정책 업데이트 제안</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-l-4 border-purple-500 pl-6">
-          <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-3">🚀 **성능 에이전트 (Performance Optimizer)**</h4>
-          <Paragraph className="text-sm mb-4">
-            실제 운영 환경의 데이터를 기반으로 성능 병목을 예측하고 최적화 방안을 제시합니다.
-          </Paragraph>
-
-          <div className="bg-purple-50 dark:bg-purple-900/20 rounded p-3">
-            <h5 className="font-semibold text-sm mb-2">📊 예측적 성능 분석</h5>
-            <div className="grid md:grid-cols-2 gap-3 text-xs">
-              <div>
-                <div><strong>트래픽 예측:</strong></div>
-                <div>• 고객사 비즈니스 패턴 학습</div>
-                <div>• 계절성 및 이벤트 영향 고려</div>
-                <div>• 확장성 요구사항 자동 계산</div>
-              </div>
-              <div>
-                <div><strong>최적화 제안:</strong></div>
-                <div>• 알고리즘 복잡도 개선안</div>
-                <div>• 데이터베이스 쿼리 최적화</div>
-                <div>• 캐싱 전략 맞춤 설계</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-l-4 border-orange-500 pl-6">
-          <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-3">🎯 **품질 에이전트 (Quality Assurance)**</h4>
-          <Paragraph className="text-sm mb-4">
-            코드 품질을 다각도로 평가하고 지속적인 개선 방안을 제시하는 품질 관리 전문 에이전트입니다.
-          </Paragraph>
-
-          <div className="bg-orange-50 dark:bg-orange-900/20 rounded p-3">
-            <h5 className="font-semibold text-sm mb-2">🔄 지속적 품질 개선</h5>
-            <div className="text-xs space-y-2">
-              <div><strong>자동 테스트 생성:</strong> 코드 변경사항에 맞는 테스트 케이스 실시간 생성</div>
-              <div><strong>리팩토링 제안:</strong> 기술부채 누적 패턴 분석 및 개선안 제시</div>
-              <div><strong>문서화 자동화:</strong> 코드 변경에 따른 문서 자동 업데이트</div>
-              <div><strong>팀 성과 분석:</strong> 개발팀별 품질 트렌드 분석 및 개선 방안</div>
-            </div>
-          </div>
+      <SubsectionTitle>1단계: 비즈니스 요구사항 자연어 설명</SubsectionTitle>
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+        <div className="bg-gray-900 text-gray-100 rounded p-4 text-sm font-mono mb-4">
+          <div className="text-green-400"># 바이브 코딩으로 3-tier 웹 애플리케이션 인프라 생성</div>
+          <br />
+          <div className="text-white">"고가용성 3-tier 웹 애플리케이션을 위한 AWS 인프라를 구성해줘:</div>
+          <div className="text-white">- 프론트엔드: React SPA를 S3 + CloudFront로 서빙</div>
+          <div className="text-white">- 백엔드: Node.js API를 ECS Fargate에서 실행</div>
+          <div className="text-white">- 데이터베이스: PostgreSQL RDS with Multi-AZ</div>
+          <div className="text-white">- 네트워킹: VPC with public/private subnets</div>
+          <div className="text-white">- 보안: WAF, Security Groups, IAM roles</div>
+          <div className="text-white">- 모니터링: CloudWatch, ALB health checks</div>
+          <div className="text-white">- 예상 트래픽: 월 100만 PV, 동시 사용자 1,000명</div>
+          <div className="text-white">- 예산: 월 $500 이하로 최적화"</div>
         </div>
       </div>
 
-      <SectionTitle>⚙️ 자율 실행 워크플로</SectionTitle>
-
-      <SubsectionTitle>AI 에이전트가 스스로 계획하고 실행하는 검증 프로세스</SubsectionTitle>
-
-      <FeatureBox title="🧠 Agentic AI 검증 시나리오 예시">
-        <Paragraph className="text-sm mb-3">
-          실제 이커머스 프로젝트에서 Agentic AI가 어떻게 작동하는지 살펴보겠습니다.
-        </Paragraph>
-        
+      <SubsectionTitle>2단계: AI가 생성하는 완전한 Terraform 코드</SubsectionTitle>
+      <FeatureBox title="🏗️ AI 생성 Terraform 아키텍처">
         <div className="space-y-4">
-          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4">
-            <h5 className="font-semibold text-sm text-blue-600 mb-2">🎯 상황: 블랙프라이데이 대비 결제 시스템 개발</h5>
-            <div className="text-xs space-y-2">
-              <div><strong>비즈니스 컨텍스트:</strong> 평소 대비 100배 트래픽 예상, 99.99% 가용성 필요</div>
-              <div><strong>기술적 제약:</strong> 레거시 시스템 연동, PCI DSS 컴플라이언스 필수</div>
-              <div><strong>시간 제약:</strong> 2주 내 배포 완료</div>
-            </div>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <div className="text-green-400"># main.tf - AI가 생성한 3-tier 아키텍처</div>
+            <br />
+            <div className="text-purple-400">terraform {`{`}</div>
+            <div className="text-white">  required_providers {`{`}</div>
+            <div className="text-white">    aws = {`{`}</div>
+            <div className="text-white">      source  = "hashicorp/aws"</div>
+            <div className="text-white">      version = "~> 5.0"</div>
+            <div className="text-white">    {`}`}</div>
+            <div className="text-white">  {`}`}</div>
+            <div className="text-purple-400">{`}`}</div>
+            <br />
+            <div className="text-blue-400">resource "aws_vpc" "main" {`{`}</div>
+            <div className="text-white">  cidr_block           = "10.0.0.0/16"</div>
+            <div className="text-white">  enable_dns_hostnames = true</div>
+            <div className="text-white">  enable_dns_support   = true</div>
+            <div className="text-white">  </div>
+            <div className="text-white">  tags = {`{`}</div>
+            <div className="text-white">    Name = "3tier-vpc"</div>
+            <div className="text-white">    Environment = var.environment</div>
+            <div className="text-white">  {`}`}</div>
+            <div className="text-blue-400">{`}`}</div>
           </div>
 
-          <div className="space-y-3">
-            <div className="flex items-start space-x-3">
-              <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
-              <div className="text-sm">
-                <strong>분석 에이전트</strong>가 프로젝트 컨텍스트를 파악하고 "고부하 + 보안 중심" 검증 전략 자율 수립
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-3">
-              <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
-              <div className="text-sm">
-                <strong>보안 에이전트</strong>가 PCI DSS 요구사항을 자동으로 매핑하고 금융권 보안 패턴 적용
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-3">
-              <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
-              <div className="text-sm">
-                <strong>성능 에이전트</strong>가 블랙프라이데이 트래픽 패턴을 학습하여 병목점 예측 및 최적화안 제시
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-3">
-              <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
-              <div className="text-sm">
-                <strong>품질 에이전트</strong>가 결제 관련 엣지 케이스를 자동 발굴하고 테스트 시나리오 생성
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-3">
-              <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold">5</div>
-              <div className="text-sm">
-                모든 에이전트가 <strong>실시간으로 협업</strong>하여 통합 검증 리포트 및 배포 가이드 자동 생성
-              </div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">
+            AI가 자동으로 생성하는 리소스:
+            <div className="grid md:grid-cols-2 gap-2 mt-2">
+              <div>• VPC with 6 subnets (AZ별 public/private)</div>
+              <div>• Internet Gateway & NAT Gateways</div>
+              <div>• Application Load Balancer</div>
+              <div>• ECS Cluster & Fargate 서비스</div>
+              <div>• RDS PostgreSQL Multi-AZ</div>
+              <div>• S3 + CloudFront 배포</div>
+              <div>• Security Groups (최소 권한)</div>
+              <div>• IAM Roles & Policies</div>
+              <div>• CloudWatch 모니터링</div>
+              <div>• Route53 DNS 설정</div>
             </div>
           </div>
         </div>
       </FeatureBox>
 
-      <SectionTitle>🔧 실전 구현: MSP 환경 Agentic AI 시스템</SectionTitle>
+      <SubsectionTitle>3단계: 비용 최적화 자동 적용</SubsectionTitle>
+      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
+        <h4 className="font-semibold mb-3">💰 AI가 자동 적용하는 비용 최적화</h4>
+        <div className="space-y-2 text-sm">
+          <div>• <strong>ECS Fargate:</strong> 트래픽 패턴에 맞는 Auto Scaling 설정</div>
+          <div>• <strong>RDS:</strong> 개발/스테이징용 스케줄링으로 야간/주말 중지</div>
+          <div>• <strong>CloudFront:</strong> 적절한 캐싱 정책으로 Origin 요청 최소화</div>
+          <div>• <strong>S3:</strong> Intelligent Tiering 자동 활성화</div>
+          <div>• <strong>Reserved Instances:</strong> 예상 사용량 기반 권장사항 제공</div>
+        </div>
+      </div>
 
-      <SubsectionTitle>자율 검증 플랫폼 구성</SubsectionTitle>
+      <SectionTitle>🔄 바이브 코딩 IaC 변경 관리</SectionTitle>
 
-      <div className="space-y-6">
-        <CodeBlock language="yaml">
-# agentic-validation-config.yml - 사용자 맞춤 설정
-apiVersion: v1
-kind: AgenticValidation
-metadata:
-  name: bespin-msp-validator
-spec:
-  agents:
-    analyzer:
-      model: "claude-3.5-sonnet"
-      capabilities:
-        - business_context_understanding
-        - project_scope_analysis
-        - risk_assessment
-      custom_knowledge:
-        - "bespin_client_industries.json"
-        - "msp_best_practices.md"
-        
-    security_guardian:
-      model: "gpt-4-turbo"
-      capabilities:
-        - real_time_cve_monitoring
-        - compliance_checking
-        - threat_modeling
-      integrations:
-        - sonarqube_enterprise
-        - snyk_professional
-        - bespin_security_policies
-        
-    performance_optimizer:
-      model: "gemini-pro"
-      capabilities:
-        - load_testing_prediction
-        - bottleneck_analysis
-        - scaling_recommendations
-      data_sources:
-        - cloudwatch_metrics
-        - application_performance_monitoring
-        - customer_traffic_patterns
-        
-    quality_assurance:
-      model: "claude-3-haiku"  # 빠른 응답을 위한 경량 모델
-      capabilities:
-        - automated_test_generation
-        - code_review_automation
-        - documentation_sync
-      tools:
-        - jest_testing_framework
-        - cypress_e2e
-        - storybook_documentation
-        
-  orchestration:
-    execution_mode: "parallel"
-    timeout: "30m"
-    retry_policy: "exponential_backoff"
-    notification:
-      slack_channel: "#bespin-devops"
-      email_alerts: "msp-team@bespinglobal.com"
-        </CodeBlock>
+      <SubsectionTitle>실시간 인프라 수정</SubsectionTitle>
+      <div className="space-y-4">
+        <FeatureBox title="📝 자연어로 인프라 변경 요청">
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <div className="text-green-400"># 기존 인프라에 Redis 캐시 추가</div>
+            <br />
+            <div className="text-white">"현재 3-tier 아키텍처에 다음을 추가해줘:</div>
+            <div className="text-white">- ElastiCache Redis cluster (2 nodes)</div>
+            <div className="text-white">- API 서버가 Redis에 접근할 수 있도록 Security Group 수정</div>
+            <div className="text-white">- 세션 저장과 API 캐싱용으로 사용 예정</div>
+            <div className="text-white">- 예상 메모리 사용량: 2GB</div>
+            <div className="text-white">- 고가용성 필요 (Multi-AZ)"</div>
+          </div>
+        </FeatureBox>
 
-        <FeatureBox title="🚀 자동화된 실행 시나리오">
-          <Paragraph className="text-sm mb-3">
-            개발자가 코드를 커밋하는 순간부터 Agentic AI가 완전히 자율적으로 동작하는 과정입니다.
-          </Paragraph>
-          
-          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4">
-            <CodeBlock language="python">
-# 트리거: Git push 이벤트 발생
-@webhook_handler('/github/push')
-async def handle_code_push(payload):
-    # 1. 분석 에이전트가 변경사항의 영향도 자율 분석
-    analyzer = AnalyzerAgent(project_context=payload.repository)
-    impact_analysis = await analyzer.autonomous_impact_assessment(
-        changes=payload.commits,
-        business_context=await get_client_context(payload.repository)
-    )
-    
-    # 2. 영향도에 따른 다른 에이전트들의 작업 계획 자동 수립
-    validation_plan = await analyzer.create_validation_orchestration({
-        'security_priority': impact_analysis.security_risk,
-        'performance_focus': impact_analysis.performance_impact,
-        'quality_depth': impact_analysis.code_complexity
-    })
-    
-    # 3. 병렬 에이전트 실행 (인간 개입 없이)
-    results = await asyncio.gather(
-        SecurityGuardian().validate(validation_plan.security_tasks),
-        PerformanceOptimizer().analyze(validation_plan.performance_tasks),
-        QualityAssurance().review(validation_plan.quality_tasks)
-    )
-    
-    # 4. 결과 통합 및 자동 의사결정
-    final_decision = await analyzer.make_autonomous_decision(results)
-    
-    if final_decision.approved:
-        await auto_deploy_to_staging()
-        await notify_team("✅ 자동 검증 통과 - 스테이징 배포 완료")
-    else:
-        await create_detailed_improvement_plan(final_decision.issues)
-        await notify_team("🔄 개선사항 발견 - 자동 수정 제안 생성됨")
-            </CodeBlock>
+        <FeatureBox title="⚡ AI가 생성하는 증분 변경">
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+            <div className="text-green-400"># redis.tf - AI가 추가 생성한 파일</div>
+            <br />
+            <div className="text-blue-400">resource "aws_elasticache_subnet_group" "redis" {`{`}</div>
+            <div className="text-white">  name       = "redis-subnet-group"</div>
+            <div className="text-white">  subnet_ids = [aws_subnet.private[*].id]</div>
+            <div className="text-blue-400">{`}`}</div>
+            <br />
+            <div className="text-blue-400">resource "aws_elasticache_replication_group" "redis" {`{`}</div>
+            <div className="text-white">  description          = "Redis cluster for sessions and caching"</div>
+            <div className="text-white">  replication_group_id = "app-redis"</div>
+            <div className="text-white">  node_type            = "cache.t3.micro"</div>
+            <div className="text-white">  port                 = 6379</div>
+            <div className="text-white">  parameter_group_name = "default.redis7"</div>
+            <div className="text-white">  num_cache_clusters   = 2</div>
+            <div className="text-white">  </div>
+            <div className="text-white">  subnet_group_name  = aws_elasticache_subnet_group.redis.name</div>
+            <div className="text-white">  security_group_ids = [aws_security_group.redis.id]</div>
+            <div className="text-blue-400">{`}`}</div>
           </div>
         </FeatureBox>
       </div>
 
-      <SectionTitle>📊 지속적 학습 & 개선 시스템</SectionTitle>
+      <SectionTitle>🛡️ 보안 모범 사례 자동 적용</SectionTitle>
 
-      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-lg p-6">
-        <h4 className="font-semibold mb-4">🧠 Agentic AI의 자기 개선 능력</h4>
-        
-        <div className="grid md:grid-cols-2 gap-6 text-sm">
-          <div>
-            <h5 className="font-semibold mb-3">📈 학습 메커니즘</h5>
-            <div className="space-y-2">
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>프로젝트별 패턴 학습</span>
-                <span className="font-bold text-blue-600">자동 적용</span>
-              </div>
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>고객 피드백 통합</span>
-                <span className="font-bold text-green-600">실시간 반영</span>
-              </div>
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>에러 패턴 인식</span>
-                <span className="font-bold text-purple-600">예방적 대응</span>
-              </div>
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>업계 트렌드 추적</span>
-                <span className="font-bold text-orange-600">선제적 업데이트</span>
-              </div>
-            </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        <FeatureBox title="🔒 Network Security">
+          <div className="text-sm space-y-2">
+            <div>• Private subnets에 데이터베이스 배치</div>
+            <div>• Security Groups 최소 권한 원칙</div>
+            <div>• NACLs 추가 보안 계층</div>
+            <div>• VPC Endpoints로 AWS 서비스 접근</div>
           </div>
-          
-          <div>
-            <h5 className="font-semibold mb-3">🎯 개선 영역</h5>
-            <div className="space-y-2">
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>검증 정확도</span>
-                <span className="font-bold text-green-600">지속적 향상</span>
-              </div>
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>오탐지 최소화</span>
-                <span className="font-bold text-green-600">점진적 개선</span>
-              </div>
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>처리 속도</span>
-                <span className="font-bold text-blue-600">최적화 진행</span>
-              </div>
-              <div className="flex justify-between items-center p-2 bg-white dark:bg-gray-800 rounded">
-                <span>사용자 경험</span>
-                <span className="font-bold text-purple-600">우수</span>
-              </div>
-            </div>
+        </FeatureBox>
+
+        <FeatureBox title="🛡️ Application Security">
+          <div className="text-sm space-y-2">
+            <div>• IAM Roles 기반 서비스 인증</div>
+            <div>• Secrets Manager 자격증명 관리</div>
+            <div>• CloudTrail 모든 API 호출 로깅</div>
+            <div>• WAF로 웹 애플리케이션 보호</div>
+          </div>
+        </FeatureBox>
+      </div>
+
+      <SectionTitle>📊 바이브 코딩 IaC 모니터링</SectionTitle>
+
+      <SubsectionTitle>자동 생성되는 모니터링 스택</SubsectionTitle>
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+          <div className="text-green-400"># AI가 자동 생성하는 CloudWatch 알림</div>
+          <br />
+          <div className="text-blue-400">resource "aws_cloudwatch_metric_alarm" "high_cpu" {`{`}</div>
+          <div className="text-white">  alarm_name          = "ecs-high-cpu"</div>
+          <div className="text-white">  comparison_operator = "GreaterThanThreshold"</div>
+          <div className="text-white">  evaluation_periods  = "2"</div>
+          <div className="text-white">  metric_name        = "CPUUtilization"</div>
+          <div className="text-white">  namespace          = "AWS/ECS"</div>
+          <div className="text-white">  period             = "120"</div>
+          <div className="text-white">  statistic          = "Average"</div>
+          <div className="text-white">  threshold          = "80"</div>
+          <div className="text-white">  alarm_description  = "This metric monitors ecs cpu utilization"</div>
+          <div className="text-white">  </div>
+          <div className="text-white">  dimensions = {`{`}</div>
+          <div className="text-white">    ServiceName = aws_ecs_service.app.name</div>
+          <div className="text-white">    ClusterName = aws_ecs_cluster.main.name</div>
+          <div className="text-white">  {`}`}</div>
+          <div className="text-blue-400">{`}`}</div>
+        </div>
+
+        <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          AI가 자동 생성하는 모니터링 항목:
+          <div className="grid md:grid-cols-3 gap-2 mt-2">
+            <div>• ECS CPU/Memory 사용률</div>
+            <div>• RDS 연결 수 & 성능</div>
+            <div>• ALB 응답시간 & 에러율</div>
+            <div>• CloudFront 캐시 적중률</div>
+            <div>• S3 요청 수 & 에러율</div>
+            <div>• Lambda 함수 실행 시간</div>
           </div>
         </div>
+      </div>
+
+      <SectionTitle>🎯 바이브 코딩 IaC 실무 팁</SectionTitle>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <InfoBox type="tip" title="💡 효과적인 자연어 설명법">
+          <div className="text-sm space-y-2">
+            <div>• <strong>비즈니스 맥락 제공:</strong> "쇼핑몰", "핀테크 API" 등</div>
+            <div>• <strong>예상 트래픽 명시:</strong> "월 100만 PV", "동시 접속 1천명"</div>
+            <div>• <strong>예산 제약 조건:</strong> "월 $500 이하"</div>
+            <div>• <strong>보안 요구사항:</strong> "금융업 규제 준수"</div>
+            <div>• <strong>확장성 고려:</strong> "향후 10배 성장 예상"</div>
+          </div>
+        </InfoBox>
+
+        <InfoBox type="warning" title="⚠️ 주의사항">
+          <div className="text-sm space-y-2">
+            <div>• <strong>프로덕션 전 검토:</strong> AI 생성 코드 반드시 리뷰</div>
+            <div>• <strong>테스트 환경 우선:</strong> 먼저 dev/staging에서 검증</div>
+            <div>• <strong>백업 계획:</strong> 기존 인프라 상태 백업</div>
+            <div>• <strong>비용 모니터링:</strong> 예산 초과 알림 설정</div>
+            <div>• <strong>보안 검증:</strong> 생성된 보안 규칙 점검</div>
+          </div>
+        </InfoBox>
+      </div>
+
+      <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-8">
+        <h4 className="font-semibold mb-2">🚀 바이브 코딩 IaC의 미래</h4>
+        <Paragraph className="text-sm">
+          바이브 코딩은 인프라 관리를 완전히 바꿔놓고 있습니다. 
+          복잡한 IaC 문법을 외우는 대신 <strong>비즈니스 요구사항에 집중</strong>하고, 
+          AI가 최적의 아키텍처와 보안 설정을 제안해줍니다. 
+          이제 클라우드 엔지니어는 기술적 구현보다는 <strong>전략적 설계와 비즈니스 가치 창출</strong>에 
+          더 많은 시간을 투자할 수 있습니다.
+        </Paragraph>
       </div>
 
       <SectionTitle>🎯 다음 학습</SectionTitle>
       
       <Paragraph>
-        Agentic AI 기반 자율 코드 검증 시스템을 구축했다면, <strong>8.3 다중 에이전트 협업 시스템</strong>에서 
-        여러 AI 에이전트가 협업하여 복잡한 MSP 프로젝트를 자율적으로 관리하고 실행하는 방법을 배워보겠습니다.
+        바이브 코딩으로 IaC를 마스터했다면, <strong>8.3 바이브 코딩 CI/CD 파이프라인</strong>에서 
+        자동화된 배포 프로세스를 구축하는 방법을 알아보겠습니다.
       </Paragraph>
 
       <div className="flex gap-4 mt-8">
@@ -403,13 +265,13 @@ async def handle_code_push(payload):
           href="/part8/debugging/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
-          다음: 다중 에이전트 협업 시스템 →
+          다음: CI/CD 파이프라인 →
         </a>
         <a 
           href="/part8/prompting/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
-          ← 이전: 바이브 코딩 마스터 프롬프트
+          ← 이전: 마스터 프롬프트
         </a>
       </div>
     </div>

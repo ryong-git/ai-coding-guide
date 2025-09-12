@@ -265,7 +265,7 @@ export default function RoleRedefinitionPage() {
         </div>
       </div>
 
-      <SectionTitle>💼 베스핀글로벌에서의 역할 변화</SectionTitle>
+      <SectionTitle>💼 IT 전문가의 역할 변화</SectionTitle>
 
       <SubsectionTitle>클라우드 엔지니어의 새로운 정의</SubsectionTitle>
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
@@ -293,7 +293,7 @@ export default function RoleRedefinitionPage() {
             이제는 AI에게 아키텍처 요구사항을 설명하면 10분 만에 완성됩니다. 
             덕분에 고객 비즈니스 이해와 최적화 방안 도출에 더 많은 시간을 쓸 수 있어요."
           </blockquote>
-          <cite className="text-sm text-gray-600 dark:text-gray-400">- 베스핀글로벌 시니어 클라우드 아키텍트 김○○</cite>
+          <cite className="text-sm text-gray-600 dark:text-gray-400">- 시니어 클라우드 아키텍트</cite>
         </div>
         
         <div className="bg-white dark:bg-gray-900 p-6 rounded border border-gray-200 dark:border-gray-700">
@@ -302,7 +302,7 @@ export default function RoleRedefinitionPage() {
             이제 제 역할은 설정 작성이 아니라 왜 이런 설정이 필요한지, 
             비즈니스에 어떤 영향을 주는지 가르치는 것으로 바뀌었어요."
           </blockquote>
-          <cite className="text-sm text-gray-600 dark:text-gray-400">- 베스핀글로벌 테크 리드 박○○</cite>
+          <cite className="text-sm text-gray-600 dark:text-gray-400">- 테크 리드</cite>
         </div>
       </div>
 
