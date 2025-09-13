@@ -225,11 +225,11 @@ export default function CICDPipelinePage() {
             <div className="text-white">notifications:</div>
             <div className="text-white">  slack:</div>
             <div className="text-white">    - event: deployment_start</div>
-            <div className="text-white">      message: "🚀 {{service}} v{{version}} 배포 시작"</div>
+            <div className="text-white">      message: "🚀 {`{{service}}`} v{`{{version}}`} 배포 시작"</div>
             <div className="text-white">    - event: deployment_success</div>
-            <div className="text-white">      message: "✅ {{service}} 배포 완료 ({{duration}})"</div>
+            <div className="text-white">      message: "✅ {`{{service}}`} 배포 완료 ({`{{duration}}`})"</div>
             <div className="text-white">    - event: deployment_failure</div>
-            <div className="text-white">      message: "❌ {{service}} 배포 실패 - 자동 롤백 실행"</div>
+            <div className="text-white">      message: "❌ {`{{service}}`} 배포 실패 - 자동 롤백 실행"</div>
             <br />
             <div className="text-white">  email:</div>
             <div className="text-white">    - event: production_deployment</div>

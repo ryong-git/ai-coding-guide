@@ -43,27 +43,24 @@ export default function PromptingPage() {
           <div className="border-l-4 border-blue-500 pl-4">
             <h4 className="font-semibold text-blue-800 dark:text-blue-200">B - Business Context</h4>
             <p className="text-sm text-gray-600 dark:text-gray-400">비즈니스 맥락과 고객사 정보</p>
-            <CodeBlock language="text">
-우리는 A고객사의 AWS 환경을 관리하는 MSP입니다.
-월 1000만원 예산, 24/7 운영 필수, 컴플라이언스 준수 필요
+            <CodeBlock language="text">{`우리는 A고객사의 AWS 환경을 관리하는 MSP입니다.
+월 1000만원 예산, 24/7 운영 필수, 컴플라이언스 준수 필요`}
             </CodeBlock>
           </div>
 
           <div className="border-l-4 border-green-500 pl-4">
             <h4 className="font-semibold text-green-800 dark:text-green-200">E - Environment</h4>
             <p className="text-sm text-gray-600 dark:text-gray-400">기술 환경과 제약사항</p>
-            <CodeBlock language="text">
-AWS 멀티리전(서울, 버지니아), Terraform 관리
-기존 VPC 구조 유지, 보안그룹 정책 준수
+            <CodeBlock language="text">{`AWS 멀티리전(서울, 버지니아), Terraform 관리
+기존 VPC 구조 유지, 보안그룹 정책 준수`}
             </CodeBlock>
           </div>
 
           <div className="border-l-4 border-purple-500 pl-4">
             <h4 className="font-semibold text-purple-800 dark:text-purple-200">S - Specific Task</h4>
             <p className="text-sm text-gray-600 dark:text-gray-400">구체적인 작업 내용</p>
-            <CodeBlock language="text">
-RDS PostgreSQL 자동 백업 스크립트 작성
-일일 백업, 7일 보관, S3 저장, 실패시 Slack 알림
+            <CodeBlock language="text">{`RDS PostgreSQL 자동 백업 스크립트 작성
+일일 백업, 7일 보관, S3 저장, 실패시 Slack 알림`}
             </CodeBlock>
           </div>
         </div>
@@ -72,27 +69,24 @@ RDS PostgreSQL 자동 백업 스크립트 작성
           <div className="border-l-4 border-orange-500 pl-4">
             <h4 className="font-semibold text-orange-800 dark:text-orange-200">P - Performance</h4>
             <p className="text-sm text-gray-600 dark:text-gray-400">성능 요구사항과 품질 기준</p>
-            <CodeBlock language="text">
-실행시간 30초 이내, 에러 처리 필수
-로깅 상세화, 재시도 로직 3회
+            <CodeBlock language="text">{`실행시간 30초 이내, 에러 처리 필수
+로깅 상세화, 재시도 로직 3회`}
             </CodeBlock>
           </div>
 
           <div className="border-l-4 border-red-500 pl-4">
             <h4 className="font-semibold text-red-800 dark:text-red-200">I - Integration</h4>
             <p className="text-sm text-gray-600 dark:text-gray-400">기존 시스템과의 연동</p>
-            <CodeBlock language="text">
-CloudWatch 메트릭 전송, SNS 토픽 연결
-기존 Lambda IAM 역할 재사용
+            <CodeBlock language="text">{`CloudWatch 메트릭 전송, SNS 토픽 연결
+기존 Lambda IAM 역할 재사용`}
             </CodeBlock>
           </div>
 
           <div className="border-l-4 border-indigo-500 pl-4">
             <h4 className="font-semibold text-indigo-800 dark:text-indigo-200">N - Next Steps</h4>
             <p className="text-sm text-gray-600 dark:text-gray-400">후속 작업과 검증 방법</p>
-            <CodeBlock language="text">
-테스트 계획 포함, 배포 가이드 작성
-모니터링 대시보드 구성 방법 제시
+            <CodeBlock language="text">{`테스트 계획 포함, 배포 가이드 작성
+모니터링 대시보드 구성 방법 제시`}
             </CodeBlock>
           </div>
         </div>
@@ -108,8 +102,7 @@ CloudWatch 메트릭 전송, SNS 토픽 연결
             고객사별 맞춤 모니터링 대시보드 자동 생성을 위한 프롬프트
           </Paragraph>
           
-          <CodeBlock language="text">
-베스핀글로벌 MSP 엔지니어입니다. {고객사명}의 실시간 모니터링 시스템을 구축해주세요.
+          <CodeBlock language="text">{`MSP 엔지니어입니다. {고객사명}의 실시간 모니터링 시스템을 구축해주세요.
 
 **고객 환경:**
 - AWS 계정: {account_id}
@@ -131,7 +124,7 @@ CloudWatch 메트릭 전송, SNS 토픽 연결
 **결과물:**
 - 실행 가능한 Terraform 코드
 - 알람 임계값 가이드
-- 운영 매뉴얼 포함
+- 운영 매뉴얼 포함`}
           </CodeBlock>
         </FeatureBox>
 
@@ -140,8 +133,7 @@ CloudWatch 메트릭 전송, SNS 토픽 연결
             신속한 장애 진단과 초기 대응을 위한 AI 자동화 프롬프트
           </Paragraph>
           
-          <CodeBlock language="text">
-MSP 운영팀 장애 대응 스크립트가 필요합니다.
+          <CodeBlock language="text">{`MSP 운영팀 장애 대응 스크립트가 필요합니다.
 
 **장애 상황:**
 - 발생 시간: {timestamp}
@@ -163,7 +155,7 @@ MSP 운영팀 장애 대응 스크립트가 필요합니다.
 **출력 형식:**
 - 5분 이내 초기 진단 보고서
 - 액션 아이템 우선순위 정렬
-- 에스컬레이션 가이드라인
+- 에스컬레이션 가이드라인`}
           </CodeBlock>
         </FeatureBox>
 
@@ -172,11 +164,10 @@ MSP 운영팀 장애 대응 스크립트가 필요합니다.
             고객사 클라우드 비용 절감을 위한 스마트 분석 프롬프트
           </Paragraph>
           
-          <CodeBlock language="text">
-{고객사명}의 AWS 비용 최적화 전략을 수립해주세요.
+          <CodeBlock language="text">{`{고객사명}의 AWS 비용 최적화 전략을 수립해주세요.
 
 **현재 상황:**
-- 월간 AWS 비용: ${monthly_cost}
+- 월간 AWS 비용: \${monthly_cost}
 - 주요 비용 구성: {cost_breakdown}
 - 사용 패턴: {usage_pattern}
 - 성장률: 월 {growth_rate}%
@@ -196,7 +187,7 @@ MSP 운영팀 장애 대응 스크립트가 필요합니다.
 - 상세 분석 리포트
 - 단계별 실행 계획 (3개월)
 - 예상 절감액 계산서
-- 리스크 평가 및 대응책
+- 리스크 평가 및 대응책`}
           </CodeBlock>
         </FeatureBox>
       </div>

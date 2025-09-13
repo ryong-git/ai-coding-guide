@@ -264,8 +264,7 @@ class StrategicAgent:
       <SubsectionTitle>동적 에이전트 배분 및 성능 최적화</SubsectionTitle>
 
       <div className="space-y-6">
-        <CodeBlock language="python">
-# 지능형 리소스 최적화 시스템
+        <CodeBlock language="python">{`# 지능형 리소스 최적화 시스템
 class IntelligentResourceOptimizer:
     def __init__(self):
         self.agent_pool = AgentPool()
@@ -319,7 +318,7 @@ class IntelligentResourceOptimizer:
         # 에이전트에 새로운 컨텍스트 적용
         await agent.apply_context(new_context, relevant_knowledge)
         
-        return await agent.validate_context_transfer()
+        return await agent.validate_context_transfer()`}
         </CodeBlock>
 
         <FeatureBox title="📊 실시간 리소스 최적화 대시보드">
@@ -426,8 +425,7 @@ class IntelligentResourceOptimizer:
           </div>
         </div>
 
-        <CodeBlock language="python">
-# 조직 지식 진화 시스템
+        <CodeBlock language="python">{`# 조직 지식 진화 시스템
 class OrganizationalKnowledgeEvolution:
     def __init__(self):
         self.knowledge_graph = KnowledgeGraph()
@@ -481,7 +479,7 @@ class OrganizationalKnowledgeEvolution:
                 'pattern': pattern,
                 'prevention_methods': prevention_methods,
                 'early_warnings': early_warning_rules
-            })
+            })`}
         </CodeBlock>
       </div>
 
