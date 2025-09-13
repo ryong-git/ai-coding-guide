@@ -70,7 +70,7 @@ export default function IaCAutomationPage() {
             <div className="text-white">  required_providers {`{`}</div>
             <div className="text-white">    aws = {`{`}</div>
             <div className="text-white">      source  = "hashicorp/aws"</div>
-            <div className="text-white">      version = "~> 5.0"</div>
+            <div className="text-white">      version = "{`~> 5.0`}"</div>
             <div className="text-white">    {`}`}</div>
             <div className="text-white">  {`}`}</div>
             <div className="text-purple-400">{`}`}</div>

@@ -15,7 +15,7 @@ export default function ComparisonPage() {
       <SectionTitle>🔧 MSP 업무별 도구 선택</SectionTitle>
 
       <Lead>
-        베스핀글로벌 MSP 환경에서는 <strong>운영 업무 특성에 따른 AI 도구 선택이 핵심</strong>입니다. 
+        MSP 환경에서는 <strong>운영 업무 특성에 따른 AI 도구 선택이 핵심</strong>입니다. 
         각 도구의 강점을 이해하고 클라우드 운영 상황에 맞게 활용하는 것이 효율적 인프라 관리의 열쇠입니다.
       </Lead>
 
@@ -148,14 +148,12 @@ export default function ComparisonPage() {
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 구체적 사용 예시</div>
             <div className="text-white">"E-커머스 고객사를 위한 완전한 프로덕션 환경을 구축해줘.</div>
-            <div className="text-white">
             <div className="text-white">- 동시 사용자 5,000명 처리 가능</div>
             <div className="text-white">- 자동 스케일링 및 로드밸런싱</div>
             <div className="text-white">- 데이터베이스 고가용성 및 자동 백업</div>
             <div className="text-white">- SSL 인증서 자동 관리</div>
             <div className="text-white">- 전체 시스템 모니터링 및 알림 설정</div>
             <div className="text-white">- 예산: 월 $3,000 이하</div>
-            <div className="text-white">
             <div className="text-white">Terraform 코드와 운영 가이드도 포함해서 제공해줘"</div>
           </div>
         </div>
@@ -176,15 +174,12 @@ export default function ComparisonPage() {
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 구체적 사용 예시</div>
             <div className="text-white">"금융사 고객의 API 서비스에 장애가 발생했어.</div>
-            <div className="text-white">
             <div className="text-white">증상: 응답시간이 평소 200ms에서 5초로 증가</div>
             <div className="text-white">상황: 고객 결제 시스템 영향, 비즐니스 손실 발생</div>
-            <div className="text-white">
             <div className="text-white">1. CloudWatch 로그 분석해서 근본 원인 파악</div>
             <div className="text-white">2. 즉시 적용 가능한 임시 해결책 제시</div>
             <div className="text-white">3. 장기적 근본 해결 방안 제안</div>
             <div className="text-white">4. 동일 문제 재발 방지 모니터링 설정</div>
-            <div className="text-white">
             <div className="text-white">실시간 액션 플랜과 함께 제공해줘"</div>
           </div>
         </div>
@@ -205,16 +200,13 @@ export default function ComparisonPage() {
           <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
             <div className="text-green-400"># 구체적 사용 예시</div>
             <div className="text-white">"스타트업 고객사의 AWS 비용이 급증하고 있어.</div>
-            <div className="text-white">
             <div className="text-white">데이터: 지난 6개월 Cost Explorer 데이터 첨부</div>
             <div className="text-white">문제: 월 $5,000에서 $15,000으로 3배 증가</div>
-            <div className="text-white">
             <div className="text-white">분석 요청사항:</div>
             <div className="text-white">1. 비용 증가의 주요 원인 식별 (서비스별 세분화)</div>
             <div className="text-white">2. 사용량이 높지만 효율이 낮은 리소스 찾기</div>
             <div className="text-white">3. 즉시 적용 가능한 비용 절감 방안 (라이센스, 예약 인스턴스)</div>
             <div className="text-white">4. 향후 3개월 비용 예측 및 버짓 체계 제안</div>
-            <div className="text-white">
             <div className="text-white">목표: 월 $8,000 이하로 단축하면서 성능 유지"</div>
           </div>
         </div>

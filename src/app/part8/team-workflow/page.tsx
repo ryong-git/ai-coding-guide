@@ -59,8 +59,7 @@ export default function AgenticOrchestrationPlatformPage() {
               </div>
             </div>
             
-            <CodeBlock language="python">
-# Strategic Agent의 전사 관리 시스템
+            <CodeBlock language="python">{`# Strategic Agent의 전사 관리 시스템
 class StrategicAgent:
     def __init__(self, organization_context):
         self.organization = organization_context
@@ -89,7 +88,7 @@ class StrategicAgent:
         # 5. 성과 모니터링 및 조정
         await self.monitor_and_adjust_strategy()
         
-        return strategic_decisions
+        return strategic_decisions`}
             </CodeBlock>
           </div>
         </div>

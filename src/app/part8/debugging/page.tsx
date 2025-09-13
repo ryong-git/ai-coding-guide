@@ -168,7 +168,7 @@ export default function CICDPipelinePage() {
             <br />
             <div className="text-white">    - name: Health Check Green</div>
             <div className="text-white">      run: |</div>
-            <div className="text-white">        for i in {1..30}; do</div>
+            <div className="text-white">        for i in {`{1..30}`}; do</div>
             <div className="text-white">          if curl -f http://green.example.com/health; then</div>
             <div className="text-white">            echo "Green environment healthy"</div>
             <div className="text-white">            break</div>
