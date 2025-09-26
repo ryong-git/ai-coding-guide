@@ -2,408 +2,162 @@ export default function MulticloudOpsPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
       <h1>9.6 멀티클라우드 운영</h1>
-      
+
       <p className="text-xl text-gray-600 dark:text-gray-300">
-        AI 기반 멀티클라우드 통합 운영으로 복잡한 하이브리드 환경을 단일 플랫폼처럼 관리
+        프로파일 기반 인증과 Amazon Q Developer CLI를 활용해 AWS·Azure·GCP를 통합 운영하는 실무 전략을 정리했습니다.
       </p>
 
-      <h2>☁️ 멀티클라우드 시대의 AI 운영</h2>
-
+      <h2>1. 계정별 프로파일 설계</h2>
       <p>
-        현대 기업들은 단일 클라우드에 의존하지 않습니다. AWS의 AI/ML, Azure의 엔터프라이즈 통합, 
-        GCP의 데이터 분석을 각각 활용하며 <strong>Best-of-Breed</strong> 전략을 취합니다. 
-        하지만 이는 운영 복잡성을 기하급수적으로 증가시킵니다. 
-        AI 기반 멀티클라우드 운영은 이러한 복잡성을 해결하는 핵심 솔루션입니다.
+        멀티클라우드 운영의 핵심은 <strong>각 클라우드 계정을 명확하게 분리</strong>하고, 필요한 권한만 부여하는 것입니다.
+        AWS는 IAM Identity Center, Azure는 Entra ID, GCP는 gcloud 구성으로 관리합니다.
       </p>
 
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 my-6">
-        <h3 className="text-lg font-semibold mb-4">🌐 멀티클라우드 AI 운영의 가치</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-blue-700 dark:text-blue-300">통합 관리</h4>
-            <ul className="text-sm space-y-1">
-              <li>• 단일 대시보드로 모든 클라우드 제어</li>
-              <li>• 통일된 정책 및 거버넌스</li>
-              <li>• 크로스 클라우드 자동화</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-purple-700 dark:text-purple-300">지능형 최적화</h4>
-            <ul className="text-sm space-y-1">
-              <li>• 워크로드별 최적 클라우드 선택</li>
-              <li>• 자동 비용 분산 및 최적화</li>
-              <li>• 실시간 성능 균형 조정</li>
-            </ul>
-          </div>
-        </div>
+      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono mb-6">
+        <div className="text-green-400"># AWS ~/.aws/config 예시</div>
+        <div className="text-white">[profile bespin-aws-prod]</div>
+        <div className="text-white">sso_session = corp-sso</div>
+        <div className="text-white">sso_account_id = 111111111111</div>
+        <div className="text-white">sso_role_name = ProductionObserver</div>
+        <div className="text-white">region = ap-northeast-2</div>
       </div>
 
-      <h2>🏗️ AI 기반 워크로드 오케스트레이션</h2>
+      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono mb-6">
+        <div className="text-green-400"># Azure Az CLI 프로파일</div>
+        <div className="text-white">az account set --subscription "Bespin-Prod"</div>
+        <div className="text-white"># 클라우드 쉘 또는 로컬에서 로그인</div>
+        <div className="text-white">az login --tenant bespin.onmicrosoft.com</div>
+      </div>
 
-      <h3>지능형 클라우드 선택</h3>
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
-        <h4 className="font-semibold">워크로드별 최적 배치 AI</h4>
-        
+      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono mb-6">
+        <div className="text-green-400"># GCP gcloud 구성</div>
+        <div className="text-white">gcloud config configurations create bespin-gcp-prod</div>
+        <div className="text-white">gcloud config set account ops@bespin.com</div>
+        <div className="text-white">gcloud config set project bespin-prod-123456</div>
+      </div>
+
+      <h2>2. 공통 운영 패턴</h2>
+      <p>
+        실제 운영은 <strong>각 플랫폼의 네이티브 CLI</strong>를 사용해 데이터를 수집하고, Amazon Q Developer CLI를 통해 보고서/자동화 문서를 생성하는 구조로 진행합니다.
+      </p>
+
+      <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-4">
+        <h3 className="font-semibold">계정별 점검 루틴</h3>
         <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># AI 기반 워크로드 배치 결정</div>
-          <div className="text-white">claude multicloud-optimize "새로운 AI/ML 파이프라인:</div>
-          <div className="text-white">- 데이터: 10TB 고객 로그 (한국 위치)</div>
-          <div className="text-white">- 모델: TensorFlow 대용량 훈련</div>
-          <div className="text-white">- 예산: 월 $15,000 이하</div>
-          <div className="text-white">- 지연시간: 50ms 이하</div>
-          <div className="text-white">최적 배치 및 비용 효율성 분석"</div>
+          <div className="text-green-400"># 클라우드별 상태 점검</div>
+          <div className="text-white">aws sso login --profile bespin-aws-prod</div>
+          <div className="text-white">AWS_PROFILE=bespin-aws-prod aws configservice get-compliance-summary-by-config-rule</div>
+          <div className="text-white">az account set --subscription "Bespin-Prod"</div>
+          <div className="text-white">az monitor metrics list --resource /subscriptions/...</div>
+          <div className="text-white">gcloud config configurations activate bespin-gcp-prod</div>
+          <div className="text-white">gcloud monitoring metrics list --filter="metric.type=\"compute.googleapis.com/instance/cpu/utilization\""</div>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold text-orange-600 dark:text-orange-400">AWS 선택</h5>
-            <div className="text-sm space-y-1">
-              <div>• <strong>데이터 저장</strong>: S3 (한국 리전)</div>
-              <div>• <strong>전처리</strong>: EMR + Spark</div>
-              <div>• <strong>이유</strong>: 데이터 지역성 + 비용</div>
-              <div>• <strong>예상 비용</strong>: $4,500/월</div>
-            </div>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold text-blue-600 dark:text-blue-400">GCP 선택</h5>
-            <div className="text-sm space-y-1">
-              <div>• <strong>모델 훈련</strong>: Vertex AI</div>
-              <div>• <strong>GPU 클러스터</strong>: TPU v4</div>
-              <div>• <strong>이유</strong>: ML 성능 + TPU 효율</div>
-              <div>• <strong>예상 비용</strong>: $8,200/월</div>
-            </div>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold text-green-600 dark:text-green-400">Azure 선택</h5>
-            <div className="text-sm space-y-1">
-              <div>• <strong>모델 서빙</strong>: AKS + ONNX</div>
-              <div>• <strong>API 관리</strong>: API Management</div>
-              <div>• <strong>이유</strong>: 엔터프라이즈 통합</div>
-              <div>• <strong>예상 비용</strong>: $2,100/월</div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded">
-          <div className="font-semibold">🎯 AI 추천 결과</div>
-          <div className="text-sm mt-1">
-            <strong>총 예상 비용:</strong> $14,800/월 (예산 내 $200 여유) <br />
-            <strong>예상 성능:</strong> 훈련 시간 40% 단축, 추론 지연시간 35ms <br />
-            <strong>데이터 전송 최적화:</strong> 리전 간 비용 68% 절감
-          </div>
-        </div>
-      </div>
-
-      <h3>자동 워크로드 마이그레이션</h3>
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
-        <h4 className="font-semibold mb-3">⚡ 실시간 워크로드 재배치</h4>
-        
-        <div className="space-y-3">
-          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-yellow-300">Workload Migration Alert</div>
-            <div className="text-white">Trigger: AWS 비용 급증 감지 (+45%)</div>
-            <div className="text-white">Workload: 배치 데이터 처리 (daily-etl-job)</div>
-            <div className="text-white">Current: AWS Batch (c5.4xlarge × 20)</div>
-            <br />
-            <div className="text-white">AI 분석:</div>
-            <div className="text-white">- GCP Preemptible VMs 활용 시 78% 절약 가능</div>
-            <div className="text-white">- 처리 시간 증가: +15분 (허용 범위 내)</div>
-            <div className="text-white">- 데이터 전송 비용: $120 (ROI 235%)</div>
-            <br />
-            <div className="text-green-300">자동 마이그레이션 실행:</div>
-            <div className="text-green-300">1. GCP 환경 프로비저닝</div>
-            <div className="text-green-300">2. 데이터 동기화</div>
-            <div className="text-green-300">3. 작업 재스케줄링</div>
-            <div className="text-green-300">4. AWS 리소스 정리</div>
-          </div>
-        </div>
-      </div>
-
-      <h2>🔄 크로스 클라우드 데이터 관리</h2>
-
-      <h3>지능형 데이터 오케스트레이션</h3>
-      <div className="space-y-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-          <h4 className="font-semibold mb-3">AI 기반 데이터 배치 최적화</h4>
-          
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded">
-              <h5 className="font-semibold text-blue-600 dark:text-blue-400">Primary Storage</h5>
-              <div className="text-sm space-y-1">
-                <div>• <strong>Hot Data</strong>: AWS S3 (서울)</div>
-                <div>• <strong>사용자 접근</strong>: 높음</div>
-                <div>• <strong>지연시간</strong>: 최소</div>
-              </div>
-            </div>
-            
-            <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded">
-              <h5 className="font-semibold text-green-600 dark:text-green-400">Analytics Hub</h5>
-              <div className="text-sm space-y-1">
-                <div>• <strong>BigQuery</strong>: GCP (도쿄)</div>
-                <div>• <strong>분석 워크로드</strong>: 대용량</div>
-                <div>• <strong>비용 효율성</strong>: 높음</div>
-              </div>
-            </div>
-            
-            <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded">
-              <h5 className="font-semibold text-purple-600 dark:text-purple-400">Archive</h5>
-              <div className="text-sm space-y-1">
-                <div>• <strong>Blob Storage</strong>: Azure (부산)</div>
-                <div>• <strong>장기 보관</strong>: 7년+</div>
-                <div>• <strong>비용</strong>: 최저</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4">
-          <h4 className="font-semibold">자동 데이터 티어링</h4>
-          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono mt-2">
-            <div className="text-green-400"># 데이터 라이프사이클 자동화</div>
-            <div className="text-white">Day 0-30: AWS S3 Standard (빠른 접근)</div>
-            <div className="text-white">Day 31-90: AWS S3 IA (가끔 접근)</div>
-            <div className="text-white">Day 91-365: GCP Nearline (분석용)</div>
-            <div className="text-white">Day 366+: Azure Archive (장기 보관)</div>
-            <br />
-            <div className="text-white">자동 복제 및 동기화:</div>
-            <div className="text-white">→ 3-2-1 백업 전략</div>
-            <div className="text-white">→ 지역 간 재해 복구</div>
-            <div className="text-white">→ 규정 준수 (GDPR, HIPAA)</div>
-          </div>
-        </div>
-      </div>
-
-      <h2>🛡️ 통합 보안 및 거버넌스</h2>
-
-      <h3>Zero Trust 멀티클라우드</h3>
-      <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6">
-        <h4 className="font-semibold mb-3">🔒 클라우드별 보안 정책 통합</h4>
-        
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold text-orange-600 dark:text-orange-400">AWS 보안</h5>
-            <ul className="text-sm space-y-1">
-              <li>• IAM 정책 자동 생성</li>
-              <li>• GuardDuty 위협 탐지</li>
-              <li>• Config 규정 준수</li>
-              <li>• CloudTrail 감사 로그</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold text-blue-600 dark:text-blue-400">Azure 보안</h5>
-            <ul className="text-sm space-y-1">
-              <li>• Azure AD 통합 인증</li>
-              <li>• Security Center 평가</li>
-              <li>• Key Vault 키 관리</li>
-              <li>• Sentinel SIEM 연동</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold text-green-600 dark:text-green-400">GCP 보안</h5>
-            <ul className="text-sm space-y-1">
-              <li>• Cloud IAM 역할 관리</li>
-              <li>• Security Command Center</li>
-              <li>• Cloud KMS 암호화</li>
-              <li>• Chronicle 위협 분석</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-4 bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 통합 보안 정책 적용</div>
-          <div className="text-white">claude security-sync "멀티클라우드 보안 표준:</div>
-          <div className="text-white">- 최소 권한 원칙 (Zero Trust)</div>
-          <div className="text-white">- 모든 데이터 저장/전송 암호화</div>
-          <div className="text-white">- MFA 필수 적용</div>
-          <div className="text-white">- 90일 키 로테이션</div>
-          <div className="text-white">AWS, Azure, GCP 모두 동일 정책 적용"</div>
-        </div>
-      </div>
-
-      <h2>📊 통합 모니터링 및 관찰성</h2>
-
-      <h3>Single Pane of Glass</h3>
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
-        <h4 className="font-semibold">AI 기반 통합 대시보드</h4>
-        
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">실시간 메트릭 통합</h5>
-            <ul className="text-sm space-y-1">
-              <li>• AWS CloudWatch</li>
-              <li>• Azure Monitor</li>
-              <li>• GCP Cloud Monitoring</li>
-              <li>• 사용자 정의 메트릭</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-900 p-4 rounded border">
-            <h5 className="font-semibold mb-2">지능형 알림 통합</h5>
-            <ul className="text-sm space-y-1">
-              <li>• 클라우드별 노이즈 필터링</li>
-              <li>• 상관관계 기반 그룹화</li>
-              <li>• 비즈니스 영향도 우선순위</li>
-              <li>• 자동 에스컬레이션</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <h3>크로스 클라우드 성능 분석</h3>
-      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6">
-        <h4 className="font-semibold mb-3">🎯 멀티클라우드 APM</h4>
-        
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 분산 트레이싱 예시</div>
-          <div className="text-white">사용자 요청 → AWS ELB (5ms)</div>
-          <div className="text-white">→ AWS Lambda 인증 (15ms)</div>
-          <div className="text-white">→ Azure API Management (12ms)</div>
-          <div className="text-white">→ GCP Cloud Run 처리 (85ms)</div>
-          <div className="text-white">→ AWS RDS 조회 (45ms)</div>
-          <div className="text-white">→ 응답 반환 (8ms)</div>
-          <br />
-          <div className="text-yellow-300">총 응답시간: 170ms</div>
-          <div className="text-white">병목지점: GCP Cloud Run 처리</div>
-          <div className="text-white">최적화 제안: 메모리 증가 또는 동시성 조정</div>
-        </div>
-      </div>
-
-      <h2>💼 멀티클라우드 운영 플랫폼</h2>
-
-      <h3>통합 MSP 서비스</h3>
-      <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
-        <h4 className="font-semibold mb-4">멀티클라우드 운영 허브</h4>
-        
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="space-y-3">
-            <div><strong>통합 관리:</strong> AWS + Azure + GCP를 단일 콘솔에서 관리</div>
-            <div><strong>비용 최적화:</strong> 클라우드별 강점 활용으로 평균 35% 절약</div>
-            <div><strong>자동화:</strong> 1,200개 이상 자동화 워크플로 제공</div>
-          </div>
-          <div className="space-y-3">
-            <div><strong>24/7 운영:</strong> AI 기반 무인 모니터링 및 대응</div>
-            <div><strong>컴플라이언스:</strong> 각국 규정에 맞춘 자동 정책 적용</div>
-            <div><strong>재해복구:</strong> 멀티클라우드 기반 99.99% 가용성</div>
-          </div>
-        </div>
-      </div>
-
-      <h3>고객 성공 사례</h3>
-      <div className="space-y-4">
-        <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4">
-          <h4 className="font-semibold">P모 게임회사: 글로벌 서비스 최적화</h4>
-          <ul className="text-sm space-y-1">
-            <li>• <strong>한국</strong>: AWS 게임 서버 (낮은 지연시간)</li>
-            <li>• <strong>미국</strong>: Azure CDN (엔터프라이즈 연동)</li>
-            <li>• <strong>유럽</strong>: GCP BigQuery (GDPR 준수 분석)</li>
-            <li>• <strong>결과</strong>: 글로벌 지연시간 40% 감소, 비용 28% 절약</li>
-          </ul>
-        </div>
-        
-        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4">
-          <h4 className="font-semibold">Q모 금융사: 규정 준수 멀티클라우드</h4>
-          <ul className="text-sm space-y-1">
-            <li>• <strong>핵심 시스템</strong>: 온프레미스 (금융 규제)</li>
-            <li>• <strong>백오피스</strong>: Azure (Active Directory 연동)</li>
-            <li>• <strong>분석 플랫폼</strong>: GCP (BigQuery + AI Platform)</li>
-            <li>• <strong>결과</strong>: 규제 준수하며 디지털 전환 완료</li>
-          </ul>
-        </div>
-      </div>
-
-      <h2>🔮 멀티클라우드의 미래</h2>
-
-      <h3>신기술 통합</h3>
-      <div className="space-y-4">
-        <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-4">
-          <h4 className="font-semibold">Edge Computing 통합</h4>
-          <div className="text-sm space-y-1">
-            <div>• <strong>AWS Wavelength</strong>: 5G 네트워크 엣지</div>
-            <div>• <strong>Azure Edge Zones</strong>: 도시 엣지 컴퓨팅</div>
-            <div>• <strong>Google Distributed Cloud</strong>: 온프레미스 확장</div>
-            <div>• <strong>AI 최적화</strong>: 지연시간 1ms 이하 실현</div>
-          </div>
-        </div>
-
-        <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-4">
-          <h4 className="font-semibold">양자 컴퓨팅 준비</h4>
-          <div className="text-sm space-y-1">
-            <div>• <strong>AWS Braket</strong>: 양자 컴퓨팅 실험</div>
-            <div>• <strong>Azure Quantum</strong>: 양자 개발 도구</div>
-            <div>• <strong>Google Quantum</strong>: 양자 알고리즘 연구</div>
-            <div>• <strong>하이브리드 워크로드</strong>: 고전+양자 컴퓨팅 통합</div>
-          </div>
-        </div>
-      </div>
-
-      <h3>멀티클라우드 로드맵</h3>
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-        <h4 className="font-semibold mb-4">2025-2027 멀티클라우드 비전</h4>
-        
-        <div className="grid md:grid-cols-3 gap-4 text-center">
-          <div>
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400">200+</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">고객사 멀티클라우드 전환</p>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">50%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">평균 운영 비용 절감</p>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">99.99%</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">멀티클라우드 SLA 목표</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
-        <h4 className="font-semibold mb-2">🌟 멀티클라우드 성공 전략</h4>
         <p className="text-sm">
-          멀티클라우드의 성공은 기술이 아닌 전략에서 나옵니다. 
-          각 클라우드의 장점을 이해하고, 워크로드별 특성에 맞는 배치를 통해 
-          비용과 성능을 동시에 최적화하는 것이 핵심입니다. 
-          AI 기반 자동화를 통해 이러한 복잡성을 단순화하고 
-          고객이 비즈니스 혁신에 집중할 수 있도록 지원합니다.
+          수집된 메트릭/로그 요약은 Amazon Q 프롬프트에 포함하여 통합 보고서를 작성합니다.
         </p>
       </div>
 
-      <h2>🎯 완료</h2>
-      
+      <h2>3. Amazon Q Developer CLI로 멀티클라우드 보고서 작성</h2>
       <p>
-        축하합니다! <strong>9부 AI Ops 완전 가이드</strong>를 모두 완료했습니다. 
-        이제 AI 기반 클라우드 운영의 모든 영역을 마스터했습니다. 
-        다음 단계로는 실제 프로젝트에 적용하여 경험을 쌓아보시기 바랍니다.
+        프로파일을 명시해 Q CLI에 계정 정보를 전달하면, 각 클라우드에서 수집한 데이터를 한꺼번에 정리하도록 지시할 수 있습니다.
       </p>
 
-      <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 my-8">
-        <h4 className="font-semibold mb-3">🚀 다음 단계 추천</h4>
-        <ul className="space-y-2">
-          <li>✅ <strong>실습 프로젝트</strong>: 개인 환경에서 AI 자동화 구현</li>
-          <li>✅ <strong>커뮤니티 참여</strong>: AI Ops 커뮤니티에서 경험 공유</li>
-          <li>✅ <strong>지속 학습</strong>: 새로운 AI 도구와 기술 동향 팔로우</li>
-          <li>✅ <strong>전문 기업 솔루션</strong>: 엔터프라이즈 적용 상담 및 도입</li>
+      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono my-6">
+        <div className="text-green-400"># 멀티클라우드 FinOps 보고서 생성</div>
+        <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
+        <div className="text-white">  "당신은 멀티클라우드 FinOps 시니어 컨설턴트입니다.</div>
+        <div className="text-white">   아래 데이터를 기준으로 AWS, Azure, GCP 비용 상태를 비교해 DOCS 형식으로 정리하세요.</div>
+        <div className="text-white">   - AWS 요약: (직접 수집한 Cost Explorer 결과)</div>
+        <div className="text-white">   - Azure 요약: (Cost Management API 결과)</div>
+        <div className="text-white">   - GCP 요약: (BigQuery Billing Export 결과)</div>
+        <div className="text-white">   절감 우선순위와 실행 계획을 포함하세요."</div>
+      </div>
+
+      <p>
+        Q CLI는 AWS 자격 증명을 그대로 재사용하므로, 프롬프트에 다른 클라우드 데이터를 <strong>컨텍스트로 전달</strong>하는 방식으로 통합 분석을 수행합니다.
+      </p>
+
+      <h2>4. 실무 시나리오</h2>
+
+      <h3>① 멀티클라우드 장애 보고서</h3>
+      <div className="space-y-3">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+          <h4 className="font-semibold">로그 수집</h4>
+          <ul className="list-disc pl-6 text-sm space-y-1">
+            <li>AWS: CloudWatch Logs Insights 결과 요약</li>
+            <li>Azure: Log Analytics 쿼리 요약</li>
+            <li>GCP: Cloud Logging 필터 결과 요약</li>
+          </ul>
+        </div>
+        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+          <div className="text-green-400"># Q CLI에 분석 요청</div>
+          <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
+          <div className="text-white">  "당신은 멀티클라우드 SRE입니다.</div>
+          <div className="text-white">   아래 3개 클라우드의 로그 요약을 기반으로 공통 장애 원인을 분석하고,</div>
+          <div className="text-white">   즉시 조치/재발 방지 계획을 DOCS 형식으로 작성하세요.</div>
+          <div className="text-white">   - AWS: ...</div>
+          <div className="text-white">   - Azure: ...</div>
+          <div className="text-white">   - GCP: ..."</div>
+        </div>
+      </div>
+
+      <h3>② 배포 전 교차 검증 체크리스트</h3>
+      <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-3">
+        <p className="text-sm">
+          “AWS에 배포된 핵심 API가 Azure Functions, GCP BigQuery와 연동”되는 시나리오에서, 배포 전 확인해야 할 항목을 AI에게 정리하도록 지시합니다.
+        </p>
+        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+          <div className="text-green-400"># 체크리스트 생성</div>
+          <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
+          <div className="text-white">  "당신은 멀티클라우드 아키텍트입니다.</div>
+          <div className="text-white">   AWS API Gateway → Azure Functions → GCP BigQuery 흐름에 대해</div>
+          <div className="text-white">   배포 전 검증해야 할 항목을 Markdown 체크리스트로 작성하세요.</div>
+          <div className="text-white">   각 항목에 대응하는 CLI 명령 또는 콘솔 경로를 포함하세요."</div>
+        </div>
+      </div>
+
+      <h3>③ 계정별 규정 준수 검사</h3>
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-3">
+        <ul className="list-disc pl-6 text-sm space-y-1">
+          <li>AWS: AWS Config, Security Hub 결과 요약</li>
+          <li>Azure: Defender for Cloud 평가 결과 요약</li>
+          <li>GCP: Security Command Center 요약</li>
         </ul>
+        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+          <div className="text-green-400"># 규정 준수 보고서</div>
+          <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
+          <div className="text-white">  "당신은 멀티클라우드 컴플라이언스 담당자입니다.</div>
+          <div className="text-white">   아래 평가 결과를 기반으로 위험도 분류와 권고 조치를 DOCS 형식으로 정리하세요.</div>
+          <div className="text-white">   - AWS: ...</div>
+          <div className="text-white">   - Azure: ...</div>
+          <div className="text-white">   - GCP: ..."</div>
+        </div>
       </div>
 
-      <div className="flex gap-4 mt-8">
-        <a 
-          href="/conclusion/"
-          className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          다음: 마치며 →
-        </a>
-        <a 
-          href="/part9/cost-optimization/"
-          className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-        >
-          ← 이전: 비용 최적화
-        </a>
+      <h2>5. 운영 수칙</h2>
+      <div className="grid md:grid-cols-2 gap-6 my-8 text-sm">
+        <div className="border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 rounded-lg p-6">
+          <h3 className="font-semibold mb-2 text-green-800 dark:text-green-200">권장 사항</h3>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>각 클라우드의 CLI 인증 정보를 로컬에 저장하지 말고, SSO/Entra/Workload Identity Federation을 사용합니다.</li>
+            <li>AI가 생성한 조치 계획은 각 클라우드별 변경관리 프로세스를 거쳐 적용합니다.</li>
+            <li>보고서는 GitOps/문서 저장소에 커밋해 추적성을 확보합니다.</li>
+          </ul>
+        </div>
+        <div className="border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 rounded-lg p-6">
+          <h3 className="font-semibold mb-2 text-red-800 dark:text-red-200">주의 사항</h3>
+          <ul className="list-disc pl-6 space-y-1">
+            <li><code className="font-mono">claude multicloud-optimize</code> 등 실제 존재하지 않는 명령은 사용하지 않습니다.</li>
+            <li>AI에게 전달하는 로그/데이터에는 고객 식별 정보가 포함되지 않도록 마스킹합니다.</li>
+            <li>자동화 스크립트는 각 클라우드 계정마다 별도로 검증하고 롤백 플랜을 준비합니다.</li>
+          </ul>
+        </div>
       </div>
 
+      <p>
+        멀티클라우드 환경에서도 프로파일 기반 인증과 명확한 변경관리 프로세스를 유지하면, AI 도구를 <strong>신뢰할 수 있는 조력자</strong>로 활용할 수 있습니다.
+        이제 9부 마지막 단계로 넘어가 결론을 살펴보세요.
+      </p>
     </div>
-  )
+  );
 }

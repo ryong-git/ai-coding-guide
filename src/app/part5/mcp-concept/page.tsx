@@ -159,6 +159,50 @@ export default function MCPConceptPage() {
         </div>
       </div>
 
+      <SectionTitle>📚 실무 참고 자료와 프롬프트 예시</SectionTitle>
+      <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg p-6 space-y-4">
+        <h4 className="font-semibold">참고 자료</h4>
+        <ul className="list-disc pl-6 space-y-1 text-sm">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=HwAeHhbZYlQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-300 hover:underline"
+            >
+              Amazon Q Developer CLI에서 MCP 활용하기 (AWS Korea, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://catalog.workshops.aws/mcp-tutorial-on-aws/ko-KR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-300 hover:underline"
+            >
+              MCP Tutorial on AWS (Workshop Studio)
+            </a>
+          </li>
+        </ul>
+
+        <h4 className="font-semibold">프로파일 기반 프롬프트 패턴</h4>
+        <p className="text-sm">
+          AWS CLI, Amazon Q Developer CLI, Claude Code 모두 IAM Identity Center 프로파일을 공유합니다. 다음과 같이 맥락과 출력 형식을 명확히
+          지정하면 실무 보고서를 빠르게 작성할 수 있습니다.
+        </p>
+        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
+          <div className="text-green-400"># MCP 도구를 활용한 운영 리포트 생성</div>
+          <div className="text-white">AWS_PROFILE=bespin-test q mcp run \</div>
+          <div className="text-white">  "당신은 AWS 시니어 컨설턴트입니다.</div>
+          <div className="text-white">   core-platform 환경의 지난 7일 운영 이슈를 요약하고,</div>
+          <div className="text-white">   MCP로 수집 가능한 로그/지표를 표 형식으로 정리한 뒤</div>
+          <div className="text-white">   개선 권고안을 DOCS 구조로 작성하세요."</div>
+        </div>
+        <p className="text-xs text-gray-600 dark:text-gray-400">
+          ⚠️ AI가 제시한 명령은 반드시 샌드박드 환경에서 검증한 후 프로덕션에 적용합니다.
+        </p>
+      </div>
+
       <InfoBox type="warning">
         <h4 className="font-semibold mb-2">⚠️ 2025년 현재 상황</h4>
         <Paragraph className="text-sm">
