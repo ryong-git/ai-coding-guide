@@ -50,10 +50,7 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased font-inter`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-        >
+        <ThemeProvider defaultTheme="system">
           <div className="min-h-screen bg-white dark:bg-gray-900">
             <Navigation />
             
