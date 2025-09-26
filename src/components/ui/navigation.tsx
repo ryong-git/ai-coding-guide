@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ChevronDown, ChevronRight, Menu, X } from "lucide-react"
+import { ChevronDown, ChevronRight, Menu, X, PlayCircle, Sparkles } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface NavItem {
@@ -189,13 +189,32 @@ export function Navigation({ className }: NavigationProps) {
         className
       )}>
         <div className="p-6">
-          <Link 
-            href="/"
-            className="text-xl font-bold text-gray-900 dark:text-white mb-8 block"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            AI 코딩 A to Z
-          </Link>
+          <div className="mb-6 space-y-4">
+            <Link 
+              href="/"
+              className="text-xl font-bold text-gray-900 transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              AI 코딩 A to Z
+            </Link>
+
+            <div className="relative overflow-hidden rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 p-4 shadow-sm dark:border-blue-500/30 dark:from-blue-950/40 dark:via-slate-950/30 dark:to-indigo-950/40">
+              <div className="flex items-start gap-3">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/80 text-blue-600 shadow-sm dark:bg-slate-900/70 dark:text-blue-200">
+                  <PlayCircle className="h-5 w-5" />
+                </div>
+                <div className="space-y-1 text-xs">
+                  <div className="inline-flex items-center gap-1 rounded-full bg-blue-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-blue-700 dark:bg-blue-500/10 dark:text-blue-200">
+                    <Sparkles className="h-3 w-3" />
+                    Video-based
+                  </div>
+                  <p className="text-slate-600 dark:text-slate-300">
+                    3개 YouTube 실전 영상에서 추출한 워크플로를 토대로 제작된 가이드입니다. 각 섹션의 링크를 따라 실습과 검증을 동시에 진행하세요.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <div className="space-y-1">
             {navigationData.map(item => renderNavItem(item))}

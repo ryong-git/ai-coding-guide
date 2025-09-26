@@ -58,9 +58,16 @@ export default function RootLayout({
             <Navigation />
             
             <main className="md:ml-80 min-h-screen">
-              <header className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 sticky top-0 z-20">
+              <header className="sticky top-0 z-20 border-b border-transparent bg-gradient-to-r from-white via-blue-50/70 to-indigo-50/60 backdrop-blur dark:from-slate-950/60 dark:via-blue-950/40 dark:to-slate-900/60">
                 <div className="flex items-center justify-between px-6 py-4">
-                  <div className="flex-1" />
+                  <div className="space-y-1">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-500 dark:text-blue-300">
+                      Video Validated MSP Guide
+                    </p>
+                    <p className="text-sm text-slate-600 dark:text-slate-300">
+                      Agentic AI 워크플로를 단계별로 따라가며 팀에 바로 적용해 보세요.
+                    </p>
+                  </div>
                   <ThemeToggle />
                 </div>
               </header>

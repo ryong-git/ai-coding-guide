@@ -5,3 +5,4 @@ export * from './typography';
 export * from './theme-provider';
 export * from './theme-toggle';
 export * from './navigation';
+export * from './highlight-grid';

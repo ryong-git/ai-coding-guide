@@ -1,6 +1,5 @@
 import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
-import { InfoBox, FeatureBox } from '@/components/ui/info-box';
-import { CodeBlock } from '@/components/ui/code-block';
+import { InfoBox } from '@/components/ui/info-box';
 
 export default function ToolStrategyPage() {
   return (

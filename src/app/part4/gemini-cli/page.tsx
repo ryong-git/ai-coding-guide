@@ -1,5 +1,5 @@
 import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
-import { InfoBox, FeatureBox } from '@/components/ui/info-box';
+import { InfoBox } from '@/components/ui/info-box';
 import { CodeBlock } from '@/components/ui/code-block';
 
 export default function GeminiCLIPage() {

@@ -8,8 +8,6 @@ type ThemeProviderProps = {
   children: React.ReactNode
   defaultTheme?: Theme
   storageKey?: string
-  attribute?: string
-  value?: Record<Theme, string>
 }
 
 type ThemeProviderState = {
@@ -28,8 +26,6 @@ export function ThemeProvider({
   children,
   defaultTheme = "system",
   storageKey = "ui-theme",
-  attribute = "class",
-  value = { light: "light", dark: "dark", system: "system" },
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = React.useState<Theme>(defaultTheme)

@@ -1,4 +1,5 @@
-import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
+import Link from 'next/link';
+import { PageTitle, SectionTitle, Lead, Paragraph } from '@/components/ui/typography';
 import { InfoBox, FeatureBox } from '@/components/ui/info-box';
 
 export default function ConclusionPage() {
@@ -145,18 +146,18 @@ export default function ConclusionPage() {
       </div>
 
       <div className="flex gap-4 mt-8">
-        <a 
+        <Link
           href="/"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
         >
           🏠 처음으로 돌아가기
-        </a>
-        <a 
+        </Link>
+        <Link
           href="/part9/multicloud-ops/"
           className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
         >
           ← 이전: 멀티클라우드 AI 운영
-        </a>
+        </Link>
       </div>
     </div>
   )
