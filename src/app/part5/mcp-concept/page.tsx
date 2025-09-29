@@ -203,6 +203,106 @@ export default function MCPConceptPage() {
         </p>
       </div>
 
+      <SectionTitle>🧰 실무 MCP 서버 모음</SectionTitle>
+      <p>
+        실제 프로젝트에서 자주 쓰이는 MCP 서버와 설치 방법, 그리고 AWS 클라우드 운영에 접목할 수 있는 활용 아이디어를 정리했습니다.
+        아래 예시는 모두 <code className="font-mono">npx</code> 기반으로 손쉽게 테스트할 수 있습니다.
+      </p>
+
+      <div className="space-y-6">
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-3">
+          <h3 className="text-lg font-semibold">Playwright MCP — 프론트엔드 QA &amp; 모니터링</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Microsoft가 배포한 <strong>Playwright MCP</strong>는 브라우저를 자동으로 띄워 접근성 트리를 기반으로 분석하거나, 페이지 스냅샷을
+            캡처하고 폼 제출을 시뮬레이션할 수 있습니다. 정적 LCP 측정뿐 아니라, <strong>릴리즈 직후 오류 재현</strong>과 <strong>정기적인 스크린샷 회귀 테스트</strong>
+            자동화에 유용합니다.
+          </p>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto">
+            <div className="text-green-400"># 설치 (VS Code / Claude 공통)</div>
+            <div className="text-white">npx @playwright/mcp@latest</div>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4 text-sm space-y-2">
+            <p className="font-semibold">실무 프롬프트</p>
+            <p>
+              <code className="font-mono">AWS_PROFILE=bespin-test</code>로 로그인한 뒤 Amazon Q에 다음과 같이 지시하면, 배포된 프론트 페이지에서 장애 요소를
+              찾아 Slack용 보고서를 만들 수 있습니다.
+            </p>
+            <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono">
+              <div className="text-white">"Playwright MCP를 사용해 https://vibe.3344.kr 배포 페이지를 열고,</div>
+              <div className="text-white">메인 CTA 버튼이 보이지 않거나 4xx 응답이 발생하는지 확인한 뒤</div>
+              <div className="text-white">문제 발견 시 스크린샷과 HTML 스니펫을 첨부해서 DOCS 보고서를 작성해줘."</div>
+            </div>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              👉 처음 실행 시 <code className="font-mono">Install browser</code> 도구를 호출해 Playwright 런타임을 설치해야 합니다.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-3">
+          <h3 className="text-lg font-semibold">Sequential Thinking MCP — 단계별 RCA</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            <strong>@modelcontextprotocol/server-sequential-thinking</strong>은 사고의 흐름을 구조화해 주는 도구입니다. 장애 원인 분석이나 장기 로드맵 설계처럼
+            <strong>여러 가설을 검증해야 하는 작업</strong>에 사용하면 좋습니다.</p>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto">
+            <div className="text-green-400"># 설치</div>
+            <div className="text-white">npx -y @modelcontextprotocol/server-sequential-thinking</div>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4 text-sm space-y-2">
+            <p className="font-semibold">활용 아이디어</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>이벤트 릿지를 기반으로 <strong>장애 RCA</strong>를 단계별로 정리하고, 재발방지 체크리스트를 생성</li>
+              <li><strong>DevOps 워크숍</strong>에서 시나리오 기반 토론 자료를 AI가 자동 작성</li>
+            </ul>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              ✏️ <code className="font-mono">DISABLE_THOUGHT_LOGGING=true</code> 환경변수를 설정하면 민감 정보가 로그에 남지 않습니다.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-3">
+          <h3 className="text-lg font-semibold">Memory MCP — 고객사 맥락 유지</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            <strong>@modelcontextprotocol/server-memory</strong>는 로컬 지식 그래프를 이용해 사용자의 선호도, 인프라 특이점 같은 장기 맥락을 저장합니다. MSP 관점에서
+            <strong>고객사별 운영 히스토리</strong>, 정기 요청, 금지 작업 등을 저장해 두면 AI가 반복 질문 없이 대응할 수 있습니다.</p>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto">
+            <div className="text-green-400"># 설치</div>
+            <div className="text-white">npx -y @modelcontextprotocol/server-memory</div>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4 text-sm space-y-2">
+            <p className="font-semibold">Tip</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>
+                환경변수 <code className="font-mono">MEMORY_FILE_PATH=/ops/memory/bespin.json</code>을 설정해 고객사별 파일을 분리 관리
+              </li>
+              <li>
+                Amazon Q 커스텀 지침에 “<strong>Remembering...</strong>” 프롬프트를 추가해 대화 시작 시 메모리를 항상 로드하도록 구성
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-3">
+          <h3 className="text-lg font-semibold">Context7 MCP — 코드 &amp; API 문서 1차원화</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Upstash의 <strong>Context7 MCP</strong>는 GitHub 저장소, 사내 API 스펙 문서를 꾸준히 크롤링해 최신 Markdown 문서로 변환합니다. LLM 에이전트가
+            <strong>실제 최신 시그니처</strong>를 기반으로 코드를 제안하도록 만들 수 있어, 대규모 레거시에서 특히 효과적입니다.</p>
+          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto">
+            <div className="text-green-400"># 설치</div>
+            <div className="text-white">npx -y @upstash/context7-mcp@latest</div>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded p-4 text-sm space-y-2">
+            <p className="font-semibold">예시 사용법</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Terraform 모듈 저장소를 지정해 <strong>IaC 변경 영향 분석</strong>을 자동화</li>
+              <li>사내 REST API 스펙을 업로드해 <strong>멀티클라우드 통합 시나리오</strong>를 빠르게 설계</li>
+            </ul>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Context7는 자체 API 키가 필요합니다. <code className="font-mono">npx -y @smithery/cli install @upstash/context7-mcp</code> 명령으로 Smithery에 등록한 뒤 사용하는 것이 가장 간단합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <InfoBox type="warning">
         <h4 className="font-semibold mb-2">⚠️ 2025년 현재 상황</h4>
         <Paragraph className="text-sm">
