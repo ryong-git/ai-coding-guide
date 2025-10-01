@@ -129,36 +129,51 @@ export default function HomePage() {
       {/* Key Tools */}
       <section className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 space-y-6">
         <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
-          핵심 AI 코딩 도구들
+          2025-10-01 추천 도구 스타트라인
         </h2>
+        <p className="text-sm text-center text-gray-600 dark:text-gray-400">
+          무료로 시작한다면 <strong>Amazon Q Developer CLI</strong>, 유료 투자가 가능하다면 출시 직후의 <strong>Claude Code (Sonnet 4.5)</strong>로 고급 MCP 워크플로를 체험해 보세요.
+        </p>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-lg font-semibold mb-3">Amazon Q Developer CLI</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              AWS 네이티브 통합과 엔터프라이즈 보안
+          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700 space-y-3">
+            <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">FREE • AWS 계정만 있으면 즉시 사용</div>
+            <h3 className="text-lg font-semibold">Amazon Q Developer CLI</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              IAM Identity Center 기반 인증으로 코드 생성·배포·FinOps 리포트까지 단일 워크플로로 처리합니다. 이 가이드 대부분의 예제는 Q CLI를 기준으로 작성되었습니다.
             </p>
-            <div className="text-xs bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded">
-              AWS 파트너십 활용
+            <div className="text-xs bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded inline-flex">AWS 파트너십 기본 제공</div>
+            <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono text-xs overflow-x-auto">
+              <div className="text-green-400"># 설치 &amp; 로그인</div>
+              <div className="text-white">pipx install aws-q-developer-cli</div>
+              <div className="text-white">aws q login --profile bespin-sso</div>
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-lg font-semibold mb-3">Claude Code</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              전체 프로젝트 인식과 멀티파일 편집
+          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700 space-y-3">
+            <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">PAID • Claude Sonnet 4.5 (2025.10 발표)</div>
+            <h3 className="text-lg font-semibold">Claude Code</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              전체 리포지토리 컨텍스트와 멀티파일 편집에 강력합니다. 새롭게 공개된 Sonnet 4.5 모델이 기본 엔진으로 설정되어 Playwright, Context7 같은 MCP 서버와의 호환성이 대폭 향상되었습니다.
             </p>
-            <div className="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded">
-              MCP 통합 지원
+            <div className="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded inline-flex">MCP 풀 스택 통합</div>
+            <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono text-xs overflow-x-auto">
+              <div className="text-green-400"># 구독 후 설정</div>
+              <div className="text-white">claude config set default_model sonnet-4.5</div>
+              <div className="text-white">claude mcp add playwright -- npx @playwright/mcp@latest</div>
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-lg font-semibold mb-3">Gemini CLI</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              100만 토큰 컨텍스트와 오픈소스
+          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700 space-y-3">
+            <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">옵션 • 데이터 분석 강화</div>
+            <h3 className="text-lg font-semibold">Gemini CLI</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              100만 토큰 컨텍스트로 대규모 문서·로그를 한 번에 분석할 수 있어 FinOps·보안 감사 자동화에 유용합니다. 오픈소스 MCP 서버와 결합해 하이브리드 워크플로를 구축할 수 있습니다.
             </p>
-            <div className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">
-              무료 사용 가능
+            <div className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded inline-flex">Google Cloud 연계</div>
+            <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono text-xs overflow-x-auto">
+              <div className="text-green-400"># 설치</div>
+              <div className="text-white">npm install -g @google/gemini-cli</div>
+              <div className="text-white">gemini auth login</div>
             </div>
           </div>
         </div>
