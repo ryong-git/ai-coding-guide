@@ -21,13 +21,28 @@ export default function CostOptimizationPage() {
       </div>
 
       <h2>2. 비용 데이터 수집</h2>
+      <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 text-sm mb-6">
+        <p className="font-semibold mb-1">먼저 보고서 출력 디렉터리를 준비하세요.</p>
+        <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto">
+          <div className="text-white">mkdir -p reports</div>
+        </div>
+      </div>
+
       <div className="grid md:grid-cols-3 gap-6 my-6 text-sm">
         <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-900 space-y-3">
           <h3 className="font-semibold">AWS CUR</h3>
           <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto">
             <div className="text-green-400"># 지난 30일 서비스별 비용</div>
+            <div className="text-white">START_DATE=$(python - &lt;&lt;'PY'</div>
+            <div className="text-white">from datetime import date, timedelta</div>
+            <div className="text-white">today = date.today()</div>
+            <div className="text-white">start = (today - timedelta(days=30)).replace(day=1)</div>
+            <div className="text-white">print(start.strftime("%Y-%m-%d"))</div>
+            <div className="text-white">PY</div>
+            <div className="text-white">)</div>
+            <div className="text-white">END_DATE=$(python -c "from datetime import date; print(date.today().strftime('%Y-%m-%d'))")</div>
             <div className="text-white">aws ce get-cost-and-usage \</div>
-            <div className="text-white">  --time-period Start=$(date -v-30d +%Y-%m-01),End=$(date +%Y-%m-%d) \</div>
+            <div className="text-white">  --time-period Start=$START_DATE,End=$END_DATE \</div>
             <div className="text-white">  --granularity DAILY \</div>
             <div className="text-white">  --metrics UnblendedCost \</div>
             <div className="text-white">  --group-by Type=DIMENSION,Key=SERVICE \</div>
@@ -38,14 +53,18 @@ export default function CostOptimizationPage() {
           <h3 className="font-semibold">Azure Cost Management</h3>
           <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto">
             <div className="text-green-400"># ResourceGroup 단위 비용</div>
-            <div className="text-white">az costmanagement query -r \
-{AZURE_SUBSCRIPTION_ID} \</div>
+            <div className="text-white">cat &lt;&lt;'JSON' &gt; reports/azure-aggregation.json</div>
+            <div className="text-white">{'{"totalCost":{"name":"Cost","function":"Sum"}}'}</div>
+            <div className="text-white">JSON</div>
+            <div className="text-white">az costmanagement query \</div>
+            <div className="text-white">  --scope /subscriptions/$AZURE_SUBSCRIPTION_ID \</div>
             <div className="text-white">  --type Usage \</div>
             <div className="text-white">  --timeframe Custom \</div>
-            <div className="text-white">  --time-period 2025-08-01 2025-08-31 \</div>
-            <div className="text-white">  --dataset-aggregation "{`{"totalCost":{"name":"Cost","function":"Sum"}}`}" \</div>
+            <div className="text-white">  --time-period from=2025-08-01 to=2025-08-31 \</div>
             <div className="text-white">  --dataset-granularity Daily \</div>
-            <div className="text-white">  --dataset-grouping name=ResourceGroupId,type=Dimension \</div>
+            <div className="text-white">  --dataset-aggregation @reports/azure-aggregation.json \</div>
+            <div className="text-white">  --dataset-grouping name=ResourceGroup,type=Dimension \</div>
+            <div className="text-white">  --output json \</div>
             <div className="text-white">  &gt; reports/azure-cost.json</div>
           </div>
         </div>
@@ -53,14 +72,17 @@ export default function CostOptimizationPage() {
           <h3 className="font-semibold">GCP Billing Export</h3>
           <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto">
             <div className="text-green-400"># BigQuery에서 비용 조회</div>
-            <div className="text-white">bq query --use_legacy_sql=false \</div>
-            <div className="text-white">  "SELECT service.description AS service,</div>
-            <div className="text-white">          SUM(cost) AS total_cost</div>
-            <div className="text-white">   FROM   \
-`billing_export.gcp_billing_export_v1_XXXX`</div>
-            <div className="text-white">   WHERE  usage_start_time &gt;= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)</div>
-            <div className="text-white">   GROUP BY service" \</div>
-            <div className="text-white">  &gt; reports/gcp-cost.json</div>
+            <div className="text-white">bq query --use_legacy_sql=false &gt; reports/gcp-cost.json &lt;&lt;'SQL'</div>
+            <div className="text-white">SELECT</div>
+            <div className="text-white">  service.description AS service,</div>
+            <div className="text-white">  SUM(cost) AS total_cost</div>
+            <div className="text-white">FROM</div>
+            <div className="text-white">  `billing_export.gcp_billing_export_v1_XXXX`</div>
+            <div className="text-white">WHERE</div>
+            <div className="text-white">  usage_start_time &gt;= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)</div>
+            <div className="text-white">GROUP BY</div>
+            <div className="text-white">  service</div>
+            <div className="text-white">SQL</div>
           </div>
         </div>
       </div>
