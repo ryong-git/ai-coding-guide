@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Claude Use Case Visuals
+
+We maintain a reference dataset of 39 Claude use cases (track, persona, activation trigger, recommended use). The latest CSV lives at
+`docs/reference/claude_use_case_tracks.csv`, and the visual summaries are embedded below for quick context.
+
+![Category vs Track](public/assets/claude_use_case_categories.png)
+
+![Track vs Persona](public/assets/claude_use_case_personas.png)
+
 ## Getting Started
 
 First, run the development server:

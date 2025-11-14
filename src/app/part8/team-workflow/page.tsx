@@ -128,6 +128,114 @@ export default function AgenticOrchestrationPlatformPage() {
           </div>
         </InfoBox>
 
+        <SectionTitle>📎 Claude Use Case로 팀 운영 루틴 자동화</SectionTitle>
+        <div className="flex flex-wrap gap-3 my-6">
+          <a
+            href="/docs/reference/claude_use_case_tracks.csv"
+            className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/70 px-4 py-2 text-xs font-semibold text-blue-700 hover:bg-blue-100 dark:border-blue-500/40 dark:bg-blue-900/30 dark:text-blue-200"
+          >
+            CSV 보기 → Claude track & persona
+          </a>
+          <a
+            href="/docs/snippets/use-case-prompts.md"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200"
+          >
+            프롬프트 템플릿 →
+          </a>
+        </div>
+
+        <Paragraph>
+          Claude 공식 use case 39개를 트랙/페르소나별로 정리한 <code className="font-mono">docs/reference/claude_use_case_tracks.csv</code>에서 아래와 같이
+          <strong>Cloud Ops</strong>와 <strong>일반 스텝 부서</strong> 루틴을 한 번에 자동화할 수 있습니다. Part 5에서 소개한 MCP 흐름과 동일하게
+          `AWS_PROFILE`, Resource, Tool, 사후 검증 절차를 조합하면 됩니다.
+        </Paragraph>
+
+        <div className="grid lg:grid-cols-2 gap-6">
+          <div className="rounded-2xl border border-slate-200 bg-slate-900 p-6 text-slate-100 dark:border-slate-700">
+            <h4 className="text-base font-semibold text-emerald-300 mb-2">Cloud Ops 루틴</h4>
+            <p className="text-sm text-slate-300 mb-4">Delivery PM · FinOps · MSP On-call 팀이 자주 반복하는 카드 3종</p>
+            <div className="space-y-5">
+              <div>
+                <div className="text-xs font-semibold text-slate-400">generate-project-status-reports (Delivery PM)</div>
+                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
+AWS_PROFILE=bespin-core q mcp run \
+  --resource git://ops-repo?path=reports/W{week}.md \
+  --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약" \
+  --prompt "주간 리스크 + 차주 계획 + 지원 요청을 정리하고 검증 절차를 명시"
+                </pre>
+                <p className="mt-2 text-xs text-slate-300">Slack #wbr 공유 전 Git diff &lt;= 10줄 확인 + PM 승인 체커</p>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-slate-400">analyze-patterns-in-user-feedback (MSP On-call)</div>
+                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
+AWS_PROFILE=bespin-support q mcp run \
+  --resource filesystem://logs/zendesk/{date}.json \
+  --tool sequential-think.analyze "패턴/근본 원인/후속 조치 3단계 정리"
+                </pre>
+                <p className="mt-2 text-xs text-slate-300">결과는 Incident DB에 업로드하고, CloudWatch 지표와 상호 검증</p>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-slate-400">organize-your-business-finances (FinOps Lead)</div>
+                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
+AWS_PROFILE=finops-prod q mcp run \
+  --resource s3://cur-bucket/{year}-{month}.csv \
+  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard"
+                </pre>
+                <p className="mt-2 text-xs text-slate-300">CUR ↔ Cost Explorer 교차 검증 후 재무 승인 로그에 링크 저장</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">
+            <h4 className="text-base font-semibold text-indigo-600 dark:text-indigo-300 mb-2">General Biz 루틴</h4>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">Marketing Ops · HR Ops · Knowledge Manager가 곧바로 사용할 수 있는 카드</p>
+            <div className="space-y-5">
+              <div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">build-customer-personas (Marketing Ops)</div>
+                <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
+AWS_PROFILE=revops-sso q mcp run \
+  --resource fetch://crm-api/persona-export.json \
+  --tool memory.write "업데이트된 페르소나 지식"
+                </pre>
+                <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">영업팀 2인 리뷰 + 최신 세일즈 덱 링크 첨부 후 Knowledge Hub에 게시</p>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">create-new-hire-onboarding-guides (HR Ops)</div>
+                <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
+AWS_PROFILE=hr-portal q mcp run \
+  --resource filesystem://hr/onboarding/checklist.md \
+  --tool playwright.pdf "https://people.bespin/global-onboarding-template"
+                </pre>
+                <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">PDF 업로드 전 개인정보/보안 교육 링크 최신화 여부 체크</p>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">turn-text-threads-to-researched-notes (Knowledge Manager)</div>
+                <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
+AWS_PROFILE=knowledge-hub q mcp run \
+  --resource fetch://slack-api/threads/{channel}.json \
+  --tool memory.write "회의·슬랙 스레드 요약"
+                </pre>
+                <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">Slack API 토큰은 .env로 분리, 산출물은 Notion 위키와 동시 업데이트</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <InfoBox type="tip" title="📂 재사용 자산 위치">
+          <Paragraph className="text-sm">
+            프롬프트와 체크리스트는 <code className="font-mono">docs/snippets/use-case-prompts.md</code>에서 최신 버전을 확인하고, Part별
+            문서를 작성할 때에는 반드시 `track`/`persona`/`activation_trigger` 컬럼을 인용해 어떤 역할이 언제 해당 카드를 실행해야 하는지 명시하세요.
+          </Paragraph>
+        </InfoBox>
+
+          <div className="text-sm space-y-3">
+            <div><strong>🎼 통합 조율:</strong> 수십 개 프로젝트의 AI 에이전트들을 하나의 통합된 생태계로 관리</div>
+            <div><strong>🔄 동적 리소스 배분:</strong> 프로젝트 우선순위와 진행 상황에 따른 에이전트 리소스 실시간 재분배</div>
+            <div><strong>🧠 집단 학습:</strong> 모든 프로젝트의 경험과 지식을 조직 차원에서 축적하고 공유</div>
+            <div><strong>📊 전략적 의사결정:</strong> 비즈니스 목표와 기술 실행을 연결하는 데이터 기반 의사결정 지원</div>
+          </div>
+        </InfoBox>
+
         <SectionTitle>🏛️ 메타 아키텍처: 에이전트를 관리하는 에이전트</SectionTitle>
 
         <SubsectionTitle>계층적 자율 관리 시스템</SubsectionTitle>

@@ -79,6 +79,73 @@ export default function IacIntegrationPage() {
         </div>
       </div>
 
+      <h2>Claude Use Case로 IaC 의사결정 가속화</h2>
+      <div className="flex flex-wrap gap-3 my-6">
+        <a
+          href="/docs/reference/claude_use_case_tracks.csv"
+          className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/70 px-4 py-2 text-xs font-semibold text-indigo-700 hover:bg-indigo-100 dark:border-indigo-500/40 dark:bg-indigo-900/30 dark:text-indigo-200"
+        >
+          Claude track CSV →
+        </a>
+        <a
+          href="/docs/snippets/use-case-prompts.md"
+          className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200"
+        >
+          Cloud Ops 프롬프트 →
+        </a>
+      </div>
+
+      <p>
+        Claude 공식 use case 중 <strong>Cloud Ops</strong> 트랙(Card 목록: <code className="font-mono">docs/reference/claude_use_case_tracks.csv</code>)을 활용하면 
+        아키텍처 비교나 참고 자료 정리를 자동화할 수 있습니다. IaC 변경 전후 검토에서 자주 쓰는 대표 카드 2가지를 예시로 들면 다음과 같습니다.
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-6 my-8 text-sm">
+        <div className="border border-blue-200 dark:border-blue-800 bg-slate-900 text-slate-100 rounded-lg p-6 space-y-3">
+          <h3 className="font-semibold text-lg text-cyan-300">compare-and-analyze-competing-options</h3>
+          <p className="text-xs text-slate-300">
+            <strong>페르소나</strong>: Delivery PM · <strong>Activation</strong>: 멀티 환경 설계안 중 비용/보안/운영 리스크를 비교해야 할 때
+          </p>
+          <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto">
+AWS_PROFILE=bespin-architecture q mcp run \
+  --resource git://iac/design-docs?path=eks-vs-ecs.md \
+  --tool context7.search "EKS baseline, ECS best practice" \
+  --prompt "입력 문서를 기반으로 옵션별 장단점, 비용 추정, 보안 영향, 승인 조건을 표로 정리"
+          </pre>
+          <ul className="list-disc pl-6 space-y-1 text-xs text-slate-200">
+            <li>Plan 이전 단계에서 설계 비교표를 자동 생성</li>
+            <li>검증: 표에 언급된 수치/태그는 Terraform tfvars와 교차 확인</li>
+            <li>산출물은 Change Manager 티켓에 첨부</li>
+          </ul>
+        </div>
+        <div className="border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-slate-900 rounded-lg p-6 space-y-3">
+          <h3 className="font-semibold text-lg text-indigo-600 dark:text-indigo-300">plan-your-literature-review</h3>
+          <p className="text-xs text-gray-600 dark:text-gray-300">
+            <strong>페르소나</strong>: Architecture Researcher · <strong>Activation</strong>: 신규 서비스 도입 전 레퍼런스 아키텍처/보안 가이드를 빠르게 모아야 할 때
+          </p>
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto">
+AWS_PROFILE=bespin-research q mcp run \
+  --resource fetch://awsdocs/landing-zone-library.json \
+  --tool memory.write "Landing Zone 참고 노트" \
+  --prompt "Landing Zone/WAF/GuardDuty 모범사례를 요약해 IA팀 검토용 TOC와 읽기 순서를 생성"
+          </pre>
+          <ul className="list-disc pl-6 space-y-1 text-xs text-gray-600 dark:text-gray-300">
+            <li>아키텍처 리뷰 회의 전 읽기 목록/검증 항목을 자동화</li>
+            <li>Memory MCP에 저장해 다른 프로젝트에서도 동일 템플릿 사용</li>
+            <li>검증: AWS Well-Architected Tool 결과와 비교해 누락 항목 체크</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4 text-sm">
+        <p className="mb-2 font-semibold">Tip — 재사용 템플릿</p>
+        <p>
+          추가 프롬프트와 체크리스트는 <code className="font-mono">docs/snippets/use-case-prompts.md</code>에서 Cloud Ops 블록을 확인하세요.
+          IaC 문서에 카드를 인용할 때는 슬러그와 페르소나·Activation 문구를 그대로 표기해, 어떤 역할이 언제 AI를 호출해야 하는지 독자가 바로 이해하도록 합니다.
+        </p>
+      </div>
+
+
       <h2>4. 배포(Apply) 단계 자동화</h2>
       <p>
         배포는 GitHub Actions/CodePipeline 등에서 수행하되, AI가 생성한 체크리스트를 기반으로 <strong>사전 확인 → 단계별 배포 → 사후 검증</strong>을 자동화합니다.

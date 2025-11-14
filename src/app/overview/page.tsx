@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function OverviewPage() {
   return (
     <div className="prose prose-lg max-w-none dark:prose-invert">
@@ -44,6 +46,41 @@ export default function OverviewPage() {
             근본원인 분석과 단계별 해결책을 즉시 제공
           </p>
         </div>
+      </div>
+
+      <h2>📊 Claude Use Case 분포 한눈에 보기</h2>
+      <p>
+        Claude 공식 use case 39건을 <strong>Cloud Ops vs 일반 스텝 부서</strong> 관점으로 재분류했습니다. 아래 시각 자료는 어떤
+        카테고리/페르소나가 어떤 트랙에 속하는지 보여주며, 상세 데이터는 <code className="font-mono">docs/reference/claude_use_case_viz.md</code>
+        에서 확인할 수 있습니다.
+      </p>
+
+      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 my-8 space-y-6">
+        <figure>
+          <Image
+            src="/assets/claude_use_case_categories.png"
+            alt="Claude use cases category vs track"
+            width={960}
+            height={560}
+            className="rounded-lg border border-slate-200 dark:border-slate-700"
+          />
+          <figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            Category → Track 분포 (Cloud Ops 7 / General Biz 31 / Both 1)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <Image
+            src="/assets/claude_use_case_personas.png"
+            alt="Claude use cases track vs persona"
+            width={960}
+            height={420}
+            className="rounded-lg border border-slate-200 dark:border-slate-700"
+          />
+          <figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            Track → Persona 매핑. Cloud Ops/General Biz 주요 역할을 빠르게 파악할 수 있습니다.
+          </figcaption>
+        </figure>
       </div>
 
       <h2>📚 가이드 사용법</h2>

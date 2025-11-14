@@ -146,6 +146,74 @@ export default function CostOptimizationPage() {
         </p>
       </div>
 
+      <h2>Claude Use Case로 FinOps 보고 자동화</h2>
+      <div className="flex flex-wrap gap-3 my-6">
+        <a
+          href="/docs/reference/claude_use_case_tracks.csv"
+          className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50/70 px-4 py-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-100 dark:border-emerald-500/40 dark:bg-emerald-900/30 dark:text-emerald-200"
+        >
+          Claude track CSV →
+        </a>
+        <a
+          href="/docs/snippets/use-case-prompts.md"
+          className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200"
+        >
+          프롬프트 템플릿 →
+        </a>
+      </div>
+
+      <p>
+        Cloud Ops 트랙 외에도 재무/전략 담당자가 즉시 사용할 수 있는 Claude 카드가 다수 존재합니다. 
+        <code className="font-mono">docs/reference/claude_use_case_tracks.csv</code>에서 track=cloud_ops 혹은 persona가 FinOps/Strategy인 항목을 선택하고,
+        아래 예시처럼 비용 데이터와 MCP 도구를 묶어 리포트를 생성하세요.
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-6 my-8 text-sm">
+        <div className="rounded-xl border border-emerald-200 dark:border-emerald-700 bg-slate-900 text-slate-100 p-6 space-y-3">
+          <h3 className="font-semibold text-emerald-300">organize-your-business-finances</h3>
+          <p className="text-xs text-slate-300">FinOps Lead · 월간 AWS CUR/RI/저장소 지표를 요약해야 할 때</p>
+          <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto">
+AWS_PROFILE=bespin-finops q mcp run \
+  --resource s3://cur-bucket/{year}-{month}.csv \
+  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard" \
+  --prompt "CUR 데이터를 분석해 RI/SavingsPlan/CUD KPI + 이상 징후를 표로 정리하고, 증빙 스크린샷 경로를 포함해줘"
+          </pre>
+          <p className="text-xs text-slate-400">결과는 DOCS 템플릿으로 저장 후 재무 승인 로그에 링크</p>
+        </div>
+        <div className="rounded-xl border border-cyan-200 dark:border-cyan-700 bg-white dark:bg-slate-900 p-6 space-y-3">
+          <h3 className="font-semibold text-cyan-600 dark:text-cyan-300">build-financial-models</h3>
+          <p className="text-xs text-gray-600 dark:text-gray-300">FinOps Lead · 아키텍처 변경 전 비용 민감도 모델링이 필요할 때</p>
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto">
+AWS_PROFILE=bespin-finops q mcp run \
+  --resource git://iac/modules?path=eks/variables.tf \
+  --tool context7.search "EKS cost components" \
+  --prompt "변수 파일과 예상 워크로드를 기반으로 OPEX 시나리오(최소/기준/최대)를 계산하고 그래프 설명을 작성"
+          </pre>
+          <p className="text-xs text-gray-500 dark:text-gray-400">Beta: 그래프는 BI 도구로 재검증, Cost Explorer 데이터와 차이 확인</p>
+        </div>
+        <div className="rounded-xl border border-purple-200 dark:border-purple-700 bg-white dark:bg-slate-900 p-6 space-y-3">
+          <h3 className="font-semibold text-purple-600 dark:text-purple-300">draft-investment-memos</h3>
+          <p className="text-xs text-gray-600 dark:text-gray-300">Strategy Office · FinOps 데이터를 투자/비즈니스 언어로 바꿔야 할 때</p>
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto">
+AWS_PROFILE=bespin-strategy q mcp run \
+  --resource filesystem://reports/monthly-finops.md \
+  --tool memory.write "FinOps memo knowledge" \
+  --prompt "리포트를 경영진 메모 형식으로 변환하고, 투자 판단 포인트/리스크/의사결정 필요 사항을 bullet으로 정리"
+          </pre>
+          <p className="text-xs text-gray-500 dark:text-gray-400">결정 문서는 Notion/Confluence에 게시 전 CFO 검토 필수</p>
+        </div>
+      </div>
+
+      <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 rounded-lg p-4 text-sm">
+        <p className="font-semibold mb-1">검증 루틴</p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>AI가 계산한 수치를 CUR/Azure Cost Management/GCP Export 원본과 대조</li>
+          <li>Slack/메일 공유 시 슬러그와 페르소나를 명시해 승인자 파악을 쉽게 만든다.</li>
+          <li>프롬프트 템플릿은 <code className="font-mono">docs/snippets/use-case-prompts.md</code> General Biz 블록을 참고해 최신화</li>
+        </ul>
+      </div>
+
+
       <h2>5. FinOps 운영 수칙</h2>
       <div className="grid md:grid-cols-2 gap-6 my-8 text-sm">
         <div className="border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 rounded-lg p-6">
