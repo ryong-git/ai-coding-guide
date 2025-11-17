@@ -228,14 +228,6 @@ AWS_PROFILE=knowledge-hub q mcp run \
           </Paragraph>
         </InfoBox>
 
-          <div className="text-sm space-y-3">
-            <div><strong>🎼 통합 조율:</strong> 수십 개 프로젝트의 AI 에이전트들을 하나의 통합된 생태계로 관리</div>
-            <div><strong>🔄 동적 리소스 배분:</strong> 프로젝트 우선순위와 진행 상황에 따른 에이전트 리소스 실시간 재분배</div>
-            <div><strong>🧠 집단 학습:</strong> 모든 프로젝트의 경험과 지식을 조직 차원에서 축적하고 공유</div>
-            <div><strong>📊 전략적 의사결정:</strong> 비즈니스 목표와 기술 실행을 연결하는 데이터 기반 의사결정 지원</div>
-          </div>
-        </InfoBox>
-
         <SectionTitle>🏛️ 메타 아키텍처: 에이전트를 관리하는 에이전트</SectionTitle>
 
         <SubsectionTitle>계층적 자율 관리 시스템</SubsectionTitle>
