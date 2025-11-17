@@ -158,10 +158,10 @@ export default function AgenticOrchestrationPlatformPage() {
               <div>
                 <div className="text-xs font-semibold text-slate-400">generate-project-status-reports (Delivery PM)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
-AWS_PROFILE=bespin-core q mcp run \
-  --resource git://ops-repo?path=reports/W{week}.md \
-  --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약" \
-  --prompt "주간 리스크 + 차주 계획 + 지원 요청을 정리하고 검증 절차를 명시"
+{`AWS_PROFILE=bespin-core q mcp run \\
+  --resource git://ops-repo?path=reports/W{week}.md \\
+  --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약" \\
+  --prompt "주간 리스크 + 차주 계획 + 지원 요청을 정리하고 검증 절차를 명시"`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">Slack #wbr 공유 전 Git diff &lt;= 10줄 확인 + PM 승인 체커</p>
               </div>
