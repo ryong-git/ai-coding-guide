@@ -173,10 +173,10 @@ export default function CostOptimizationPage() {
           <h3 className="font-semibold text-emerald-300">organize-your-business-finances</h3>
           <p className="text-xs text-slate-300">FinOps Lead · 월간 AWS CUR/RI/저장소 지표를 요약해야 할 때</p>
           <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto">
-AWS_PROFILE=bespin-finops q mcp run \
-  --resource s3://cur-bucket/{year}-{month}.csv \
-  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard" \
-  --prompt "CUR 데이터를 분석해 RI/SavingsPlan/CUD KPI + 이상 징후를 표로 정리하고, 증빙 스크린샷 경로를 포함해줘"
+{`AWS_PROFILE=bespin-finops q mcp run \\
+  --resource s3://cur-bucket/{year}-{month}.csv \\
+  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard" \\
+  --prompt "CUR 데이터를 분석해 RI/SavingsPlan/CUD KPI + 이상 징후를 표로 정리하고, 증빙 스크린샷 경로를 포함해줘"`}
           </pre>
           <p className="text-xs text-slate-400">결과는 DOCS 템플릿으로 저장 후 재무 승인 로그에 링크</p>
         </div>

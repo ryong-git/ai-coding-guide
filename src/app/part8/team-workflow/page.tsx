@@ -168,18 +168,18 @@ export default function AgenticOrchestrationPlatformPage() {
               <div>
                 <div className="text-xs font-semibold text-slate-400">analyze-patterns-in-user-feedback (MSP On-call)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
-AWS_PROFILE=bespin-support q mcp run \
-  --resource filesystem://logs/zendesk/{date}.json \
-  --tool sequential-think.analyze "패턴/근본 원인/후속 조치 3단계 정리"
+{`AWS_PROFILE=bespin-support q mcp run \\
+  --resource filesystem://logs/zendesk/{date}.json \\
+  --tool sequential-think.analyze "패턴/근본 원인/후속 조치 3단계 정리"`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">결과는 Incident DB에 업로드하고, CloudWatch 지표와 상호 검증</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">organize-your-business-finances (FinOps Lead)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
-AWS_PROFILE=finops-prod q mcp run \
-  --resource s3://cur-bucket/{year}-{month}.csv \
-  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard"
+{`AWS_PROFILE=finops-prod q mcp run \\
+  --resource s3://cur-bucket/{year}-{month}.csv \\
+  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard"`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">CUR ↔ Cost Explorer 교차 검증 후 재무 승인 로그에 링크 저장</p>
               </div>
@@ -193,27 +193,27 @@ AWS_PROFILE=finops-prod q mcp run \
               <div>
                 <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">build-customer-personas (Marketing Ops)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
-AWS_PROFILE=revops-sso q mcp run \
-  --resource fetch://crm-api/persona-export.json \
-  --tool memory.write "업데이트된 페르소나 지식"
+{`AWS_PROFILE=revops-sso q mcp run \\
+  --resource fetch://crm-api/persona-export.json \\
+  --tool memory.write "업데이트된 페르소나 지식"`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">영업팀 2인 리뷰 + 최신 세일즈 덱 링크 첨부 후 Knowledge Hub에 게시</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">create-new-hire-onboarding-guides (HR Ops)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
-AWS_PROFILE=hr-portal q mcp run \
-  --resource filesystem://hr/onboarding/checklist.md \
-  --tool playwright.pdf "https://people.bespin/global-onboarding-template"
+{`AWS_PROFILE=hr-portal q mcp run \\
+  --resource filesystem://hr/onboarding/checklist.md \\
+  --tool playwright.pdf "https://people.bespin/global-onboarding-template"`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">PDF 업로드 전 개인정보/보안 교육 링크 최신화 여부 체크</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">turn-text-threads-to-researched-notes (Knowledge Manager)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
-AWS_PROFILE=knowledge-hub q mcp run \
-  --resource fetch://slack-api/threads/{channel}.json \
-  --tool memory.write "회의·슬랙 스레드 요약"
+{`AWS_PROFILE=knowledge-hub q mcp run \\
+  --resource fetch://slack-api/threads/{channel}.json \\
+  --tool memory.write "회의·슬랙 스레드 요약"`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">Slack API 토큰은 .env로 분리, 산출물은 Notion 위키와 동시 업데이트</p>
               </div>
