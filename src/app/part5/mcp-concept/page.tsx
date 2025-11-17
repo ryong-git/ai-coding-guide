@@ -333,7 +333,7 @@ export default function MCPConceptPage() {
           </p>
           <div className="bg-black/40 rounded p-3 text-xs font-mono space-y-1">
             <div className="text-green-400">AWS_PROFILE=bespin-core q mcp run \</div>
-            <div className="text-white">  --resource git://ops-repo?path=reports/W{week}.md \</div>
+            <div className="text-white">{`  --resource git://ops-repo?path=reports/W{week}.md \\`}</div>
             <div className="text-white">  --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약"</div>
           </div>
           <ul className="text-xs space-y-1 list-disc pl-4 text-slate-200">
