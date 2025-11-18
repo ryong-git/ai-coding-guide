@@ -186,39 +186,6 @@ export default function AgenticOrchestrationPlatformPage() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">
-            <h4 className="text-base font-semibold text-indigo-600 dark:text-indigo-300 mb-2">General Biz 루틴</h4>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">Marketing Ops · HR Ops · Knowledge Manager가 곧바로 사용할 수 있는 카드</p>
-            <div className="space-y-5">
-              <div>
-                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">build-customer-personas (Marketing Ops)</div>
-                <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
-{`AWS_PROFILE=revops-sso q mcp run \\
-  --resource fetch://crm-api/persona-export.json \\
-  --tool memory.write "업데이트된 페르소나 지식"`}
-                </pre>
-                <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">영업팀 2인 리뷰 + 최신 세일즈 덱 링크 첨부 후 Knowledge Hub에 게시</p>
-              </div>
-              <div>
-                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">create-new-hire-onboarding-guides (HR Ops)</div>
-                <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
-{`AWS_PROFILE=hr-portal q mcp run \\
-  --resource filesystem://hr/onboarding/checklist.md \\
-  --tool playwright.pdf "https://people.bespin/global-onboarding-template"`}
-                </pre>
-                <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">PDF 업로드 전 개인정보/보안 교육 링크 최신화 여부 체크</p>
-              </div>
-              <div>
-                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">turn-text-threads-to-researched-notes (Knowledge Manager)</div>
-                <pre className="mt-2 overflow-x-auto rounded bg-slate-900/90 p-3 text-xs font-mono text-slate-100">
-{`AWS_PROFILE=knowledge-hub q mcp run \\
-  --resource fetch://slack-api/threads/{channel}.json \\
-  --tool memory.write "회의·슬랙 스레드 요약"`}
-                </pre>
-                <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">Slack API 토큰은 .env로 분리, 산출물은 Notion 위키와 동시 업데이트</p>
-              </div>
-            </div>
-          </div>
         </div>
 
         <InfoBox type="tip" title="📂 재사용 자산 위치">
@@ -227,6 +194,82 @@ export default function AgenticOrchestrationPlatformPage() {
             문서를 작성할 때에는 반드시 `track`/`persona`/`activation_trigger` 컬럼을 인용해 어떤 역할이 언제 해당 카드를 실행해야 하는지 명시하세요.
           </Paragraph>
         </InfoBox>
+
+        <SectionTitle>🧭 심화 사례: 재무 정산 코파일럿 만들기</SectionTitle>
+        <Paragraph>
+          "월말 정산 보고서" 업무를 예로 들어, 아이디어 발굴 → PRD → 구현 → 상품화 → 메뉴얼까지 Vibe Coding 방식으로 정리했습니다.
+        </Paragraph>
+        <div className="space-y-6 text-sm">
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">1) 아이디어 정리</h4>
+            <p className="text-slate-600 dark:text-slate-300">
+              재무·총무·AI Ops가 30분 워크숍을 열어 "정산 보고서 작성 시 반복되는 수작업"을 나열합니다. Excel 수집, KPI 계산, CFO 보고 메일 작성 등
+              각 스텝 옆에 "어떤 MCP/도구로 대체 가능한가?"를 붙여 MVP 범위를 좁힙니다.
+            </p>
+          </div>
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5 space-y-2">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">2) PRD 초안</h4>
+            <p className="text-slate-600 dark:text-slate-300">
+              아이디어 메모를 Amazon Q에 붙여 아래 템플릿 형태의 PRD 요약을 생성합니다. 핵심 제약(AWS_PROFILE, 데이터 경로, 검증 체크)을 명확히 해
+              추후 범위 확장을 방지합니다.
+            </p>
+            <pre className="bg-slate-900 text-slate-100 rounded p-3 text-xs font-mono overflow-x-auto">{`# 정산 코파일럿 PRD
+Problem : 월말 보고서 작성에 4시간 이상 소요
+Users   : 재무팀 4명
+Scope   :
+ 1. Filesystem MCP로 S3/OneDrive Excel 수집
+ 2. Amazon Q CLI가 매출/원가/환율 KPI 계산
+ 3. Slack/메일 요약 자동 생성 (검증 체크 포함)
+Non-goal: ERP 연동, 세무 신고 자동화`}</pre>
+          </div>
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5 space-y-2">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">3) 구현 &amp; 검증</h4>
+            <ul className="list-disc pl-6 space-y-1 text-slate-600 dark:text-slate-300">
+              <li>Git MCP에 Python 스크립트(Excel → JSON KPI 변환)를 저장하고 Filesystem MCP로 실행</li>
+              <li>Amazon Q CLI 프롬프트에 JSON+템플릿을 전달해 DOCS 보고서와 Slack/메일 초안을 동시 생성</li>
+              <li>Playwright MCP로 재무 대시보드를 캡처해 보고서에 자동 첨부</li>
+              <li>재무팀 2명이 실제 데이터로 2주간 병행 운영하면서 숫자 검증·롤백 절차를 점검</li>
+            </ul>
+          </div>
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5 space-y-2">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">4) 상품화 &amp; 메뉴얼</h4>
+            <p className="text-slate-600 dark:text-slate-300">
+              MVP를 "정산 코파일럿"으로 명명하고 Git 리포지토리·프롬프트·검증 절차를 묶어 사내 서비스화합니다. 아래 목차로 Confluence/Notion 메뉴얼을 작성해
+              누구나 동일한 방식으로 실행할 수 있게 합니다.
+            </p>
+            <pre className="bg-slate-900 text-slate-100 rounded p-3 text-xs font-mono overflow-x-auto">{`정산 코파일럿 메뉴얼
+1. 목적/권한 (AWS_PROFILE=finops-prod)
+2. 준비물: S3 경로, Slack 채널 ID, 검증 체크리스트
+3. 실행 순서: CLI 명령 + 실패 시 롤백 절차
+4. 보고서 템플릿/메일 예시
+5. 개선 제안 & 이슈 접수 채널`}</pre>
+          </div>
+        </div>
+
+        <SectionTitle>💼 스텝 조직(총무·인사·재무) 업무 예시</SectionTitle>
+        <div className="grid md:grid-cols-3 gap-6 text-sm">
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5 space-y-2">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100">총무</h4>
+            <p className="text-slate-600 dark:text-slate-300">
+              Facilities/총무 팀은 Filesystem MCP로 주간 회의실 예약·비품 재고 Excel을 읽어간 뒤, Amazon Q에 "부족한 품목/공간"을 요약하게 합니다.
+              요약 결과는 Slack 공지 + 메일 초안으로 자동 변환해 구성원에게 공유합니다. 반복 수작업 체크리스트 대신, 실제 조치(발주/조정)에 집중할 수 있습니다.
+            </p>
+          </div>
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5 space-y-2">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100">인사(HR)</h4>
+            <p className="text-slate-600 dark:text-slate-300">
+              HR Ops는 Playwright MCP로 People Portal 온보딩 템플릿을 캡처하고, Claude에게 "Day1~Day5 일정 + 필수 교육 리마인더"를 요약하게 합니다.
+              추가로 Fetch MCP로 Slack/메일 상담 내역을 모아 FAQ/챗봇 스크립트로 반영해 문의 응대를 줄입니다.
+            </p>
+          </div>
+          <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-5 space-y-2">
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100">재무</h4>
+            <p className="text-slate-600 dark:text-slate-300">
+              재무팀은 S3/OneDrive에서 월말 정산 파일을 Filesystem MCP로 읽어, Amazon Q에 매출·원가·환율 변동 요약을 지시합니다. 결과는 DOCS 보고서와
+              자동화된 안내 메일로 변환해 팀장/임원에게 전달합니다. 엑셀 복사/붙여넣기 대신 검토와 승인에 집중할 수 있도록 만듭니다.
+            </p>
+          </div>
+        </div>
 
         <SectionTitle>🏛️ 메타 아키텍처: 에이전트를 관리하는 에이전트</SectionTitle>
 

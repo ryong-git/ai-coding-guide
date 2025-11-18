@@ -65,7 +65,7 @@ export default function ProductionGuidelinesPage() {
 
         <div className="mt-4 bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
           <div className="text-green-400"># 배포 전 자동 검증 스크립트</div>
-          <div className="text-white">{`#!/bin/bash
+          <pre className="text-white whitespace-pre-wrap">{`#!/bin/bash
 # AI 생성 코드 품질 검증 파이프라인
 
 echo "🔍 Step 1: 코드 품질 검사"
@@ -85,7 +85,7 @@ fi
 echo "📊 Step 4: 성능 검증"
 npm run test:performance
 
-echo "✅ 모든 검증 완료 - 배포 승인"`}</div>
+echo "✅ 모든 검증 완료 - 배포 승인"`}</pre>
         </div>
       </div>
 
@@ -183,7 +183,7 @@ echo "✅ 모든 검증 완료 - 배포 승인"`}</div>
 
         <div className="bg-gray-900 text-gray-100 rounded p-4 text-sm font-mono">
           <div className="text-green-400"># GitLab CI/CD 파이프라인 예시</div>
-          <div className="text-white">{`stages:
+          <pre className="text-white whitespace-pre-wrap">{`stages:
   - validate
   - test
   - security
@@ -226,7 +226,7 @@ canary_deployment:
     - ./scripts/health-check.sh
   environment:
     name: production
-    action: start`}</div>
+    action: start`}</pre>
         </div>
       </div>
 
@@ -267,7 +267,7 @@ canary_deployment:
 
         <div className="mt-4 bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
           <div className="text-green-400"># 카나리 배포 자동화</div>
-          <div className="text-white">{`#!/bin/bash
+          <pre className="text-white whitespace-pre-wrap">{`#!/bin/bash
 # 단계별 카나리 배포 스크립트
 
 CANARY_STAGES=(5 25 75 100)
@@ -291,7 +291,7 @@ for i in {0..3}; do
   fi
 done
 
-echo "✅ 카나리 배포 완료"`}</div>
+echo "✅ 카나리 배포 완료"`}</pre>
         </div>
       </div>
 
@@ -365,7 +365,7 @@ echo "✅ 카나리 배포 완료"`}</div>
 
         <div className="bg-gray-900 text-gray-100 rounded p-4 text-sm font-mono">
           <div className="text-green-400"># 구조화된 로깅 예시</div>
-          <div className="text-white">{`// AI 생성 코드에 대한 표준 로깅 포맷
+          <pre className="text-white whitespace-pre-wrap">{`// AI 생성 코드에 대한 표준 로깅 포맷
 const logger = {
   info: (message, meta = {}) => {
     console.log(JSON.stringify({
@@ -423,7 +423,7 @@ export const processUserData = async (userId, data) => {
     });
     throw error;
   }
-};`}</div>
+};`}</pre>
         </div>
       </div>
 
@@ -482,7 +482,7 @@ export const processUserData = async (userId, data) => {
 
         <div className="mt-4 bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
           <div className="text-green-400"># 자동 롤백 스크립트</div>
-          <div className="text-white">{`#!/bin/bash
+          <pre className="text-white whitespace-pre-wrap">{`#!/bin/bash
 # AI 코드 배포 자동 롤백 시스템
 
 # 현재 배포 상태 확인
