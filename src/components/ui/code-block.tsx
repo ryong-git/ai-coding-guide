@@ -13,7 +13,7 @@ export function CodeBlock({ children, language, title, className = "" }: CodeBlo
           {title}
         </div>
       )}
-      <pre className={`bg-gray-900 text-gray-100 ${title ? 'rounded-t-none' : ''} rounded-lg p-4 overflow-x-auto text-sm font-mono leading-relaxed`}>
+      <pre className={`bg-gray-900 text-gray-100 ${title ? 'rounded-t-none' : ''} rounded-lg p-4 overflow-x-auto whitespace-pre-wrap text-sm font-mono leading-relaxed`}>
         <code className={language ? `language-${language}` : ''}>
           {children}
         </code>

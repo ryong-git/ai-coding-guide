@@ -157,7 +157,7 @@ export default function AgenticOrchestrationPlatformPage() {
             <div className="space-y-5">
               <div>
                 <div className="text-xs font-semibold text-slate-400">generate-project-status-reports (Delivery PM)</div>
-                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
+                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
 {`AWS_PROFILE=bespin-core q mcp run \\
   --resource git://ops-repo?path=reports/W{week}.md \\
   --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약" \\
@@ -167,7 +167,7 @@ export default function AgenticOrchestrationPlatformPage() {
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">analyze-patterns-in-user-feedback (MSP On-call)</div>
-                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
+                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
 {`AWS_PROFILE=bespin-support q mcp run \\
   --resource filesystem://logs/zendesk/{date}.json \\
   --tool sequential-think.analyze "패턴/근본 원인/후속 조치 3단계 정리"`}
@@ -176,7 +176,7 @@ export default function AgenticOrchestrationPlatformPage() {
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">organize-your-business-finances (FinOps Lead)</div>
-                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono">
+                <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
 {`AWS_PROFILE=finops-prod q mcp run \\
   --resource s3://cur-bucket/{year}-{month}.csv \\
   --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard"`}
@@ -213,7 +213,7 @@ export default function AgenticOrchestrationPlatformPage() {
               아이디어 메모를 Amazon Q에 붙여 아래 템플릿 형태의 PRD 요약을 생성합니다. 핵심 제약(AWS_PROFILE, 데이터 경로, 검증 체크)을 명확히 해
               추후 범위 확장을 방지합니다.
             </p>
-            <pre className="bg-slate-900 text-slate-100 rounded p-3 text-xs font-mono overflow-x-auto">{`# 정산 코파일럿 PRD
+            <pre className="bg-slate-900 text-slate-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">{`# 정산 코파일럿 PRD
 Problem : 월말 보고서 작성에 4시간 이상 소요
 Users   : 재무팀 4명
 Scope   :
@@ -237,7 +237,7 @@ Non-goal: ERP 연동, 세무 신고 자동화`}</pre>
               MVP를 "정산 코파일럿"으로 명명하고 Git 리포지토리·프롬프트·검증 절차를 묶어 사내 서비스화합니다. 아래 목차로 Confluence/Notion 메뉴얼을 작성해
               누구나 동일한 방식으로 실행할 수 있게 합니다.
             </p>
-            <pre className="bg-slate-900 text-slate-100 rounded p-3 text-xs font-mono overflow-x-auto">{`정산 코파일럿 메뉴얼
+            <pre className="bg-slate-900 text-slate-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">{`정산 코파일럿 메뉴얼
 1. 목적/권한 (AWS_PROFILE=finops-prod)
 2. 준비물: S3 경로, Slack 채널 ID, 검증 체크리스트
 3. 실행 순서: CLI 명령 + 실패 시 롤백 절차

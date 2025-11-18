@@ -53,7 +53,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </code>
     ),
     pre: ({ children }) => (
-      <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto mb-4 text-sm">
+      <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap mb-4 text-sm">
         {children}
       </pre>
     ),

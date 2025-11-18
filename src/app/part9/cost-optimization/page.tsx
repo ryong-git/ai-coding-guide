@@ -172,7 +172,7 @@ export default function CostOptimizationPage() {
         <div className="rounded-xl border border-emerald-200 dark:border-emerald-700 bg-slate-900 text-slate-100 p-6 space-y-3">
           <h3 className="font-semibold text-emerald-300">organize-your-business-finances</h3>
           <p className="text-xs text-slate-300">FinOps Lead · 월간 AWS CUR/RI/저장소 지표를 요약해야 할 때</p>
-          <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto">
+          <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
 {`AWS_PROFILE=bespin-finops q mcp run \\
   --resource s3://cur-bucket/{year}-{month}.csv \\
   --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard" \\
@@ -183,7 +183,7 @@ export default function CostOptimizationPage() {
         <div className="rounded-xl border border-cyan-200 dark:border-cyan-700 bg-white dark:bg-slate-900 p-6 space-y-3">
           <h3 className="font-semibold text-cyan-600 dark:text-cyan-300">build-financial-models</h3>
           <p className="text-xs text-gray-600 dark:text-gray-300">FinOps Lead · 아키텍처 변경 전 비용 민감도 모델링이 필요할 때</p>
-          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto">
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
 AWS_PROFILE=bespin-finops q mcp run \
   --resource git://iac/modules?path=eks/variables.tf \
   --tool context7.search "EKS cost components" \
@@ -194,7 +194,7 @@ AWS_PROFILE=bespin-finops q mcp run \
         <div className="rounded-xl border border-purple-200 dark:border-purple-700 bg-white dark:bg-slate-900 p-6 space-y-3">
           <h3 className="font-semibold text-purple-600 dark:text-purple-300">draft-investment-memos</h3>
           <p className="text-xs text-gray-600 dark:text-gray-300">Strategy Office · FinOps 데이터를 투자/비즈니스 언어로 바꿔야 할 때</p>
-          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto">
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
 AWS_PROFILE=bespin-strategy q mcp run \
   --resource filesystem://reports/monthly-finops.md \
   --tool memory.write "FinOps memo knowledge" \

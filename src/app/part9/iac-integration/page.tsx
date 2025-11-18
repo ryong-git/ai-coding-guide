@@ -106,7 +106,7 @@ export default function IacIntegrationPage() {
           <p className="text-xs text-slate-300">
             <strong>페르소나</strong>: Delivery PM · <strong>Activation</strong>: 멀티 환경 설계안 중 비용/보안/운영 리스크를 비교해야 할 때
           </p>
-          <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto">
+          <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
 AWS_PROFILE=bespin-architecture q mcp run \
   --resource git://iac/design-docs?path=eks-vs-ecs.md \
   --tool context7.search "EKS baseline, ECS best practice" \
@@ -123,7 +123,7 @@ AWS_PROFILE=bespin-architecture q mcp run \
           <p className="text-xs text-gray-600 dark:text-gray-300">
             <strong>페르소나</strong>: Architecture Researcher · <strong>Activation</strong>: 신규 서비스 도입 전 레퍼런스 아키텍처/보안 가이드를 빠르게 모아야 할 때
           </p>
-          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto">
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
 AWS_PROFILE=bespin-research q mcp run \
   --resource fetch://awsdocs/landing-zone-library.json \
   --tool memory.write "Landing Zone 참고 노트" \
