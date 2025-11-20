@@ -19,6 +19,105 @@ export default function MCPConceptPage() {
         MCP는 AI가 AWS, 데이터베이스, 모니터링 도구 등과 쉽게 연결되게 해줍니다.
       </Paragraph>
 
+      <InfoBox type="info">
+        <p className="text-sm">
+          이 소개는 <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-300 underline">Model Context Protocol 공식 Intro</a>를 기반으로 정리했습니다. 
+          클라이언트(Claude Code, Amazon Q CLI 등)와 MCP 서버(Playwright, Git, Context7 등)가 <strong>표준 JSON-RPC</strong> 인터페이스로 통신한다는 점이 핵심입니다.
+        </p>
+      </InfoBox>
+
+      <SectionTitle>🧭 MCP 레퍼런스 아키텍처</SectionTitle>
+      <div className="bg-slate-900 text-slate-100 rounded-2xl p-6 my-8 shadow-lg border border-slate-800">
+        <div className="grid gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr] items-center">
+          <div className="rounded-xl border border-slate-700 bg-slate-800/60 p-4">
+            <p className="text-lg font-semibold">MCP Client</p>
+            <ul className="mt-2 text-sm space-y-1 text-slate-200">
+              <li>• Claude Code / Amazon Q CLI / JetBrains 플러그인</li>
+              <li>• 사용자의 자연어 프롬프트와 권한을 수집</li>
+              <li>• JSON-RPC 요청을 생성하고 응답을 UI에 반영</li>
+            </ul>
+          </div>
+          <div className="text-3xl font-bold text-slate-500">⇄</div>
+          <div className="rounded-xl border border-emerald-500/40 bg-emerald-900/30 p-4">
+            <p className="text-lg font-semibold text-emerald-200">MCP Protocol</p>
+            <ul className="mt-2 text-sm space-y-1 text-emerald-50">
+              <li>• 표준 JSON-RPC transport</li>
+              <li>• <strong>resources</strong>, <strong>tools</strong>, <strong>events</strong> 명세</li>
+              <li>• 권한/승인 및 상태 스트리밍</li>
+            </ul>
+          </div>
+          <div className="text-3xl font-bold text-slate-500">⇄</div>
+          <div className="rounded-xl border border-blue-500/40 bg-blue-900/30 p-4">
+            <p className="text-lg font-semibold text-blue-200">MCP Server</p>
+            <ul className="mt-2 text-sm space-y-1 text-blue-50">
+              <li>• Playwright, Git, Filesystem, Context7, Custom API</li>
+              <li>• 리소스 목록과 도구(액션)를 선언적으로 노출</li>
+              <li>• 실제 AWS/Azure/Git/사내 시스템과 상호작용</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-4 text-xs text-slate-400">
+          ✅ 클라이언트는 MCP 서버를 플러그인처럼 추가/제거할 수 있으며, 같은 프로토콜을 따르는 모든 서버와 재사용 가능합니다.
+        </p>
+      </div>
+
+      <SectionTitle>🧱 핵심 구성 요소</SectionTitle>
+      <div className="grid md:grid-cols-3 gap-4 my-6">
+        <div className="rounded-2xl border border-amber-200 dark:border-amber-700 bg-amber-50/70 dark:bg-amber-900/30 p-5">
+          <p className="text-base font-semibold text-amber-800 dark:text-amber-200">1) Client</p>
+          <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+            사용자 입력을 받고, MCP 서버와 연결을 유지하며, 모델이 생성한 응답을 UI/IDE에 반영합니다. 권한 승인은 여기서 처리됩니다.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-emerald-200 dark:border-emerald-700 bg-emerald-50/70 dark:bg-emerald-900/30 p-5">
+          <p className="text-base font-semibold text-emerald-800 dark:text-emerald-200">2) Transport &amp; Schema</p>
+          <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+            JSON-RPC 2.0 메시지로 <strong>list resources</strong>, <strong>call tool</strong>, <strong>subscribe events</strong> 등을 표준화합니다. Streaming도 지원합니다.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-sky-200 dark:border-sky-700 bg-sky-50/70 dark:bg-sky-900/30 p-5">
+          <p className="text-base font-semibold text-sky-800 dark:text-sky-200">3) Server Adapter</p>
+          <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+            실제 인프라·데이터 소스와 연결되는 부분입니다. Fetch/Git/Filesystem 같은 공식 서버 또는 사내 전용 서버를 작성할 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-slate-100 rounded-2xl p-6 my-8 shadow-lg">
+        <h4 className="text-lg font-semibold mb-4 text-emerald-300">Claude Code ↔ MCP ↔ 운영 시스템 흐름</h4>
+        <div className="grid gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr] items-center text-sm">
+          <div className="bg-slate-800 rounded-xl p-4 border border-slate-700">
+            <p className="text-base font-semibold">Claude Code</p>
+            <ul className="mt-2 space-y-1 text-slate-200">
+              <li>• 사용자 프롬프트</li>
+              <li>• IDE/CLI 연결</li>
+              <li>• 권한 확인</li>
+            </ul>
+          </div>
+          <div className="text-3xl font-bold text-slate-500">→</div>
+          <div className="bg-slate-800 rounded-xl p-4 border border-emerald-500/40">
+            <p className="text-base font-semibold text-emerald-200">MCP 서버</p>
+            <ul className="mt-2 space-y-1 text-slate-200">
+              <li>• 리소스 읽기 (git://, s3:// 등)</li>
+              <li>• 도구 실행 (Playwright, Context7)</li>
+              <li>• 이벤트 구독/전송</li>
+            </ul>
+          </div>
+          <div className="text-3xl font-bold text-slate-500">→</div>
+          <div className="bg-slate-800 rounded-xl p-4 border border-blue-500/40">
+            <p className="text-base font-semibold text-blue-200">운영 자산</p>
+            <ul className="mt-2 space-y-1 text-slate-200">
+              <li>• AWS / Azure / GCP API</li>
+              <li>• Git, Jira, Slack</li>
+              <li>• 온프레미스 DB/파일</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-4 text-xs text-slate-300">
+          ✔️ 사용자는 Claude Code에서 자연어로 요청하고, MCP 서버가 표준화된 규격으로 여러 운영 시스템을 안전하게 호출합니다.
+        </p>
+      </div>
+
       <InfoBox type="tip">
         <h3 className="text-lg font-semibold mb-2">MCP의 핵심 장점</h3>
         <ul className="mb-0">
@@ -56,6 +155,33 @@ export default function MCPConceptPage() {
       </div>
 
       <SectionTitle>🔧 MCP의 3가지 핵심 기능</SectionTitle>
+
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 my-8 shadow-sm">
+        <h4 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-4">MCP 계층 구조 한눈에 보기</h4>
+        <div className="grid md:grid-cols-3 gap-4 text-sm">
+          <div className="rounded-xl border border-amber-300/60 dark:border-amber-500/40 bg-amber-50/60 dark:bg-amber-900/20 p-4">
+            <p className="font-semibold text-amber-700 dark:text-amber-200">리소스 계층</p>
+            <p className="mt-2 text-slate-700 dark:text-slate-200">
+              git://, s3://, filesystem:// 같은 URI로 데이터를 읽어오고, AI에게 “맥락”을 제공합니다.
+            </p>
+            <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">예: Git 설정, S3 보고서, CMDB 레코드</p>
+          </div>
+          <div className="rounded-xl border border-emerald-300/60 dark:border-emerald-500/40 bg-emerald-50/60 dark:bg-emerald-900/20 p-4">
+            <p className="font-semibold text-emerald-700 dark:text-emerald-200">도구 계층</p>
+            <p className="mt-2 text-slate-700 dark:text-slate-200">
+              Playwright, Context7, Slack 등 실행 가능한 액션을 메타데이터·권한과 함께 노출합니다.
+            </p>
+            <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">예: 브라우저 캡처, 코드 분석, Slack 알림</p>
+          </div>
+          <div className="rounded-xl border border-sky-300/60 dark:border-sky-500/40 bg-sky-50/60 dark:bg-sky-900/20 p-4">
+            <p className="font-semibold text-sky-700 dark:text-sky-200">이벤트/검증 계층</p>
+            <p className="mt-2 text-slate-700 dark:text-slate-200">
+              상태 변화를 스트리밍하거나 사후 검증 체크리스트를 정의해, 팀의 표준 운영 규칙을 반영합니다.
+            </p>
+            <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">예: 배포 후 헬스체크, Slack 승인 워크플로</p>
+          </div>
+        </div>
+      </div>
 
       <SubsectionTitle>1. 리소스 - 정보 읽기</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
@@ -103,27 +229,47 @@ export default function MCPConceptPage() {
         </ul>
       </div>
 
-      <SubsectionTitle>3. 프롬프트 - 표준 질문 템플릿</SubsectionTitle>
+      <SubsectionTitle>3. 이벤트 - 상태 공유</SubsectionTitle>
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <Paragraph>
-          <strong>프롬프트</strong>는 AI에게 <strong>일관된 방식으로 질문하는 템플릿</strong>입니다. 
-          상황별로 정해진 형식으로 질문해서 더 정확한 답변을 받을 수 있습니다.
+          <strong>이벤트</strong>는 MCP 서버가 작업 진행 상황을 실시간으로 전송하는 채널입니다. 
+          CLI/IDE는 이 스트림을 받아 UI에 표시하거나, 추가 검증 로직을 수행합니다.
         </Paragraph>
         
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 예시: 장애 분석 프롬프트 템플릿</div>
-          <div className="text-white">템플릿명: 장애분석</div>
-          <div className="text-white">질문 형식: "[서비스명]에서 [에러종류] 발생.</div>
-          <div className="text-white">로그 데이터: [실제로그]. 원인 분석하고 해결방법 제시해줘."</div>
+        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono whitespace-pre-wrap">
+{`event:tool-output  → terraform plan 단계 출력
+member:Claude      → "암호화 미설정 경고" 알림
+member:User        → 승인/중단 여부 선택`}
         </div>
 
-        <h4 className="font-semibold">MSP에서 사용하는 템플릿들:</h4>
+        <h4 className="font-semibold">이벤트 활용 패턴:</h4>
         <ul className="text-sm space-y-1">
-          <li>• 장애 상황 분석 및 대응 가이드</li>
-          <li>• 고객 리포트 자동 생성</li>
-          <li>• 보안 점검 체크리스트</li>
-          <li>• 성능 최적화 제안서</li>
+          <li>• Playwright MCP가 스크린샷을 전송하면서 진행률 보고</li>
+          <li>• Git MCP가 대규모 diff를 chunk 단위로 스트리밍</li>
+          <li>• 서버 측 검증/테스트 결과를 실시간 Slack 알림으로 연동</li>
+          <li>• 승인 필요 이벤트를 Change Manager와 연결</li>
         </ul>
+      </div>
+
+      <SectionTitle>🔁 요청 생명주기</SectionTitle>
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 my-8">
+        <ol className="space-y-4 text-sm text-slate-700 dark:text-slate-200">
+          <li>
+            <strong className="text-base">1) Capability Sync</strong> — 클라이언트가 MCP 서버에 연결하면, 서버는 자신이 제공하는 리소스·도구·이벤트 목록을 JSON으로 응답합니다.
+          </li>
+          <li>
+            <strong className="text-base">2) Context Gathering</strong> — 모델이 문제를 해결하기 위해 필요한 로그·코드·메타데이터를 <code className="font-mono">read_resource</code> 호출로 가져옵니다.
+          </li>
+          <li>
+            <strong className="text-base">3) Tool Execution</strong> — 사용자의 승인 아래 <code className="font-mono">call_tool</code>이 실행되고, 서버는 외부 시스템을 조작하면서 이벤트를 스트리밍합니다.
+          </li>
+          <li>
+            <strong className="text-base">4) Response &amp; Follow-up</strong> — 최종 결과가 모델 응답에 포함되고, 추가 승인/검증 시나리오는 이벤트 스트림을 통해 이어집니다.
+          </li>
+        </ol>
+        <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
+          🔄 이 생명주기를 지키면, 새로운 MCP 서버를 추가해도 동일한 사용자 경험과 거버넌스를 유지할 수 있습니다.
+        </p>
       </div>
 
       <SectionTitle>🌐 실제 사용 가능한 MCP 서버들 (2025년 기준)</SectionTitle>
