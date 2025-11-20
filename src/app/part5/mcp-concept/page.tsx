@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { PageTitle, SectionTitle, SubsectionTitle, Lead, Paragraph } from '@/components/ui/typography';
 import { InfoBox } from '@/components/ui/info-box';
 
@@ -60,6 +61,19 @@ export default function MCPConceptPage() {
           ✅ 클라이언트는 MCP 서버를 플러그인처럼 추가/제거할 수 있으며, 같은 프로토콜을 따르는 모든 서버와 재사용 가능합니다.
         </p>
       </div>
+
+      <figure className="my-8 flex flex-col items-center gap-3">
+        <Image
+          src="/assets/mcp-architecture.svg"
+          alt="MCP client, protocol, server reference architecture"
+          width={900}
+          height={300}
+          className="w-full max-w-4xl rounded-2xl border border-slate-200 dark:border-slate-700 shadow"
+        />
+        <figcaption className="text-sm text-slate-500 dark:text-slate-400">
+          MCP 공식 Intro 구조를 참고하여 클라이언트 ↔ 프로토콜 ↔ 서버 계층을 도식화한 그림
+        </figcaption>
+      </figure>
 
       <SectionTitle>🧱 핵심 구성 요소</SectionTitle>
       <div className="grid md:grid-cols-3 gap-4 my-6">
@@ -271,6 +285,19 @@ member:User        → 승인/중단 여부 선택`}
           🔄 이 생명주기를 지키면, 새로운 MCP 서버를 추가해도 동일한 사용자 경험과 거버넌스를 유지할 수 있습니다.
         </p>
       </div>
+
+      <figure className="my-8 flex flex-col items-center gap-3">
+        <Image
+          src="/assets/mcp-lifecycle.svg"
+          alt="MCP request lifecycle diagram"
+          width={900}
+          height={260}
+          className="w-full max-w-4xl rounded-2xl border border-slate-200 dark:border-slate-700 shadow"
+        />
+        <figcaption className="text-sm text-slate-500 dark:text-slate-400">
+          Capability Sync → Context Gathering → Tool Execution → Response 흐름
+        </figcaption>
+      </figure>
 
       <SectionTitle>🌐 실제 사용 가능한 MCP 서버들 (2025년 기준)</SectionTitle>
 
