@@ -41,14 +41,8 @@ export default function K8sAutomationPage() {
 
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 space-y-4">
         <h3 className="font-semibold">실무 프롬프트 예시</h3>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 비용 최적화/운영 보고서를 DOCS 형태로 작성</div>
-          <div className="text-white">AWS_PROFILE=bespin-test q mcp run \</div>
-          <div className="text-white">  "당신은 AWS 시니어 컨설턴트입니다.</div>
-          <div className="text-white">   bespin-test 프로파일에서 최근 7일간 사용량을 분석해</div>
-          <div className="text-white">   비용 최적화 방안을 DOCS 형식으로 정리하세요.</div>
-          <div className="text-white">   절감액 추정치와 실행 우선순위를 포함해 주세요."</div>
-        </div>
+        <pre className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto whitespace-pre-wrap">{`# 비용 최적화/운영 보고서를 DOCS 형태로 작성
+AWS_PROFILE=bespin-test q chat --no-interactive $'당신은 AWS 시니어 컨설턴트입니다.\nbespin-test 프로파일에서 최근 7일간 사용량을 분석해\n비용 최적화 방안을 DOCS 형식으로 정리하고\n절감액 추정치와 실행 우선순위를 포함해 주세요.'`}</pre>
         <p className="text-sm">
           위와 같이 작성하면 Q CLI가 실사용 데이터를 기반으로 보고서를 구성합니다. 운영 문서, 장애 보고서, 배포 체크리스트 등도 같은 방식으로 만들 수 있습니다.
         </p>
@@ -68,15 +62,8 @@ export default function K8sAutomationPage() {
         <li><strong>출력 포맷:</strong> “Markdown 체크리스트” 또는 “DOCS 구조” 등 원하는 형식을 기재</li>
       </ul>
 
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono my-6">
-        <div className="text-green-400"># 배포 전 점검 플레이북 초안 생성</div>
-        <div className="text-white">AWS_PROFILE=bespin-test q mcp run \</div>
-        <div className="text-white">  "당신은 AWS/EKS 운영 전문가입니다.</div>
-        <div className="text-white">   core-platform 클러스터의 production 네임스페이스에서</div>
-        <div className="text-white">   신규 버전 배포 전 수행해야 할 체크리스트를</div>
-        <div className="text-white">   Markdown 형식으로 작성하세요.</div>
-        <div className="text-white">   각 항목에 대응하는 kubectl 명령과 기대 결과를 포함하세요."</div>
-      </div>
+      <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap text-sm font-mono my-6">{`# 배포 전 점검 플레이북 초안 생성
+AWS_PROFILE=bespin-test q chat --no-interactive $'당신은 AWS/EKS 운영 전문가입니다.\ncore-platform 클러스터의 production 네임스페이스에서\n신규 버전 배포 전 수행해야 할 체크리스트를 Markdown 형식으로 작성하세요.\n각 항목에 대응하는 kubectl 명령과 기대 결과를 포함하세요.'`}</pre>
 
       <h2>4. 시나리오: 장애 분석 후 대응 문서 작성</h2>
       <p>
@@ -97,14 +84,8 @@ export default function K8sAutomationPage() {
 
         <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 space-y-3">
           <h3 className="font-semibold">2) AI에게 원인 분석 + 대응 전략 요청</h3>
-          <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-            <div className="text-green-400"># 원인 분석 및 대응 문서 생성</div>
-            <div className="text-white">AWS_PROFILE=bespin-test q mcp run \</div>
-            <div className="text-white">  "당신은 AWS/EKS 시니어 컨설턴트입니다.</div>
-            <div className="text-white">   아래 로그 요약을 토대로 근본 원인을 진단하고,</div>
-            <div className="text-white">   재발 방지 대책과 즉시 조치 방안을 DOCS 문서 구조로 작성하세요.</div>
-            <div className="text-white">   - 로그 요약: ..."</div>
-          </div>
+          <pre className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto whitespace-pre-wrap">{`# 원인 분석 및 대응 문서 생성
+AWS_PROFILE=bespin-test q chat --no-interactive $'당신은 AWS/EKS 시니어 컨설턴트입니다.\n아래 로그 요약을 토대로 근본 원인을 진단하고\n재발 방지 대책과 즉시 조치 방안을 DOCS 문서 구조로 작성하세요.\n- 로그 요약: ...'`}</pre>
           <p className="text-sm">
             생성된 문서는 변경관리 도구(Service Catalog Change Manager 등)에 첨부해 승인·공유합니다.
           </p>

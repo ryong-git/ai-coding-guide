@@ -62,16 +62,8 @@ export default function MulticloudOpsPage() {
         프로파일을 명시해 Q CLI에 계정 정보를 전달하면, 각 클라우드에서 수집한 데이터를 한꺼번에 정리하도록 지시할 수 있습니다.
       </p>
 
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono my-6">
-        <div className="text-green-400"># 멀티클라우드 FinOps 보고서 생성</div>
-        <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
-        <div className="text-white">  "당신은 멀티클라우드 FinOps 시니어 컨설턴트입니다.</div>
-        <div className="text-white">   아래 데이터를 기준으로 AWS, Azure, GCP 비용 상태를 비교해 DOCS 형식으로 정리하세요.</div>
-        <div className="text-white">   - AWS 요약: (직접 수집한 Cost Explorer 결과)</div>
-        <div className="text-white">   - Azure 요약: (Cost Management API 결과)</div>
-        <div className="text-white">   - GCP 요약: (BigQuery Billing Export 결과)</div>
-        <div className="text-white">   절감 우선순위와 실행 계획을 포함하세요."</div>
-      </div>
+      <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap text-sm font-mono my-6">{`# 멀티클라우드 FinOps 보고서 생성
+AWS_PROFILE=bespin-aws-prod q chat --no-interactive $'당신은 멀티클라우드 FinOps 시니어 컨설턴트입니다.\n아래 데이터를 기준으로 AWS, Azure, GCP 비용 상태를 비교해 DOCS 형식으로 정리하세요.\n- AWS 요약: (Cost Explorer 결과)\n- Azure 요약: (Cost Management API 결과)\n- GCP 요약: (BigQuery Billing Export 결과)\n절감 우선순위와 실행 계획을 포함하세요.'`}</pre>
 
       <p>
         Q CLI는 AWS 자격 증명을 그대로 재사용하므로, 프롬프트에 다른 클라우드 데이터를 <strong>컨텍스트로 전달</strong>하는 방식으로 통합 분석을 수행합니다.
@@ -89,16 +81,8 @@ export default function MulticloudOpsPage() {
             <li>GCP: Cloud Logging 필터 결과 요약</li>
           </ul>
         </div>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># Q CLI에 분석 요청</div>
-          <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
-          <div className="text-white">  "당신은 멀티클라우드 SRE입니다.</div>
-          <div className="text-white">   아래 3개 클라우드의 로그 요약을 기반으로 공통 장애 원인을 분석하고,</div>
-          <div className="text-white">   즉시 조치/재발 방지 계획을 DOCS 형식으로 작성하세요.</div>
-          <div className="text-white">   - AWS: ...</div>
-          <div className="text-white">   - Azure: ...</div>
-          <div className="text-white">   - GCP: ..."</div>
-        </div>
+        <pre className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto whitespace-pre-wrap">{`# Q CLI에 분석 요청
+AWS_PROFILE=bespin-aws-prod q chat --no-interactive $'당신은 멀티클라우드 SRE입니다.\n아래 3개 클라우드의 로그 요약을 기반으로 공통 장애 원인을 분석하고\n즉시 조치/재발 방지 계획을 DOCS 형식으로 작성하세요.\n- AWS: ...\n- Azure: ...\n- GCP: ...'`}</pre>
       </div>
 
       <h3>② 배포 전 교차 검증 체크리스트</h3>
@@ -106,14 +90,8 @@ export default function MulticloudOpsPage() {
         <p className="text-sm">
           “AWS에 배포된 핵심 API가 Azure Functions, GCP BigQuery와 연동”되는 시나리오에서, 배포 전 확인해야 할 항목을 AI에게 정리하도록 지시합니다.
         </p>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 체크리스트 생성</div>
-          <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
-          <div className="text-white">  "당신은 멀티클라우드 아키텍트입니다.</div>
-          <div className="text-white">   AWS API Gateway → Azure Functions → GCP BigQuery 흐름에 대해</div>
-          <div className="text-white">   배포 전 검증해야 할 항목을 Markdown 체크리스트로 작성하세요.</div>
-          <div className="text-white">   각 항목에 대응하는 CLI 명령 또는 콘솔 경로를 포함하세요."</div>
-        </div>
+        <pre className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto whitespace-pre-wrap">{`# 체크리스트 생성
+AWS_PROFILE=bespin-aws-prod q chat --no-interactive $'당신은 멀티클라우드 아키텍트입니다.\nAWS API Gateway → Azure Functions → GCP BigQuery 흐름에 대해\n배포 전 검증해야 할 항목을 Markdown 체크리스트로 작성하고\n각 항목에 대응하는 CLI 명령 또는 콘솔 경로를 포함하세요.'`}</pre>
       </div>
 
       <h3>③ 계정별 규정 준수 검사</h3>
@@ -123,15 +101,8 @@ export default function MulticloudOpsPage() {
           <li>Azure: Defender for Cloud 평가 결과 요약</li>
           <li>GCP: Security Command Center 요약</li>
         </ul>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># 규정 준수 보고서</div>
-          <div className="text-white">AWS_PROFILE=bespin-aws-prod q mcp run \</div>
-          <div className="text-white">  "당신은 멀티클라우드 컴플라이언스 담당자입니다.</div>
-          <div className="text-white">   아래 평가 결과를 기반으로 위험도 분류와 권고 조치를 DOCS 형식으로 정리하세요.</div>
-          <div className="text-white">   - AWS: ...</div>
-          <div className="text-white">   - Azure: ...</div>
-          <div className="text-white">   - GCP: ..."</div>
-        </div>
+        <pre className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto whitespace-pre-wrap">{`# 규정 준수 보고서
+AWS_PROFILE=bespin-aws-prod q chat --no-interactive $'당신은 멀티클라우드 컴플라이언스 담당자입니다.\n아래 평가 결과를 기반으로 위험도 분류와 권고 조치를 DOCS 형식으로 정리하세요.\n- AWS: ...\n- Azure: ...\n- GCP: ...'`}</pre>
       </div>
 
       <h2>5. 운영 수칙</h2>

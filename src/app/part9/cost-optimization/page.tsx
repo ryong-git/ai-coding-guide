@@ -92,14 +92,8 @@ export default function CostOptimizationPage() {
         수집한 JSON을 Amazon Q Developer CLI에 입력하면, 추세·이상 징후·절감 기회가 포함된 <strong>DOCS 형식 보고서</strong>를 생성할 수 있습니다.
       </p>
 
-      <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm font-mono mb-4">
-        <div className="text-green-400"># FinOps 리포트 프롬프트</div>
-        <div className="text-white">AWS_PROFILE=bespin-finops q mcp run \</div>
-        <div className="text-white">  "당신은 멀티클라우드 FinOps 리드입니다.</div>
-        <div className="text-white">   reports/aws-cost.json, reports/azure-cost.json, reports/gcp-cost.json 데이터를 기반으로</div>
-        <div className="text-white">   서비스별 비용 추세, 이상 비용, 절감 기회를 표와 그래프로 정리한 DOCS 보고서를 작성하세요.</div>
-        <div className="text-white">   각 절감안에 예상 절감액과 실행 난이도를 포함하세요."</div>
-      </div>
+      <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap text-sm font-mono mb-4">{`# FinOps 리포트 프롬프트
+AWS_PROFILE=bespin-finops q chat --no-interactive $'당신은 멀티클라우드 FinOps 리드입니다.\nreports/aws-cost.json, reports/azure-cost.json, reports/gcp-cost.json 데이터를 토대로\n서비스별 비용 추세, 이상 비용, 절감 기회를 표와 그래프로 정리한 DOCS 보고서를 작성하세요.\n각 절감안에 예상 절감액과 실행 난이도를 포함하세요.'`}</pre>
 
       <h2>4. 자동 최적화 시나리오</h2>
 
@@ -124,13 +118,8 @@ export default function CostOptimizationPage() {
           <li>Azure Blob: <code className="font-mono">az storage blob list</code>로 90일 이상 미접근 데이터 파악</li>
           <li>GCP: BigQuery Export로 Nearline/Coldline 후보 탐색</li>
         </ul>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto">
-          <div className="text-green-400"># 스토리지 정책 생성</div>
-          <div className="text-white">AWS_PROFILE=bespin-finops q mcp run \</div>
-          <div className="text-white">  "다음 버킷 보고서를 기반으로 S3 Lifecycle 정책과</div>
-          <div className="text-white">   Azure Storage, GCS Object Lifecycle 규칙을 작성해줘.</div>
-          <div className="text-white">   각 규칙별 기대 절감액과 위험도를 함께 표로 정리해줘."</div>
-        </div>
+        <pre className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto whitespace-pre-wrap">{`# 스토리지 정책 생성
+AWS_PROFILE=bespin-finops q chat --no-interactive $'버킷 보고서를 참고해\nS3 Lifecycle 정책과 Azure Storage, GCS Object Lifecycle 규칙을 작성해줘.\n각 규칙별 기대 절감액과 위험도를 표로 정리해줘.'`}</pre>
       </div>
 
       <h3>③ 스케줄링 &amp; 자동 종료</h3>
@@ -173,10 +162,7 @@ export default function CostOptimizationPage() {
           <h3 className="font-semibold text-emerald-300">organize-your-business-finances</h3>
           <p className="text-xs text-slate-300">FinOps Lead · 월간 AWS CUR/RI/저장소 지표를 요약해야 할 때</p>
           <pre className="bg-black/40 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
-{`AWS_PROFILE=bespin-finops q mcp run \\
-  --resource s3://cur-bucket/{year}-{month}.csv \\
-  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard" \\
-  --prompt "CUR 데이터를 분석해 RI/SavingsPlan/CUD KPI + 이상 징후를 표로 정리하고, 증빙 스크린샷 경로를 포함해줘"`}
+{`AWS_PROFILE=bespin-finops q chat --no-interactive $'s3://cur-bucket/{year}-{month}.csv CUR 데이터를 분석해\nRI/SavingsPlan/CUD KPI와 이상 징후를 표로 정리하고,\n증빙이 필요한 지표는 Cost Explorer 스크린샷 경로를 함께 적어줘.'`}
           </pre>
           <p className="text-xs text-slate-400">결과는 DOCS 템플릿으로 저장 후 재무 승인 로그에 링크</p>
         </div>
@@ -184,10 +170,7 @@ export default function CostOptimizationPage() {
           <h3 className="font-semibold text-cyan-600 dark:text-cyan-300">build-financial-models</h3>
           <p className="text-xs text-gray-600 dark:text-gray-300">FinOps Lead · 아키텍처 변경 전 비용 민감도 모델링이 필요할 때</p>
           <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
-AWS_PROFILE=bespin-finops q mcp run \
-  --resource git://iac/modules?path=eks/variables.tf \
-  --tool context7.search "EKS cost components" \
-  --prompt "변수 파일과 예상 워크로드를 기반으로 OPEX 시나리오(최소/기준/최대)를 계산하고 그래프 설명을 작성"
+{`AWS_PROFILE=bespin-finops q chat --no-interactive $'git://iac/modules?path=eks/variables.tf 변수를 기준으로\n예상 워크로드 OPEX 시나리오(최소/기준/최대)를 계산하고 그래프 설명을 작성해줘.'`}
           </pre>
           <p className="text-xs text-gray-500 dark:text-gray-400">Beta: 그래프는 BI 도구로 재검증, Cost Explorer 데이터와 차이 확인</p>
         </div>
@@ -195,10 +178,7 @@ AWS_PROFILE=bespin-finops q mcp run \
           <h3 className="font-semibold text-purple-600 dark:text-purple-300">draft-investment-memos</h3>
           <p className="text-xs text-gray-600 dark:text-gray-300">Strategy Office · FinOps 데이터를 투자/비즈니스 언어로 바꿔야 할 때</p>
           <pre className="bg-gray-900 text-gray-100 rounded p-3 text-xs font-mono overflow-x-auto whitespace-pre-wrap">
-AWS_PROFILE=bespin-strategy q mcp run \
-  --resource filesystem://reports/monthly-finops.md \
-  --tool memory.write "FinOps memo knowledge" \
-  --prompt "리포트를 경영진 메모 형식으로 변환하고, 투자 판단 포인트/리스크/의사결정 필요 사항을 bullet으로 정리"
+{`AWS_PROFILE=bespin-strategy q chat --no-interactive $'filesystem://reports/monthly-finops.md 내용을 읽고\n투자 판단 포인트/리스크/필요 결정을 bullet 형태로 정리한 경영진 메모를 작성해줘.'`}
           </pre>
           <p className="text-xs text-gray-500 dark:text-gray-400">결정 문서는 Notion/Confluence에 게시 전 CFO 검토 필수</p>
         </div>

@@ -11,19 +11,13 @@ Claude 공식 use case 카드를 Vibe Coding 워크플로에 녹일 때 바로 �
 
 ### 예시 A — `generate-project-status-reports`
 ```bash
-AWS_PROFILE=bespin-core q mcp run \
-  --resource git://ops-repo?path=reports/W{week}.md \
-  --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약" \
-  --prompt "당신은 베스핀 Delivery PM입니다. Jira/깃/배포 로그를 결합해 W{week} 프로젝트 상태 리포트를 작성하세요.\n포함 항목: 위험 요인, 차주 계획, 필요 지원."
+AWS_PROFILE=bespin-core q chat --no-interactive $'당신은 베스핀 Delivery PM입니다.\n자료: git://ops-repo?path=reports/W{week}.md\nJira BOARD-123, Git 태그, 배포 로그를 결합해 W{week} 프로젝트 상태 리포트를 작성하세요.\n포함 항목: 위험 요인, 차주 계획, 필요 지원.'
 ```
 - 출력은 DOCS 템플릿으로 저장하고 Slack #wbr 공유 전, 프로젝트 오너가 승인.
 
 ### 예시 B — `organize-your-business-finances`
 ```bash
-AWS_PROFILE=finops-prod q mcp run \
-  --resource s3://cur-bucket/{year}-{month}.csv \
-  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard" \
-  --prompt "FinOps 리뷰를 위해 CUR 데이터를 분석하고 RI/Savings Plan/CUD 지표를 요약한 뒤, 이상 징후와 권고안을 표로 정리하세요."
+AWS_PROFILE=finops-prod q chat --no-interactive $'FinOps 리뷰를 위해 s3://cur-bucket/{year}-{month}.csv CUR 데이터를 분석하고\nRI/Savings Plan/CUD 지표를 요약한 뒤, 이상 징후와 권고안을 표로 정리하세요.\n필요한 경우 Cost Explorer 스크린샷 경로를 함께 언급하세요.'
 ```
 - Amazon Q Developer CLI 보고서 ↔ Cost Explorer 값을 대조한 뒤 재무 승인 로그에 첨부.
 
@@ -36,19 +30,13 @@ AWS_PROFILE=finops-prod q mcp run \
 
 ### 예시 C — `build-customer-personas`
 ```bash
-AWS_PROFILE=revops-sso q mcp run \
-  --resource fetch://crm-api/persona-export.json \
-  --tool memory.write "업데이트된 페르소나 지식" \
-  --prompt "당신은 베스핀 Marketing Ops입니다. 입력 데이터를 기반으로 산업별 페르소나 카드(도전과제, KPI, 권장 메시지, 추천 MCP 스택)를 3장 작성하세요."
+AWS_PROFILE=revops-sso q chat --no-interactive $'당신은 베스핀 Marketing Ops입니다.\nfetch://crm-api/persona-export.json 데이터를 기반으로\n산업별 페르소나 카드(도전과제, KPI, 권장 메시지, 추천 MCP 스택)를 3장 작성하세요.'
 ```
 - Memory MCP에 저장 후 Claude Code / Slack 워크플로에서 재활용.
 
 ### 예시 D — `create-new-hire-onboarding-guides`
 ```bash
-AWS_PROFILE=hr-portal q mcp run \
-  --resource filesystem://hr/onboarding/checklist.md \
-  --tool playwright.pdf "https://people.bespin/global-onboarding-template" \
-  --prompt "신규 입사자 {role}를 위한 Day1~Day5 가이드를 표 형식으로 작성하고, 필수 시스템/코스 링크와 검증 절차를 포함해줘."
+AWS_PROFILE=hr-portal q chat --no-interactive $'신규 입사자 {role}를 위한 Day1~Day5 가이드를 표 형식으로 작성하고,\n필수 시스템/코스 링크와 검증 절차를 포함해줘.\n참고 자료: filesystem://hr/onboarding/checklist.md'
 ```
 - PDF 결과는 People Portal에 게시하기 전에 HR Ops가 개인정보 및 최신 정책 링크를 확인.
 

@@ -146,8 +146,8 @@ export default function AgenticOrchestrationPlatformPage() {
 
         <Paragraph>
           Claude 공식 use case 39개를 트랙/페르소나별로 정리한 <code className="font-mono">docs/reference/claude_use_case_tracks.csv</code>에서 아래와 같이
-          <strong>Cloud Ops</strong>와 <strong>일반 스텝 부서</strong> 루틴을 한 번에 자동화할 수 있습니다. Part 5에서 소개한 MCP 흐름과 동일하게
-          `AWS_PROFILE`, Resource, Tool, 사후 검증 절차를 조합하면 됩니다.
+          <strong>Cloud Ops</strong>와 <strong>일반 스텝 부서</strong> 루틴을 한 번에 자동화할 수 있습니다. Part 5에서 소개한 MCP 흐름처럼
+          `AWS_PROFILE`과 연결된 MCP 리소스 경로, Amazon Q CLI 프롬프트, 사후 검증 절차를 조합하면 됩니다.
         </Paragraph>
 
         <div className="grid lg:grid-cols-2 gap-6">
@@ -158,28 +158,21 @@ export default function AgenticOrchestrationPlatformPage() {
               <div>
                 <div className="text-xs font-semibold text-slate-400">generate-project-status-reports (Delivery PM)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
-{`AWS_PROFILE=bespin-core q mcp run \\
-  --resource git://ops-repo?path=reports/W{week}.md \\
-  --tool context7.search "Jira BOARD-123, Git 태그, 배포 로그를 DOCS 형식으로 요약" \\
-  --prompt "주간 리스크 + 차주 계획 + 지원 요청을 정리하고 검증 절차를 명시"`}
+{`AWS_PROFILE=bespin-core q chat --no-interactive $'W{week} 주차 프로젝트 현황을 요약해줘.\n참고 자료: git://ops-repo?path=reports/W{week}.md\n반드시 Jira BOARD-123, Git 태그, 배포 로그의 주요 차이를 표로 정리하고 주간 리스크/차주 계획/지원 요청을 명시해.'`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">Slack #wbr 공유 전 Git diff &lt;= 10줄 확인 + PM 승인 체커</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">analyze-patterns-in-user-feedback (MSP On-call)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
-{`AWS_PROFILE=bespin-support q mcp run \\
-  --resource filesystem://logs/zendesk/{date}.json \\
-  --tool sequential-think.analyze "패턴/근본 원인/후속 조치 3단계 정리"`}
+{`AWS_PROFILE=bespin-support q chat --no-interactive $'Zendesk {date} 티켓 로그를 분석해서\n반복 패턴·근본 원인·후속 조치 3단계를 bullet 형태로 정리해.\n로그는 filesystem://logs/zendesk/{date}.json MCP 서버로 제공된다.'`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">결과는 Incident DB에 업로드하고, CloudWatch 지표와 상호 검증</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">organize-your-business-finances (FinOps Lead)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
-{`AWS_PROFILE=finops-prod q mcp run \\
-  --resource s3://cur-bucket/{year}-{month}.csv \\
-  --tool playwright.screenshot "https://console.aws.amazon.com/cost-management/home?#/dashboard"`}
+{`AWS_PROFILE=finops-prod q chat --no-interactive $'s3://cur-bucket/{year}-{month}.csv 에 있는 CUR를 읽고\nCost Explorer 대시보드 스크린샷과 함께 월간 FinOps 리포트를 만들어줘.\nKPI(Idle EC2/EBS, Savings Plan, CUD) 편차를 표로 설명해.'`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">CUR ↔ Cost Explorer 교차 검증 후 재무 승인 로그에 링크 저장</p>
               </div>

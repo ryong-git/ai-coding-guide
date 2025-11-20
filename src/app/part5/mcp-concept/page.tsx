@@ -190,14 +190,8 @@ export default function MCPConceptPage() {
           AWS CLI, Amazon Q Developer CLI, Claude Code 모두 IAM Identity Center 프로파일을 공유합니다. 다음과 같이 맥락과 출력 형식을 명확히
           지정하면 실무 보고서를 빠르게 작성할 수 있습니다.
         </p>
-        <div className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono">
-          <div className="text-green-400"># MCP 도구를 활용한 운영 리포트 생성</div>
-          <div className="text-white">AWS_PROFILE=bespin-test q mcp run \</div>
-          <div className="text-white">  "당신은 AWS 시니어 컨설턴트입니다.</div>
-          <div className="text-white">   core-platform 환경의 지난 7일 운영 이슈를 요약하고,</div>
-          <div className="text-white">   MCP로 수집 가능한 로그/지표를 표 형식으로 정리한 뒤</div>
-          <div className="text-white">   개선 권고안을 DOCS 구조로 작성하세요."</div>
-        </div>
+        <pre className="bg-gray-900 text-gray-100 rounded p-3 text-sm font-mono overflow-x-auto whitespace-pre-wrap">{`# MCP 도구를 활용한 운영 리포트 생성
+AWS_PROFILE=bespin-test q chat --no-interactive $'당신은 AWS 시니어 컨설턴트입니다.\ncore-platform 환경의 지난 7일 운영 이슈를 요약하고,\nMCP 서버로부터 수집한 로그/지표를 표로 정리한 뒤\n개선 권고안을 DOCS 구조로 작성하세요.'`}</pre>
         <p className="text-xs text-gray-600 dark:text-gray-400">
           ⚠️ AI가 제시한 명령은 반드시 샌드박드 환경에서 검증한 후 프로덕션에 적용합니다.
         </p>

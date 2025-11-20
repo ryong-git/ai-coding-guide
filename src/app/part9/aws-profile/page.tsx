@@ -125,8 +125,7 @@ export default function AWSProfilePage() {
         <div className="text-white">$ AWS_PROFILE=customer-prod q generate "Summarize open GuardDuty findings for last 4h"</div>
         <br />
         <div className="text-green-400"># MCP 툴 실행 (동영상 예제와 동일한 패턴)</div>
-        <div className="text-white">$ AWS_PROFILE=customer-prod q mcp run \
-"Generate CloudWatch Logs Insights query for API Gateway 5xx spikes"</div>
+        <div className="text-white">$ AWS_PROFILE=customer-prod q chat --no-interactive $'API Gateway에서 15분간 5xx 급증 구간을 찾고\nCloudWatch Logs Insights 쿼리를 제안해줘.'</div>
       </div>
 
       <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-6 my-6 text-sm">
@@ -147,8 +146,7 @@ export default function AWSProfilePage() {
           <div className="text-green-400"># 현황 파악</div>
           <div className="text-white">AWS_PROFILE=customer-prod aws cloudwatch describe-alarms --state-value ALARM</div>
           <div className="text-green-400 mt-3"># 로그 패턴 분석을 Q CLI에 위임</div>
-          <div className="text-white">AWS_PROFILE=customer-prod q mcp run \
-"Analyze API Gateway 5xx logs from last 15 minutes and propose mitigation"</div>
+          <div className="text-white">AWS_PROFILE=customer-prod q chat --no-interactive $'최근 15분 API Gateway 5xx 로그를 분석하고 완화 절차를 제안해줘.'</div>
         </div>
         <ul className="list-disc pl-6 space-y-1">
           <li>Amazon Q가 제안한 완화 스크립트를 검토 후 Systems Manager Automation 문서로 등록합니다.</li>
@@ -161,8 +159,7 @@ export default function AWSProfilePage() {
         <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono">
           <div className="text-green-400"># 모든 고객 계정에 대한 비용 리포트 생성</div>
           <div className="text-white">for profile in customer-prod customer-dr customer-dev; do</div>
-          <div className="text-white">  AWS_PROFILE=$profile q mcp run \</div>
-          <div className="text-white">    "Generate a Cost Explorer report for idle EC2/EBS and suggest savings actions"</div>
+          <div className="text-white">  AWS_PROFILE=$profile q chat --no-interactive $'Cost Explorer 데이터를 이용해 Idle EC2/EBS 비용을 찾고\n  절감 조치를 제안해줘.'</div>
           <div className="text-white">done</div>
         </div>
         <ul className="list-disc pl-6 space-y-1">
@@ -175,8 +172,7 @@ export default function AWSProfilePage() {
       <div className="space-y-3 text-sm">
         <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono overflow-x-auto">
           <div className="text-green-400"># Amazon Q에게 배포 플레이북 생성 요청</div>
-          <div className="text-white">AWS_PROFILE=corp-platform q mcp run "Draft a multi-stage deployment runbook</div>
-          <div className="text-white">for ECS service with dev → staging → prod, including rollback steps"</div>
+          <div className="text-white">AWS_PROFILE=corp-platform q chat --no-interactive $'ECS 서비스를 dev→staging→prod 순서로 배포하는 런북과 롤백 절차를 초안해줘.'</div>
         </div>
         <ul className="list-disc pl-6 space-y-1">
           <li>워크숍 예제와 같이 <strong>streamable-http</strong> 방식 MCP 서버를 통해 Terraform 실행 상태를 실시간으로 전달합니다.</li>
