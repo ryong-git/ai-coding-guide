@@ -1,0 +1,52 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="client" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="protocol" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <style>
+      .card { rx:18; ry:18; filter:url(#shadow); }
+      .label { font: 600 20px 'Pretendard', 'Inter', sans-serif; fill:#0f172a; }
+      .list { font: 400 15px 'Pretendard', 'Inter', sans-serif; fill:#0f172a; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect x="50" y="60" width="210" height="180" fill="url(#client)" rx="20"/>
+  <text x="70" y="105" class="label" fill="#f8fafc">MCP Client</text>
+  <text x="70" y="140" class="list" fill="#f8fafc">• Claude Code / Amazon Q</text>
+  <text x="70" y="168" class="list" fill="#f8fafc">• 사용자 입력 · 권한 확인</text>
+  <text x="70" y="196" class="list" fill="#f8fafc">• UI/IDE 통합</text>
+
+  <rect x="345" y="40" width="210" height="220" fill="url(#protocol)" rx="20"/>
+  <text x="365" y="95" class="label" fill="#022c22">MCP Protocol</text>
+  <text x="365" y="130" class="list" fill="#022c22">• JSON-RPC transport</text>
+  <text x="365" y="158" class="list" fill="#022c22">• Resources / Tools / Events</text>
+  <text x="365" y="186" class="list" fill="#022c22">• Streaming + Approvals</text>
+
+  <rect x="640" y="60" width="210" height="180" fill="url(#server)" rx="20"/>
+  <text x="660" y="105" class="label" fill="#f8fafc">MCP Server</text>
+  <text x="660" y="140" class="list" fill="#f8fafc">• Playwright / Git / FS</text>
+  <text x="660" y="168" class="list" fill="#f8fafc">• 사내 API, 로그, DB</text>
+  <text x="660" y="196" class="list" fill="#f8fafc">• 실제 작업 실행</text>
+
+  <path d="M270 150 H340" stroke="#0ea5e9" stroke-width="6" marker-end="url(#arrow)"/>
+  <path d="M555 150 H625" stroke="#6366f1" stroke-width="6" marker-end="url(#arrow)"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <text x="300" y="135" class="list" fill="#0f172a">표준 JSON-RPC</text>
+  <text x="585" y="135" class="list" fill="#0f172a">도구 호출 / 이벤트</text>
+</svg>

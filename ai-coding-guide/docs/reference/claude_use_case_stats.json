@@ -1,0 +1,129 @@
+{
+  "total_cards": 39,
+  "category_counts": {
+    "Professional": 10,
+    "Legal": 2,
+    "Education": 4,
+    "Personal": 9,
+    "Marketing": 3,
+    "Sales": 3,
+    "Research": 2,
+    "Finance": 3,
+    "HR": 1,
+    "Life Sciences": 2
+  },
+  "track_counts": {
+    "general_biz": 31,
+    "both": 1,
+    "cloud_ops": 7
+  },
+  "persona_counts": {
+    "Brand Studio": 2,
+    "Legal Ops": 2,
+    "Enablement PM": 1,
+    "L&D Coach": 1,
+    "People Success": 1,
+    "Wellbeing Manager": 1,
+    "Corporate Travel": 2,
+    "Executive Coaching": 1,
+    "Culture Team": 1,
+    "Growth Hacker": 1,
+    "Workspace Design": 1,
+    "Marketing Ops": 2,
+    "Sales Enablement": 1,
+    "Internal Comms": 1,
+    "Biz Ops": 1,
+    "Automation Architect": 1,
+    "Field Marketing": 1,
+    "Operations Desk": 1,
+    "L&D PM": 1,
+    "Delivery PM": 2,
+    "Sales Ops": 1,
+    "Solutions Consultant": 1,
+    "Architecture Researcher": 1,
+    "Observability Analyst": 1,
+    "Content Studio": 1,
+    "FinOps Lead": 2,
+    "Knowledge Manager": 1,
+    "HR Ops": 1,
+    "MSP On-call": 1,
+    "Life Sciences PM": 2,
+    "Strategy Office": 1,
+    "Design Ops": 1
+  },
+  "category_by_track": {
+    "Professional": {
+      "general_biz": 6,
+      "both": 1,
+      "cloud_ops": 3
+    },
+    "Legal": {
+      "general_biz": 2
+    },
+    "Education": {
+      "general_biz": 4
+    },
+    "Personal": {
+      "general_biz": 9
+    },
+    "Marketing": {
+      "general_biz": 3
+    },
+    "Sales": {
+      "general_biz": 3
+    },
+    "Research": {
+      "cloud_ops": 2
+    },
+    "Finance": {
+      "cloud_ops": 2,
+      "general_biz": 1
+    },
+    "HR": {
+      "general_biz": 1
+    },
+    "Life Sciences": {
+      "general_biz": 2
+    }
+  },
+  "personas_by_track": {
+    "general_biz": {
+      "Brand Studio": 2,
+      "Legal Ops": 2,
+      "Enablement PM": 1,
+      "L&D Coach": 1,
+      "People Success": 1,
+      "Wellbeing Manager": 1,
+      "Corporate Travel": 2,
+      "Executive Coaching": 1,
+      "Culture Team": 1,
+      "Growth Hacker": 1,
+      "Workspace Design": 1,
+      "Marketing Ops": 2,
+      "Sales Enablement": 1,
+      "Internal Comms": 1,
+      "Biz Ops": 1,
+      "Field Marketing": 1,
+      "Operations Desk": 1,
+      "L&D PM": 1,
+      "Sales Ops": 1,
+      "Solutions Consultant": 1,
+      "Content Studio": 1,
+      "Knowledge Manager": 1,
+      "HR Ops": 1,
+      "Life Sciences PM": 2,
+      "Strategy Office": 1,
+      "Design Ops": 1
+    },
+    "both": {
+      "Automation Architect": 1
+    },
+    "cloud_ops": {
+      "Delivery PM": 2,
+      "Architecture Researcher": 1,
+      "Observability Analyst": 1,
+      "FinOps Lead": 2,
+      "MSP On-call": 1
+    }
+  }
+}
