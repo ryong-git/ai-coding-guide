@@ -1,4 +1,4 @@
-import { PageTitle, SectionTitle, SubsectionTitle, Paragraph } from '@/components/ui/typography';
+import { PageTitle, SectionTitle, SubsectionTitle, Paragraph, Lead } from '@/components/ui/typography';
 import { InfoBox, FeatureBox } from '@/components/ui/info-box';
 import { CodeBlock } from '@/components/ui/code-block';
 
