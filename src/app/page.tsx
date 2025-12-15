@@ -10,18 +10,18 @@ export default function HomePage() {
           AI 코딩 A to Z
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          바이브코딩 완전 가이드 - 클라우드 엔지니어를 위한 
-          AI 기반 코딩 도구 활용 종합 가이드
+          바이브코딩 완전 가이드 - Cursor 2.1, Antigravity, AWS Q를 활용한
+          실전 클라우드 엔지니어링 & 에이전트 협업 가이드
         </p>
         <div className="flex justify-center gap-4 mt-8">
-          <Link 
+          <Link
             href="/overview/"
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
             시작하기
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
-          <Link 
+          <Link
             href="/part9/aws-profile/"
             className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
           >
@@ -79,7 +79,7 @@ export default function HomePage() {
           학습 경로
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <Link 
+          <Link
             href="/part1/definition/"
             className="group p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
           >
@@ -94,7 +94,7 @@ export default function HomePage() {
             </div>
           </Link>
 
-          <Link 
+          <Link
             href="/part4/amazon-q/"
             className="group p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
           >
@@ -109,7 +109,7 @@ export default function HomePage() {
             </div>
           </Link>
 
-          <Link 
+          <Link
             href="/part9/aws-profile/"
             className="group p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
           >
@@ -167,13 +167,41 @@ export default function HomePage() {
             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">옵션 • 데이터 분석 강화</div>
             <h3 className="text-lg font-semibold">Gemini CLI</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              100만 토큰 컨텍스트로 대규모 문서·로그를 한 번에 분석할 수 있어 FinOps·보안 감사 자동화에 유용합니다. 오픈소스 MCP 서버와 결합해 하이브리드 워크플로를 구축할 수 있습니다.
+              100만 토큰 컨텍스트로 대규모 문서, 로그를 한 번에 분석할 수 있어 FinOps, 보안 감사 자동화에 유용합니다.
             </p>
             <div className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded inline-flex">Google Cloud 연계</div>
             <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono text-xs overflow-x-auto">
               <div className="text-green-400"># 설치</div>
               <div className="text-white">npm install -g @google/gemini-cli</div>
               <div className="text-white">gemini auth login</div>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700 space-y-3">
+            <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">HOT • AI Native IDE</div>
+            <h3 className="text-lg font-semibold">Cursor 2.1 (Agent)</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              터미널 명령부터 파일 수정까지 스스로 수행하는 Agent Mode가 탑재되었습니다. Terraform 분석, 보안 점검 등 복잡한 워크플로를 위임할 수 있습니다.
+            </p>
+            <div className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded inline-flex">Next Edit Prediction</div>
+            <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono text-xs overflow-x-auto">
+              <div className="text-green-400"># Agent Mode</div>
+              <div className="text-white">"tfsec 설치하고 main.tf 보안 점검해줘"</div>
+              <div className="text-gray-400">(스스로 설치 및 실행)</div>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700 space-y-3">
+            <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">NEW • Google DeepMind</div>
+            <h3 className="text-lg font-semibold">Antigravity</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              프로젝트 전체를 이해하고 도구(Tools)를 능동적으로 사용하는 차세대 에이전트입니다. 순차적 사고(Sequential Thinking)로 복잡한 리팩토링도 안전하게 수행합니다.
+            </p>
+            <div className="text-xs bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded inline-flex">Agentic AI</div>
+            <div className="bg-gray-900 text-gray-100 rounded p-3 font-mono text-xs overflow-x-auto">
+              <div className="text-green-400"># Refactoring</div>
+              <div className="text-white">"legacy.ts를 클린 아키텍처로 분리해줘"</div>
+              <div className="text-gray-400">(계획 수립 → 파일 생성 → 검증)</div>
             </div>
           </div>
         </div>
@@ -185,10 +213,10 @@ export default function HomePage() {
           지금 바로 시작해보세요
         </h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          개발 시간 대폭 단축의 비밀을 알아보고, AWS Profile을 활용한 
+          개발 시간 대폭 단축의 비밀을 알아보고, AWS Profile을 활용한
           실무 AI Ops 구현 방법을 익혀보세요.
         </p>
-        <Link 
+        <Link
           href="/overview/"
           className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
         >

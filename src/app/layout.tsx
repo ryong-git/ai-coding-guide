@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/ui/navigation";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -7,6 +7,11 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -28,7 +33,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico'
   },
   manifest: '/site.webmanifest',
-  themeColor: '#2E86C1',
+  themeColor: '#09090b',
   viewport: 'width=device-width, initial-scale=1',
   creator: 'AI 코딩 가이드',
   publisher: 'AI 코딩 가이드',
@@ -49,27 +54,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased font-inter`}>
-        <ThemeProvider defaultTheme="system">
-          <div className="min-h-screen bg-white dark:bg-gray-900">
+      <body className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} antialiased font-sans selection:bg-accent-primary/20 selection:text-accent-cyan`}>
+        <ThemeProvider defaultTheme="dark">
+          <div className="min-h-screen relative">
+            <div className="app-grid-overlay" />
             <Navigation />
-            
-            <main className="md:ml-80 min-h-screen">
-              <header className="sticky top-0 z-20 border-b border-transparent bg-gradient-to-r from-white via-blue-50/70 to-indigo-50/60 backdrop-blur dark:from-slate-950/60 dark:via-blue-950/40 dark:to-slate-900/60">
+
+            <main className="md:ml-80 min-h-screen relative z-10 transition-all duration-300">
+              <header className="sticky top-0 z-20 border-b border-border-soft bg-background/80 backdrop-blur-md">
                 <div className="flex items-center justify-between px-6 py-4">
                   <div className="space-y-1">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-500 dark:text-blue-300">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-cyan animate-pulse-glow">
                       Video Validated MSP Guide
                     </p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300">
+                    <p className="text-sm text-text-secondary">
                       Agentic AI 워크플로를 단계별로 따라가며 팀에 바로 적용해 보세요.
                     </p>
                   </div>
                   <ThemeToggle />
                 </div>
               </header>
-              
-              <div className="container max-w-4xl mx-auto px-6 py-8">
+
+              <div className="container max-w-5xl mx-auto px-6 py-8 animate-fade-in">
                 {children}
               </div>
             </main>

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ChevronDown, ChevronRight, Menu, X, PlayCircle, Sparkles } from "lucide-react"
+import { ChevronDown, ChevronRight, Menu, X, PlayCircle, Sparkles, Zap } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface NavItem {
@@ -24,6 +24,7 @@ const navigationData: NavItem[] = [
       { title: "1.2 AI 페어 운영 워크플로", href: "/part1/ai-pair-programming/" },
       { title: "1.3 효율성과 안정성 균형", href: "/part1/velocity-risk-balance/" },
       { title: "1.4 도구별 비교 분석", href: "/part1/comparison/" },
+      { title: "1.5 Vibe Coding 실전 팁", href: "/part1/vibe-tips/" },
     ]
   },
   {
@@ -50,16 +51,19 @@ const navigationData: NavItem[] = [
       { title: "4.1 Amazon Q Developer CLI", href: "/part4/amazon-q/" },
       { title: "4.2 Claude Code", href: "/part4/claude-code/" },
       { title: "4.3 Gemini CLI", href: "/part4/gemini-cli/" },
-      { title: "4.4 도구 조합 전략", href: "/part4/tool-strategy/" },
+      { title: "4.4 Cursor 2.1 (Agent)", href: "/part4/cursor/" },
+      { title: "4.5 Antigravity (Google)", href: "/part4/antigravity/" },
+      { title: "4.6 도구 조합 전략", href: "/part4/tool-strategy/" },
     ]
   },
   {
-    title: "5부. MCP 마스터하기",
+    title: "5부. MCP & Frontier AI",
     children: [
       { title: "5.1 MCP 개념", href: "/part5/mcp-concept/" },
       { title: "5.2 아키텍처 이해", href: "/part5/architecture/" },
       { title: "5.3 실무 구현", href: "/part5/implementation/" },
       { title: "5.4 MSP 업무 적용", href: "/part5/msp-application/" },
+      { title: "5.5 Frontier AI & Kiro", href: "/part5/frontier-ai/" },
     ]
   },
   {
@@ -84,7 +88,7 @@ const navigationData: NavItem[] = [
       { title: "8.1 바이브 코딩 마스터 프롬프트", href: "/part8/prompting/" },
       { title: "8.2 바이브 코딩 IaC 자동 생성", href: "/part8/react-optimization/" },
       { title: "8.3 바이브 코딩 CI/CD 파이프라인", href: "/part8/debugging/" },
-      { title: "8.4 Agentic AI 오케스트레이션 플랫폼", href: "/part8/team-workflow/" },
+      { title: "8.4 Agentic AI 오케스트레이션", href: "/part8/team-workflow/" },
     ]
   },
   {
@@ -114,8 +118,8 @@ export function Navigation({ className }: NavigationProps) {
   const pathname = usePathname()
 
   const toggleExpanded = (title: string) => {
-    setExpandedItems(prev => 
-      prev.includes(title) 
+    setExpandedItems(prev =>
+      prev.includes(title)
         ? prev.filter(item => item !== title)
         : [...prev, title]
     )
@@ -125,6 +129,12 @@ export function Navigation({ className }: NavigationProps) {
     const isExpanded = expandedItems.includes(item.title)
     const isActive = pathname === item.href
     const hasChildren = item.children && item.children.length > 0
+    const isChildActive = item.children?.some(child => pathname === child.href)
+
+    // Auto-expand parent if child is active
+    if (isChildActive && !isExpanded && !expandedItems.includes(item.title)) {
+      setExpandedItems(prev => [...prev, item.title])
+    }
 
     return (
       <div key={item.title} className={cn("", depth > 0 && "ml-4")}>
@@ -133,33 +143,45 @@ export function Navigation({ className }: NavigationProps) {
             <button
               onClick={() => toggleExpanded(item.title)}
               className={cn(
-                "flex items-center w-full px-3 py-2 text-sm rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors",
-                isActive && "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400"
+                "flex items-center w-full px-3 py-2 text-sm rounded-lg transition-all duration-200 group",
+                isChildActive
+                  ? "text-accent-cyan font-medium"
+                  : "text-text-secondary hover:text-foreground hover:bg-white/5"
               )}
             >
-              {isExpanded ? (
-                <ChevronDown className="w-4 h-4 mr-2 flex-shrink-0" />
-              ) : (
-                <ChevronRight className="w-4 h-4 mr-2 flex-shrink-0" />
-              )}
-              <span className="truncate">{item.title}</span>
+              <div className={cn(
+                "mr-2 transition-transform duration-200",
+                isExpanded ? "rotate-90" : ""
+              )}>
+                {isExpanded ? (
+                  <ChevronDown className="w-4 h-4" />
+                ) : (
+                  <ChevronRight className="w-4 h-4" />
+                )}
+              </div>
+              <span className="truncate tracking-tight">{item.title}</span>
             </button>
           ) : (
             <Link
               href={item.href || "#"}
               className={cn(
-                "flex items-center w-full px-3 py-2 text-sm rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors",
-                isActive && "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400"
+                "flex items-center w-full px-3 py-2 text-sm rounded-lg transition-all duration-200 relative overflow-hidden",
+                isActive
+                  ? "text-accent-cyan bg-accent-primary/10 font-medium border-l-2 border-accent-cyan"
+                  : "text-text-secondary hover:text-foreground hover:bg-white/5"
               )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <span className="truncate ml-6">{item.title}</span>
+              {isActive && (
+                <div className="absolute inset-0 bg-gradient-to-r from-accent-cyan/10 to-transparent opacity-50" />
+              )}
+              <span className={cn("truncate ml-6 relative z-10", isActive && "ml-5")}>{item.title}</span>
             </Link>
           )}
         </div>
-        
+
         {hasChildren && isExpanded && (
-          <div className="mt-1">
+          <div className="mt-1 space-y-0.5 border-l border-border-soft ml-2 pl-2">
             {item.children?.map(child => renderNavItem(child, depth + 1))}
           </div>
         )}
@@ -172,7 +194,7 @@ export function Navigation({ className }: NavigationProps) {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-sm"
+        className="md:hidden fixed top-4 left-4 z-50 p-2 bg-surface backdrop-blur-md border border-border-soft rounded-lg text-foreground shadow-lg"
       >
         {isMobileMenuOpen ? (
           <X className="w-5 h-5" />
@@ -183,40 +205,45 @@ export function Navigation({ className }: NavigationProps) {
 
       {/* Sidebar */}
       <nav className={cn(
-        "fixed left-0 top-0 z-40 h-screen w-80 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 overflow-y-auto",
-        "transition-transform duration-300 ease-in-out",
+        "fixed left-0 top-0 z-40 h-screen w-80 bg-surface/95 backdrop-blur-xl border-r border-border-soft overflow-y-auto",
+        "transition-transform duration-300 ease-in-out shadow-2xl",
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
         className
       )}>
         <div className="p-6">
-          <div className="mb-6 space-y-4">
-            <Link 
+          <div className="mb-8 space-y-6">
+            <Link
               href="/"
-              className="text-xl font-bold text-gray-900 transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-300"
+              className="group flex items-center gap-2 text-xl font-bold text-foreground transition-colors hover:text-accent-cyan"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              AI 코딩 A to Z
+              <Zap className="w-6 h-6 text-accent-cyan" />
+              <span className="tracking-tight">Vibe Coding</span>
             </Link>
 
-            <div className="relative overflow-hidden rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 p-4 shadow-sm dark:border-blue-500/30 dark:from-blue-950/40 dark:via-slate-950/30 dark:to-indigo-950/40">
-              <div className="flex items-start gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/80 text-blue-600 shadow-sm dark:bg-slate-900/70 dark:text-blue-200">
-                  <PlayCircle className="h-5 w-5" />
+            <div className="relative overflow-hidden rounded-2xl border border-accent-primary/20 bg-gradient-to-br from-accent-primary/10 via-surface to-accent-secondary/5 p-4 shadow-lg group">
+              <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]" />
+              <div className="relative z-10 flex items-start gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-primary/20 text-accent-cyan shadow-inner ring-1 ring-white/10 group-hover:scale-110 transition-transform">
+                  <PlayCircle className="h-6 w-6" />
                 </div>
-                <div className="space-y-1 text-xs">
-                  <div className="inline-flex items-center gap-1 rounded-full bg-blue-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-blue-700 dark:bg-blue-500/10 dark:text-blue-200">
+                <div className="space-y-1.5 flex-1">
+                  <div className="inline-flex items-center gap-1.5 rounded-full bg-accent-primary/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-cyan border border-accent-primary/20">
                     <Sparkles className="h-3 w-3" />
-                    Video-based
+                    Video-Validated
                   </div>
-                  <p className="text-slate-600 dark:text-slate-300">
-                    3개 YouTube 실전 영상에서 추출한 워크플로를 토대로 제작된 가이드입니다. 각 섹션의 링크를 따라 실습과 검증을 동시에 진행하세요.
+                  <p className="text-xs text-text-secondary leading-relaxed">
+                    실전 영상 워크플로 기반 가이드.<br />
+                    <span className="text-accent-primary">Intention</span> →
+                    <span className="text-accent-secondary"> Agent</span> →
+                    <span className="text-accent-success"> Verify</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          
-          <div className="space-y-1">
+
+          <div className="space-y-1 pb-10">
             {navigationData.map(item => renderNavItem(item))}
           </div>
         </div>
@@ -225,7 +252,7 @@ export function Navigation({ className }: NavigationProps) {
       {/* Mobile Overlay */}
       {isMobileMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 z-30 bg-black bg-opacity-50"
+          className="md:hidden fixed inset-0 z-30 bg-black/60 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
