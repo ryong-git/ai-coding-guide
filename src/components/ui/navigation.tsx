@@ -24,7 +24,8 @@ const navigationData: NavItem[] = [
       { title: "1.2 AI 페어 운영 워크플로", href: "/part1/ai-pair-programming/" },
       { title: "1.3 효율성과 안정성 균형", href: "/part1/velocity-risk-balance/" },
       { title: "1.4 도구별 비교 분석", href: "/part1/comparison/" },
-      { title: "1.5 Vibe Coding 실전 팁", href: "/part1/vibe-tips/" },
+      { title: "1.5 환경 설정 가이드", href: "/part1/setup/" },
+      { title: "1.6 Vibe Coding 실전 팁", href: "/part1/vibe-tips/" },
     ]
   },
   {

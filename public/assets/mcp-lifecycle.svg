@@ -21,8 +21,8 @@
       <stop offset="0%" stop-color="#f472b6"/>
       <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
-    <marker id="arrowGray" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto">
-      <path d="M0 0 L12 6 L0 12" fill="#94a3b8"/>
+    <marker id="arrowGray" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L6 3 L0 6" fill="#94a3b8"/>
     </marker>
   </defs>
   <rect x="40" y="60" width="180" height="140" rx="20" fill="url(#grad1)"/>
@@ -30,22 +30,22 @@
   <text x="60" y="140" class="desc">서버가 resources/tools/events 목록을 </text>
   <text x="60" y="160" class="desc">JSON-RPC로 클라이언트에 전달</text>
 
-  <rect x="260" y="60" width="180" height="140" rx="20" fill="url(#grad2)"/>
-  <text x="280" y="110" class="step">2. Context Gathering</text>
-  <text x="280" y="140" class="desc">필요한 로그/코드/지표를 </text>
-  <text x="280" y="160" class="desc">read_resource 호출로 로딩</text>
+  <rect x="250" y="60" width="180" height="140" rx="20" fill="url(#grad2)"/>
+  <text x="270" y="110" class="step">2. Context Gathering</text>
+  <text x="270" y="140" class="desc">필요한 로그/코드/지표를 </text>
+  <text x="270" y="160" class="desc">read_resource 호출로 로딩</text>
 
-  <rect x="480" y="60" width="180" height="140" rx="20" fill="url(#grad3)"/>
-  <text x="500" y="110" class="step">3. Tool Execution</text>
-  <text x="500" y="140" class="desc">승인된 call_tool이 실제 시스템을</text>
-  <text x="500" y="160" class="desc">조작하고 이벤트를 스트리밍</text>
+  <rect x="460" y="60" width="180" height="140" rx="20" fill="url(#grad3)"/>
+  <text x="480" y="110" class="step">3. Tool Execution</text>
+  <text x="480" y="140" class="desc">승인된 call_tool이 실제 시스템을</text>
+  <text x="480" y="160" class="desc">조작하고 이벤트를 스트리밍</text>
 
-  <rect x="700" y="60" width="180" height="140" rx="20" fill="url(#grad4)"/>
-  <text x="720" y="110" class="step">4. Response &amp; Review</text>
-  <text x="720" y="140" class="desc">결과/검증 로그가 모델 응답과</text>
-  <text x="720" y="160" class="desc">후속 승인 절차로 전달</text>
+  <rect x="670" y="60" width="180" height="140" rx="20" fill="url(#grad4)"/>
+  <text x="690" y="110" class="step">4. Response &amp; Review</text>
+  <text x="690" y="140" class="desc">결과/검증 로그가 모델 응답과</text>
+  <text x="690" y="160" class="desc">후속 승인 절차로 전달</text>
 
-  <path d="M220 130 H260" stroke="#94a3b8" stroke-width="6" marker-end="url(#arrowGray)"/>
-  <path d="M440 130 H480" stroke="#94a3b8" stroke-width="6" marker-end="url(#arrowGray)"/>
-  <path d="M660 130 H700" stroke="#94a3b8" stroke-width="6" marker-end="url(#arrowGray)"/>
+  <path d="M220 130 H250" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <path d="M430 130 H460" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <path d="M640 130 H670" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowGray)"/>
 </svg>

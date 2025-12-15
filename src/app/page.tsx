@@ -28,6 +28,20 @@ export default function HomePage() {
             실무 사례 보기
           </Link>
         </div>
+
+        <div className="relative w-full max-w-5xl mx-auto mt-12 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent z-10" />
+          <img
+            src="/assets/vibe_coding_hero.png"
+            alt="Vibe Coding: AI Pair Programming Flow"
+            className="w-full h-auto object-cover"
+          />
+          <div className="absolute bottom-6 left-0 right-0 z-20">
+            <p className="text-white/90 text-sm font-medium tracking-widest uppercase">
+              Beyond Coding • Enter the Flow • Verify Everything
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Features */}
