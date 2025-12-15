@@ -104,7 +104,7 @@ export default function AgenticOrchestrationPlatformPage() {
       <WorkflowSteps items={workflowSteps} />
 
       <div className="prose prose-lg max-w-none dark:prose-invert">
-        <PageTitle 
+        <PageTitle
           sectionNumber="8.4"
           subtitle="조직 차원에서 여러 프로젝트와 AI 에이전트 팀을 통합 관리하는 메타 플랫폼"
         >
@@ -114,8 +114,8 @@ export default function AgenticOrchestrationPlatformPage() {
         <SectionTitle>🌐 조직 차원의 AI 에이전트 생태계</SectionTitle>
 
         <Lead>
-          Agentic AI 오케스트레이션 플랫폼은 <strong>전사 차원에서 수십 개의 프로젝트와 수백 개의 AI 에이전트를 통합 관리</strong>하는 
-          메타 시스템입니다. MSP 환경에서는 이 플랫폼을 통해 다양한 고객사 프로젝트를 동시에 진행하면서도 
+          Agentic AI 오케스트레이션 플랫폼은 <strong>전사 차원에서 수십 개의 프로젝트와 수백 개의 AI 에이전트를 통합 관리</strong>하는
+          메타 시스템입니다. MSP 환경에서는 이 플랫폼을 통해 다양한 고객사 프로젝트를 동시에 진행하면서도
           리소스 효율성을 극대화하고 조직 전체의 AI 역량을 지속적으로 발전시키고 있습니다.
         </Lead>
 
@@ -158,21 +158,25 @@ export default function AgenticOrchestrationPlatformPage() {
               <div>
                 <div className="text-xs font-semibold text-slate-400">generate-project-status-reports (Delivery PM)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
-{`AWS_PROFILE=bespin-core q chat --no-interactive $'W{week} 주차 프로젝트 현황을 요약해줘.\n참고 자료: git://ops-repo?path=reports/W{week}.md\n반드시 Jira BOARD-123, Git 태그, 배포 로그의 주요 차이를 표로 정리하고 주간 리스크/차주 계획/지원 요청을 명시해.'`}
+                  {`AWS_PROFILE=bespin-customer-a-observer q chat --no-interactive $'W{week} 주차 주간 보고서 초안을 작성해줘.
+1. Jira에서 이번 주 "Done" 처리된 티켓 목록 요약
+2. Git 저장소(main 브랜치)의 최근 7일 커밋 로그 요약
+3. AWS CloudWatch에서 발생한 Critical 알람 이력 포함
+위 내용을 바탕으로 "금주 실적 / 차주 계획 / 리스크" 파트로 나누어 Markdown으로 출력해.'`}
                 </pre>
-                <p className="mt-2 text-xs text-slate-300">Slack #wbr 공유 전 Git diff &lt;= 10줄 확인 + PM 승인 체커</p>
+                <p className="mt-2 text-xs text-slate-300">Jira MCP + Git MCP + AWS MCP를 조합하여 보고서 자동 생성</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">analyze-patterns-in-user-feedback (MSP On-call)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
-{`AWS_PROFILE=bespin-support q chat --no-interactive $'Zendesk {date} 티켓 로그를 분석해서\n반복 패턴·근본 원인·후속 조치 3단계를 bullet 형태로 정리해.\n로그는 filesystem://logs/zendesk/{date}.json MCP 서버로 제공된다.'`}
+                  {`AWS_PROFILE=bespin-support q chat --no-interactive $'Zendesk {date} 티켓 로그를 분석해서\n반복 패턴·근본 원인·후속 조치 3단계를 bullet 형태로 정리해.\n로그는 filesystem://logs/zendesk/{date}.json MCP 서버로 제공된다.'`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">결과는 Incident DB에 업로드하고, CloudWatch 지표와 상호 검증</p>
               </div>
               <div>
                 <div className="text-xs font-semibold text-slate-400">organize-your-business-finances (FinOps Lead)</div>
                 <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-3 text-xs font-mono whitespace-pre-wrap">
-{`AWS_PROFILE=finops-prod q chat --no-interactive $'s3://cur-bucket/{year}-{month}.csv 에 있는 CUR를 읽고\nCost Explorer 대시보드 스크린샷과 함께 월간 FinOps 리포트를 만들어줘.\nKPI(Idle EC2/EBS, Savings Plan, CUD) 편차를 표로 설명해.'`}
+                  {`AWS_PROFILE=finops-prod q chat --no-interactive $'s3://cur-bucket/{year}-{month}.csv 에 있는 CUR를 읽고\nCost Explorer 대시보드 스크린샷과 함께 월간 FinOps 리포트를 만들어줘.\nKPI(Idle EC2/EBS, Savings Plan, CUD) 편차를 표로 설명해.'`}
                 </pre>
                 <p className="mt-2 text-xs text-slate-300">CUR ↔ Cost Explorer 교차 검증 후 재무 승인 로그에 링크 저장</p>
               </div>
@@ -274,7 +278,7 @@ Non-goal: ERP 연동, 세무 신고 자동화`}</pre>
             <Paragraph className="text-sm mb-4">
               조직의 비즈니스 목표를 이해하고 장기적 관점에서 AI 에이전트 생태계를 관리하는 최고 레벨의 에이전트입니다.
             </Paragraph>
-            
+
             <div className="space-y-3">
               <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded p-3">
                 <h5 className="font-semibold text-sm mb-2">🎯 전략적 관리 능력</h5>
@@ -293,7 +297,7 @@ Non-goal: ERP 연동, 세무 신고 자동화`}</pre>
                   </div>
                 </div>
               </div>
-              
+
               <CodeBlock language="python">{`# Strategic Agent의 전사 관리 시스템
 class StrategicAgent:
     def __init__(self, organization_context):
@@ -344,7 +348,7 @@ class StrategicAgent:
                   <div>• 교차 프로젝트 학습 효과 극대화</div>
                 </div>
               </div>
-              
+
               <div className="bg-blue-50 dark:bg-blue-900/20 rounded p-3">
                 <h5 className="font-semibold text-sm mb-2">⚖️ 리소스 밸런싱</h5>
                 <div className="text-xs space-y-1">
