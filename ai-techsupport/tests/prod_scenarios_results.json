@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "Bedrock RAG 최적화",
+    "ticket_id": 94,
+    "success": false,
+    "status": "Open"
+  },
+  {
+    "scenario": "Lambda SnapStart VPC 문제",
+    "ticket_id": 95,
+    "success": true,
+    "status": "Open",
+    "answer_length": 1748,
+    "keywords": [
+      "SnapStart",
+      "VPC",
+      "DynamoDB"
+    ]
+  },
+  {
+    "scenario": "에스컬레이션",
+    "ticket_id": 96,
+    "success": true,
+    "status": "Open"
+  }
+]

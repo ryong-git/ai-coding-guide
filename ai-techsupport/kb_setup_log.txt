@@ -1,0 +1,44 @@
+================================
+Bedrock Knowledge Base 설정
+================================
+
+1️⃣  S3 버킷 생성...
+make_bucket: bespin-ai-techsupport-kb-1766412579
+   Bucket: bespin-ai-techsupport-kb-1766412579
+
+2️⃣  Knowledge Base 문서 업로드...
+Completed 5.7 KiB/30.5 KiB (22.7 KiB/s) with 4 file(s) remainingupload: knowledge_base/guides/common_issues/ec2-cpu-high-alarm.md to s3://bespin-ai-techsupport-kb-1766412579/knowledge_base/guides/common_issues/ec2-cpu-high-alarm.md
+Completed 5.7 KiB/30.5 KiB (22.7 KiB/s) with 3 file(s) remainingCompleted 13.3 KiB/30.5 KiB (17.2 KiB/s) with 3 file(s) remainingCompleted 21.2 KiB/30.5 KiB (27.3 KiB/s) with 3 file(s) remainingCompleted 30.5 KiB/30.5 KiB (39.3 KiB/s) with 3 file(s) remainingupload: knowledge_base/guides/common_issues/rds-cpu-high-alarm.md to s3://bespin-ai-techsupport-kb-1766412579/knowledge_base/guides/common_issues/rds-cpu-high-alarm.md
+Completed 30.5 KiB/30.5 KiB (39.3 KiB/s) with 2 file(s) remainingupload: knowledge_base/guides/common_issues/spf-record-email-failure.md to s3://bespin-ai-techsupport-kb-1766412579/knowledge_base/guides/common_issues/spf-record-email-failure.md
+Completed 30.5 KiB/30.5 KiB (39.3 KiB/s) with 1 file(s) remainingupload: knowledge_base/policies/bespin_process/security-group-change-process.md to s3://bespin-ai-techsupport-kb-1766412579/knowledge_base/policies/bespin_process/security-group-change-process.md
+   ✅ 업로드 완료
+
+3️⃣  OpenSearch Serverless Collection 생성...
+   Collection already exists
+   Collection ARN: 
+
+   Waiting for collection to be active...
+4️⃣  IAM Role 생성...
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "BedrockKBRole-1766412615",
+        "RoleId": "AROA4TYZP5SGMHNF4JBOW",
+        "Arn": "arn:aws:iam::867099995276:role/BedrockKBRole-1766412615",
+        "CreateDate": "2025-12-22T14:10:16+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "bedrock.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+    }
+}
+
+An error occurred (MalformedPolicyDocument) when calling the PutRolePolicy operation: Resource  must be in ARN format or "*".

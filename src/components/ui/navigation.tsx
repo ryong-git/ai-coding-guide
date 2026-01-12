@@ -18,8 +18,13 @@ const navigationData: NavItem[] = [
     href: "/overview/"
   },
   {
-    title: "비개발자 가이드",
-    href: "/for-everyone/"
+    title: "10부. 비개발자 가이드",
+    children: [
+      { title: "10.1 개요 (Intro)", href: "/for-everyone/intro/" },
+      { title: "10.2 Gmail 자동화", href: "/for-everyone/gmail/" },
+      { title: "10.3 엑셀/문서 활용", href: "/for-everyone/office/" },
+      { title: "10.4 나만의 도구 만들기", href: "/for-everyone/advanced/" },
+    ]
   },
   {
     title: "1부. AI 도구 활용이란?",
@@ -226,26 +231,6 @@ export function Navigation({ className }: NavigationProps) {
               <span className="tracking-tight">Vibe Coding</span>
             </Link>
 
-            <div className="relative overflow-hidden rounded-2xl border border-accent-primary/20 bg-gradient-to-br from-accent-primary/10 via-surface to-accent-secondary/5 p-4 shadow-lg group">
-              <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]" />
-              <div className="relative z-10 flex items-start gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-primary/20 text-accent-cyan shadow-inner ring-1 ring-white/10 group-hover:scale-110 transition-transform">
-                  <PlayCircle className="h-6 w-6" />
-                </div>
-                <div className="space-y-1.5 flex-1">
-                  <div className="inline-flex items-center gap-1.5 rounded-full bg-accent-primary/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-cyan border border-accent-primary/20">
-                    <Sparkles className="h-3 w-3" />
-                    Video-Validated
-                  </div>
-                  <p className="text-xs text-text-secondary leading-relaxed">
-                    실전 영상 워크플로 기반 가이드.<br />
-                    <span className="text-accent-primary">Intention</span> →
-                    <span className="text-accent-secondary"> Agent</span> →
-                    <span className="text-accent-success"> Verify</span>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="space-y-1 pb-10">

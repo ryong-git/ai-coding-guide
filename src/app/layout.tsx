@@ -64,10 +64,7 @@ export default function RootLayout({
               <header className="sticky top-0 z-20 border-b border-border-soft bg-background/80 backdrop-blur-md">
                 <div className="flex items-center justify-between px-6 py-4">
                   <div className="space-y-1">
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-cyan animate-pulse-glow">
-                      Video Validated MSP Guide
-                    </p>
-                    <p className="text-sm text-text-secondary">
+                    <p className="text-sm text-text-secondary font-medium">
                       Agentic AI 워크플로를 단계별로 따라가며 팀에 바로 적용해 보세요.
                     </p>
                   </div>

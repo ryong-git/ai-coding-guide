@@ -1,0 +1,53 @@
+[
+  {
+    "scenario": "Identity Center 사용자 추가 요청",
+    "ticket_id": 97,
+    "success": true,
+    "status": "Open",
+    "answer_length": 204,
+    "keywords": [],
+    "tone_friendly": true,
+    "escalation": false
+  },
+  {
+    "scenario": "Identity Center MFA 설정 문의",
+    "ticket_id": 98,
+    "success": true,
+    "status": "Open",
+    "answer_length": 1712,
+    "keywords": [
+      "MFA",
+      "Identity Center",
+      "보안"
+    ],
+    "tone_friendly": true,
+    "escalation": false
+  },
+  {
+    "scenario": "Identity Center 사용자 권한 제거 - 퇴사자",
+    "ticket_id": 99,
+    "success": true,
+    "status": "Open",
+    "answer_length": 1471,
+    "keywords": [
+      "퇴사",
+      "즉시"
+    ],
+    "tone_friendly": true,
+    "escalation": false
+  },
+  {
+    "scenario": "Identity Center 그룹 기반 권한 관리",
+    "ticket_id": 100,
+    "success": true,
+    "status": "Open",
+    "answer_length": 1843,
+    "keywords": [
+      "그룹",
+      "Permission Set",
+      "관리"
+    ],
+    "tone_friendly": true,
+    "escalation": false
+  }
+]

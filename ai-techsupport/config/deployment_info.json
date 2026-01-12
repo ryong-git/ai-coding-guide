@@ -1,0 +1,22 @@
+{
+  "lambda_functions": [
+    {
+      "name": "ai-techsupport-aws-doc-search",
+      "arn": "arn:aws:lambda:us-east-1:867099995276:function:ai-techsupport-aws-doc-search",
+      "action_group": "AwsDocSearch"
+    },
+    {
+      "name": "ai-techsupport-customer-resource",
+      "arn": "arn:aws:lambda:us-east-1:867099995276:function:ai-techsupport-customer-resource",
+      "action_group": "CustomerResourceQuery"
+    },
+    {
+      "name": "ai-techsupport-answer-review",
+      "arn": "arn:aws:lambda:us-east-1:867099995276:function:ai-techsupport-answer-review",
+      "action_group": "AnswerReview"
+    }
+  ],
+  "agent_id": "FEWSKP2FB1",
+  "region": "us-east-1",
+  "deployed_at": "2025-12-22 03:28:57"
+}

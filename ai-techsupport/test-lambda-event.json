@@ -1,0 +1,3 @@
+{
+    "body": "{\"ticket\":{\"id\":105,\"subject\":\"SPF Record Email Error\",\"description_text\":\"I received an SPF record error email. What should I do?\",\"requester\":{\"email\":\"test@example.com\",\"name\":\"Test User\"},\"priority\":2,\"status\":2,\"tags\":[],\"custom_fields\":{}}}"
+}

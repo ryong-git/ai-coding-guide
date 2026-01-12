@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "베스핀 KB 전용 (SPF Record)",
+    "ticket_id": 101,
+    "success": false,
+    "reason": "AI 응답 없음"
+  },
+  {
+    "scenario": "베스핀 KB + AWS Doc (EC2 CPU)",
+    "ticket_id": 102,
+    "success": false,
+    "reason": "AI 응답 없음"
+  },
+  {
+    "scenario": "베스핀 KB 전용 (방화벽)",
+    "ticket_id": 103,
+    "success": false,
+    "reason": "AI 응답 없음"
+  },
+  {
+    "scenario": "AWS Doc 전용 (Lambda 기술 질문)",
+    "ticket_id": 104,
+    "success": false,
+    "reason": "AI 응답 없음"
+  }
+]

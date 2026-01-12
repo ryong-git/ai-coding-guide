@@ -1,0 +1,5817 @@
+{
+  "analysis_date": "2025-12-22T22:42:22.750706",
+  "total_tickets": 3567,
+  "analysis_results": {
+    "faq_candidates": [
+      {
+        "normalized_subject": "action required spf record issue prevented delivery of your email to moodys",
+        "count": 69,
+        "examples": [
+          "Action Required: SPF Record Issue Prevented Delivery of Your Email to Moody's",
+          "Action Required: SPF Record Issue Prevented Delivery of Your Email to Moody's",
+          "Action Required: SPF Record Issue Prevented Delivery of Your Email to Moody's"
+        ],
+        "tickets": [
+          162818,
+          162816,
+          162813,
+          162812,
+          162810,
+          162808,
+          162806,
+          162803,
+          162801,
+          162798,
+          162796,
+          162794,
+          162792,
+          162790,
+          162788,
+          162786,
+          162784,
+          162782,
+          162780,
+          162778,
+          162776,
+          162773,
+          162772,
+          162769,
+          162768,
+          162766,
+          162764,
+          162762,
+          162760,
+          162758,
+          162757,
+          162755,
+          162753,
+          162750,
+          162749,
+          162745,
+          162743,
+          162741,
+          162739,
+          162737,
+          162735,
+          162733,
+          162730,
+          162729,
+          162727,
+          162725,
+          162722,
+          162721,
+          162658,
+          162656,
+          162654,
+          162651,
+          162650,
+          162648,
+          162643,
+          162641,
+          162638,
+          162635,
+          162634,
+          162632,
+          162629,
+          162625,
+          162618,
+          162615,
+          162611,
+          162609,
+          162605,
+          162604,
+          162602
+        ]
+      },
+      {
+        "normalized_subject": "lg전자_signagecare spmsqlus sql db storage 사용량 조치 관련",
+        "count": 26,
+        "examples": [
+          "[LG전자_Signage365Care] spm-sql-us29 SQL DB Storage 사용량 조치 관련",
+          "[LG전자_Signage365Care] spm-sql-us29 SQL DB Storage 사용량 조치 관련",
+          "[LG전자_Signage365Care] spm-sql-us29 SQL DB Storage 사용량 조치 관련"
+        ],
+        "tickets": [
+          161742,
+          161690,
+          161687,
+          161543,
+          161536,
+          161499,
+          161430,
+          161425,
+          161379,
+          161327,
+          161256,
+          161178,
+          160875,
+          160868,
+          160858,
+          160857,
+          160854,
+          160851,
+          160815,
+          160791,
+          160760,
+          160619,
+          160613,
+          160612,
+          160550,
+          160520
+        ]
+      },
+      {
+        "normalized_subject": "버거킹 rims_bkjh 서버 jeus 재시작건",
+        "count": 13,
+        "examples": [
+          "버거킹 RIMS_BKJH 서버 JEUS 재시작건",
+          "버거킹 RIMS_BKJH 서버 JEUS 재시작건",
+          "버거킹 RIMS_BKJH 서버 JEUS 재시작건"
+        ],
+        "tickets": [
+          165009,
+          164712,
+          164118,
+          164013,
+          163757,
+          163403,
+          163390,
+          162424,
+          162005,
+          161974,
+          161965,
+          161391,
+          160395
+        ]
+      },
+      {
+        "normalized_subject": "반올림피자 서버 금일 오전 배포 예정입니다",
+        "count": 12,
+        "examples": [
+          "반올림피자 서버 금일 오전 8:50 ~ 10:00 배포 예정입니다.",
+          "반올림피자 서버 금일 오전 9:00 - 10:00 배포 예정입니다.",
+          "반올림피자 서버 금일 오전 9:00~10:00 배포 예정입니다."
+        ],
+        "tickets": [
+          164861,
+          164787,
+          164724,
+          164101,
+          163424,
+          163201,
+          162025,
+          161988,
+          161547,
+          161354,
+          160723,
+          160396
+        ]
+      },
+      {
+        "normalized_subject": "한화비전 smartcam 년 월 주 주간 보고서",
+        "count": 11,
+        "examples": [
+          "[한화비전] SmartCAM 2025년 12월 3주 주간 보고서",
+          "[한화비전] SmartCAM 2025년 11월 4주 주간 보고서",
+          "[한화비전] SmartCAM 2025년 11월 3주 주간 보고서"
+        ],
+        "tickets": [
+          165109,
+          164078,
+          163653,
+          163392,
+          162402,
+          162039,
+          161798,
+          161501,
+          161117,
+          160566,
+          160313
+        ]
+      },
+      {
+        "normalized_subject": "귀사베스핀글로벌 주식회사가 한국과학기술원kaist과 거래하신 내역에 대한 세금계산서 접수 안내입니다",
+        "count": 9,
+        "examples": [
+          "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+          "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+          "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다."
+        ],
+        "tickets": [
+          164913,
+          164671,
+          164425,
+          163476,
+          163138,
+          162314,
+          161456,
+          161141,
+          161049
+        ]
+      },
+      {
+        "normalized_subject": "re 버거킹 rims서버 jeus 재시작건",
+        "count": 8,
+        "examples": [
+          "Re: 버거킹 RIMS서버 JEUS 재시작건.",
+          "Re: 버거킹 RIMS서버 JEUS 재시작건.",
+          "Re: 버거킹 RIMS서버 JEUS 재시작건."
+        ],
+        "tickets": [
+          164973,
+          164424,
+          163522,
+          162423,
+          161845,
+          161288,
+          160211,
+          159046
+        ]
+      },
+      {
+        "normalized_subject": "슈피겐코리아 방화벽 추가 요청",
+        "count": 8,
+        "examples": [
+          "[슈피겐코리아] 방화벽 추가 요청",
+          "[슈피겐코리아] 방화벽 추가 요청",
+          "[슈피겐코리아] 방화벽 추가 요청"
+        ],
+        "tickets": [
+          164964,
+          164939,
+          164882,
+          163914,
+          163893,
+          163606,
+          163574,
+          163516
+        ]
+      },
+      {
+        "normalized_subject": "대상웰라이프 오늘 오후시에 azure database for mysql 서버의 사용 스펙 원상복구 부탁드립니다",
+        "count": 8,
+        "examples": [
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 원상복구 부탁드립니다",
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 원상복구 부탁드립니다",
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 원상복구 부탁드립니다."
+        ],
+        "tickets": [
+          164709,
+          164316,
+          164121,
+          163256,
+          162352,
+          161720,
+          160735,
+          160453
+        ]
+      },
+      {
+        "normalized_subject": "대상웰라이프 오늘 오후시 분에 azure database for mysql 서버의 사용 스펙 변경예정이라 공유드립니다",
+        "count": 7,
+        "examples": [
+          "[대상웰라이프] 오늘 오후6시 20분에 Azure Database for MySQL 서버의 사용 스펙 변경예정이라 공유드립니다.",
+          "[대상웰라이프] 오늘 오후8시 15분에 Azure Database for MySQL 서버의 사용 스펙 변경예정이라 공유드립니다.",
+          "[대상웰라이프] 오늘 오후6시 35분에 Azure Database for MySQL 서버의 사용 스펙 변경예정이라 공유드립니다."
+        ],
+        "tickets": [
+          165083,
+          164454,
+          164094,
+          163420,
+          162444,
+          160621,
+          160342
+        ]
+      },
+      {
+        "normalized_subject": "다우기술 spamhaus 등록 아이피 차단 해제 요청의 건",
+        "count": 6,
+        "examples": [
+          "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건",
+          "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건",
+          "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건"
+        ],
+        "tickets": [
+          164993,
+          164798,
+          163694,
+          161663,
+          161630,
+          160434
+        ]
+      },
+      {
+        "normalized_subject": "엔로비 ec cpu 사용률 임계치 초과 알림",
+        "count": 6,
+        "examples": [
+          "[​​엔로비] EC2 CPU 사용률 임계치 초과 알림",
+          "[​​엔로비] EC2 CPU 사용률 임계치 초과 알림",
+          "[​​엔로비] EC2 CPU 사용률 임계치 초과 알림"
+        ],
+        "tickets": [
+          164858,
+          164850,
+          164838,
+          164785,
+          164722,
+          164512
+        ]
+      },
+      {
+        "normalized_subject": "returned mail see transcript for details",
+        "count": 6,
+        "examples": [
+          "Returned mail: see transcript for details",
+          "Returned mail: see transcript for details",
+          "Returned mail: see transcript for details"
+        ],
+        "tickets": [
+          164668,
+          163385,
+          163137,
+          161706,
+          161472,
+          161066
+        ]
+      },
+      {
+        "normalized_subject": "발송 실패 안내 박성혜 베스핀글로벌 주아톤 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 6,
+        "examples": [
+          "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 11월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164627,
+          164584,
+          162642,
+          162637,
+          160978,
+          160975
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀 elasticcontainerservice task patching retirement 알람 전달드립니다",
+        "count": 6,
+        "examples": [
+          "[이투스에듀] ElasticContainerService task patching retirement 알람 전달드립니다.",
+          "[이투스에듀] ElasticContainerService task patching retirement 알람 전달드립니다.",
+          "[이투스에듀] ElasticContainerService task patching retirement 알람 전달드립니다."
+        ],
+        "tickets": [
+          164215,
+          163705,
+          163701,
+          162346,
+          161801,
+          161358
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 년 월 일금 전사 휴무 안내",
+        "count": 6,
+        "examples": [
+          "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+          "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+          "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내"
+        ],
+        "tickets": [
+          164194,
+          164193,
+          164192,
+          164191,
+          164187,
+          164168
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀 년 월 windows os 보안 업데이트 일차 작업 진행 내용 전달 드립니다",
+        "count": 6,
+        "examples": [
+          "[이투스에듀] 2025년 11월 Windows OS 보안 업데이트 2일차 작업 진행 내용 전달 드립니다.",
+          "[이투스에듀] 2025년 11월 Windows OS 보안 업데이트 1일차 작업 진행 내용 전달 드립니다.",
+          "[이투스에듀] 2025년 10월 Windows OS 보안 업데이트 2일차 작업 진행 내용 전달 드립니다."
+        ],
+        "tickets": [
+          163589,
+          163539,
+          161732,
+          161688,
+          160489,
+          160439
+        ]
+      },
+      {
+        "normalized_subject": "이투스교육플랫폼 alb에서 unhealthy host count 알람 발생하여 안내 드리겠습니다",
+        "count": 5,
+        "examples": [
+          "[이투스교육-플랫폼] ALB에서 Unhealthy Host Count 알람 발생하여 안내 드리겠습니다.",
+          "[이투스교육-플랫폼] ALB에서 Unhealthy Host Count 알람 발생하여 안내 드리겠습니다.",
+          "[이투스교육-플랫폼] ALB에서 Unhealthy Host Count 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          165130,
+          165124,
+          165088,
+          164974,
+          164916
+        ]
+      },
+      {
+        "normalized_subject": "캐논코리아 보안규칙 확인 요청의 건",
+        "count": 5,
+        "examples": [
+          "[캐논코리아] 보안규칙 확인 요청의 건",
+          "[캐논코리아] 보안규칙 확인 요청의 건",
+          "[캐논코리아] 보안규칙 확인 요청의 건"
+        ],
+        "tickets": [
+          164656,
+          160722,
+          160560,
+          160324,
+          160204
+        ]
+      },
+      {
+        "normalized_subject": "한글과컴퓨터upd 년 월 월간 보고서 전달드립니다",
+        "count": 5,
+        "examples": [
+          "[한글과컴퓨터-UPD] 2025년 10월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-UPD] 2025년 10월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-UPD] 2025년 9월 월간 보고서 전달드립니다."
+        ],
+        "tickets": [
+          164532,
+          162415,
+          160808,
+          160807,
+          160804
+        ]
+      },
+      {
+        "normalized_subject": "엔로비 운영 rds prodpg에서 rds freeable memory gb 알람 발생하여 전달드립니다",
+        "count": 5,
+        "examples": [
+          "[엔로비] 운영 RDS 'prod-pg01'에서 RDS Freeable Memory <= 1 GB 알람 발생하여 전달드립니다.",
+          "[엔로비] 운영 RDS 'prod-pg01'에서 RDS Freeable Memory <= 1 GB 알람 발생하여 전달드립니다.",
+          "[엔로비] 운영 RDS 'prod-pg01'에서 RDS Freeable Memory <= 1 GB 알람 발생하여 전달드립니다."
+        ],
+        "tickets": [
+          163598,
+          163549,
+          163546,
+          163514,
+          163494
+        ]
+      },
+      {
+        "normalized_subject": "re 베스핀글로벌 주식회사에서 쿠팡 주식회사님에게 보내온 전자세금계산서 입니다",
+        "count": 5,
+        "examples": [
+          "RE: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+          "Re: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+          "Re: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다."
+        ],
+        "tickets": [
+          163524,
+          161392,
+          161282,
+          160767,
+          160731
+        ]
+      },
+      {
+        "normalized_subject": "한화시스템 모바일 그룹웨어 년 월 월간보고서 전달드립니다",
+        "count": 4,
+        "examples": [
+          "[한화시스템 - 모바일 그룹웨어] 2025년 12월 월간보고서 전달드립니다.",
+          "[한화시스템 - 모바일 그룹웨어] 2025년 11월 월간보고서 전달드립니다.",
+          "[한화시스템 - 모바일 그룹웨어] 2025년 10월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          165163,
+          164010,
+          161698,
+          160372
+        ]
+      },
+      {
+        "normalized_subject": "대상웰라이프 오늘 오후시에 azure database for mysql 서버의 사용 스펙 조정 부탁드립니다",
+        "count": 4,
+        "examples": [
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 조정 부탁드립니다.",
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 조정 부탁드립니다.",
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 조정 부탁드립니다."
+        ],
+        "tickets": [
+          165148,
+          165016,
+          163716,
+          163579
+        ]
+      },
+      {
+        "normalized_subject": "fnco 운영 ec에서 cpu utilization 알람 발생하여 안내 드리겠습니다",
+        "count": 4,
+        "examples": [
+          "[FNCO] 운영 EC2에서 CPU Utilization 알람 발생하여 안내 드리겠습니다.",
+          "[FNCO] 운영 EC2에서 CPU Utilization 알람 발생하여 안내 드리겠습니다.",
+          "[FNCO] 운영 EC2에서 CPU Utilization 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          165080,
+          165067,
+          163003,
+          160514
+        ]
+      },
+      {
+        "normalized_subject": "에스티유니타스 운영 aurora rds에서 cpu utilization 알람 발생하여 안내 드리겠습니다",
+        "count": 4,
+        "examples": [
+          "[에스티유니타스] 운영 Aurora RDS에서 CPU Utilization 알람 발생하여 안내 드리겠습니다.",
+          "[에스티유니타스] 운영 Aurora RDS에서 CPU Utilization 알람 발생하여 안내 드리겠습니다.",
+          "[에스티유니타스] 운영 Aurora RDS에서 CPU Utilization 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          165059,
+          165025,
+          164970,
+          164911
+        ]
+      },
+      {
+        "normalized_subject": "ktg old_prod_network 운영 ec에서 agent no data 알람 발생하여 안내 드리겠습니다",
+        "count": 4,
+        "examples": [
+          "[KT&G - OLD_PROD_Network] 운영 EC2에서 Agent No Data 알람 발생하여 안내 드리겠습니다.",
+          "[KT&G - OLD_PROD_Network] 운영 EC2에서 Agent No Data 알람 발생하여 안내 드리겠습니다.",
+          "[KT&G - OLD_PROD_Network] 운영 EC2에서 Agent No Data 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          165050,
+          165033,
+          163421,
+          163343
+        ]
+      },
+      {
+        "normalized_subject": "msp섹타나인 aws 년 월 월간보고서 전달 드립니다",
+        "count": 4,
+        "examples": [
+          "[MSP][섹타나인] AWS 25년 11월 월간보고서 전달 드립니다",
+          "[MSP][섹타나인] AWS 25년 9월 월간보고서 전달 드립니다",
+          "[MSP][섹타나인] AWS 25년 9월 월간보고서 전달 드립니다"
+        ],
+        "tickets": [
+          165026,
+          163475,
+          161205,
+          160098
+        ]
+      },
+      {
+        "normalized_subject": "배달되지 않음 베스핀글로벌 주에스티유니타스 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 4,
+        "examples": [
+          "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+          "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 10월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164578,
+          162467,
+          160904,
+          156843
+        ]
+      },
+      {
+        "normalized_subject": "아톤pass dx interface down 알람 발생하여 내용 전달 드립니다",
+        "count": 4,
+        "examples": [
+          "[​​아톤-PASS] ​DX Interface Down 알람 발생하여 내용 전달 드립니다.",
+          "[​​아톤-PASS] ​DX Interface Down 알람 발생하여 내용 전달 드립니다.",
+          "[​​아톤-PASS] ​DX Interface Down 알람 발생하여 내용 전달 드립니다."
+        ],
+        "tickets": [
+          164560,
+          164511,
+          162117,
+          160721
+        ]
+      },
+      {
+        "normalized_subject": "대상정보기술 년 월 월간보고서 송부드립니다",
+        "count": 4,
+        "examples": [
+          "[대상정보기술] 2025년 11월 월간보고서 송부드립니다.",
+          "[대상정보기술] 2025년 10월 월간보고서 송부드립니다.",
+          "[대상정보기술] 2025년 08월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164550,
+          162351,
+          161445,
+          161418
+        ]
+      },
+      {
+        "normalized_subject": "lg전자_connectedcare spmsqlus sql db storage 사용량 조치 관련",
+        "count": 4,
+        "examples": [
+          "[LG전자_ConnectedCare] spm-sql-us29 SQL DB Storage 사용량 조치 관련",
+          "[LG전자_ConnectedCare] spm-sql-us29 SQL DB Storage 사용량 조치 관련",
+          "[LG전자_ConnectedCare] spm-sql-us29 SQL DB Storage 사용량 조치 관련"
+        ],
+        "tickets": [
+          164254,
+          162220,
+          162153,
+          162062
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀 플랫폼 elasticcontainerservice task patching retirement 알람 전달드립니다",
+        "count": 4,
+        "examples": [
+          "[이투스에듀 - 플랫폼] ElasticContainerService task patching retirement 알람 전달드립니다.",
+          "[이투스에듀 - 플랫폼] ElasticContainerService task patching retirement 알람 전달드립니다.",
+          "[이투스에듀 - 플랫폼] ElasticContainerService task patching retirement 알람 전달드립니다."
+        ],
+        "tickets": [
+          164216,
+          162347,
+          161803,
+          161359
+        ]
+      },
+      {
+        "normalized_subject": "아톤pass aws directconnect maintenance scheduled 이벤트 안내 드립니다",
+        "count": 4,
+        "examples": [
+          "[아톤-PASS] AWS DirectConnect maintenance scheduled 이벤트 안내 드립니다.",
+          "[아톤-PASS] AWS DirectConnect maintenance scheduled 이벤트 안내 드립니다.",
+          "[아톤-PASS] AWS DirectConnect maintenance scheduled 이벤트 안내 드립니다."
+        ],
+        "tickets": [
+          164104,
+          163143,
+          162020,
+          160707
+        ]
+      },
+      {
+        "normalized_subject": "overtake labs pte ltd just paid you",
+        "count": 4,
+        "examples": [
+          "OVERTAKE LABS PTE. LTD. just paid you",
+          "OVERTAKE LABS PTE. LTD. just paid you",
+          "OVERTAKE LABS PTE. LTD. just paid you"
+        ],
+        "tickets": [
+          164092,
+          163672,
+          163671,
+          163670
+        ]
+      },
+      {
+        "normalized_subject": "아발론교육 운영계 ec avaprdbluwasasga에서 zadara disk used over 알람 발생하여 전달드립니다",
+        "count": 4,
+        "examples": [
+          "[아발론교육] 운영계 EC2 'ava-prd-blu-was-asg-01-a'에서 Zadara Disk Used Over 90% 알람 발생하여 전달드립니다.",
+          "[아발론교육] 운영계 EC2 'ava-prd-blu-was-asg-01-a'에서 Zadara Disk Used Over 90% 알람 발생하여 전달드립니다.",
+          "[아발론교육] 운영계 EC2 'ava-prd-blu-was-asg-01-a'에서 Zadara Disk Used Over 90% 알람 발생하여 전달드립니다."
+        ],
+        "tickets": [
+          164045,
+          163678,
+          161538,
+          161422
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 주식회사 베스핀글로벌 주식회사에델만코리아 주식회사",
+        "count": 4,
+        "examples": [
+          "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)",
+          "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)",
+          "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)"
+        ],
+        "tickets": [
+          164016,
+          164014,
+          163993,
+          163991
+        ]
+      },
+      {
+        "normalized_subject": "you got paid by bespin global",
+        "count": 4,
+        "examples": [
+          "You got paid by Bespin Global!",
+          "You got paid by Bespin Global!",
+          "You got paid by Bespin Global!"
+        ],
+        "tickets": [
+          163481,
+          162022,
+          161983,
+          160605
+        ]
+      },
+      {
+        "normalized_subject": "a payment from bespin global is on the way",
+        "count": 4,
+        "examples": [
+          "A payment from Bespin Global is on the way",
+          "A payment from Bespin Global is on the way",
+          "A payment from Bespin Global is on the way"
+        ],
+        "tickets": [
+          163380,
+          161906,
+          161860,
+          160487
+        ]
+      },
+      {
+        "normalized_subject": "삼성물산 리조트 sg 등록 요청prdevldvalkey 접속",
+        "count": 4,
+        "examples": [
+          "[삼성물산 리조트] SG 등록 요청(prd-evld-valkey 접속)",
+          "[삼성물산 리조트] SG 등록 요청(prd-evld-valkey 접속)",
+          "[삼성물산 리조트] SG 등록 요청(prd-evld-valkey 접속)"
+        ],
+        "tickets": [
+          162206,
+          161665,
+          161604,
+          161440
+        ]
+      },
+      {
+        "normalized_subject": "ktg prd global 운영계 ec apnprdglobalaintlegalsearchec에서 disk used 알람 발생하여 전달드립니다",
+        "count": 4,
+        "examples": [
+          "[KT&G - PRD Global] 운영계 EC2 'apn2-prd-global-a-intlegal-search-ec2'에서 Disk / Used > 90.0 % 알람 발생하여 전달드립니다.",
+          "[KT&G - PRD Global] 운영계 EC2 'apn2-prd-global-a-intlegal-search-ec2'에서 Disk / Used > 90.0 % 알람 발생하여 전달드립니다.",
+          "[KT&G - PRD Global] 운영계 EC2 'apn2-prd-global-a-intlegal-search-ec2'에서 Disk / Used > 90.0 % 알람 발생하여 전달드립니다."
+        ],
+        "tickets": [
+          161349,
+          161346,
+          161291,
+          161285
+        ]
+      },
+      {
+        "normalized_subject": "sre sre팀 ai poc 데이터분석 ld 세미나 참석",
+        "count": 4,
+        "examples": [
+          "[SRE1] SRE3팀 AI PoC 데이터분석 4 - L&D 세미나 참석 (2025.09.25)",
+          "[SRE1] SRE3팀 AI PoC 데이터분석 3 - L&D 세미나 참석 (2025.09.24)",
+          "[SRE1] SRE3팀 AI PoC 데이터분석 2 - L&D 세미나 참석 (2025.09.18)"
+        ],
+        "tickets": [
+          160599,
+          160598,
+          160596,
+          160595
+        ]
+      },
+      {
+        "normalized_subject": "이스타항공 ec instance reboot flexible maintenance scheduled 이벤트 내용 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[이스타항공] EC2 instance reboot flexible maintenance scheduled 이벤트 내용 전달드립니다.",
+          "[이스타항공] EC2 instance reboot flexible maintenance scheduled 이벤트 내용 전달드립니다.",
+          "[이스타항공] EC2 instance reboot flexible maintenance scheduled 이벤트 내용 전달드립니다."
+        ],
+        "tickets": [
+          165131,
+          161233,
+          159921
+        ]
+      },
+      {
+        "normalized_subject": "블루월넛유럽 rds kiaeucprdicppostgres freestoragespace gib 알람 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[블루월넛-유럽] RDS 'kia-euc1-prd-icp-postgres-166' FreeStorageSpace < 30GiB 알람 전달드립니다.",
+          "[블루월넛-유럽] RDS 'kia-euc1-prd-icp-postgres-166' FreeStorageSpace < 30GiB 알람 전달드립니다.",
+          "[블루월넛-유럽] RDS 'kia-euc1-prd-icp-postgres-166' FreeStorageSpace < 30GiB 알람 전달드립니다."
+        ],
+        "tickets": [
+          165041,
+          163742,
+          162327
+        ]
+      },
+      {
+        "normalized_subject": "블루월넛 인도icp 작업 공유",
+        "count": 3,
+        "examples": [
+          "[블루월넛] 인도ICP (211125295412) 작업 공유",
+          "[블루월넛] 인도ICP (211125295412) 작업 공유",
+          "[블루월넛] 인도ICP (211125295412) 작업 공유"
+        ],
+        "tickets": [
+          165040,
+          163534,
+          161994
+        ]
+      },
+      {
+        "normalized_subject": "ktg old_prod_network ec apnprdaplanetwasec memory used 알람 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[KT&G - OLD_PROD_Network] EC2 'apn2-prd-a-planet-was-ec2' Memory Used 알람 안내 드립니다.",
+          "[KT&G - OLD_PROD_Network] EC2 'apn2-prd-a-planet-was-ec2' Memory Used 알람 안내 드립니다.",
+          "[KT&G - OLD_PROD_Network] EC2 'apn2-prd-a-planet-was-ec2' Memory Used 알람 안내 드립니다."
+        ],
+        "tickets": [
+          165027,
+          164439,
+          164429
+        ]
+      },
+      {
+        "normalized_subject": "아발론교육 운영 ec에서 disk 알람 발생하여 안내 드리겠습니다",
+        "count": 3,
+        "examples": [
+          "[아발론교육] 운영 EC2에서 Disk 알람 발생하여 안내 드리겠습니다.",
+          "[아발론교육] 운영 EC2에서 Disk 알람 발생하여 안내 드리겠습니다.",
+          "[아발론교육] 운영 EC2에서 Disk 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          165021,
+          164975,
+          164918
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀 플랫폼 kafka security patching event 알람 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[이투스에듀 - 플랫폼] Kafka security patching event 알람 전달드립니다.",
+          "[이투스에듀 - 플랫폼] Kafka security patching event 알람 전달드립니다.",
+          "[이투스에듀 - 플랫폼] Kafka security patching event 알람 전달드립니다."
+        ],
+        "tickets": [
+          164984,
+          162348,
+          161360
+        ]
+      },
+      {
+        "normalized_subject": "엔로비 운영 rds freeable memory 알람 발생하여 안내 드리겠습니다",
+        "count": 3,
+        "examples": [
+          "[엔로비] 운영 RDS Freeable Memory 알람 발생하여 안내 드리겠습니다.",
+          "[엔로비] 운영 RDS - Freeable Memory 알람 발생하여 안내 드리겠습니다.",
+          "[엔로비] 운영 RDS - Freeable Memory 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          164982,
+          163382,
+          163361
+        ]
+      },
+      {
+        "normalized_subject": "물산리조트 년 월 월간 비용보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[물산리조트] 25년 11월 월간 비용보고서 전달드립니다.",
+          "[물산리조트] 25년 10월 월간 비용보고서 전달드립니다.",
+          "[물산리조트] 25년 9월 월간 비용보고서 전달드립니다."
+        ],
+        "tickets": [
+          164969,
+          163104,
+          161330
+        ]
+      },
+      {
+        "normalized_subject": "한화비전모플 년 월 인프라 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[한화비전-모플] 2025년 11월 인프라 월간 보고서",
+          "[한화비전-모플] 2025년 10월 인프라 월간 보고서",
+          "[한화비전-모플] 2025년 09월 인프라 월간 보고서"
+        ],
+        "tickets": [
+          164959,
+          162980,
+          161240
+        ]
+      },
+      {
+        "normalized_subject": "에스티유니타스 운영 alb에서 alb target response time 알람 발생하여 전달 드리겠습니다",
+        "count": 3,
+        "examples": [
+          "[에스티유니타스] 운영 ALB에서 ALB Target Response Time 알람 발생하여 전달 드리겠습니다.",
+          "[에스티유니타스] 운영 ALB에서 ALB Target Response Time 알람 발생하여 전달 드리겠습니다.",
+          "[에스티유니타스] 운영 ALB에서 ALB Target Response Time 알람 발생하여 전달 드리겠습니다."
+        ],
+        "tickets": [
+          164944,
+          161136,
+          160876
+        ]
+      },
+      {
+        "normalized_subject": "드림씨아이에스 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[드림씨아이에스] 2025년 11월 월간보고서 전달드립니다.",
+          "[드림씨아이에스] 2025년 10월 월간보고서 전달드립니다.",
+          "[드림씨아이에스] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164930,
+          163214,
+          161134
+        ]
+      },
+      {
+        "normalized_subject": "undeliverable 베스핀글로벌 appknot 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "Undeliverable: [베스핀글로벌] appknot 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "Undeliverable: [베스핀글로벌] appknot 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+          "Undeliverable: [베스핀글로벌] appknot 님의 2025년 10월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164906,
+          163468,
+          161437
+        ]
+      },
+      {
+        "normalized_subject": "아톤pass ss vpn vpnbcadmetlife tunnel state down 알람 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[아톤-PASS] S2S VPN 'vpn-08205054bc6825ad9'(MetLife) Tunnel State Down 알람 안내 드립니다.",
+          "[아톤-PASS] S2S VPN 'vpn-08205054bc6825ad9'(MetLife) Tunnel State Down 알람 안내 드립니다.",
+          "[아톤-PASS] S2S VPN 'vpn-08205054bc6825ad9'(MetLife) Tunnel2 State Down 알람 안내 드립니다."
+        ],
+        "tickets": [
+          164854,
+          164852,
+          164001
+        ]
+      },
+      {
+        "normalized_subject": "tym ec prodtpcswas tpis web check 알람이 발생하여 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[TYM] EC2 'PROD-TPCS-WAS' - TPIS Web Check 알람이 발생하여 안내 드립니다.",
+          "[TYM] EC2 'PROD-TPCS-WAS' - TPIS Web Check 알람이 발생하여 안내 드립니다.",
+          "[TYM] EC2 'PROD-TPCS-WAS' - TPIS Web Check 알람이 발생하여 안내 드립니다."
+        ],
+        "tickets": [
+          164842,
+          164433,
+          164143
+        ]
+      },
+      {
+        "normalized_subject": "에스티유니타스 alb stweboapialb targetresponsetime 알람 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[에스티유니타스] ALB 'st-web-oapi-01-ALB' TargetResponseTIme 알람 안내 드립니다.",
+          "[에스티유니타스] ALB 'st-web-oapi-01-ALB' TargetResponseTIme 알람 안내 드립니다.",
+          "[에스티유니타스] ALB 'st-web-oapi-01-ALB' TargetResponseTIme 알람 안내 드립니다."
+        ],
+        "tickets": [
+          164841,
+          164142,
+          160860
+        ]
+      },
+      {
+        "normalized_subject": "re bespin global invoice for usage of aws",
+        "count": 3,
+        "examples": [
+          "RE: [BESPIN GLOBAL] Invoice for - usage of AWS.",
+          "RE: [BESPIN GLOBAL] Invoice for - usage of AWS.",
+          "RE: [BESPIN GLOBAL] Invoice for - usage of AWS."
+        ],
+        "tickets": [
+          164818,
+          161426,
+          160870
+        ]
+      },
+      {
+        "normalized_subject": "msp섹타나인 kafka 서비스의 보안패치 이벤트가 확인되어 안내드립니다",
+        "count": 3,
+        "examples": [
+          "[MSP][섹타나인] Kafka 서비스의 보안패치 이벤트가 확인되어 안내드립니다",
+          "[MSP][섹타나인] Kafka 서비스의 보안패치 이벤트가 확인되어 안내드립니다",
+          "[MSP][섹타나인] Kafka 서비스의 보안패치 이벤트가 확인되어 안내드립니다"
+        ],
+        "tickets": [
+          164729,
+          163215,
+          161215
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 devsecops 년 월 azure infra 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[베스핀글로벌] DevSecOps 2025년 11월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] DevSecOps 2025년 10월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] DevSecOps 2025년 9월 Azure Infra 월간 보고서"
+        ],
+        "tickets": [
+          164718,
+          163320,
+          161569
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 piirisk 년 월 azure infra 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[베스핀글로벌] piirisk 2025년 11월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] piirisk 2025년 10월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] piirisk 2025년 9월 Azure Infra 월간 보고서"
+        ],
+        "tickets": [
+          164717,
+          163318,
+          161568
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 landing zone 년 월 azure infra 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[베스핀글로벌] Landing Zone 2025년 11월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] Landing Zone 2025년 10월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] Landing Zone 2025년 9월 Azure Infra 월간 보고서"
+        ],
+        "tickets": [
+          164716,
+          163317,
+          161567
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 checkit 년 월 azure infra 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[베스핀글로벌] CheckIT 2025년 11월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] CheckIT 2025년 10월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] CheckIT 2025년 9월 Azure Infra 월간 보고서"
+        ],
+        "tickets": [
+          164715,
+          163316,
+          161566
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 fido 년 월 azure infra 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[베스핀글로벌] FIDO2 2025년 11월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] FIDO2 2025년 10월 Azure Infra 월간 보고서",
+          "[베스핀글로벌] FIDO2 2025년 9월 Azure Infra 월간 보고서"
+        ],
+        "tickets": [
+          164714,
+          163314,
+          161565
+        ]
+      },
+      {
+        "normalized_subject": "월급쟁이부자들 년 월 월간보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[월급쟁이부자들] 2025년 11월 월간보고서 송부드립니다.",
+          "[월급쟁이부자들] 2025년 10월 월간보고서 송부드립니다.",
+          "[월급쟁이부자들] 2025년 9월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164678,
+          163087,
+          161140
+        ]
+      },
+      {
+        "normalized_subject": "re 베스핀글로벌 주매스프레소 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "Re: [베스핀글로벌] (주)매스프레소 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "Re: [베스핀글로벌] (주)매스프레소 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+          "Re: [베스핀글로벌] (주)매스프레소 님의 2025년 10월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164675,
+          163656,
+          161029
+        ]
+      },
+      {
+        "normalized_subject": "re 베스핀글로벌 주라이언로켓 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "Re: [베스핀글로벌] (주)라이언로켓 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "Re: [베스핀글로벌] (주)라이언로켓 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+          "Re: [베스핀글로벌] (주)라이언로켓 님의 2025년 08월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164667,
+          161231,
+          160148
+        ]
+      },
+      {
+        "normalized_subject": "배달되지 않음 베스핀글로벌 에스케이브로드밴드주식회사 님의 년 월 서비스 요금 및 상세내역",
+        "count": 3,
+        "examples": [
+          "배달되지 않음: [베스핀글로벌] 에스케이브로드밴드주식회사 님의 2025년 12월 서비스 요금 및 상세내역",
+          "배달되지 않음: [베스핀글로벌] 에스케이브로드밴드주식회사 님의 2025년 11월 서비스 요금 및 상세내역",
+          "배달되지 않음: [베스핀글로벌] 에스케이브로드밴드주식회사 님의 2025년 10월 서비스 요금 및 상세내역"
+        ],
+        "tickets": [
+          164661,
+          162917,
+          161052
+        ]
+      },
+      {
+        "normalized_subject": "골프존카운티 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[골프존카운티] 2025년 11월 월간보고서 전달드립니다.",
+          "[골프존카운티] 2025년 10월 월간보고서 전달드립니다.",
+          "[골프존카운티] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164643,
+          162375,
+          161116
+        ]
+      },
+      {
+        "normalized_subject": "undeliverable 베스핀글로벌 주식회사 메이트모빌리티 님의 년 월 서비스 요금 및 상세내역 안",
+        "count": 3,
+        "examples": [
+          "Undeliverable: [베스핀글로벌] 주식회사 메이트모빌리티 님의 2025년 12월 서비스 요금 및 상세내역 안",
+          "Undeliverable: [베스핀글로벌] 주식회사 메이트모빌리티 님의 2025년 11월 서비스 요금 및 상세내역 안",
+          "Undeliverable: [베스핀글로벌] 주식회사 메이트모빌리티 님의 2025년 10월 서비스 요금 및 상세내역 안"
+        ],
+        "tickets": [
+          164631,
+          162472,
+          160910
+        ]
+      },
+      {
+        "normalized_subject": "ndr delivery failure notice 베스핀글로벌 주바우라움 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)바우라움 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)바우라움 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+          "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)바우라움 님의 2025년 10월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164608,
+          162622,
+          160973
+        ]
+      },
+      {
+        "normalized_subject": "re 베스핀글로벌 주식회사 엑스닷츠 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "Re: [베스핀글로벌] 주식회사 엑스닷츠 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "Re: [베스핀글로벌] 주식회사 엑스닷츠 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+          "Re: [베스핀글로벌] 주식회사 엑스닷츠 님의 2025년 08월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164555,
+          160410,
+          160409
+        ]
+      },
+      {
+        "normalized_subject": "에이티코넥 aws 운영 년 월 월간보고서 송부 드립니다",
+        "count": 3,
+        "examples": [
+          "[에이티코넥] AWS 운영 2025년 11월 월간보고서 송부 드립니다.",
+          "[에이티코넥] AWS 운영 2025년 10월 월간보고서 송부 드립니다.",
+          "[에이티코넥] AWS 운영 2025년 09월 월간보고서 송부 드립니다."
+        ],
+        "tickets": [
+          164551,
+          162357,
+          160831
+        ]
+      },
+      {
+        "normalized_subject": "아톤otn aws 운영 년 월 월간 정기보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[아톤-OTN] AWS 운영 2025년 11월 월간 정기보고서 전달 드립니다.",
+          "[아톤-OTN] AWS 운영 2025년 10월 월간 정기보고서 전달 드립니다.",
+          "[아톤-OTN] AWS 운영 2025년 09월 월간 정기보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164549,
+          162366,
+          161281
+        ]
+      },
+      {
+        "normalized_subject": "아톤pass aws 운영 년 월 월간 정기보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[아톤-PASS] AWS 운영 2025년 11월 월간 정기보고서 전달 드립니다.",
+          "[아톤-PASS] AWS 운영 2025년 10월 월간 정기보고서 전달 드립니다.",
+          "[아톤-PASS] AWS 운영 2025년 09월 월간 정기보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164548,
+          162365,
+          161279
+        ]
+      },
+      {
+        "normalized_subject": "한동대학교 년 월 월간보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[한동대학교] 25년 11월 월간보고서 송부드립니다.",
+          "[한동대학교] 25년 10월 월간보고서 송부드립니다.",
+          "[한동대학교] 25년 9월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164542,
+          163154,
+          161147
+        ]
+      },
+      {
+        "normalized_subject": "아이아이컴바인드 년 월 월간보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[아이아이컴바인드] 2025년 11월 월간보고서 송부드립니다.",
+          "[아이아이컴바인드] 2025년 10월 월간보고서 송부드립니다.",
+          "[아이아이컴바인드] 2025년 9월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164541,
+          162198,
+          161309
+        ]
+      },
+      {
+        "normalized_subject": "한글과컴퓨터it 년 월 월간 보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[한글과컴퓨터-IT] 2025년 11월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-IT] 2025년 10월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-IT] 2025년 9월 월간 보고서 전달드립니다."
+        ],
+        "tickets": [
+          164537,
+          162421,
+          160811
+        ]
+      },
+      {
+        "normalized_subject": "한글과컴퓨터ncp 년 월 월간 보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[한글과컴퓨터-NCP] 2025년 11월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-NCP] 2025년 10월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-NCP] 2025년 9월 월간 보고서 전달드립니다."
+        ],
+        "tickets": [
+          164536,
+          162420,
+          160810
+        ]
+      },
+      {
+        "normalized_subject": "한글과컴퓨터docs 년 월 월간 보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[한글과컴퓨터-DOCS] 2025년 11월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-DOCS] 2025년 10월 월간 보고서 전달드립니다.",
+          "[한글과컴퓨터-DOCS] 2025년 9월 월간 보고서 전달드립니다."
+        ],
+        "tickets": [
+          164533,
+          162417,
+          160805
+        ]
+      },
+      {
+        "normalized_subject": "통신대안평가 년 월 월간보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[통신대안평가] 2025년 11월 월간보고서 전달 드립니다.",
+          "[통신대안평가] 2025년 10월 월간보고서 전달 드립니다.",
+          "[통신대안평가] 2025년 9월 월간보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164506,
+          162372,
+          161490
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 landing zone 년 월 aws infra 월간 보고서",
+        "count": 3,
+        "examples": [
+          "[베스핀글로벌] Landing Zone 2025년 11월 AWS Infra 월간 보고서",
+          "[베스핀글로벌] Landing Zone 2025년 10월 AWS Infra 월간 보고서",
+          "[베스핀글로벌] Landing Zone 2025년 09월 AWS Infra 월간 보고서"
+        ],
+        "tickets": [
+          164505,
+          162428,
+          161059
+        ]
+      },
+      {
+        "normalized_subject": "물산리조트 년 월 정산용 서비스 전달 건입니다",
+        "count": 3,
+        "examples": [
+          "[물산리조트] 2025년 11월 정산용 서비스 전달 건입니다.",
+          "[물산리조트] 2025년 10월 정산용 서비스 전달 건입니다.",
+          "[물산리조트] 2025년 9월 정산용 서비스 전달 건입니다."
+        ],
+        "tickets": [
+          164497,
+          162380,
+          161357
+        ]
+      },
+      {
+        "normalized_subject": "re bespinglobal 빌링포털 가입 안내드립니다",
+        "count": 3,
+        "examples": [
+          "Re: [BespinGlobal] 빌링포털 가입 안내드립니다",
+          "Re: [BespinGlobal] 빌링포털 가입 안내드립니다",
+          "Re: [BespinGlobal] 빌링포털 가입 안내드립니다"
+        ],
+        "tickets": [
+          164495,
+          163851,
+          163541
+        ]
+      },
+      {
+        "normalized_subject": "물산리조트 aws 운영 년 월 월간 cloudtrail log 전달 건 입니다",
+        "count": 3,
+        "examples": [
+          "[물산리조트] AWS 운영 2025년 11월 월간 CloudTrail Log 전달 건 입니다.",
+          "[물산리조트] AWS 운영 2025년 10월 월간 CloudTrail Log 전달 건 입니다.",
+          "[물산리조트] AWS 운영 2025년 9월 월간 CloudTrail Log 전달 건 입니다."
+        ],
+        "tickets": [
+          164492,
+          163230,
+          161342
+        ]
+      },
+      {
+        "normalized_subject": "경동도시가스 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[경동도시가스] 2025년 11월 월간보고서 전달드립니다.",
+          "[경동도시가스] 2025년 10월 월간보고서 전달드립니다.",
+          "[경동도시가스] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164490,
+          162412,
+          161355
+        ]
+      },
+      {
+        "normalized_subject": "whatap 에이전트 설치 요청 드립니다",
+        "count": 3,
+        "examples": [
+          "Whatap 에이전트 설치 요청 드립니다.",
+          "Whatap 에이전트 설치 요청 드립니다.",
+          "Whatap 에이전트 설치 요청 드립니다."
+        ],
+        "tickets": [
+          164482,
+          161374,
+          160530
+        ]
+      },
+      {
+        "normalized_subject": "물산리조트 aws 운영 년 월 월간 정기보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[물산리조트] AWS 운영 2025년 11월 월간 정기보고서 송부드립니다.",
+          "[물산리조트] AWS 운영 2025년 10월 월간 정기보고서 송부드립니다.",
+          "[물산리조트] AWS 운영 2025년 9월 월간 정기보고서 송부드립니다."
+        ],
+        "tickets": [
+          164478,
+          162363,
+          161332
+        ]
+      },
+      {
+        "normalized_subject": "천재교육클래스보드 년 월 월간 운영보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[천재교육-클래스보드] 2025년 11월 월간 운영보고서 전달드립니다.",
+          "[천재교육-클래스보드] 2025년 10월 월간 운영보고서 전달드립니다.",
+          "[천재교육-클래스보드] 2025년 09월 월간 운영보고서 전달드립니다."
+        ],
+        "tickets": [
+          164472,
+          162090,
+          161065
+        ]
+      },
+      {
+        "normalized_subject": "re 베스핀글로벌 재 서울연구원 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "RE: [베스핀글로벌] (재) 서울연구원 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "RE: [베스핀글로벌] (재) 서울연구원 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+          "RE: [베스핀글로벌] (재) 서울연구원 님의 2025년 10월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164422,
+          162258,
+          161118
+        ]
+      },
+      {
+        "normalized_subject": "ndr delivery failure notice 베스핀글로벌 주아파트아이 님의 년 월 서비스 요금 및 상세내역 안내",
+        "count": 3,
+        "examples": [
+          "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)아파트아이 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+          "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)아파트아이 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+          "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)아파트아이 님의 2025년 10월 서비스 요금 및 상세내역 안내"
+        ],
+        "tickets": [
+          164371,
+          162234,
+          160996
+        ]
+      },
+      {
+        "normalized_subject": "re bespin global invoice for usage of gcp",
+        "count": 3,
+        "examples": [
+          "Re: [BESPIN GLOBAL] Invoice for - usage of GCP.",
+          "Re: [BESPIN GLOBAL] Invoice for - usage of GCP.",
+          "Re: [BESPIN GLOBAL] Invoice for - usage of GCP."
+        ],
+        "tickets": [
+          164341,
+          162182,
+          160985
+        ]
+      },
+      {
+        "normalized_subject": "fnco ec prdfncoasga cpu used 알람 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[FNCO] EC2 'prd-fnco-asg-a' CPU Used 알람 안내 드립니다.",
+          "[FNCO] EC2 'prd-fnco-asg-a' CPU Used 알람 안내 드립니다.",
+          "[FNCO] EC2 'prd-fnco-asg-a' CPU Used 알람 안내 드립니다."
+        ],
+        "tickets": [
+          164327,
+          164292,
+          164233
+        ]
+      },
+      {
+        "normalized_subject": "슈피겐코리아 sap비sapssc 년 월 월간보고서 송부 드리겠습니다",
+        "count": 3,
+        "examples": [
+          "[슈피겐코리아] SAP/비SAP/SSC 2025년 11월 월간보고서 송부 드리겠습니다.",
+          "[슈피겐코리아] SAP/비SAP/SSC 2025년 10월 월간보고서 송부 드리겠습니다.",
+          "[슈피겐코리아] SAP/비SAP/SSC 2025년 09월 월간보고서 송부 드리겠습니다."
+        ],
+        "tickets": [
+          164300,
+          163082,
+          161217
+        ]
+      },
+      {
+        "normalized_subject": "ssip 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[S1-SIP] 2025년 11월 월간보고서 전달드립니다.",
+          "[S1-SIP] 2025년 10월 월간보고서 전달드립니다.",
+          "[S1-SIP] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164289,
+          162304,
+          161084
+        ]
+      },
+      {
+        "normalized_subject": "kbi메탈 년 월 oci 월간 리포트 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[KBI메탈] 25년 11월 OCI 월간 리포트 송부드립니다.",
+          "[KBI메탈] 25년 10월 OCI 월간 리포트 송부드립니다.",
+          "[KBI메탈] 25년 9월 OCI 월간 리포트 송부드립니다."
+        ],
+        "tickets": [
+          164288,
+          162858,
+          160997
+        ]
+      },
+      {
+        "normalized_subject": "fnco 운영계 년 월 월간보고서 송부 드리겠습니다",
+        "count": 3,
+        "examples": [
+          "[FNCO] 운영계 2025년 11월 월간보고서 송부 드리겠습니다.",
+          "[FNCO] 운영계 2025년 10월 월간보고서 송부 드리겠습니다.",
+          "[FNCO] 운영계 2025년 09월 월간보고서 송부 드리겠습니다."
+        ],
+        "tickets": [
+          164287,
+          163094,
+          161214
+        ]
+      },
+      {
+        "normalized_subject": "아마노코리아 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[아마노코리아] 2025년 11월 월간보고서 전달드립니다.",
+          "[아마노코리아] 2025년 10월 월간보고서 전달드립니다.",
+          "[아마노코리아] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164283,
+          162373,
+          160832
+        ]
+      },
+      {
+        "normalized_subject": "아산병원 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[아산병원] 2025년 11월 월간보고서 전달드립니다.",
+          "[아산병원] 2025년 10월 월간보고서 전달드립니다.",
+          "[아산병원] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164282,
+          162225,
+          160833
+        ]
+      },
+      {
+        "normalized_subject": "피벗크리에이티브 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[피벗크리에이티브] 2025년 11월 월간보고서 전달드립니다.",
+          "[피벗크리에이티브] 2025년 10월 월간보고서 전달드립니다.",
+          "[피벗크리에이티브] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164280,
+          162236,
+          161022
+        ]
+      },
+      {
+        "normalized_subject": "dn솔루션즈 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[DN솔루션즈] 2025년 11월 월간보고서 전달드립니다.",
+          "[DN솔루션즈] 2025년 10월 월간보고서 전달드립니다.",
+          "[DN솔루션즈] 2025년 09월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164257,
+          162161,
+          161120
+        ]
+      },
+      {
+        "normalized_subject": "ktg 월 월간 보고서 관련 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[KT&G] 2025/11월 월간 보고서 관련 안내 드립니다.",
+          "[KT&G] 2025/10월 월간 보고서 관련 안내 드립니다.",
+          "[KT&G] 2025/09월 월간 보고서 관련 안내 드립니다."
+        ],
+        "tickets": [
+          164247,
+          162141,
+          161236
+        ]
+      },
+      {
+        "normalized_subject": "gcp 프로젝트 삭제 관련 문의",
+        "count": 3,
+        "examples": [
+          "gcp 프로젝트 삭제 관련 문의",
+          "GCP 프로젝트 삭제 관련 문의",
+          "gcp 프로젝트 삭제 관련 문의"
+        ],
+        "tickets": [
+          164238,
+          164237,
+          163856
+        ]
+      },
+      {
+        "normalized_subject": "휴먼컨설팅그룹 aws 운영 년 월 월간보고서 송부 드립니다",
+        "count": 3,
+        "examples": [
+          "[휴먼컨설팅그룹] AWS 운영 2025년 11월 월간보고서 송부 드립니다.",
+          "[휴먼컨설팅그룹] AWS 운영 2025년 10월 월간보고서 송부 드립니다.",
+          "[휴먼컨설팅그룹] AWS 운영 2025년 09월 월간보고서 송부 드립니다."
+        ],
+        "tickets": [
+          164232,
+          162099,
+          160836
+        ]
+      },
+      {
+        "normalized_subject": "한화비전스마트캠 년 월 월간 보고서 송부 드립니다",
+        "count": 3,
+        "examples": [
+          "[한화비전-스마트캠] 2025년 11월 월간 보고서 송부 드립니다.",
+          "[한화비전-스마트캠] 2025년 10월 월간 보고서 송부 드립니다.",
+          "[한화비전-스마트캠] 2025년 9월 월간 보고서 송부 드립니다."
+        ],
+        "tickets": [
+          164218,
+          162368,
+          161115
+        ]
+      },
+      {
+        "normalized_subject": "다우기술 spamhaus 등록 아이피 차단 해제 요청의 건 재요청_번째",
+        "count": 3,
+        "examples": [
+          "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건 (재요청_2번째)",
+          "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건 (재요청_3번째)",
+          "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건 (재요청_2번째)"
+        ],
+        "tickets": [
+          164214,
+          164108,
+          164004
+        ]
+      },
+      {
+        "normalized_subject": "교촌치킨 aws infra 월 월간보고서 송부 드립니다",
+        "count": 3,
+        "examples": [
+          "[교촌치킨] AWS Infra 11월 월간보고서 송부 드립니다.",
+          "[교촌치킨] AWS Infra 10월 월간보고서 송부 드립니다.",
+          "[교촌치킨] AWS Infra 9월 월간보고서 송부 드립니다."
+        ],
+        "tickets": [
+          164213,
+          162226,
+          160992
+        ]
+      },
+      {
+        "normalized_subject": "에치와이 년 월 bigdata 계정 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[에치와이] 2025년 11월 bigdata 계정 월간보고서 전달드립니다.",
+          "[에치와이] 2025년 9월 bigdata 계정 월간보고서 전달드립니다.",
+          "[에치와이] 2025년 8월 bigdata 계정 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164212,
+          161305,
+          159919
+        ]
+      },
+      {
+        "normalized_subject": "에치와이 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[에치와이] 2025년 11월 월간보고서 전달드립니다.",
+          "[에치와이] 2025년 10월 월간보고서 전달드립니다.",
+          "[에치와이] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164211,
+          163212,
+          161306
+        ]
+      },
+      {
+        "normalized_subject": "온누리스토어 년 월 월간보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[온누리스토어] 2025년 11월 월간보고서 전달 드립니다.",
+          "[온누리스토어] 2025년 10월 월간보고서 전달 드립니다.",
+          "[온누리스토어] 2025년 09월 월간보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164210,
+          162112,
+          161133
+        ]
+      },
+      {
+        "normalized_subject": "버거킹 년 월 월간보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[버거킹] 2025년 11월 월간보고서 전달 드립니다.",
+          "[버거킹] 2025년 10월 월간보고서 전달 드립니다.",
+          "[버거킹] 2025년 09월 월간보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164209,
+          162113,
+          161200
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀플랫폼 년 월 월간보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[이투스에듀-플랫폼] 2025년 11월 월간보고서 전달 드립니다.",
+          "[이투스에듀-플랫폼] 2025년 10월 월간보고서 전달 드립니다.",
+          "[이투스에듀-플랫폼] 2025년 09월 월간보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164208,
+          162111,
+          161131
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀 년 월 월간보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[이투스에듀] 2025년 11월 월간보고서 전달 드립니다.",
+          "[이투스에듀] 2025년 10월 월간보고서 전달 드립니다.",
+          "[이투스에듀] 2025년 09월 월간보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164207,
+          162110,
+          161132
+        ]
+      },
+      {
+        "normalized_subject": "clms 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[CLM&S] 2025년 11월 월간보고서 전달드립니다.",
+          "[CLM&S] 2025년 10월 월간보고서 전달드립니다.",
+          "[CLM&S] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164198,
+          163207,
+          161144
+        ]
+      },
+      {
+        "normalized_subject": "유진기업 aws infra 월 월간보고서 송부 드립니다",
+        "count": 3,
+        "examples": [
+          "[유진기업] AWS Infra 11월 월간보고서 송부 드립니다.",
+          "[유진기업] AWS Infra 10월 월간보고서 송부 드립니다.",
+          "[유진기업] AWS Infra 9월 월간보고서 송부 드립니다."
+        ],
+        "tickets": [
+          164195,
+          162329,
+          161130
+        ]
+      },
+      {
+        "normalized_subject": "투어마케팅코리아 aws 운영 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[투어마케팅코리아] AWS 운영 2025년 11월 월간보고서 전달드립니다.",
+          "[투어마케팅코리아] AWS 운영 2025년 10월 월간보고서 전달드립니다.",
+          "[투어마케팅코리아] AWS 운영 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164190,
+          162322,
+          161128
+        ]
+      },
+      {
+        "normalized_subject": "비즈니스온커뮤니케이션 글로싸인넛지스마트빌채권 년 월 월간보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[비즈니스온커뮤니케이션] 글로싸인/넛지/스마트빌채권 2025년 11월 월간보고서 송부드립니다.",
+          "[비즈니스온커뮤니케이션] 글로싸인/넛지/스마트빌채권 2025년 10월 월간보고서 송부드립니다.",
+          "[비즈니스온커뮤니케이션] 글로싸인/넛지/스마트빌채권 2025년 09월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164189,
+          162361,
+          161045
+        ]
+      },
+      {
+        "normalized_subject": "솔루엠 aws infra 년 월 월간 보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[솔루엠] AWS infra 2025년 11월 월간 보고서 송부드립니다.",
+          "[솔루엠] AWS infra 2025년 10월 월간 보고서 송부드립니다.",
+          "[솔루엠] AWS infra 2025년 09월 월간 보고서 송부드립니다."
+        ],
+        "tickets": [
+          164188,
+          162325,
+          161127
+        ]
+      },
+      {
+        "normalized_subject": "삼양바이오팜 aws 운영 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[삼양바이오팜] AWS 운영 2025년 11월 월간보고서 전달드립니다.",
+          "[삼양바이오팜] AWS 운영 2025년 10월 월간보고서 전달드립니다.",
+          "[삼양바이오팜] AWS 운영 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164186,
+          162324,
+          161126
+        ]
+      },
+      {
+        "normalized_subject": "한국네트웍스 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[한국네트웍스] 2025년 11월 월간보고서 전달드립니다.",
+          "[한국네트웍스] 2025년 10월 월간보고서 전달드립니다.",
+          "[한국네트웍스] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164185,
+          162323,
+          161125
+        ]
+      },
+      {
+        "normalized_subject": "피자앤컴퍼니 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[피자앤컴퍼니] 2025년 11월 월간보고서 전달드립니다.",
+          "[피자앤컴퍼니] 2025년 10월 월간보고서 전달드립니다.",
+          "[피자앤컴퍼니] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164181,
+          162232,
+          161124
+        ]
+      },
+      {
+        "normalized_subject": "커리어케어 년 월 월간 보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[커리어케어] 2025년 11월 월간 보고서 전달 드립니다.",
+          "[커리어케어] 2025년 10월 월간 보고서 전달 드립니다.",
+          "[커리어케어] 2025년 9월 월간 보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164180,
+          162260,
+          161028
+        ]
+      },
+      {
+        "normalized_subject": "런인베스트 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[런인베스트] 2025년 11월 월간보고서 전달드립니다.",
+          "[런인베스트] 2025년 10월 월간보고서 전달드립니다.",
+          "[런인베스트] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164179,
+          162237,
+          161123
+        ]
+      },
+      {
+        "normalized_subject": "유라 년 월 aws infra 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[유라] 2025년 11월 AWS Infra 월간보고서 전달드립니다.",
+          "[유라] 2025년 10월 AWS Infra 월간보고서 전달드립니다.",
+          "[유라] 2025년 9월 AWS Infra 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164178,
+          162228,
+          161006
+        ]
+      },
+      {
+        "normalized_subject": "캐논코리아 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[캐논코리아] 2025년 11월 월간보고서 전달드립니다.",
+          "[캐논코리아] 2025년 10월 월간보고서 전달드립니다.",
+          "[캐논코리아] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164174,
+          162272,
+          161103
+        ]
+      },
+      {
+        "normalized_subject": "tym 년 월 월간보고서 송부 관련",
+        "count": 3,
+        "examples": [
+          "[TYM] 2025년 11월 월간보고서 송부 관련",
+          "[TYM] 2025년 10월 월간보고서 송부 관련",
+          "[TYM] 2025년 09월 월간보고서 송부 관련"
+        ],
+        "tickets": [
+          164173,
+          162096,
+          160825
+        ]
+      },
+      {
+        "normalized_subject": "ahc카버코리아 년 월 월간보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[AHC-카버코리아] 2025년 11월 월간보고서 송부드립니다.",
+          "[AHC-카버코리아] 2025년 10월 월간보고서 송부드립니다.",
+          "[AHC-카버코리아] 2025년 09월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164172,
+          162097,
+          160824
+        ]
+      },
+      {
+        "normalized_subject": "한아세안센터 년 월 월간보고서 송부의 건",
+        "count": 3,
+        "examples": [
+          "[한-아세안센터] 2025년 11월 월간보고서 송부의 건",
+          "[한-아세안센터] 2025년 10월 월간보고서 송부의 건",
+          "[한-아세안센터] 2025년 09월 월간보고서 송부의 건"
+        ],
+        "tickets": [
+          164171,
+          162091,
+          160821
+        ]
+      },
+      {
+        "normalized_subject": "대상웰라이프 년월 azure infra 월간 운영리포트 송부 안내",
+        "count": 3,
+        "examples": [
+          "[대상웰라이프] 2025년11월 Azure Infra 월간 운영리포트 송부 안내",
+          "[대상웰라이프] 2025년10월 Azure Infra 월간 운영리포트 송부 안내",
+          "[대상웰라이프] 2025년09월 Azure Infra 월간 운영리포트 송부 안내"
+        ],
+        "tickets": [
+          164170,
+          162092,
+          160819
+        ]
+      },
+      {
+        "normalized_subject": "대상정보기술대상다이브스 azure msp 년 월 월간보고서 송부",
+        "count": 3,
+        "examples": [
+          "[대상정보기술(대상다이브스)] Azure MSP 2025년 11월 월간보고서 송부",
+          "[대상정보기술(대상다이브스)] Azure MSP 2025년 10월 월간보고서 송부",
+          "[대상정보기술(대상다이브스)] Azure MSP 2025년 09월 월간보고서 송부"
+        ],
+        "tickets": [
+          164169,
+          162093,
+          160820
+        ]
+      },
+      {
+        "normalized_subject": "lg전자_connectedcare 년 월 월간보고서 송부 관련",
+        "count": 3,
+        "examples": [
+          "[LG전자_ConnectedCare] 2025년 11월 월간보고서 송부 관련",
+          "[LG전자_ConnectedCare] 2025년 10월 월간보고서 송부 관련",
+          "[LG전자_ConnectedCare] 2025년 09월 월간보고서 송부 관련"
+        ],
+        "tickets": [
+          164167,
+          162095,
+          160822
+        ]
+      },
+      {
+        "normalized_subject": "ktg aws directconnect maintenance scheduled 이벤트 안내 드립니다",
+        "count": 3,
+        "examples": [
+          "[KT&G] AWS DirectConnect maintenance scheduled 이벤트 안내 드립니다.",
+          "[KT&G] AWS DirectConnect maintenance scheduled 이벤트 안내 드립니다.",
+          "[KT&G] AWS DirectConnect maintenance scheduled 이벤트 안내 드립니다."
+        ],
+        "tickets": [
+          164163,
+          163151,
+          162032
+        ]
+      },
+      {
+        "normalized_subject": "연암공과대학교 년 월 월간 운영보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[연암공과대학교] 2025년 11월 월간 운영보고서 전달드립니다.",
+          "[연암공과대학교] 2025년 10월 월간 운영보고서 전달드립니다.",
+          "[연암공과대학교] 2025년 09월 월간 운영보고서 전달드립니다."
+        ],
+        "tickets": [
+          164158,
+          162140,
+          160765
+        ]
+      },
+      {
+        "normalized_subject": "마이셰프 년 월 월간 운영보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[마이셰프] 2025년 11월 월간 운영보고서 전달드립니다.",
+          "[마이셰프] 2025년 10월 월간 운영보고서 전달드립니다.",
+          "[마이셰프] 2025년 09월 월간 운영보고서 전달드립니다."
+        ],
+        "tickets": [
+          164155,
+          162133,
+          160766
+        ]
+      },
+      {
+        "normalized_subject": "엑시온그룹 년 월 월간보고서 전달 드립니다",
+        "count": 3,
+        "examples": [
+          "[엑시온그룹] 2025년 11월 월간보고서 전달 드립니다.",
+          "[엑시온그룹] 2025년 10월 월간보고서 전달 드립니다.",
+          "[엑시온그룹] 2025년 09월 월간보고서 전달 드립니다."
+        ],
+        "tickets": [
+          164139,
+          162065,
+          160736
+        ]
+      },
+      {
+        "normalized_subject": "이스타항공 년 월 월간보고서 송부드립니다",
+        "count": 3,
+        "examples": [
+          "[이스타항공] 2025년 11월 월간보고서 송부드립니다.",
+          "[이스타항공] 2025년 10월 월간보고서 송부드립니다.",
+          "[이스타항공] 2025년 09월 월간보고서 송부드립니다."
+        ],
+        "tickets": [
+          164130,
+          162360,
+          161243
+        ]
+      },
+      {
+        "normalized_subject": "천재교육 년 월 월간보고서 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[천재교육] 2025년 11월 월간보고서 전달드립니다.",
+          "[천재교육] 2025년 10월 월간보고서 전달드립니다.",
+          "[천재교육] 2025년 9월 월간보고서 전달드립니다."
+        ],
+        "tickets": [
+          164125,
+          162125,
+          160750
+        ]
+      },
+      {
+        "normalized_subject": "아발론교육 ec 디스크 사용률 임계치 초과 알림 instance avaprdabat",
+        "count": 3,
+        "examples": [
+          "[​아발론교육] EC2 디스크 사용률 임계치 초과 알림 (Instance: ​ava-prd-a-bat-01)",
+          "[​아발론교육] EC2 디스크 사용률 임계치 초과 알림 (Instance: ​ava-prd-a-bat-01)",
+          "[​아발론교육] EC2 디스크 사용률 임계치 초과 알림 (Instance: ​ava-prd-a-bat-01)"
+        ],
+        "tickets": [
+          164049,
+          162438,
+          162430
+        ]
+      },
+      {
+        "normalized_subject": "물산리조트 클라우드 보안 미흡사항 조치요청",
+        "count": 3,
+        "examples": [
+          "[물산리조트] 클라우드 보안 미흡사항 조치요청",
+          "[물산리조트] 클라우드 보안 미흡사항 조치요청",
+          "[물산리조트] 클라우드 보안 미흡사항 조치요청"
+        ],
+        "tickets": [
+          164048,
+          164047,
+          164046
+        ]
+      },
+      {
+        "normalized_subject": "invoice remittance advice from match group",
+        "count": 3,
+        "examples": [
+          "Invoice Remittance Advice from Match Group",
+          "Invoice Remittance Advice from Match Group",
+          "Invoice Remittance Advice from Match Group"
+        ],
+        "tickets": [
+          163768,
+          161795,
+          160495
+        ]
+      },
+      {
+        "normalized_subject": "이투스에듀 lambda planned lifecycle event 알람 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[이투스에듀] Lambda planned lifecycle event 알람 전달드립니다.",
+          "[이투스에듀] Lambda planned lifecycle event 알람 전달드립니다.",
+          "[이투스에듀] Lambda planned lifecycle event 알람 전달드립니다."
+        ],
+        "tickets": [
+          163703,
+          163167,
+          160411
+        ]
+      },
+      {
+        "normalized_subject": "신규 인스턴스 모니터링 등록요청 account",
+        "count": 3,
+        "examples": [
+          "신규 인스턴스 모니터링 등록요청 (Account: 034362071944)",
+          "신규 인스턴스 모니터링 등록요청 (Account: 677276115863)",
+          "신규 인스턴스 모니터링 등록요청 (Account: 701604998747)"
+        ],
+        "tickets": [
+          163688,
+          163687,
+          163686
+        ]
+      },
+      {
+        "normalized_subject": "에스티유니타스 rds select latency ms 알람 발생하여 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[에스티유니타스] RDS SELECT Latency > 500.0ms 알람 발생하여 전달드립니다.",
+          "[에스티유니타스] RDS SELECT Latency > 500.0ms 알람 발생하여 전달드립니다.",
+          "[에스티유니타스] RDS SELECT Latency > 500.0ms 알람 발생하여 전달드립니다."
+        ],
+        "tickets": [
+          163668,
+          163438,
+          162081
+        ]
+      },
+      {
+        "normalized_subject": "your payment from amway is being processed ref",
+        "count": 3,
+        "examples": [
+          "Your Payment from Amway is being processed : Ref : #12128346",
+          "Your Payment from Amway is being processed : Ref : #12056766",
+          "Your Payment from Amway is being processed : Ref : #12003656"
+        ],
+        "tickets": [
+          163631,
+          161705,
+          160435
+        ]
+      },
+      {
+        "normalized_subject": "한글과컴퓨터gw unhealthy host count current 알람 안내드립니다",
+        "count": 3,
+        "examples": [
+          "[한글과컴퓨터-GW] Unhealthy Host Count Current 알람 안내드립니다.",
+          "[한글과컴퓨터-GW] Unhealthy Host Count Current 알람 안내드립니다.",
+          "[한글과컴퓨터-GW] Unhealthy Host Count Current 알람 안내드립니다."
+        ],
+        "tickets": [
+          163383,
+          161945,
+          161683
+        ]
+      },
+      {
+        "normalized_subject": "엔로비 운영 rds에서 freeable memory 알람 발생하여 안내 드리겠습니다",
+        "count": 3,
+        "examples": [
+          "[엔로비] 운영 RDS에서 Freeable Memory 알람 발생하여 안내 드리겠습니다.",
+          "[엔로비] 운영 RDS에서 Freeable Memory 알람 발생하여 안내 드리겠습니다.",
+          "[엔로비] 운영 RDS에서 Freeable Memory 알람 발생하여 안내 드리겠습니다."
+        ],
+        "tickets": [
+          163341,
+          163328,
+          163279
+        ]
+      },
+      {
+        "normalized_subject": "슈피겐코리아 sap 계정 서버 생성 요청",
+        "count": 3,
+        "examples": [
+          "[슈피겐코리아] SAP 계정 서버 생성 요청",
+          "[슈피겐코리아] SAP 계정 서버 생성 요청",
+          "[슈피겐코리아] sap 계정 서버 생성 요청"
+        ],
+        "tickets": [
+          162328,
+          161722,
+          160761
+        ]
+      },
+      {
+        "normalized_subject": "대상웰라이프 오늘 오후시에 azure database for mysql 서버의 사용 스펙 변경 부탁드립니다",
+        "count": 3,
+        "examples": [
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 변경 부탁드립니다.",
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 변경 부탁드립니다.",
+          "[대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 변경 부탁드립니다."
+        ],
+        "tickets": [
+          162028,
+          161368,
+          160656
+        ]
+      },
+      {
+        "normalized_subject": "fwd 버킷플레이스 gws gcp 빌링 관련 문의 및 협조 요청",
+        "count": 3,
+        "examples": [
+          "Fwd: [버킷플레이스] (GWS, GCP) 빌링 관련 문의 및 협조 요청",
+          "Fwd: [버킷플레이스] (GWS, GCP) 빌링 관련 문의 및 협조 요청",
+          "Fwd: [버킷플레이스] (GWS, GCP) 빌링 관련 문의 및 협조 요청"
+        ],
+        "tickets": [
+          161901,
+          161514,
+          161513
+        ]
+      },
+      {
+        "normalized_subject": "re google cloud support general cloud billing query",
+        "count": 3,
+        "examples": [
+          "Re: Google Cloud Support 64257451: General Cloud Billing Query",
+          "Re: Google Cloud Support 64255450: General Cloud Billing Query",
+          "Re: Google Cloud Support 63832276: General Cloud Billing Query"
+        ],
+        "tickets": [
+          161864,
+          161807,
+          161110
+        ]
+      },
+      {
+        "normalized_subject": "iic snoopby 운영 ec apneprdhiwaremanager에서 memory used 알람 발생하여 전달드립니다",
+        "count": 3,
+        "examples": [
+          "[IIC - Snoopby] 운영 EC2 'APNE2-PRD-HIWARE-MANAGER'에서 Memory Used > 85 % 알람 발생하여 전달드립니다.",
+          "[IIC - Snoopby] 운영 EC2 'APNE2-PRD-HIWARE-MANAGER'에서 Memory Used > 85 % 알람 발생하여 전달드립니다.",
+          "[IIC - Snoopby] 운영 EC2 'APNE2-PRD-HIWARE-MANAGER'에서 Memory Used > 85 % 알람 발생하여 전달드립니다."
+        ],
+        "tickets": [
+          161805,
+          161796,
+          161419
+        ]
+      },
+      {
+        "normalized_subject": "블루월넛 북미icp 작업 공유",
+        "count": 3,
+        "examples": [
+          "[블루월넛] 북미ICP (930003465354) 작업 공유 (10/22)",
+          "[블루월넛] 북미ICP (930003465354) 작업 공유 (9/25)",
+          "[블루월넛] 북미ICP (930003465354) 작업 공유 (9/23)"
+        ],
+        "tickets": [
+          161693,
+          160516,
+          160363
+        ]
+      },
+      {
+        "normalized_subject": "re fw warningjavafredit apmwasduplicate_agent_name_detected",
+        "count": 3,
+        "examples": [
+          "Re: FW: [Warning][JAVA][Fredit APM][was01][DUPLICATE_AGENT_NAME_DETECTED]",
+          "RE: FW: [Warning][JAVA][Fredit APM][was01][DUPLICATE_AGENT_NAME_DETECTED]",
+          "RE: FW: [Warning][JAVA][Fredit APM][was01][DUPLICATE_AGENT_NAME_DETECTED]"
+        ],
+        "tickets": [
+          161326,
+          160493,
+          160432
+        ]
+      },
+      {
+        "normalized_subject": "베스핀글로벌 주식회사 베스핀글로벌 주식회사주식회사 엠피에이지mpag inc",
+        "count": 3,
+        "examples": [
+          "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 엠피에이지(MPAG Inc.))",
+          "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 엠피에이지(MPAG Inc.))",
+          "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 엠피에이지(MPAG Inc.))"
+        ],
+        "tickets": [
+          161265,
+          161264,
+          161261
+        ]
+      },
+      {
+        "normalized_subject": "aws 관리콘솔 취약점 보완조치 요청",
+        "count": 3,
+        "examples": [
+          "AWS 관리콘솔 취약점 보완조치 요청",
+          "AWS 관리콘솔 취약점 보완조치 요청",
+          "AWS 관리콘솔 취약점 보완조치 요청"
+        ],
+        "tickets": [
+          161206,
+          160693,
+          160671
+        ]
+      },
+      {
+        "normalized_subject": "삼성물산 리조트 sg 등록 요청valkey",
+        "count": 3,
+        "examples": [
+          "[삼성물산 리조트] SG 등록 요청(VALKEY)",
+          "[삼성물산 리조트] SG 등록 요청(VALKEY)",
+          "[삼성물산 리조트] SG 등록 요청(VALKEY)"
+        ],
+        "tickets": [
+          160949,
+          160844,
+          160398
+        ]
+      },
+      {
+        "normalized_subject": "re 밀레니얼웍스_ gcp 빌링 계정 연동 안내",
+        "count": 3,
+        "examples": [
+          "Re: 밀레니얼웍스_ GCP 빌링 계정 연동 안내",
+          "RE: 밀레니얼웍스_ GCP 빌링 계정 연동 안내",
+          "RE: 밀레니얼웍스_ GCP 빌링 계정 연동 안내"
+        ],
+        "tickets": [
+          160602,
+          160590,
+          160589
+        ]
+      }
+    ],
+    "service_counter": {
+      "rds": 183,
+      "eks": 14,
+      "ec2": 288,
+      "s3": 50,
+      "iam": 32,
+      "identity center": 7,
+      "cloudwatch": 9,
+      "bedrock": 15,
+      "cloudfront": 18,
+      "vpc": 18,
+      "dynamodb": 2,
+      "sso": 5,
+      "lambda": 15,
+      "route53": 1
+    },
+    "issue_counter": {
+      "계정": 117,
+      "설정": 86,
+      "비용": 59,
+      "account": 25,
+      "느림": 1,
+      "billing": 8,
+      "오류": 19,
+      "권한": 31,
+      "error": 7,
+      "cost": 2,
+      "slow": 1,
+      "performance": 3
+    },
+    "bespin_tickets": [
+      {
+        "id": 165160,
+        "subject": "(한화에너지) Security Group IP 베스핀글로벌 사용 유무",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165152,
+        "subject": "Re: [베스핀글로벌][#164510] 몽골 aws sms 발송 불가 확인 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165119,
+        "subject": "Re: [베스핀글로벌] 팀블랙버드 주식회사 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165114,
+        "subject": "Re: [Data팀] 고객사 Payer(NEW7,NEW8)의 계정 생성 요청",
+        "description": "",
+        "tags": [
+          "SRE1"
+        ]
+      },
+      {
+        "id": 165105,
+        "subject": "Re: [베스핀글로벌] 주식회사 어헤드코리아 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165092,
+        "subject": "재능이아카데미 담당자 변경으로 인한 메일주소 변경 요청드립니다",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165079,
+        "subject": "Re: [베스핀글로벌][#165060] RE: [베스핀글로벌 주식회사]에서 [((주)케이비국민카드)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165071,
+        "subject": "[에코마케팅] IAM Identity Center 위임 이후, AWS support 지원 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165060,
+        "subject": "RE: [베스핀글로벌 주식회사]에서 [((주)케이비국민카드)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165028,
+        "subject": "FW: [베스핀글로벌] SK(주) 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165015,
+        "subject": "RE: [베스핀글로벌] 주식회사 이클라우드에이아이 (E Cloud Al Inc.) 님의 2025년",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 165014,
+        "subject": "RE: [베스핀글로벌 주식회사]에서 [조창희(SK텔레콤(주))]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164971,
+        "subject": "Re: [베스핀글로벌] (주)온라인파워스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "대상웰라이프B2C몰"
+        ]
+      },
+      {
+        "id": 164953,
+        "subject": "Re: [베스핀글로벌] 엘지전자(주) 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164951,
+        "subject": "Re: [베스핀글로벌] 엘지전자(주) 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164938,
+        "subject": "[베스핀글로벌] 동원몰 DW-ALB-DWMALLWEB-SSL-TGT Unhealthy 알람 전달드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164920,
+        "subject": "RE: FW: [베스핀글로벌] 주식회사 디케이테크인 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164917,
+        "subject": "[엔로비] EC2 [ bespin-helpnow-ips-mgt ]에서 CPU Utilization 알람 발생하여 안내 드리겠습니다.",
+        "description": "",
+        "tags": [
+          "엔로비"
+        ]
+      },
+      {
+        "id": 164913,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164907,
+        "subject": "[요청] (주)아톤 베스핀글로벌 서비스 상세내역 및 세금계산서 발행 메일 변경 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164906,
+        "subject": "Undeliverable: [베스핀글로벌] appknot 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164856,
+        "subject": "[베스핀글로벌] 경동도시가스 'KDGAS-PRD-BI-EC2-AZ1' 인스턴스 중지 상태 확인 부탁드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164832,
+        "subject": "[베스핀글로벌] 농협물류 BPR/NHFRUIT 2025년 11월 월간보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164831,
+        "subject": "[베스핀글로벌] 농협물류 WMS 2025년 11월 월간보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164827,
+        "subject": "[베스핀글로벌/임재헌] TYM Whatap 추가 요청의 건",
+        "description": "",
+        "tags": [
+          "TYM"
+        ]
+      },
+      {
+        "id": 164818,
+        "subject": "RE: [BESPIN GLOBAL] Invoice for - usage of AWS.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164808,
+        "subject": "Re: [베스핀글로벌] 연세의료원 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164805,
+        "subject": "베스핀 AWS Organization 소속으로 인한 일부 AWS 서비스 미사용 건",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164793,
+        "subject": "Tag Policy 관련 Organization 권한",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164781,
+        "subject": "Re: [베스핀글로벌] 주식회사 텔라 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164774,
+        "subject": "[알리콘] 베스핀글로벌 계좌사본 및 사업자등록증 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164770,
+        "subject": "Bespin Global WTax Certificate",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164765,
+        "subject": "[베스핀글로벌] 계약 종료 시 선수금 처리 절차 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164760,
+        "subject": "Updated invitation: 캐논코리아 운영 방안 논의 @ Fri Dec 12, 2025 10am - 11am (GMT+9) (ITS Bespin)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164759,
+        "subject": "Invitation: 캐논코리아 운영 방안 논의 @ Fri Dec 12, 2025 10pm - 11pm (GMT+9) (ITS Bespin)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164737,
+        "subject": "[요청] Key vault 권한 요청",
+        "description": "",
+        "tags": [
+          "LG전자-ConnectedCare"
+        ]
+      },
+      {
+        "id": 164735,
+        "subject": "Re: [베스핀글로벌] 한양대학교 에리카산학협력단 님의 2025년 12월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164733,
+        "subject": "Re: [베스핀글로벌] 주식회사 마켓디자이너스 님의 2025년 12월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164718,
+        "subject": "[베스핀글로벌] DevSecOps 2025년 11월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164717,
+        "subject": "[베스핀글로벌] piirisk 2025년 11월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164716,
+        "subject": "[베스핀글로벌] Landing Zone 2025년 11월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164715,
+        "subject": "[베스핀글로벌] CheckIT 2025년 11월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164714,
+        "subject": "[베스핀글로벌] FIDO2 2025년 11월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164710,
+        "subject": "Re: [베스핀글로벌] (주)제이엔이웍스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164698,
+        "subject": "RE: [베스핀글로벌] SK(주) 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164680,
+        "subject": "Re: [베스핀글로벌] 주식회사 피엘지(PLZ Co.,Ltd.) 님의 2025년 12월 서비스 요",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164677,
+        "subject": "배달되지 않음: [베스핀글로벌] 현대글로비스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164675,
+        "subject": "Re: [베스핀글로벌] (주)매스프레소 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164671,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164667,
+        "subject": "Re: [베스핀글로벌] (주)라이언로켓 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164661,
+        "subject": "배달되지 않음: [베스핀글로벌] 에스케이브로드밴드주식회사 님의 2025년 12월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164652,
+        "subject": "RE: [베스핀글로벌] 주식회사 클라스카 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164651,
+        "subject": "Re: [베스핀글로벌] 뉴튠(주) 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164631,
+        "subject": "Undeliverable: [베스핀글로벌] 주식회사 메이트모빌리티 님의 2025년 12월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164628,
+        "subject": "RE: [베스핀글로벌] 주식회사 빌리지베이비 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164627,
+        "subject": "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164622,
+        "subject": "RE: [베스핀글로벌] 주식회사 온앤오프랩 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164612,
+        "subject": "Re: [베스핀글로벌] (주)아이더스에프앤비 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164608,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)바우라움 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164607,
+        "subject": "Returned Msg: [베스핀글로벌] 주식회사 코스모앤컴퍼니 님의 2025년 12월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164605,
+        "subject": "Re: [베스핀글로벌] 주식회사 프로젝트퀘스천 님의 2025년 12월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164596,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)천재교과서 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164595,
+        "subject": "Re: [베스핀글로벌] 주식회사 넷츠 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164592,
+        "subject": "Notification Re: [베스핀글로벌] (주)노르마 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164584,
+        "subject": "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164578,
+        "subject": "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164577,
+        "subject": "배달되지 않음: [베스핀글로벌] 현대오토에버(주) 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164555,
+        "subject": "Re: [베스핀글로벌] 주식회사 엑스닷츠 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164530,
+        "subject": "[삼성물산 리조트] SG 등록 요청(MSP담당자)",
+        "description": "",
+        "tags": [
+          "ev"
+        ]
+      },
+      {
+        "id": 164527,
+        "subject": "Fwd: [베스핀글로벌] 자동이체 관련 안내의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164526,
+        "subject": "Re: [베스핀글로벌][#164523] Re: [베스핀글로벌] 데이트립코리아 유한책임회사 님의 2025년 12월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164525,
+        "subject": "Re: [베스핀글로벌] (주)바른손씨앤씨 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164524,
+        "subject": "사업장 정보 변경 요청 RE: [베스핀글로벌] (주)플레이위드 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164523,
+        "subject": "Re: [베스핀글로벌] 데이트립코리아 유한책임회사 님의 2025년 12월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164505,
+        "subject": "[베스핀글로벌] Landing Zone 2025년 11월 AWS Infra 월간 보고서",
+        "description": "",
+        "tags": [
+          "LandingZone"
+        ]
+      },
+      {
+        "id": 164498,
+        "subject": "[경동도시가스] AWS 및 VPN 신규 인력 계정 생성 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164495,
+        "subject": "Re: [BespinGlobal] 빌링포털 가입 안내드립니다",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164489,
+        "subject": "Re: [베스핀글로벌][#164366] Re: [베스핀글로벌] (주)워트인텔리전스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164488,
+        "subject": "RE: [베스핀글로벌] 라인플러스 주식회사 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164486,
+        "subject": "Fwd: [베스핀글로벌] 주식회사 리트빅 (litbig Inc.) 님의 2025년 12월 서비스 요",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164470,
+        "subject": "[베스핀글로벌] vertex AI 사용 문의",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 164469,
+        "subject": "Re: [베스핀글로벌][#164428] [지아이비타] 결제건 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164464,
+        "subject": "Re: [베스핀글로벌][#164364] Re: [베스핀글로벌] (주)마이리얼트립 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164461,
+        "subject": "Re: [베스핀글로벌] 한국화학연구원 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164447,
+        "subject": "[엔로비] EC2 'bespin-helpnow-ips-mgt' CPU Used 알람 안내 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164446,
+        "subject": "Re: [베스핀글로벌] 주식회사 플루언트 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164435,
+        "subject": "RE: [베스핀글로벌] 주식회사 래피드글로벌 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164432,
+        "subject": "Re: [베스핀글로벌] (주)바른손씨앤씨 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164431,
+        "subject": "Re: [베스핀글로벌] (주)씨제이이엔엠 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164430,
+        "subject": "RE: [베스핀글로벌] 주식회사 도구공간 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164425,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164422,
+        "subject": "RE: [베스핀글로벌] (재) 서울연구원 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164419,
+        "subject": "배달되지 않음: [베스핀글로벌] 넥스트증권 주식회사 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164417,
+        "subject": "RE: [베스핀글로벌] 주식회사 지마켓 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164415,
+        "subject": "RE: [베스핀글로벌] 한국원자력연구원 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164411,
+        "subject": "Fwd: 베스핀글로벌 서비스 취소",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164409,
+        "subject": "RE: [베스핀글로벌] 주식회사 지마켓 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164400,
+        "subject": "Re: [베스핀글로벌][#164392] Re: [베스핀글로벌] 샵라이브코리아 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164392,
+        "subject": "Re: [베스핀글로벌] 샵라이브코리아 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164380,
+        "subject": "Re: [베스핀글로벌] 주식회사 스토리타코 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164371,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)아파트아이 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164366,
+        "subject": "Re: [베스핀글로벌] (주)워트인텔리전스 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164364,
+        "subject": "Re: [베스핀글로벌] (주)마이리얼트립 님의 2025년 12월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164341,
+        "subject": "Re: [BESPIN GLOBAL] Invoice for - usage of GCP.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164323,
+        "subject": "[SRE1] PLES 신규 계정 생성 지원",
+        "description": "",
+        "tags": [
+          "SRE1"
+        ]
+      },
+      {
+        "id": 164319,
+        "subject": "[한글과컴퓨터] 베스핀글로벌 신규 담당자 계정 발급 건으로 연락 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164317,
+        "subject": "Re: [베스핀글로벌] 주식회사 프로젝트빌드업 님의 2025년 11월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164314,
+        "subject": "FW: (리) DB계정 담당자 및 업무내용 확인요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164313,
+        "subject": "FW: (리) DB계정 담당자 및 업무내용 확인요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164306,
+        "subject": "[Edelman/Bespin] SK온 뉴스룸 메인 도메인 변경 관련 확인 요청의 건_1204",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164297,
+        "subject": "[베스핀글로벌]GPU 예약 생성 스크립트 전달의 건",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164286,
+        "subject": "Re: [베스핀글로벌] 중복 입금 관련 안내 - 주식회사 인프랩",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164278,
+        "subject": "[LG전자_ConnectedCare][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164277,
+        "subject": "[한-아세안센터][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164275,
+        "subject": "[대상정보기술(대상다이브스)][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164274,
+        "subject": "[대상웰라이프][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164273,
+        "subject": "[토라웨어][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": [
+          "토라웨어"
+        ]
+      },
+      {
+        "id": 164272,
+        "subject": "[모빌씨앤씨][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": [
+          "IRIS"
+        ]
+      },
+      {
+        "id": 164271,
+        "subject": "[슈피겐코리아][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": [
+          "슈피겐코리아"
+        ]
+      },
+      {
+        "id": 164270,
+        "subject": "[FNCO][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": [
+          "FNCO"
+        ]
+      },
+      {
+        "id": 164268,
+        "subject": "[IIC][공지] 베스핀글로벌 창립기념일 휴무 및 서비스 이용 안내 (12/05)",
+        "description": "",
+        "tags": [
+          "IIC"
+        ]
+      },
+      {
+        "id": 164265,
+        "subject": "담당자 변경 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164260,
+        "subject": "Re: [베스핀글로벌] (주)비바리퍼블리카 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164250,
+        "subject": "Re: [베스핀글로벌] GCP 빌링 계약",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164243,
+        "subject": "Re: [베스핀글로벌] 오입금 관련 안내 - 트레이드 컨설테이션",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164241,
+        "subject": "RE: [베스핀글로벌] 중복 입금 관련 안내 - 주식회사 도스트11",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164227,
+        "subject": "[RE]FW: [베스핀글로벌][#163419] [케이투코리아] AWS, OCI PPK 값 변경 절차 및 지원 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164226,
+        "subject": "[RE]FW: [베스핀글로벌][#163419] [케이투코리아] AWS, OCI PPK 값 변경 절차 및 지원 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164196,
+        "subject": "RE: [이랜드몰][요청] Google Cloud 사용료 세금계산서 발행 담당자 변경 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164194,
+        "subject": "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164193,
+        "subject": "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164192,
+        "subject": "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164191,
+        "subject": "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164187,
+        "subject": "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164184,
+        "subject": "[MSP][섹타나인] [베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": [
+          "섹타나인"
+        ]
+      },
+      {
+        "id": 164168,
+        "subject": "[베스핀글로벌] 2025년 12월 5일(금) 전사 휴무 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164156,
+        "subject": "[문의] kt cloud의 GCP Reseller 계정 담당자 변경으로 인하여 문의드립니다",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164145,
+        "subject": "[베스핀글로벌 윤진혁] 마크애니 - Q Developer 구독 취소 관련 문의드림",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 164135,
+        "subject": "Re: [베스핀글로벌] 주식회사 나인투원 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164131,
+        "subject": "Re: Re: [베스핀글로벌][#164116] SSL 인증서 전달의 건",
+        "description": "",
+        "tags": [
+          "엘브리지"
+        ]
+      },
+      {
+        "id": 164120,
+        "subject": "[베스핀글로벌] Logs explorer 사용 & VM SSH 접속 가이드",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164109,
+        "subject": "RE: FW: [MCAC] MSP 담당자 변경(철수, 투입)에 따른 Azure Portal 및 시스템 접근통제 사용자 계정 생성/삭제 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164099,
+        "subject": "[문의]Re: [베스핀글로벌] 과입금 관련 안내 - (주)엑슨투",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164082,
+        "subject": "Undeliverable: [베스핀글로벌][#163526] 티켓이 종료되었습니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164022,
+        "subject": "Re: [베스핀글로벌][#164018] [문의] 유빅소프트 클라우드 계약 관련",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164016,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164014,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 164003,
+        "subject": "[베스핀글로벌] [안내] 우정사업본부 NCP 2025년 CSAP 인증 기준 변경에 따른 마이그레이션 일정 안내 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163993,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163991,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->에델만코리아 주식회사)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163980,
+        "subject": "베스핀글로벌 사업자등록증 및 통장사본 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163964,
+        "subject": "[베스핀글로벌/임재헌] 고객사 문의 사항 검토 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163954,
+        "subject": "AWS 계정 생성 요청 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163903,
+        "subject": "FW: [라이선스증서] [25년] 베스핀글로벌_에델만코리아_보안솔루션 및 관제서비스_DS_Renew_Trendmicro_42048001",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163873,
+        "subject": "Fwd: [해빗팩토리] AWS IAM Identity Center(SSO)에 임시 권한 설정 작업 티켓 내용",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 163870,
+        "subject": "축산was 서비스 실행권한 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163866,
+        "subject": "[베스핀글로벌/임재헌] 스토어링크 ECS 타겟그룹 헬스체크 관련 티켓 오픈 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163851,
+        "subject": "Re: [BespinGlobal] 빌링포털 가입 안내드립니다",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163829,
+        "subject": "Re: [베스핀글로벌] 아이에스동서(주) 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163800,
+        "subject": "RE: (주)씨제이이엔엠 이예슬님 베스핀글로벌 주식회사 신다인(으)로 부터 세금계산서가 발행 되었습니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163740,
+        "subject": "[베스핀글로벌][FNCO] 2025.11.25 비용 관련 미팅 진행 내용 공유 드리겠습니다.",
+        "description": "",
+        "tags": [
+          "FNCO"
+        ]
+      },
+      {
+        "id": 163734,
+        "subject": "(Bespin Global 전달 확인 - jaehyuk.ryu@bespinglobal.com에서 보낸 메일 수신",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163733,
+        "subject": "Payee Advice Dated 25-Nov-2025 for BESPIN GLOBAL Inc., Cust Ref: PIGSGWETPLA02093 , UTR: SG1OT2511250280Y",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163731,
+        "subject": "[삼성물산 리조트] SG 등록 요청(베스핀 MSP)",
+        "description": "",
+        "tags": [
+          "ev"
+        ]
+      },
+      {
+        "id": 163718,
+        "subject": "[SRE1] PLES 계정 생성 지원",
+        "description": "",
+        "tags": [
+          "SRE1"
+        ]
+      },
+      {
+        "id": 163710,
+        "subject": "[베스핀글로벌] 버거킹 11/25 미사용 리소스 싱크업 미팅 관련",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163685,
+        "subject": "[엔로비] 운영계 EC2 'bespin-helpnow-ips-mgt'에서 CPU Used > 90 % 알람 발생하여 전달드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163656,
+        "subject": "Re: [베스핀글로벌] (주)매스프레소 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163646,
+        "subject": "Re: [베스핀글로벌][#163644] 애드쉴드_세금계산서 및 서비스요금 안내 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163615,
+        "subject": "Re: [베스핀글로벌] 출금실패) 주식회사 부엔까미노님의 2025년 11월 서비스 요금에 대한 결제(카드매출(정기)) 실패 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163600,
+        "subject": "[twave]담당자 부재로 인한 대체 인원 공유",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163599,
+        "subject": "[twave]담당자 부재로 인한 대체 인원 공유",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163560,
+        "subject": "Re: [베스핀글로벌] 주식회사 프로큐라티오 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163553,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->블랙해머게임즈)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163541,
+        "subject": "Re: [BespinGlobal] 빌링포털 가입 안내드립니다",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_night_email_reply",
+          "after_hours_support",
+          "email_sent"
+        ]
+      },
+      {
+        "id": 163526,
+        "subject": "[이랜드몰][요청] Google Cloud 사용료 세금계산서 발행 담당자 변경 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163524,
+        "subject": "RE: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163523,
+        "subject": "Re: [!]Re: [!]Re: [베스핀글로벌][#161837] FW: [!]mail 서버 방화벽 등 확인 요청_공문",
+        "description": "",
+        "tags": [
+          "canon-hp"
+        ]
+      },
+      {
+        "id": 163519,
+        "subject": "Re: [베스핀글로벌] 주식회사 넥스쳐(NEXTURE Corporation) 님의 2025년 11",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163502,
+        "subject": "Fwd: Fwd: [베스핀글로벌] 모비소프트 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163498,
+        "subject": "Re: [베스핀글로벌 주식회사]에서 [(엘지전자(주))]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163488,
+        "subject": "[안랩/요청] 베스핀글로벌 AWS 세금계산서, 인보이스 수신인 변경 요청",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 163487,
+        "subject": "Bespin Global WTax Certificate",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163486,
+        "subject": "RE: [베스핀글로벌] 주식회사 래피드글로벌 님의 2025년 11월 서비스 요금 및 상세내역 안내(사업장 변경)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163485,
+        "subject": "[베스핀글로벌][동원산업] dw-vm-hpdwloex 서버 임계치 알람 안내드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163481,
+        "subject": "You got paid by Bespin Global!",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163480,
+        "subject": "[엔로비] 운영계 EC2 'bespin-helpnow-ips-mgt'에서 CPU Used > 90 % 알람 발생하여 전달드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163476,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163471,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] 오비오 주식회사 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163468,
+        "subject": "Undeliverable: [베스핀글로벌] appknot 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163464,
+        "subject": "[베스핀글로벌] 농협물류 BPR/NHFRUIT 2025년 10월 월간보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163463,
+        "subject": "[베스핀글로벌] 농협물류 WMS 2025년 10월 월간보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163456,
+        "subject": "Re: [베스핀글로벌][#163405] Re: [베스핀글로벌] 교촌에프앤비(주) 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163436,
+        "subject": "Re: [베스핀글로벌] (주)뉴닉 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163430,
+        "subject": "[베스핀글로벌 윤진혁] 마크애니 - AmazonQ Developer Limit 해제 요청",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 163409,
+        "subject": "섹타나인 GCP에서 조직 계정 생성 및 연결 방법 문의 드립니다.",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval",
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 163407,
+        "subject": "1차 담당자 변경 요청드립니다.",
+        "description": "",
+        "tags": [
+          "IIC"
+        ]
+      },
+      {
+        "id": 163405,
+        "subject": "Re: [베스핀글로벌] 교촌에프앤비(주) 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163404,
+        "subject": "Re: [베스핀글로벌][#163386] Re: [베스핀글로벌] (주)슈가힐 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163393,
+        "subject": "RE: [베스핀글로벌] SK(주) 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163389,
+        "subject": "[삼성물산 리조트] SG 등록 요청(디지털혁신 담당자)",
+        "description": "",
+        "tags": [
+          "ev"
+        ]
+      },
+      {
+        "id": 163386,
+        "subject": "Re: [베스핀글로벌] (주)슈가힐 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163380,
+        "subject": "A payment from Bespin Global is on the way",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163356,
+        "subject": "Re: [베스핀글로벌] 주식회사 부릉 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163342,
+        "subject": "Re: [베스핀글로벌] 주식회사 소크라에이아이 님의 2025년 11월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163336,
+        "subject": "Re: [BESPIN GLOBAL] Invoice for - usage of Newberry '25년 10월 접대비, 출장비 정산.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163320,
+        "subject": "[베스핀글로벌] DevSecOps 2025년 10월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163318,
+        "subject": "[베스핀글로벌] piirisk 2025년 10월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163317,
+        "subject": "[베스핀글로벌] Landing Zone 2025년 10월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163316,
+        "subject": "[베스핀글로벌] CheckIT 2025년 10월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163314,
+        "subject": "[베스핀글로벌] FIDO2 2025년 10월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163309,
+        "subject": "유지보수 계약관련 담당자 확인 요청",
+        "description": "",
+        "tags": [
+          "아식스"
+        ]
+      },
+      {
+        "id": 163283,
+        "subject": "[에코마케팅] IAM Identity Center 활성화 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163246,
+        "subject": "Re: [베스핀글로벌] 옵스나우 주식회사 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163238,
+        "subject": "Re: [베스핀글로벌] 주식회사 마켓디자이너스 님의 2025년 11월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163236,
+        "subject": "Re: [베스핀글로벌] 서울대학교 산학협력단 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163226,
+        "subject": "손정은 Auto-reply Email: RE: [베스핀글로벌] 주식회사 도스트11 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163220,
+        "subject": "Re: [베스핀글로벌] 주식회사 모비릭스 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163191,
+        "subject": "Re: [베스핀글로벌] (주)모아데이타 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163187,
+        "subject": "배달되지 않음: [베스핀글로벌] 현대글로비스 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163158,
+        "subject": "RE: [베스핀글로벌] 주식회사 잉글리시에그 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163156,
+        "subject": "Fwd: [뷰노] AWS 어카운트별 Bespin 계정 사용여부 확인",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 163153,
+        "subject": "Re: [베스핀글로벌] 주식회사 더트라이브 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163149,
+        "subject": "Re: [베스핀글로벌][#162312] [SR_S202510294593982] C570_IM_SEID10121426.xml_FA50M0_100020252000024809_20251015",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163138,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163135,
+        "subject": "Undeliverable: [베스핀글로벌][#163134] 새로운 문의가 등록되었습니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163029,
+        "subject": "자동 회신: [베스핀글로벌] 홈플러스(주) 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 163024,
+        "subject": "Re: [베스핀글로벌] 브라운백 주식회사 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162917,
+        "subject": "배달되지 않음: [베스핀글로벌] 에스케이브로드밴드주식회사 님의 2025년 11월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162912,
+        "subject": "AWS IAM Identity Center(SSO)에 임시 권한 설정 작업",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 162747,
+        "subject": "RE: [베스핀글로벌] (주)아이에이치큐 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162746,
+        "subject": "RE: [베스핀글로벌] (주)삼양홀딩스 판교 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162642,
+        "subject": "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162637,
+        "subject": "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162622,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)바우라움 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162620,
+        "subject": "Re: [베스핀글로벌] (주)아이더스에프앤비 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162571,
+        "subject": "Fwd: [베스핀글로벌] 주식회사 피플스헬스 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162524,
+        "subject": "[베스핀글로벌] 암호 화폐 채굴 남용 의심 관련 확인 요청",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 162472,
+        "subject": "Undeliverable: [베스핀글로벌] 주식회사 메이트모빌리티 님의 2025년 11월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162467,
+        "subject": "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162434,
+        "subject": "[​​엔로비] EC2 CPU 사용률 임계치 초과 알림 (Instance: ​bespin-helpnow-ips-mgt)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162429,
+        "subject": "Re: [베스핀글로벌] (주)씨제이이엔엠 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162428,
+        "subject": "[베스핀글로벌] Landing Zone 2025년 10월 AWS Infra 월간 보고서",
+        "description": "",
+        "tags": [
+          "LandingZone"
+        ]
+      },
+      {
+        "id": 162393,
+        "subject": "Fwd: [베스핀글로벌] (주)원더피플 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162381,
+        "subject": "[담당자 변경요청] 안녕하세요 컨스택츠코리아입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162379,
+        "subject": "Re: [베스핀글로벌/CJ온스타일] 유튜브 쇼핑 GCS 버킷 관련 문의드립니다.",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 162378,
+        "subject": "Fwd: FW: 주식회사 케이티 담당자님 베스핀글로벌 주식회사 신다인(으)로 부터 세금계산서가 발행 되었습니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162354,
+        "subject": "[RE][베스핀글로벌] 주식회사 룩코 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162345,
+        "subject": "Re: [베스핀글로벌][#162326] Re: [베스핀글로벌] 주식회사 쏘카 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162343,
+        "subject": "Re: [베스핀글로벌] 주식회사 슈퍼러닝 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162326,
+        "subject": "Re: [베스핀글로벌] 주식회사 쏘카 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162319,
+        "subject": "Re: [베스핀글로벌] 연세의료원 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162317,
+        "subject": "Re: [베스핀글로벌] 주식회사 비에이치에스엔 님의 2025년 11월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 162316,
+        "subject": "Re: [베스핀글로벌] 중복 입금 관련 안내 - 주식회사 레드소파",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162314,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162308,
+        "subject": "RE: [베스핀글로벌] 주식회사 카카오게임즈 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162306,
+        "subject": "RE: [베스핀글로벌] 주식회사 위드소프트 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162300,
+        "subject": "RE: [베스핀글로벌] 라인플러스 주식회사 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162299,
+        "subject": "Re: [베스핀글로벌] 지엑스씨(주) 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162297,
+        "subject": "Re: [베스핀글로벌] 마인드로직 주식회사(Mindlogic Inc.) 님의 2025년 11월 서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162293,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 히츠(HITS Inc.))",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162268,
+        "subject": "Re: [베스핀글로벌] 과입금 관련 안내 - 더블유클럽",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162258,
+        "subject": "RE: [베스핀글로벌] (재) 서울연구원 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162251,
+        "subject": "RE: [베스핀글로벌] 주식회사 휴딧 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162234,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)아파트아이 님의 2025년 11월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162230,
+        "subject": "aws 신규 어카운트 추가 및 SSO계정 생성",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 162192,
+        "subject": "Re: [베스핀글로벌] 과입금 관련 안내 - 주식회사 푸짐",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162186,
+        "subject": "[슈피겐코리아] 슈피겐 AWS 담당자 변경 안내",
+        "description": "",
+        "tags": [
+          "슈피겐코리아"
+        ]
+      },
+      {
+        "id": 162182,
+        "subject": "Re: [BESPIN GLOBAL] Invoice for - usage of GCP.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162173,
+        "subject": "베스핀글로벌과 종료된 프로젝트 관련 리소스 및 비용 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162171,
+        "subject": "FW: [클라우드 보안진단] DB점검 대상 및 체크리스트 사전 공유 (DBA 이지원/베스핀)",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 162162,
+        "subject": "경동도시가스 신규 담당자 정보 전달 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162155,
+        "subject": "[Failure Notice] ketitax@keti.re.kr : [베스핀글로벌 주식회사]에서 [안미희(한국전자기술연구원)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162139,
+        "subject": "[베스핀글로벌/임재헌] 셔틀 주식회사 500번대 에러 관련 문의의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162134,
+        "subject": "베스핀 매니지먼트용 파이썬3.8버전의 lambda 함수 업데이트 요청의 건",
+        "description": "",
+        "tags": [
+          "hc"
+        ]
+      },
+      {
+        "id": 162128,
+        "subject": "Fwd: [베스핀글로벌][#162122] 세금계산서 분리 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162108,
+        "subject": "RE: [베스핀글로벌][#162072] [IGLOO@원격관제팀-요청사항] 현대건설기계 DeepFinder WAF 로그 미수집 확인 요청 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162104,
+        "subject": "[Failure Notice] ketitax@keti.re.kr : [베스핀글로벌 주식회사]에서 [안미희(한국전자기술연구원)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162079,
+        "subject": "RE: [베스핀글로벌] 주식회사 숲(SOOP CO.,LTD.) 님의 2025년 10월 서비스 요금",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162044,
+        "subject": "Q CLI Pro 구독 사용을 위한 IAM Identity Center 설정 가이드 요청",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 162043,
+        "subject": "[베스핀글로벌][롯데바이오로직스] 금일 월간 미팅 간 문의 주신 사항 안내드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 162022,
+        "subject": "You got paid by Bespin Global!",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161999,
+        "subject": "Re: [베스핀글로벌] 주식회사 캐킷 님의 2025년 07월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161983,
+        "subject": "You got paid by Bespin Global!",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161980,
+        "subject": "[베스핀글로벌/임재헌] 스토어링크 DTO 비용 무상지원 관련 추가 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161978,
+        "subject": "베스핀글로벌 튠잇 담당자 변경 안내 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161973,
+        "subject": "튠잇 담당자 변경 안내 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161972,
+        "subject": "Re: [베스핀글로벌] 토스인컴 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161969,
+        "subject": "[피닉스다트] 담당자 변경 안내 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161955,
+        "subject": "Re: [베스핀글로벌][#161869] [월급쟁이부자들] RDS 스토리지 임계 알람 발생 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161953,
+        "subject": "[베스핀글로벌] 우정사업본부 NCP 신규 인증키",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161947,
+        "subject": "[경동도시가스] IMS 담당자 변경에 따른 계정 생성요청 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161939,
+        "subject": "Re: [베스핀글로벌] 주식회사 레드소파 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161906,
+        "subject": "A payment from Bespin Global is on the way",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161905,
+        "subject": "Re: [베스핀글로벌] (주)헤렌 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161900,
+        "subject": "[베스핀글로벌/임재헌] 원티드랩 AWS S3 버킷 관련 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161897,
+        "subject": "Fwd: [베스핀글로벌] 베리파이아 (VerifyA) 님의 2025년 10월 서비스 요금 및 상세내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161878,
+        "subject": "Re: [manage@a-better.co.kr] [베스핀글로벌] 주식회사 에이베러 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161867,
+        "subject": "Fw: [베스핀글로벌] (주)앳플리 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161860,
+        "subject": "A payment from Bespin Global is on the way",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161858,
+        "subject": "[2025.09 FA50M0 - 베스핀글로벌] A/P Balance Reconciliation 2025 SEVT-S [1ST REMINDER]",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161856,
+        "subject": "Re: [베스핀글로벌][#161854] RE: [베스핀글로벌] 주식회사 비케이알 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161854,
+        "subject": "RE: [베스핀글로벌] 주식회사 비케이알 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161843,
+        "subject": "RE: [베스핀글로벌] 주식회사 마유비 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161824,
+        "subject": "[비트망고] 담당자 메일주소 변경요청",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161797,
+        "subject": "Re: [베스핀글로벌][#161794] [코인원] 2025년 사용 내역 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161775,
+        "subject": "Payee Advice Dated 24-Oct-2025 for BESPIN GLOBAL Inc., Cust Ref: PIGSGWETPLA02064 , UTR: SG1OT251024025YG",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161769,
+        "subject": "Undeliverable: [베스핀글로벌][#161259] 티켓이 종료되었습니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161766,
+        "subject": "Re: [베스핀글로벌] 주식회사 큐리어슬리 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161758,
+        "subject": "[베스핀글로벌] 우정사업본부 SSL VPN(VPC) 수도권 점검 작업 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161753,
+        "subject": "담당자 변경 안내 드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161746,
+        "subject": "Re: [베스핀글로벌] 앤마들린 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161743,
+        "subject": "[호텔스토리] IAM Identity Center 계정 확인 요청",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161740,
+        "subject": "Re: [베스핀글로벌] 주식회사 피스오브크리에이티브 님의 2025년 10월 서비스 요금 및 상세내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161731,
+        "subject": "[베스핀글로벌] Google Cloud 암호화폐 채굴 악용 의심 활동 연속 감지 및 조치 협조 요청 (Project: 61041849355)",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161730,
+        "subject": "Fwd: [유니포스트_슈피겐코리아] 서버 이관에 따른 서비스 재설치를 위한 계정 생성 및 디렉토리 복사 요청의 건",
+        "description": "",
+        "tags": [
+          "슈피겐코리아-SAP"
+        ]
+      },
+      {
+        "id": 161729,
+        "subject": "RE: [베스핀글로벌] 한국전자통신연구원 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161728,
+        "subject": "[베스핀글로벌/임재헌] 스토어링크 DTO 비용 무상지원 관련 문의의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161714,
+        "subject": "Re: [accounting] [베스핀글로벌] 주식회사 젠테 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161704,
+        "subject": "Re: [베스핀글로벌] 주식회사 제제미미 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161703,
+        "subject": "Re: [베스핀글로벌] 주식회사 로프트아일랜드 님의 2025년 10월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161679,
+        "subject": "[BESPINGLOBAL] 엔로비 MSP 정책 공지문 안내 건입니다.",
+        "description": "",
+        "tags": [
+          "엔로비"
+        ]
+      },
+      {
+        "id": 161676,
+        "subject": "Re: [베스핀글로벌] 주식회사 수호아이오 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161671,
+        "subject": "[코보시스] 담당자 정보변경 및 주소 변경 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161667,
+        "subject": "[베스핀글로벌] 가사번 회수 및 DeVDI 신청 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161652,
+        "subject": "[에스원-SIP] IAM User (bespin_msp@bespinglobal.com) 관련 전달드립니다.",
+        "description": "",
+        "tags": [
+          "에스원",
+          "S1"
+        ]
+      },
+      {
+        "id": 161647,
+        "subject": "Re: [베스핀글로벌] 오후두시랩 주식회사 님의 2025년 08월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161645,
+        "subject": "Re: [베스핀글로벌] 오후두시랩 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161622,
+        "subject": "FW: FW: [베스핀글로벌] 에이투엠(A2M) 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161608,
+        "subject": "Fwd: [베스핀글로벌] AWS 장애 공지",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161607,
+        "subject": "Re: [베스핀글로벌] 주식회사 펄스애드 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161606,
+        "subject": "Fwd: [베스핀글로벌] AWS 장애 공지",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161573,
+        "subject": "[문토] 베스핀글로벌 사업자등록증 및 통장 사본 요청",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161569,
+        "subject": "[베스핀글로벌] DevSecOps 2025년 9월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161568,
+        "subject": "[베스핀글로벌] piirisk 2025년 9월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161567,
+        "subject": "[베스핀글로벌] Landing Zone 2025년 9월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161566,
+        "subject": "[베스핀글로벌] CheckIT 2025년 9월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161565,
+        "subject": "[베스핀글로벌] FIDO2 2025년 9월 Azure Infra 월간 보고서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161563,
+        "subject": "[베스핀글로벌] 버거킹 10/21 미사용 리소스 싱크업  미팅 관련",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161556,
+        "subject": "Re: [베스핀글로벌] (주)토스랩 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161519,
+        "subject": "Re: [베스핀글로벌] 주식회사 위대한상상 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161491,
+        "subject": "Re:[베스핀글로벌] 코리아크레딧뷰로(주) 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161471,
+        "subject": "Re: [베스핀글로벌] 주식회사 비로보틱스 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161462,
+        "subject": "[2025.09 FA50M0 - 베스핀글로벌] A/P Balance Reconciliation",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161456,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161453,
+        "subject": "Re: [베스핀글로벌] (주)LF 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161437,
+        "subject": "Undeliverable: [베스핀글로벌] appknot 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161429,
+        "subject": "Re: [베스핀글로벌] 주식회사 페이타랩 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161426,
+        "subject": "RE: [BESPIN GLOBAL] Invoice for - usage of AWS.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161412,
+        "subject": "Re: [베스핀글로벌] 앤하우스 Datadog 9월 온디맨드 추가 과금 청구서",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161409,
+        "subject": "[레이크사이드] 베스핀글로벌 MSP 해지 절차 안내드립니다.",
+        "description": "",
+        "tags": [
+          "레이크사이드"
+        ]
+      },
+      {
+        "id": 161404,
+        "subject": "Re: [베스핀글로벌] 슈퍼브에이아이 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161402,
+        "subject": "Re: [베스핀글로벌][#160777] [문의] LG유플러스 세금계산서 미발행 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161392,
+        "subject": "Re: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161387,
+        "subject": "한국전자기술연구원 청구 담당자 관련 정보 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161370,
+        "subject": "Re: [베스핀글로벌] 주식회사 마음주의 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161351,
+        "subject": "[2025.09 FA50M0 - 베스핀글로벌] A/P Balance Reconciliation 2025 SEVT-S",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161350,
+        "subject": "[2025.09 FA50M0 - 베스핀글로벌] A/P Balance Reconciliation 2025 SEVT-S",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161348,
+        "subject": "Re: [베스핀글로벌] 셔틀 유한회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161343,
+        "subject": "FW: [BESPIN GLOBAL] Invoice for - usage of AWS.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161339,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->SK텔레콤(주))",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161338,
+        "subject": "Fwd: [베스핀글로벌] 주식회사 백패커 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161316,
+        "subject": "[삼성물산 리조트] SG 등록 요청(제노이드 담당자)",
+        "description": "",
+        "tags": [
+          "ev"
+        ]
+      },
+      {
+        "id": 161304,
+        "subject": "Re: [베스핀글로벌] 넛지헬스케어 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161289,
+        "subject": "Re: [베스핀글로벌] (주)이지미디어 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161286,
+        "subject": "Fwd: FW: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161283,
+        "subject": "[2025.09 FA50M0 - 베스핀글로벌] A/P Balance Reconciliation",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 161282,
+        "subject": "Re: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161270,
+        "subject": "Automatic reply: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161268,
+        "subject": "Re: [베스핀글로벌] 주식회사 뉴냅스 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161265,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 엠피에이지(MPAG Inc.))",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161264,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 엠피에이지(MPAG Inc.))",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161261,
+        "subject": "베스핀글로벌 주식회사 (베스핀글로벌 주식회사->주식회사 엠피에이지(MPAG Inc.))",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161259,
+        "subject": "[요청] Google Cloud 사용료 세금계산서 발행 담당자 변경 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161258,
+        "subject": "RE: [베스핀글로벌] AWS 빌링 서비스 계약 해지 절차 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161252,
+        "subject": "[베스핀글로벌] AWS 빌링 서비스 계약 해지 절차 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161242,
+        "subject": "Re: [베스핀글로벌] 주식회사 라라스테이션 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161237,
+        "subject": "Re: [베스핀글로벌][#161197] Re: [베스핀글로벌] 주식회사 화해글로벌 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161234,
+        "subject": "[RE][베스핀글로벌] 국립부경대학교 산학협력단 님의 2025년 10월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161231,
+        "subject": "Re: [베스핀글로벌] (주)라이언로켓 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161219,
+        "subject": "Re: [베스핀글로벌][#161197] Re: [베스핀글로벌] 주식회사 화해글로벌 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161212,
+        "subject": "Re: [베스핀글로벌][#161160] Re: [베스핀글로벌] 지엑스씨(주) 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161202,
+        "subject": "Re: [베스핀글로벌] 과입금 관련 안내 - 주식회사 엣지크로스",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161201,
+        "subject": "에스엘즈 담당자 변경",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161197,
+        "subject": "Re: [베스핀글로벌] 주식회사 화해글로벌 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161191,
+        "subject": "Re: [베스핀글로벌] (주)교보문고 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161187,
+        "subject": "Re: [베스핀글로벌] 주식회사 플래티넘브릿지 님의 2025년 10월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161185,
+        "subject": "Re: [베스핀글로벌] 주식회사 에스엘즈 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161160,
+        "subject": "Re: [베스핀글로벌] 지엑스씨(주) 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161141,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161137,
+        "subject": "Re: [베스핀글로벌] 캥스터즈 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161122,
+        "subject": "RE: [베스핀글로벌] 주식회사 비던스 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161121,
+        "subject": "Automatic reply: [베스핀글로벌] 에델만코리아 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161119,
+        "subject": "Re: [베스핀글로벌] 캐시닥 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161118,
+        "subject": "RE: [베스핀글로벌] (재) 서울연구원 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161114,
+        "subject": "Re: [베스핀글로벌][#161029] Re: [베스핀글로벌] (주)매스프레소 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161106,
+        "subject": "자동 회신: [베스핀글로벌] 주식회사 지마켓 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161100,
+        "subject": "[Out of Office] 부재 공지 Re: [베스핀글로벌] 젤리피쉬코리아 유한회사 님의 2025년 10월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161088,
+        "subject": "Re: [베스핀글로벌] 중복 입금 관련 안내 - 주식회사 와이즐리컴퍼니",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161086,
+        "subject": "[Auto Reply 2025/10/10 ~ 2025/10/14 부재중 입니다.][베스핀글로벌] (주)미디어로그 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161085,
+        "subject": "[Auto Reply 2025/10/10 ~ 2025/10/14 부재중 입니다.][베스핀글로벌 주식회사]에서 [((주)미디어로그)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161082,
+        "subject": "RE: [베스핀글로벌] 주식회사 노써치 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161081,
+        "subject": "RE: [베스핀글로벌] 현대오토에버(주) 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161080,
+        "subject": "Re: [베스핀글로벌] 오입금 관련 안내 - 주식회사 웍스아웃",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161079,
+        "subject": "Re: [베스핀글로벌] 중복 입금 관련 안내 - 주식회사 두다지",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161076,
+        "subject": "RE: [베스핀글로벌] 주식회사 해긴 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161075,
+        "subject": "Out of Office Auto Reply - Hyundai A1 Corporation Ltd. Re: [베스핀글로벌] 현대에이원코퍼레이션 주식회사 님의 2025년 10월 서비스 요금 및 상세내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161074,
+        "subject": "Re: [베스핀글로벌] 주식회사 다리소프트 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161073,
+        "subject": "Re: [베스핀글로벌] 주식회사 엑시온그룹 (Exion Group Co.,Ltd) 님의 2025년",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161072,
+        "subject": "Re: [베스핀글로벌] 주식회사 비욘디 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161062,
+        "subject": "[IIC] Organizations planned lifecycle event 발생하여 안내 드리겠습니다.",
+        "description": "",
+        "tags": [
+          "IIC"
+        ]
+      },
+      {
+        "id": 161059,
+        "subject": "[베스핀글로벌] Landing Zone 2025년 09월 AWS Infra 월간 보고서",
+        "description": "",
+        "tags": [
+          "LandingZone"
+        ]
+      },
+      {
+        "id": 161052,
+        "subject": "배달되지 않음: [베스핀글로벌] 에스케이브로드밴드주식회사 님의 2025년 10월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161049,
+        "subject": "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161029,
+        "subject": "Re: [베스핀글로벌] (주)매스프레소 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 161026,
+        "subject": "(첨부메일 첨고 요청의 건) FW: [베스핀글로벌] 한국전자기술연구원 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160996,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)아파트아이 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160988,
+        "subject": "Re: [베스핀글로벌] (주)콜론디 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160985,
+        "subject": "Re: [BESPIN GLOBAL] Invoice for - usage of GCP.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160978,
+        "subject": "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160977,
+        "subject": "부재중입니다. Re: [베스핀글로벌] 주식회사 노타 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160975,
+        "subject": "[발송 실패 안내] 박성혜 : [베스핀글로벌] (주)아톤 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160973,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)바우라움 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160966,
+        "subject": "Re: [베스핀글로벌] 과입금 관련 안내 - (주)엑슨투",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160962,
+        "subject": "RE: [베스핀글로벌] 서울아산병원 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 160959,
+        "subject": "Re: [베스핀글로벌] 모비두 주식회사 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160956,
+        "subject": "[NDR] Delivery Failure Notice : [베스핀글로벌] (주)천재교과서 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160951,
+        "subject": "FW: RE: [베스핀글로벌] (주) 비즈니스온커뮤니케이션 님의 2025년 09월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160950,
+        "subject": "[내부] PLES 담당자 스케줄 작성",
+        "description": "",
+        "tags": [
+          "SRE1"
+        ]
+      },
+      {
+        "id": 160946,
+        "subject": "Returned Msg: [베스핀글로벌] 주식회사 코스모앤컴퍼니 님의 2025년 10월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160945,
+        "subject": "[베스핀글로벌][동원산업] dw-vm-hpdwloex, dw-vm-systems 서버 디스크 임계치 도달 안내건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160938,
+        "subject": "자리비움 안내/OUT OF OFFICE Re: [베스핀글로벌] (주)이지미디어 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160934,
+        "subject": "Re: [베스핀글로벌][#160847] [게임리서치] CUD 약정 취소 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160914,
+        "subject": "자동 회신: [베스핀글로벌] 한국신용평가 (주) 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160910,
+        "subject": "Undeliverable: [베스핀글로벌] 주식회사 메이트모빌리티 님의 2025년 10월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160907,
+        "subject": "자동 회신: [베스핀글로벌] 주식회사 스패너 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160904,
+        "subject": "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160877,
+        "subject": "Re: [베스핀글로벌] 주식회사 안다르 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160870,
+        "subject": "RE: [BESPIN GLOBAL] Invoice for - usage of AWS.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160852,
+        "subject": "Re: [베스핀글로벌][#160847] [게임리서치] CUD 약정 취소 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160839,
+        "subject": "Re: [베스핀글로벌][#160814] 결제 정보 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160783,
+        "subject": "Bespinglobal meeting of October 1, 2025 at 05:44:31 AM- Sharing the Bespinglobal employee benefit programs Guideline- GO LIVE from today [ID:bovRyIGDXH]",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160769,
+        "subject": "[캐논코리아] IAM 계정 생성 및 DBSafer 계정 생성 요청의 건",
+        "description": "",
+        "tags": [
+          "canon"
+        ]
+      },
+      {
+        "id": 160767,
+        "subject": "RE: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160764,
+        "subject": "Fwd: [베스핀글로벌] 토스씨엑스 주식회사 님의 2025년 10월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160734,
+        "subject": "Re: [베스핀글로벌][#160728] [나이스페이먼츠] 세금계산서 변경 관련 사업자등록증 전달 건_나이스정보통신",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160731,
+        "subject": "Re: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160710,
+        "subject": "[이지미디어-현대자동차] 베스핀글로벌 MSP 해지 절차 안내드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160691,
+        "subject": "Re: [베스핀글로벌][#160668] [주식회사 패러블엔터테인먼트] 서비스 요금 납부자 변경의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160687,
+        "subject": "Re: [베스핀글로벌] 주식회사 프로젝트빌드업 님의 2025년 09월 서비스 요금 및 상세내역 안",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160686,
+        "subject": "[베스핀글로벌] 보안솔루션 IP 추가에 따른 변경 작업 요청드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160682,
+        "subject": "[베스핀글로벌] 보안솔루션 IP 추가에 따른 작업안내드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160673,
+        "subject": "내용 확인 합니다만.....RE: [베스핀글로벌] SK텔레콤(주) 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160635,
+        "subject": "[내부] PLES2.0 추석 연휴 담당자 설정",
+        "description": "",
+        "tags": [
+          "SRE1"
+        ]
+      },
+      {
+        "id": 160611,
+        "subject": "RE: [베스핀글로벌] 현대오토에버(주) 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 160605,
+        "subject": "You got paid by Bespin Global!",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160597,
+        "subject": "Re: [베스핀글로벌] 암호화폐 채굴 남용 의심 관련 확인 요청",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 160574,
+        "subject": "[베스핀글로벌] opsnow 통합계정 요청드립니다.",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 160573,
+        "subject": "[베스핀글로벌] 암호화폐 채굴 남용 의심 관련 확인 요청",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 160572,
+        "subject": "[주식회사 밀레니얼웍스] 담당자 배정 및 결제 문의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160568,
+        "subject": "[요청]: Re: Re: RE: FW: Re: Re: RE: [KT&G] MSP 담당자 VPN&WinNGS 계정 휴면 관련 요청의 건",
+        "description": "",
+        "tags": [
+          "KT&G"
+        ]
+      },
+      {
+        "id": 160559,
+        "subject": "Re: [베스핀글로벌] 오륜교회 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160555,
+        "subject": "[베스핀글로벌] opsnow 통합계정 확인 및 신청 방법 요청드립니다.",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 160553,
+        "subject": "[한글과컴퓨터] 신규 담당자 계정 발급 건으로 연락 드립니다.",
+        "description": "",
+        "tags": [
+          "한글과컴퓨터"
+        ]
+      },
+      {
+        "id": 160551,
+        "subject": "Re: [베스핀글로벌][#160547] [버튼스] GWS/GCP 비용 관련 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160506,
+        "subject": "Payee Advice Dated 25-Sep-2025 for BESPIN GLOBAL Inc., Cust Ref: PIGSGWETPLA02037 , UTR: SG1OT2509250268C",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160503,
+        "subject": "Re: [베스핀글로벌] 교촌에프앤비(주) 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160499,
+        "subject": "Re: [베스핀글로벌][#160486] Re: [RE][베스핀글로벌] GCP Offering 확인 요청드립니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160487,
+        "subject": "A payment from Bespin Global is on the way",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160486,
+        "subject": "Re: [RE][베스핀글로벌] GCP Offering 확인 요청드립니다.",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval",
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 160438,
+        "subject": "Re: [베스핀글로벌] 뉴로모먼트 주식회사 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160427,
+        "subject": "[교촌] AWS Organization 정책 확인 및 AWS Transform 계정 추가 요청의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160410,
+        "subject": "Re: [베스핀글로벌] 주식회사 엑스닷츠 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160409,
+        "subject": "Re: [베스핀글로벌] 주식회사 엑스닷츠 님의 2025년 08월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160405,
+        "subject": "RE: [베스핀글로벌] (주)와이즈스톤 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160403,
+        "subject": "AWS 콘솔 접근 계정 생성, 관리 권한부여 요청",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 160390,
+        "subject": "Fwd: [베스핀글로벌] 주식회사 원티드랩 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160371,
+        "subject": "[블루월넛] 베스핀글로벌 콘솔 접근 IP 확인 요청 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160359,
+        "subject": "베스핀글로벌 계약 해지건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160286,
+        "subject": "IAM Identity Center 를 활용하여 계정관리를 하려고 합니다.",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 160238,
+        "subject": "Re: [베스핀글로벌] 주식회사 위대한상상 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160217,
+        "subject": "FW: [베스핀글로벌 주식회사]에서 [(쿠팡 주식회사)]님에게 보내온 전자세금계산서 입니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160197,
+        "subject": "Re: [베스핀글로벌] 주식회사 케어스퀘어 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160189,
+        "subject": "Fw: 엘지전자(주) 김영민님 베스핀글로벌 주식회사 신다인(으)로 부터 세금계산서가 발행 되었습니다.",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160182,
+        "subject": "Re: [베스핀글로벌] 휴멜로 주식회사 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160175,
+        "subject": "Fwd: [베스핀글로벌] 한양대학교 에리카산학협력단 님의 2025년 09월 서비스 요금 및 상세내역",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160148,
+        "subject": "Re: [베스핀글로벌] (주)라이언로켓 님의 2025년 08월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 160143,
+        "subject": "AWS 계정 생성 요청",
+        "description": "",
+        "tags": [
+          "블루월넛"
+        ]
+      },
+      {
+        "id": 160096,
+        "subject": "Re: Re: [베스핀글로벌] 교촌에프앤비(주) 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "교촌"
+        ]
+      },
+      {
+        "id": 160086,
+        "subject": "Re: [베스핀글로벌] 주식회사 유리프트(ULIFT Inc.) 님의 2025년 09월 서비스 요금",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 159731,
+        "subject": "Re: [베스핀글로벌] 주식회사 페이타랩 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 159689,
+        "subject": "[베스핀글로벌] VM 인스턴스 CPU 100% 스파이크 원인 확인 요청 (2025-09-06 02:00 KST)",
+        "description": "",
+        "tags": [
+          "ai_response_exported"
+        ]
+      },
+      {
+        "id": 159490,
+        "subject": "RE: [베스핀글로벌] 한국전자기술연구원 님의 2025년 09월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 159284,
+        "subject": "[베스핀글로벌] [안내] 우정사업본부 NCP 2025년 CSAP 인증 기준 변경에 따른 마이그레이션 예정",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 158668,
+        "subject": "담당자 변경의 건",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 158654,
+        "subject": "Re: [베스핀글로벌] 에어프레미아주식회사 님의 2025년 08월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 158455,
+        "subject": "Re: Re: [베스핀글로벌] (주)코엑스 님의 2025년 08월 서비스 요금 및 상세내역 안내 (상세데이터 요청)",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 157968,
+        "subject": "Re: [베스핀글로벌] 주식회사 쏘카 님의 2025년 08월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 156843,
+        "subject": "배달되지 않음: [베스핀글로벌] (주)에스티유니타스 님의 2025년 07월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": [
+          "ai_response_generated",
+          "ai_pending_approval"
+        ]
+      },
+      {
+        "id": 154699,
+        "subject": "RE: [베스핀글로벌][#154386] 브라질 CCS 1.0 퍼블릭 클라우드 보안 검토 문의",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 153920,
+        "subject": "RE: [베스핀글로벌] 주식회사 반올림피자 님의 2025년 05월 서비스 요금 및 상세내역 안내",
+        "description": "",
+        "tags": []
+      },
+      {
+        "id": 153110,
+        "subject": "[베스핀글로벌] Whatap 기반 모니터링 설정 사전 안내",
+        "description": "",
+        "tags": [
+          "한동대학교"
+        ]
+      }
+    ],
+    "categories": {
+      "technical": 135,
+      "permission": 66,
+      "billing": 88,
+      "account": 122,
+      "request": 819,
+      "other": 2337
+    }
+  },
+  "recommendations": [
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: Action Required: SPF Record Issue Prevented Delivery of Your Email to Moody's",
+      "reason": "69회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        162818,
+        162816,
+        162813
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: [LG전자_Signage365Care] spm-sql-us29 SQL DB Storage 사용량 조치 관련",
+      "reason": "26회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        161742,
+        161690,
+        161687
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: 버거킹 RIMS_BKJH 서버 JEUS 재시작건",
+      "reason": "13회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        165009,
+        164712,
+        164118
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: 반올림피자 서버 금일 오전 8:50 ~ 10:00 배포 예정입니다.",
+      "reason": "12회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        164861,
+        164787,
+        164724
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: [한화비전] SmartCAM 2025년 12월 3주 주간 보고서",
+      "reason": "11회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        165109,
+        164078,
+        163653
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: 귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다.",
+      "reason": "9회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        164913,
+        164671,
+        164425
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: Re: 버거킹 RIMS서버 JEUS 재시작건.",
+      "reason": "8회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        164973,
+        164424,
+        163522
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: [슈피겐코리아] 방화벽 추가 요청",
+      "reason": "8회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        164964,
+        164939,
+        164882
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: [대상웰라이프] 오늘 오후6시에 Azure Database for MySQL 서버의 사용 스펙 원상복구 부탁드립니다",
+      "reason": "8회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        164709,
+        164316,
+        164121
+      ]
+    },
+    {
+      "type": "FAQ",
+      "priority": "HIGH",
+      "title": "FAQ: [대상웰라이프] 오늘 오후6시 20분에 Azure Database for MySQL 서버의 사용 스펙 변경예정이라 공유드립니다.",
+      "reason": "7회 반복",
+      "suggested_path": "knowledge_base/guides/common_issues/",
+      "tickets": [
+        165083,
+        164454,
+        164094
+      ]
+    },
+    {
+      "type": "SERVICE_GUIDE",
+      "priority": "MEDIUM",
+      "title": "EC2 가이드",
+      "reason": "288개 문의",
+      "suggested_path": "knowledge_base/guides/ec2/"
+    },
+    {
+      "type": "SERVICE_GUIDE",
+      "priority": "MEDIUM",
+      "title": "RDS 가이드",
+      "reason": "183개 문의",
+      "suggested_path": "knowledge_base/guides/rds/"
+    },
+    {
+      "type": "SERVICE_GUIDE",
+      "priority": "MEDIUM",
+      "title": "S3 가이드",
+      "reason": "50개 문의",
+      "suggested_path": "knowledge_base/guides/s3/"
+    },
+    {
+      "type": "SERVICE_GUIDE",
+      "priority": "MEDIUM",
+      "title": "IAM 가이드",
+      "reason": "32개 문의",
+      "suggested_path": "knowledge_base/guides/iam/"
+    },
+    {
+      "type": "SERVICE_GUIDE",
+      "priority": "MEDIUM",
+      "title": "CLOUDFRONT 가이드",
+      "reason": "18개 문의",
+      "suggested_path": "knowledge_base/guides/cloudfront/"
+    },
+    {
+      "type": "POLICY",
+      "priority": "HIGH",
+      "title": "Identity Center 관리 정책",
+      "reason": "502개 관련 티켓",
+      "suggested_path": "knowledge_base/policies/identity_center/"
+    }
+  ]
+}

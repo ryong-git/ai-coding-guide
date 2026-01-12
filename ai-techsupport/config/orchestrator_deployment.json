@@ -1,0 +1,11 @@
+{
+  "orchestrator_lambda_arn": "arn:aws:lambda:us-east-1:867099995276:function:ai-techsupport-orchestrator",
+  "api_gateway": {
+    "api_id": "66ibf7k3je",
+    "api_endpoint": "https://66ibf7k3je.execute-api.us-east-1.amazonaws.com",
+    "webhook_url": "https://66ibf7k3je.execute-api.us-east-1.amazonaws.com/prod/webhook"
+  },
+  "webhook_url": "https://66ibf7k3je.execute-api.us-east-1.amazonaws.com/prod/webhook",
+  "deployed_at": "2025-12-22 09:05:47",
+  "region": "us-east-1"
+}

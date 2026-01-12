@@ -1,0 +1,28 @@
+{
+  "bespin_alerts": {
+    "count": 240,
+    "patterns": 51,
+    "examples": [
+      "[LG전자_Signage365Care] spm-sql-us29 SQL DB Storage 사용량 조치 관련",
+      "버거킹 RIMS_BKJH 서버 JEUS 재시작건",
+      "반올림피자 서버 금일 오전 8:50 ~ 10:00 배포 예정입니다.",
+      "[한화비전] SmartCAM 2025년 12월 3주 주간 보고서",
+      "귀사[베스핀글로벌 주식회사]가 한국과학기술원(KAIST)과 거래하신 내역에 대한 (세금)계산서 접수 안내입니다."
+    ]
+  },
+  "customer_inquiries": {
+    "count": 119,
+    "patterns": 14,
+    "examples": [
+      "Action Required: SPF Record Issue Prevented Delivery of Your Email to Moody's",
+      "[슈피겐코리아] 방화벽 추가 요청",
+      "[다우기술] spamhaus 등록 아이피 차단 해제 요청의 건",
+      "[캐논코리아] 보안규칙 확인 요청의 건",
+      "[삼성물산 리조트] SG 등록 요청(prd-evld-valkey 접속)"
+    ]
+  },
+  "uncertain": {
+    "count": 304,
+    "patterns": 92
+  }
+}
