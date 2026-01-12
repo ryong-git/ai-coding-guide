@@ -18,6 +18,10 @@ const navigationData: NavItem[] = [
     href: "/overview/"
   },
   {
+    title: "비개발자 가이드",
+    href: "/for-everyone/"
+  },
+  {
     title: "1부. AI 도구 활용이란?",
     children: [
       { title: "1.1 AI 도구 활용의 정의", href: "/part1/definition/" },
