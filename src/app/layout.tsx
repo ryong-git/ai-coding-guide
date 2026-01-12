@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter, Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/ui/navigation";
@@ -63,10 +64,16 @@ export default function RootLayout({
             <main className="md:ml-80 min-h-screen relative z-10 transition-all duration-300">
               <header className="sticky top-0 z-20 border-b border-border-soft bg-background/80 backdrop-blur-md">
                 <div className="flex items-center justify-between px-6 py-4">
-                  <div className="space-y-1">
-                    <p className="text-sm text-text-secondary font-medium">
-                      Agentic AI 워크플로를 단계별로 따라가며 팀에 바로 적용해 보세요.
-                    </p>
+                  <div className="flex items-center gap-4">
+                    <Link
+                      href="/for-everyone/intro/"
+                      className="group flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600/10 to-purple-600/10 hover:from-blue-600/20 hover:to-purple-600/20 border border-blue-200 dark:border-blue-900 rounded-full transition-all"
+                    >
+                      <span className="text-xs font-bold bg-blue-600 text-white px-2 py-0.5 rounded-full">New</span>
+                      <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent group-hover:opacity-80">
+                        비개발자라면 클릭! 코딩 없이 AI 비서 활용하기 →
+                      </span>
+                    </Link>
                   </div>
                   <ThemeToggle />
                 </div>
